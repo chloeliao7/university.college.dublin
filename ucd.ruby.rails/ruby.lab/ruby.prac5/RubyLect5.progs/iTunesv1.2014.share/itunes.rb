@@ -28,10 +28,11 @@ puts "Building all owners..."
 $actors = Actor.build_all()
 
 puts "Updating songs with ownership details..."
-$songs.each{|song| song.owners = $hash_owners[song.id]}
+$songs.each{|song| song.owners = $hash_owners[song.id]} 
 
 puts "Building All Albums..."
 $albums = Album.build_all()
+puts $albums 
 
 # Given the name of a song and a person; let them buy the song
 puts "\nMarkk buys The Cure..."

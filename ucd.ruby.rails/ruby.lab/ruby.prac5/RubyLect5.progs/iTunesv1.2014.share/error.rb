@@ -13,12 +13,13 @@ class MyErr
 
   #  Method that is applied to an error object and prints out appropriate error.
   #  Ruby actually has its own error class that you can use, when you grow up.
-	zdef do_it
-		if @type == "multiple_answer_error"
+	def do_it
+	  if @type == "multiple_answer_error"
 			then puts "Error: Item #{@holder} raised #{@type} in #{@method}"
 		elsif @type == "not_found_error"
 			then puts "Error: #{@holder} was #{@type} in #{@method}"
-		else puts "Error: Have been given an unknown error type: #{@type}"
+		else 
+			puts "Error: Have been given an unknown error type: #{@type}"
 		end
 	end
 end

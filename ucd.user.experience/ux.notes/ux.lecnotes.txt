@@ -50,7 +50,6 @@ Processes of design
 - + Ones with direct task that use the system 
 - + other Stakeholder 
 
-
 >> PERSONAS!
 - imagining the user 
 - when hard to get access to real users
@@ -64,15 +63,14 @@ what do we need by needs
 
 >> lecture three 
 
-what is a requiremnt 
+what is a requirement 
 - should be specific 
 - time to download a page 
 - visitor should find the tabletop engaging
 
-
 Environmental requirements
-- physical : lightning , nouse , movement, safety 
-- social : collaboration sharing of data and physical location team memebers 
+- physical : lightning , mouse , movement, safety 
+- social : collaboration sharing of data and physical location team members 
 
 Key Attributes
 # personas 
@@ -80,12 +78,10 @@ Key Attributes
 - allow product team to focus on user 
 - not real people but based on real people from data gathering stage 
 
-
 + example - detailed users 
 
 Usability and UX goals vs UX Goals 
-- Measures and goals agreed earky and progress measure accrross iterations 
+- Measures and goals agreed early and progress measure across iterations 
 - Objective or subjective 
 
-
-WIMP - windowa, icon, motion, pointers 
+WIMP - windows, icon, motion, pointers 

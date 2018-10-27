@@ -1,11 +1,7 @@
-Due Date
-Sunday, 10 December 2017
-15:00
-Points Possible
-70
+Due Date: Sunday, 10 December 2017 15:00
+Points Possible: 70
 
 DUE 10TH DECEMBER 2018 AT 3 PM TO BE SUBMITTED VIA BLACKBOARD: 
-
 This assignment will focus on an area of HCI covered in the lectures. Groups will be comprised of approximately 5 students.
 Instructions: Report on requirements gathering, designing and prototyping of an interaction relevant to specific users and contexts. The assignment is based on the CHI 2019 Design Competition (https://chi2019.acm.org/authors/student-design-competition/)
 For this assignment your group will need to undertake 5 phases:
@@ -16,17 +12,21 @@ For this assignment your group will need to undertake 5 phases:
 5) Evaluation
 Instructions for each phase:
 
-=== Research/ Requirements Gathering  ===
+=== Research/ Requirements Gathering
     ⁃    Choose a user group. You will need to have access to people in your planned user group throughout the project (through from requirements gathering to evaluation) so keep this in mind.  
     ⁃    Look at materials aimed at your target group and previous innovations in the area (websites, products etc) and also read around the relevant HCI literature . 
     ⁃    As a minimum you will need to create two personas (in total) to help in your design and evaluation.
-=== Creative design and prototyping phase  ===
+
+=== Creative design and prototyping phase
     ⁃    Initially come up with a large set of ideas and concepts to consider. From this you'll need to have two distinct design concepts to take forward to the lo-fi prototype phase. 
     ⁃    Details of how many scenarios will depend on the number of designs you wish to take forward to Lo-Fi prototype phase
-=== Lo-Fi Prototyping phase  ===
-    ⁃    You will need to produce 2 lo-fi prototypes, and the decide which of them to refine and take forward. For this phase, you must summarise the advantages and disadvantages of each design and give reasons as to why you are taking one of them forward. 
-=== Hi-Fi Prototyping phase  ===
+
+=== Lo-Fi Prototyping phase
+    ⁃    You will need to produce 2 lo-fi prototypes, and the decide which of them to refine and take forward. For this phase, you must summaries the advantages and disadvantages of each design and give reasons as to why you are taking one of them forward. 
+
+=== Hi-Fi Prototyping phase
     ⁃    You will need to produce an interactive prototype for users to evaluate. This can be done using HTML, Powerpoint, Audacity or any other tool you feel comfortable using. 
+
 === Evaluation phase === 
       -  The final version of your design has to be evaluated with real users. Choose an evaluation technique and apply it to your system.
 
@@ -37,10 +37,13 @@ A joint report (written with your group members) documenting each stage should b
 This should be:
     ⁃    Word-Processed (single line spacing, 12pt font, spell-checked). 
     ⁃    No more than 5000 words (this is an upper limit, lower is fine)
+
 Included in this submission you must present the materials created in each of the stages including all documentation gathered related to the design process (brainstorming sheets, raw interview transcripts, rough drawings of the design etc). Please include these in an appendix.
 Submissions to be made digitally on Blackboard. All submissions should include a Submission Cover Page with all group members  (see attachment)
 Late submissions policy is available from the following link http://www.ucd.ie/registry/academicsecretariat/docs/latesub_po.pdf
+
 Instructions for submission:
 Each group should upload a .zip file for their project. This file should include 1) the report, 2) the hi-fi prototype files, 3) a submission cover sheet for each group member (i.e. one sheet per member- the sheet is attached to this assessment post) as well as 4) any other documents you feel you need to include for the project to be assessed.
+
 Submission cover page.pdf
 By submitting this paper, you agree: (1) that you are submitting your paper to be used and stored as part of the SafeAssign™ services in accordance with the Blackboard Privacy Policy; (2) that your institution may use your paper in accordance with your institution's policies; and (3) that your use of SafeAssign will be without recourse against Blackboard Inc. and its affiliates.
