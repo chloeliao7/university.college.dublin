@@ -1,0 +1,111 @@
+<p>Complete the following class in your solution:</p>
+<pre>/**
+   A bank account has a balance that can be changed by 
+   deposits and withdrawals.
+*/
+public class BankAccount
+{  
+   private double balance;
+
+   /**
+      Constructs a bank account with a zero balance.
+   */
+   public BankAccount()
+   {   
+      balance = 0;
+   }
+
+   /**
+      Constructs a bank account with a given balance.
+      @param initialBalance the initial balance
+   */
+   public BankAccount(double initialBalance)
+   {   
+      balance = initialBalance;
+   }
+
+   /**
+      Deposits money into the bank account.
+      @param amount the amount to deposit
+   */
+   public void deposit(double amount)
+   {  
+      double newBalance = balance + amount;
+      balance = newBalance;
+   }
+
+   /**
+      Withdraws money from the bank account.
+      @param amount the amount to withdraw
+   */
+   public void withdraw(double amount)
+   {   
+      double newBalance = balance - amount;
+      balance = newBalance;
+   }
+
+   /**
+      Gets the current balance of the bank account.
+      @return the current balance
+   */
+   public double getBalance()
+   {   
+      return balance;
+   }
+}
+</pre>
+<p>Use the following class as your tester class:</p>
+<pre>public class BankAccountTester
+{
+   public static void main(String[] args)
+   {
+      try
+      {
+         BankAccount a = new BankAccount(-1000);
+         System.out.println("No assertion error");
+      }
+      catch (AssertionError e)
+      {
+         System.out.println("Assertion error");
+      }
+      System.out.println("Expected: Assertion error");
+      
+      try
+      {
+         BankAccount b = new BankAccount(1000);
+         b.deposit(-1000);
+         System.out.println("No assertion error");
+      }
+      catch (AssertionError e)
+      {
+         System.out.println("Assertion error");
+      }
+      System.out.println("Expected: Assertion error");
+
+      try
+      {
+         BankAccount c = new BankAccount(1000);
+         c.withdraw(2000);
+         System.out.println("No assertion error");
+      }
+      catch (AssertionError e)
+      {
+         System.out.println("Assertion error");
+      }
+      System.out.println("Expected: Assertion error");
+
+      try
+      {
+         BankAccount d = new BankAccount(1000);
+         d.deposit(1000);
+         d.withdraw(2000);         
+         System.out.println("No assertion error");
+      }
+      catch (AssertionError e)
+      {
+         System.out.println("Assertion error");
+      }
+      System.out.println("Expected: No assertion error");
+   }
+}
+</pre>

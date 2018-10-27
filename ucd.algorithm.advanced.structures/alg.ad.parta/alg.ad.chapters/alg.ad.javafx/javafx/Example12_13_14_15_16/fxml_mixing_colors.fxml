@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:controller="MixingColorsController" 
+      xmlns:fx="http://javafx.com/fxml" 
+      alignment="center" spacing="10" 
+      style="-fx-background-color:#CCCCCC" >
+
+  <CheckBox fx:id="red" selected="true" 
+            text="red" onAction="#mix" />
+  <CheckBox fx:id="green" selected="true" 
+            text="green" onAction="#mix" />
+  <CheckBox fx:id="blue" selected="true" 
+            text="blue" onAction="#mix" />
+
+  <Label fx:id="label" text="Watch my background"
+         style="-fx-background-color:#FFFFFF" />
+    
+</HBox>

@@ -1,0 +1,14 @@
+<p>Write a program that reads two times in military format (0900, 1730) and prints the number of hours and minutes between the two times. Here is a sample run. User input is in color.
+<pre><font face="Courier New">
+Please enter the first time: <font color="#0abbf5">0900</font>
+Please enter the second time: <font color="#0abbf5">1730</font>
+8 hours 30 minutes
+</font></pre>
+Extra credit if you can deal with the case where the first time is later than the second time:
+<pre><font face="Courier New">
+Please enter the first time: <font color="#0abbf5">1730</font>
+Please enter the second time: <font color="#0abbf5">0900</font>
+15 hours 30 minutes
+</font></pre>
+Implement a class <font face="Courier New">TimeInterval</font> whose constructor takes two military times. The class should have two methods <font face="Courier New">getHours</font> and <font face="Courier New">getMinutes</font>.</p>
+<p>Your main class should be called <font face="Courier New">ElapsedTimePrinter</font>.</p>

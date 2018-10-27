@@ -1,0 +1,59 @@
+|   |
+|   |
+|   |
+
+Row for x (Q to exit): 
+Column for x: 
+|x  |
+|   |
+|   |
+
+Row for o (Q to exit): 
+Column for o: 
+|x  |
+| o |
+|   |
+
+Row for x (Q to exit): 
+Column for x: 
+|xx |
+| o |
+|   |
+
+Row for o (Q to exit): 
+Column for o: 
+|xxo|
+| o |
+|   |
+
+Row for x (Q to exit): 
+Column for x: 
+|xxo|
+| o |
+|x  |
+
+Row for o (Q to exit): 
+Column for o: 
+|xxo|
+|oo |
+|x  |
+
+Row for x (Q to exit): 
+Column for x: 
+|xxo|
+|oox|
+|x  |
+
+Row for o (Q to exit): 
+Column for o: 
+|xxo|
+|oox|
+|xo |
+
+Row for x (Q to exit): 
+Column for x: 
+|xxo|
+|oox|
+|xox|
+
+Row for o (Q to exit): 

@@ -1,0 +1,64 @@
+<p>Complete the following class in your solution:</p>
+<pre>/** 
+    A car can drive and consume fuel. 
+*/ 
+public class Car 
+{ 
+   private double gas;
+   private double efficiency;
+
+   /** 
+      Constructs a car with a given fuel efficiency. 
+      @param anEfficiency the fuel efficiency of the car 
+   */ 
+   public Car(double anEfficiency) 
+   {
+      . . .
+   }
+
+   /** Adds gas to the tank. 
+       @param amount the amount of fuel to add 
+   */ 
+   public void addGas(double amount) 
+   { 
+      . . .
+   } 
+
+   /** 
+       Drives a certain amount, consuming gas. 
+       @param distance the distance driven 
+   */ 
+   public void drive(double distance) 
+   { 
+      . . .
+   } 
+
+   /** 
+       Gets the amount of gas left in the tank. 
+       @return the amount of gas 
+   */ 
+
+   public double getGasInTank() 
+   { 
+      . . .
+   } 
+} 
+</pre>
+<p>Use the following class as your tester class:</p>
+<pre>/**
+   This program tests the Car class.
+*/
+public class CarTester
+{ 
+   public static void main(String [] args)
+   { 
+      Car myHybrid = new Car(50); // 50 miles per gallon       
+      myHybrid.addGas(20); 
+      myHybrid.drive(100); // consumes 2 gallons      
+      double gasLeft = myHybrid.getGasInTank(); 
+      
+      // TODO: Print actual and expected gas level
+      
+   } 
+}
+</pre>

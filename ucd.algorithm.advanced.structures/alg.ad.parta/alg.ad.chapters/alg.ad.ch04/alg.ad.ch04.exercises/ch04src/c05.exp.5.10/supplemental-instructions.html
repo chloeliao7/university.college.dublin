@@ -1,0 +1,63 @@
+<p>Here is a sample program run:</p>
+<pre>Please enter the first time in military time (hour minute): 
+<b>15 45
+</b>Please enter the second time in military time (hour minute): 
+<b>8 30
+</b>The first time is after the second time.
+</pre>
+<p>Use the following class as your main class:</p>
+<pre>import java.util.Scanner;
+
+/**
+   This program compares two military times and
+   determines which comes first.
+*/
+public class TimeComparer
+{
+   public static void main(String[] args)
+   {  
+      Scanner in = new Scanner(System.in);
+
+      System.out.println("Please enter the first time in military time (hour minute): ");
+      int hour1 = in.nextInt();
+      int minute1 = in.nextInt();
+
+      System.out.println("Please enter the second time in military time (hour minute): ");
+      int hour2 = in.nextInt();
+      int minute2 = in.nextInt();
+      
+      Time time1 = new Time(hour1, minute1);
+      Time time2 = new Time(hour2, minute2);
+      
+      String comp = time1.compareWith(time2);
+      System.out.println("The first time is " + comp + " the second time.");      
+   }
+}
+</pre>
+<p>Complete the following class in your solution:</p>
+<pre>/**
+   This class compares two military times and
+   determines which comes first.
+*/
+public class Time
+{
+   private int hour;
+   private int minute;
+   
+   public Time(int anHour, int aMinute)
+   {
+      . . .
+   }
+
+   /**
+      Compares this time against another time.
+      @param time2 the time to compare with
+      @return "before" if this time comes before time2,
+      "" if the times are the same, and "after" otherwise
+   */   
+   public String compareWith(Time time2)
+   {
+      . . .   
+   }
+}
+</pre>

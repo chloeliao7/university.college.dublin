@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" 
+      fx:controller="AnimationController">
+ <center>
+  <VBox fx:id="canvasContainer" alignment="center"
+     style="-fx-border-color:navy;-fx-border-width:1"/>
+ </center>
+ <left>
+  <VBox spacing="10" alignment="center" 
+     style="-fx-border-color:navy;-fx-border-width:1;-fx-padding:8">
+     
+    <Button text="Fade" fx:id="fadeButton" />
+    <Button text="Rotate" fx:id="rotateButton" />
+    <Button text="Scale" fx:id="scaleButton" /> 
+    <Button text="Combine Animations" fx:id="combineButton" />
+    <Button text="Start Translate" fx:id="startTranslateButton" />
+    <Button text="Stop Translate" fx:id="stopTranslateButton" />   
+  </VBox>
+ </left>
+</BorderPane>

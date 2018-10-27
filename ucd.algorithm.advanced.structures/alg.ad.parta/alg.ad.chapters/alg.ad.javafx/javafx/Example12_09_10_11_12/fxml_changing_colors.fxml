@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:controller="ChangingColorsController" 
+      xmlns:fx="http://javafx.com/fxml" 
+      alignment="center" spacing="10" >
+
+  <fx:define>  
+    <ToggleGroup fx:id="colorGroup" />  
+  </fx:define>  
+
+  <RadioButton fx:id="red" text="red" selected="true" 
+               toggleGroup="$colorGroup" 
+               onAction="#colorChosen" />
+  <RadioButton fx:id="green" text="green" 
+               toggleGroup="$colorGroup" 
+               onAction="#colorChosen" />
+  <RadioButton fx:id="blue" text="blue" 
+               toggleGroup="$colorGroup" 
+               onAction="#colorChosen" />
+
+  <Label fx:id="label" text="Watch my background"
+         textFill="WHITE" 
+         style="-fx-background-color:#FF0000" />
+    
+</HBox>
+

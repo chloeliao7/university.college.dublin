@@ -1,0 +1,99 @@
+<p>Use the following class as your main class:</p>
+<pre>/**
+      Play the game of Bulgarian Solitare.
+*/
+public class BulgarianSolitairePlayer
+{
+   public static void main(String[] args)
+   {
+      BulgarianSolitaire deck = new BulgarianSolitaire();
+      deck.setupRandomly();
+      deck.play();
+   }
+}
+</pre>
+<p>Complete the following class in your solution:</p>
+<pre>import java.util.ArrayList;
+import java.util.Random;
+
+public class BulgarianSolitaire
+{
+   private ArrayList&lt;Integer&gt; piles;
+
+   /**
+      Sets up the game randomly with some number of piles of random
+      size. The pile sizes add up to 45.
+   */
+   public void setupRandomly()
+   {
+      . . .
+   }
+   
+   /**
+      This method can be used to set up a pile with a known (non-random)
+      configuration for testing.
+      @param pileSizes an array of numbers whose sum is 45
+   */
+   public void setup(int[] pileSizes)
+   {
+      piles = new ArrayList&lt;Integer&gt;();
+      for (int s : pileSizes)
+         piles.add(s);
+   }
+
+   public String getPiles()
+   {
+      return piles.toString();
+   }
+
+   /**
+      Play the game.
+   */
+   public void play()
+   {
+      while (!isDone())
+      {
+         System.out.println(getPiles());
+         playRound();
+      }
+      System.out.println(getPiles());
+   }
+
+   /**
+      Play one round of the game. 
+   */
+   public void playRound()
+   {
+      . . .
+   }
+
+   /**
+      Checks whether the game is done.
+      @return true when the piles have size 
+      1, 2, 3, 4, 5, 6, 7, 8, and 9, in some order.
+   */
+   public boolean isDone()
+   {
+      . . .
+   }
+}
+</pre>
+<p>Use the following class as your tester class:</p>
+<pre>/**
+   Tests the game of Bulgarian Solitaire.
+*/
+public class BulgarianSolitaireTester
+{
+   public static void main(String[] args)
+   {
+      BulgarianSolitaire deck = new BulgarianSolitaire();
+      int[] initialSizes = { 20, 5, 1, 9, 10 };
+      deck.setup(initialSizes);
+      System.out.println(deck.isDone());
+      System.out.println("Expected: false");
+      deck.playRound();
+      System.out.println(deck.getPiles());
+      System.out.println("Expected: [19, 4, 8, 9, 5]");
+   }
+}
+</pre>

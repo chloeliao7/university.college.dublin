@@ -1,0 +1,83 @@
+<p>Here is a sample program run:</p>
+<pre>Please enter three numbers:
+<b>4
+9
+2.5</b>The inputs in sorted order are:
+2.5
+4.0
+9.0
+</pre>
+<p>Use the following class as your main class:</p>
+<pre>import java.util.Scanner;
+
+/**
+   This is program sorts three numbers.
+*/
+public class DataSorter
+{
+   public static void main(String[] args)
+   {
+      Scanner in = new Scanner(System.in);
+      
+      System.out.println("Please enter three numbers:");
+      double num1 = in.nextDouble();
+      double num2 = in.nextDouble();
+      double num3 = in.nextDouble();
+
+      DataSet s = new DataSet(num1, num2, num3);
+
+      System.out.println("The inputs in sorted order are:\n"
+         + s.getSmallest() + "\n"
+         + s.getMiddle() + "\n"
+         + s.getLargest());
+   }
+}
+</pre>
+<p>Complete the following class in your solution:</p>
+<pre>/**
+   This class finds the smallest, middle, and largest of 
+   three numbers.
+*/
+public class DataSet
+{
+   . . .
+
+   /**
+      Constructs a data set that processes three numbers.
+      @param num1 the first number to sort
+      @param num2 the second number to sort
+      @param num3 the third number to sort
+   */
+   public DataSet(double num1, double num2, double num3)
+   {
+      . . .
+   }
+
+   /**
+      Gets the smallest number in the data set.
+      @return smallest the smallest of three numbers
+   */
+   public double getSmallest()
+   {
+      . . .
+   }
+
+   /**
+      Gets the largest number in the data set.
+      @return largest the largest of three numbers
+   */
+   public double getLargest()
+   {
+      . . .
+   }
+
+   /**
+      Gets the middle number in the data set.
+      @return middle the middle number of three numbers
+   */
+   public double getMiddle()
+   {
+      . . .
+   }
+}
+</pre>

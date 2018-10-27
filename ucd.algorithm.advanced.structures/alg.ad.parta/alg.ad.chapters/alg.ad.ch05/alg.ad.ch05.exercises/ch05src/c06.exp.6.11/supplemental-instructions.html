@@ -1,0 +1,91 @@
+<p>Here is a sample program run:</p>
+<pre>Please enter a number: <b>10000
+</b>Extract which root? <b>4
+</b>1.0
+2500.75
+1875.5625001598562
+1406.6718754988103
+1055.003907522284
+791.2529327707234
+593.4397046245859
+445.0797904306161
+333.80987117774873
+250.35747059464057
+187.76826226159503
+140.82657433224733
+105.62082587929066
+79.21774114540123
+59.41833475494345
+44.57566838563254
+33.459977099434724
+25.161719272973865
+19.02822418695417
+14.634033265120637
+11.773240199515095
+10.361906266171065
+10.018522615807727
+10.000051304662867
+10.000000000394822
+10.0
+10.0
+</pre>
+<p>Your main class should be called <code>RootCalculator</code>.</p>
+<p>Complete the following class in your solution:</p>
+<pre>/**
+   This class implements the Newton-Raphson method to approximate the
+   nth root of an input value.
+*/
+public class RootApproximator
+{
+   . . .
+
+   /**
+      Creates a RootApproximator object used to approximate the root of a number.
+      @param a the value whose nth root is to be obtained
+      @param n the root to be extracted
+      @param eps the comparison threshold 
+   */
+   public RootApproximator(double a, int n, double eps)
+   {
+      . . .
+   }
+
+   /**
+      Method used to calculate the next root number.
+      @return the next guess number
+   */
+   public double nextGuess()
+   {
+      . . .
+   }
+
+   /**
+      Determine if there are more guesses.
+      @return true we are close enough to the answer
+   */
+   public boolean hasMoreGuesses()
+   {
+      . . .
+   }
+}
+</pre>
+<p>Use the following class as your tester class:</p>
+<pre>public class RootApproximatorTester
+{
+   public static void main(String[] args)
+   {
+      double a = 10000;
+      final double EPSILON = 1000; 
+      RootApproximator approx = new RootApproximator(a, 4, EPSILON);
+      System.out.println(approx.nextGuess());  
+      System.out.println("Expected: 1");
+      System.out.println(approx.nextGuess());  
+      System.out.println("Expected: 2500.75");
+      System.out.println(approx.hasMoreGuesses());
+      System.out.println("Expected: true");
+      approx.nextGuess();
+      System.out.println(approx.hasMoreGuesses());
+      System.out.println("Expected: false");
+   }
+}
+</pre>

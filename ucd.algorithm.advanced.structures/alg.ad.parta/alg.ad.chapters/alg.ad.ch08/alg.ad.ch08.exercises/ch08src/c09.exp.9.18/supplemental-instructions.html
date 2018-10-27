@@ -1,0 +1,70 @@
+<p>Here is a sample program run:</p>
+<pre>&lt;h1&gt;Chapter 1&lt;/h1&gt;
+&lt;p&gt;Happy families are all alike; every unhappy family is unhappy in
+its own way.&lt;/p&gt;
+&lt;p&gt;Everything was in confusion in the Oblonskys&amp;rsquo; house. The wife
+had discovered that the husband was carrying on an intrigue with
+a French girl, who had been a governess in their family, and she
+had announced to her husband that she could not go on living in
+the same house with him ...&lt;/p&gt;
+</pre>
+<p>Use the following class as your main class:</p>
+<pre>public class TextDemo
+{
+   public static void main(String[] args)
+   {
+      IText text = new MockText();
+      while (...)
+      {
+         String type = ...;
+         System.out.println("&lt;" + type + "&gt;" + cleanup(...) + 
+            "&lt;/" + type + "&gt;");
+      }
+   }
+
+   public static String cleanup(String text)
+   {
+      String result = text.replace("&", "&amp;");
+      result = result.replace("``", "&ldquo;"); 
+      result = result.replace("''", "&ldquo;"); 
+      result = result.replace("`", "&lsquo;"); 
+      result = result.replace("'", "&rsquo;"); 
+      result = result.replace("--", "&emdash;"); 
+      result = result.replace("&lt;", "&lt;"); 
+      result = result.replace("&gt;", "&gt;"); 
+      return result;
+   }
+}
+</pre>
+<p>Use the following classes in your solution:</p>
+<pre>public interface IText
+{
+   /**
+      Checks whether there is another segment
+      @return true if there is another segment
+   */
+   boolean hasMoreSegments();
+
+   /**
+      Gets the type of the next segment
+      @return the type such as p or h1
+   */
+   String nextSegmentType();
+
+   /**
+      Reads the text of the next segment
+      @return the text of the next segment
+   */
+   String nextSegment();
+}
+<hr />
+/**
+   Produce a document with three sections of type h1, p, and p
+   whose contents is given in the problem statement.
+*/
+
+public class MockText ...
+{
+   ...
+}
+</pre>

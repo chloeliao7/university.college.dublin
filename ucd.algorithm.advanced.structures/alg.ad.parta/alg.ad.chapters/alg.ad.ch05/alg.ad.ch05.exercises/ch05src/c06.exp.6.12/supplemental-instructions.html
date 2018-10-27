@@ -1,0 +1,79 @@
+<p>Here is a sample program run:</p>
+<pre>x: <b>1
+</b>1.0
+2.0
+2.5
+2.6666666666666665
+2.708333333333333
+2.7166666666666663
+2.7180555555555554
+2.7182539682539684
+2.71827876984127
+2.7182815255731922
+2.7182818011463845
+2.718281826198493
+2.7182818282861687
+2.7182818284467594
+2.71828182845823
+2.718281828458995
+</pre>
+<p>Your main class should be called <code>ExpCalculator</code>.</p>
+<p>Complete the following class in your solution:</p>
+<pre>/**
+   This class calculates e^x as a power series.
+*/
+public class ExpApproximator
+{
+   . . .
+
+   /**
+      Creates a ExpApproximator object to calculate e^x.
+      @param x the input value
+      @param eps the comparison threshold 
+   */
+   public ExpApproximator(double x, double eps)
+   {
+      . . .
+   }
+
+   /**
+      Calculates the next approximation.
+      @return the next approximation of e^x
+   */
+   public double nextGuess()
+   {
+      . . .
+   }
+
+   /**
+      Checks whether a more precise approximation is available
+      @return true if there is a more precise approximation
+   */
+   public boolean hasMoreGuesses()
+   {
+      . . .
+   }
+}
+</pre>
+<p>Use the following class as your tester class:</p>
+<pre>public class ExpApproximatorTester
+{
+   public static void main(String[] args)
+   {
+      double a = 1;
+      double epsilon = 0.25; 
+      ExpApproximator approx = new ExpApproximator(a, epsilon);
+      System.out.println(approx.nextGuess());
+      System.out.println("Expected: 1");
+      System.out.println(approx.nextGuess());
+      System.out.println("Expected: 2");
+      System.out.println(approx.nextGuess());
+      System.out.println("Expected: 2.5");
+      System.out.println(approx.hasMoreGuesses());
+      System.out.println("Expected: true");
+      approx.nextGuess();
+      System.out.println(approx.hasMoreGuesses());
+      System.out.println("Expected: false");
+   }
+}
+</pre>

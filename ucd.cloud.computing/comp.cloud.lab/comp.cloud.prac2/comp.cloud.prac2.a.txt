@@ -1,0 +1,37 @@
+Gregoire Cousin
+Gregoire.cousin@ucdconnect.ie
+12.10.2018 18204188
+Cloud Computing PRAC2
+Questions: You were asked by your manager to look into the question whether it is worth migrating to the cloud or not. To answer this question, it is necessary to
+follow some key steps to help to make a decision.
+1 - As a first step, would you make the decision yourself or assemble a team to help you reach the decision? Justify your answer.
+1a. I would consult with a group of people within my team to make the decision on which provider and what to send to the cloud since it will be critical and detrimental to the future of my company. Having multiple thoughts on what to send to the cloud not only covers you on justifying why you chose but also helps you figure out what will be necessary to keep private as well.
+2 - How will you approach the question? (Hint: develop organization cloud strategy and business case).
+2a. I would approach my decision on the worth of migrating to the cloud based on a few criteria.
+The first question I would ask myself is how fast my customer, I or the company need the piece of data stored. The second question would be how flexible we need to be and if it’s worth financially in our company.
+3 - As a third step, do you think it is worth selecting cloud deployment models? Justify your answer.
+3a. Yes, I think choosing the right deployment model is very critical to your business or personal matter. It is important because you don't want all of your data to be public, for instance. If have data with financial details you would want to make sure to keep that private. Vs some other data you would want public/hybrid to clients, and the company.
+4 - Do you think you should select cloud service models that the organization will need? Justify your answer.
+4a. Yes, I think that if you don't you will be missing out on vital functionality and services that the cloud can provide. for example, if you need your data stored externally you will need PAAS.
+5 - Do you think you should consider at this stage the security and privacy issues in relation to your organization? Why?
+5a. Privacy is a necessity in todays modern organizations. An organization is only as good as its clients, which means with multiple clients registering, storing and sending their own private data on the cloud it becomes
+ 
+vital to know that that data isn't accessible just by anyone. The organization should have the ability to choose to whom that information is accessible by. Cloud providers have services and infrastructures in place to keep your data private.
+At this point, you made your (yourself or with your team) decision and met with
+you manager. You presented your study. The manager was happy with what that has been done so far, but s/he asked more questions, which are as follows:
+6 - Have you identified who will develop, test and deploy the cloud services?
+6a. our company has a set of testers, developers and and deploy based employees which can be taught how to use these cloud services. However An individual team should be in charge of the distribution of data to the cloud. It is an investment but privacy is key to our organization. hiring more people with past skills in cloud computing would be a good idea.
+7 - Have you defined the governance policies and service agreements?
+7a. governance policies and service agreements are based on four categories that encompasses USER BEHAVIOR/BUSINESS ACTIVITY, APPLICATION/PLATFORM, OPERATING SYSTEMS and INFRASTRUCTURE. These policies are the deployment and lifecycles of these categories,
+their security and privacy, their operations and support and management and monitoring. We would need to set in place a talent to set this up.
+8 - How this new solution is different from our existing services? (Hint: should we integrate them? If YES how?)
+8a. At this stage we haven't set up out company with proper IT governance. governance plays a vital role in compliance, security a costs of our platform. Setting up this architecture would provide a legal set of standards that cloud providers use.
+9 - How should we start using this new solution? (Hint: you may need to develop a proof-of-concept)
+9a. A popular framework supported and applied in the Federal Government, DoD and commercial clients is called the CC-RM framework. Which lintels and accompanies the combination of providing an internal/private cloud, a community-based cloud, and external/ public cloud
+and a hybrid and integrated cloud.
+10 - How this will be managed? Obviously, these questions are
+part of the necessary steps for cloud computing adoption. How would you address each of the manager's question? You may need to use the "Hints" given for some of the manager's questions.
+10a. Within the governance ready combination of the CC-RM framework and its services, you have a couple Tiers to set up. This means starting a Cloud Business Tier, A Cloud Platform Tier and Cloud OD Tier and a cloud Virtualization Tier. Each having their own role within the business you have. This would provide a good Cloud Ecosystem.
+
+10b. I would delicately make sure that Privacy is an important aspect to our project all the while including technologies that would enhance the workflow and data manipulation within our business. Hiring the right talent, providing new and modern cloud-based frameworks, while making sure we have a flexible infrastructure where switching Cloud providers,
+and off boarding from a Cloud can become an easy task.

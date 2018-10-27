@@ -1,0 +1,84 @@
+<p>Use the following class as your main class:</p>
+<pre>import java.util.Random;
+
+/**
+   This class generates randon die tosses and prints them out,
+   marking "runs", i.e., adjacent repeated values, by
+   including them in parenthesis.
+
+   For example:
+      1 2 (5 5) 3 1 2 4 3 (2 2 2 2) 3 6 (5 5) 6 3 1
+*/
+public class DieSequencePrinter
+{
+   public static void main(String[] args)
+   {
+      final int TOSSES = 20;
+      Random die = new Random();
+      Sequence seq = new Sequence(TOSSES);
+
+      /* fill the array with random die tosses */
+      for (int i = 1; i &lt;= TOSSES; i++)
+      {
+         seq.add(die.nextInt(6) + 1);
+      }
+
+      System.out.println(seq.markRuns());
+   }
+}
+</pre>
+<p>Complete the following class in your solution:</p>
+<pre>/**
+   This class marks "runs", i.e., adjacent repeated values, by
+   including them in parenthesis.
+
+   For example:
+      1 2 (5 5) 3 1 2 4 3 (2 2 2 2) 3 6 (5 5) 6 3 1
+*/
+public class Sequence
+{
+   private int[] values;
+   private int size;
+
+   public Sequence(int capacity)
+   {
+      values = new int[capacity];
+      size = 0;
+   }
+
+   public void add(int value)
+   {
+      if (size &lt; values.length)
+      {
+         values[size] = value;
+         size++;
+      }
+   }
+
+   /**
+      Returns the string of values, with runs enclosed in parentheses.
+      @return the string of values with the runs marked, for example 
+      "1 2 (5 5) 3 1 2 4 3 (2 2 2 2) 3 6 (5 5) 6 3 1"
+   */
+   public String markRuns()
+   {
+      . . .
+   }
+}
+</pre>
+<p>Use the following class as your tester class:</p>
+<pre>public class SequenceTester
+{
+   public static void main(String[] args)
+   {
+      Sequence seq1 = new Sequence(5);
+      seq1.add(3);
+      seq1.add(3);
+      seq1.add(4);
+      seq1.add(5);
+      seq1.add(5);
+      System.out.println(seq1.markRuns());
+      System.out.println("Expected: (3 3) 4 (5 5)");
+   }
+}
+</pre>

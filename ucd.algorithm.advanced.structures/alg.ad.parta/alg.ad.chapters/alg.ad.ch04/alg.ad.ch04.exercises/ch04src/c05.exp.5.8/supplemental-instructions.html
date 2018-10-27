@@ -1,0 +1,30 @@
+<p>Here is a sample program run:</p>
+<pre>Please enter your income: 
+<b>40000
+</b>Tax: 400.0
+</pre>
+<p>Use the following class as your main class:</p>
+<pre>import java.util.Scanner;
+
+/**
+   This program calculates taxes based on the original
+   U.S. income tax schedule in 1913.
+*/
+public class TaxCalculator
+{
+   public static void main(String[] args)
+   {  
+      Scanner in = new Scanner(System.in);
+
+      System.out.println("Please enter your income: ");
+      double income = in.nextDouble();
+
+      TaxReturn aTaxReturn = new TaxReturn(income);
+
+      System.out.println("Tax: " + aTaxReturn.getTax());
+   }
+}
+</pre>
+<p>You need to supply the following class in your solution:</p>
+<pre>TaxReturn
+</pre>

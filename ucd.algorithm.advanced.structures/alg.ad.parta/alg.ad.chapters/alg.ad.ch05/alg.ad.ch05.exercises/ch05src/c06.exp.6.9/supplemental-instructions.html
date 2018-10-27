@@ -1,0 +1,47 @@
+<p>Your main class should be called <code>PrimePrinter</code>.</p>
+<p>Complete the following class in your solution:</p>
+<pre>/**
+   This class generates all prime numbers.
+*/
+public class PrimeGenerator
+{
+   . . .
+
+   public PrimeGenerator()
+   {
+      . . .
+   }
+
+   /**
+      Calculates the next prime number.
+      @return the next prime number
+   */
+   public int nextPrime()
+   {
+      . . .
+   }
+}
+</pre>
+<p>Use the following class as your tester class:</p>
+<pre>public class PrimeGeneratorTester
+{
+   public static void main(String[] args)
+   {
+      PrimeGenerator generator = new PrimeGenerator();
+      System.out.println(generator.nextPrime()); 
+      System.out.println("Expected: " + 2);
+      System.out.println(generator.nextPrime());  
+      System.out.println("Expected: " + 3);
+      System.out.println(generator.nextPrime());  
+      System.out.println("Expected: " + 5);
+      System.out.println(generator.nextPrime());  
+      System.out.println("Expected: " + 7);
+      System.out.println(generator.nextPrime());  
+      System.out.println("Expected: " + 11);
+      for (int i = 6; i &lt;= 9999; i++)
+         generator.nextPrime();
+      System.out.println(generator.nextPrime());  
+      System.out.println("Expected: " + 104729); // the ten thousandth prime
+   }
+}
+</pre>

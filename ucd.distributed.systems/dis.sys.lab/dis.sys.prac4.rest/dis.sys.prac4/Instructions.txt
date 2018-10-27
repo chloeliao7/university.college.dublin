@@ -1,0 +1,15 @@
+
+
+To Start the servers and make sure that it works: please do the fallowing: 
+
+
+1. start the Server from client package
+2. start Broker application server from core 
+3. go to postman and type http://127.0.0.1:9003/brokers with: 
+json as a test dummy: 
+
+{
+"reference": "myreff", 
+"company": "NEWNAME",
+"price": 45
+}

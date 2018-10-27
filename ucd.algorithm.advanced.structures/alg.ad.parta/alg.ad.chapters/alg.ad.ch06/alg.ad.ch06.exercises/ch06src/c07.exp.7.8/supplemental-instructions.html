@@ -1,0 +1,50 @@
+<p>Use the following class as your main class:</p>
+<pre>/**
+   This class prints 5 permutations of the numbers 1 through 10.
+*/
+public class PermutationPrinter
+{  
+   public static void main(String[] args)
+   {  
+      PermutationGenerator gen = new PermutationGenerator(10);      
+      
+      for (int i = 1; i &lt;= 5; i++)
+      {  
+         for (int n : gen.nextPermutation())
+            System.out.print(" " +  n);
+         System.out.println();
+      }
+   }
+}
+</pre>
+<p>Complete the following class in your solution:</p>
+<pre>import java.util.Random;
+
+/**
+   This class generates permutations of a sequence of integers 
+   1...length.
+*/
+public class PermutationGenerator
+{   
+   . . .
+
+   /**
+      Construct a PermutationGenerator object.
+      @param length the length of the permutations generated
+      by this generator.
+   */
+   public PermutationGenerator(int length)
+   {
+      . . .
+   }
+
+   /**
+      Gets the next permutation.
+      @return the array containing the next permutation
+   */
+   public int[] nextPermutation()
+   {  
+      . . .
+   }
+}
+</pre>

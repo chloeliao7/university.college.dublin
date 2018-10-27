@@ -1,0 +1,155 @@
+<p>Use the following class as your main class:</p>
+<pre>import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JFrame;
+import javax.swing.Timer;
+
+public class CarsMover
+{
+   private static final int FRAME_WIDTH = 300;
+   private static final int FRAME_HEIGHT = 400;
+
+   public static void main(String[] args)
+   {
+      JFrame frame = new JFrame();
+
+      frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
+      frame.setTitle("CarMover");
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+      final CarsComponent component = new CarsComponent();
+      final Car car1 = new Car(0, 0);
+      . . .
+
+      frame.add(component);
+
+      frame.setVisible(true);
+      
+      class TimerListener implements ActionListener
+      {
+         public void actionPerformed(ActionEvent event)
+         {
+            car1.translate(1, 0);
+            . . .
+         }
+      }
+
+      ActionListener listener = new TimerListener();
+
+      final int DELAY = 100; // Milliseconds between timer ticks
+      Timer t = new Timer(DELAY, listener);
+      t.start();      
+   }
+}
+</pre>
+<p>Use the following classes in your solution:</p>
+<pre>import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.util.ArrayList;
+import javax.swing.JComponent;
+
+/**
+   This component displays cars. 
+*/
+public class CarsComponent extends JComponent
+{  
+   private ArrayList&lt;Car&gt; cars;
+
+   public CarsComponent()
+   {  
+      // The rectangle that the paint method draws 
+      cars = new ArrayList&lt;Car&gt;();         
+   }
+
+   public void add(Car car)
+   {
+      cars.add(car);
+   }
+
+   public void paintComponent(Graphics g)
+   {  
+      super.paintComponent(g);
+      Graphics2D g2 = (Graphics2D) g;
+      for (Car car : cars)
+         car.draw(g2);
+   }
+}
+<hr />
+import java.awt.Graphics2D;
+import java.awt.Rectangle;
+import java.awt.geom.Ellipse2D;
+import java.awt.geom.Line2D;
+import java.awt.geom.Point2D;
+
+/**
+   A car shape that can be positioned anywhere on the screen.
+*/
+public class Car
+{
+   private int xLeft;
+   private int yTop;
+
+   /**
+      Constructs a car with a given top left corner
+      @param x the x coordinate of the top left corner
+      @param y the y coordinate of the top left corner
+   */
+   public Car(int x, int y)
+   {
+      xLeft = x;
+      yTop = y;
+   }
+
+   /**
+      Moves this car by a given distance.
+      @param dx the distance in x-direction
+      @param dy the distance in y-direction
+    */
+   public void translate(int dx, int dy)
+   {
+      xLeft = xLeft + dx;
+      yTop = yTop + dy;
+   }
+
+   /**
+      Draws the car.
+      @param g2 the graphics context
+   */
+   public void draw(Graphics2D g2)
+   {
+      Rectangle body 
+            = new Rectangle(xLeft, yTop + 10, 60, 10);      
+      Ellipse2D.Double frontTire 
+            = new Ellipse2D.Double(xLeft + 10, yTop + 20, 10, 10);
+      Ellipse2D.Double rearTire
+            = new Ellipse2D.Double(xLeft + 40, yTop + 20, 10, 10);
+
+      // The bottom of the front windshield
+      Point2D.Double r1 
+            = new Point2D.Double(xLeft + 10, yTop + 10);
+      // The front of the roof
+      Point2D.Double r2 
+            = new Point2D.Double(xLeft + 20, yTop);
+      // The rear of the roof
+      Point2D.Double r3 
+            = new Point2D.Double(xLeft + 40, yTop);
+      // The bottom of the rear windshield
+      Point2D.Double r4 
+            = new Point2D.Double(xLeft + 50, yTop + 10);
+
+      Line2D.Double frontWindshield 
+            = new Line2D.Double(r1, r2);
+      Line2D.Double roofTop 
+            = new Line2D.Double(r2, r3);
+      Line2D.Double rearWindshield
+            = new Line2D.Double(r3, r4);
+   
+      g2.draw(body);
+      g2.draw(frontTire);
+      g2.draw(rearTire);
+      g2.draw(frontWindshield);      
+      g2.draw(roofTop);      
+      g2.draw(rearWindshield);      
+   }
+}
+</pre>

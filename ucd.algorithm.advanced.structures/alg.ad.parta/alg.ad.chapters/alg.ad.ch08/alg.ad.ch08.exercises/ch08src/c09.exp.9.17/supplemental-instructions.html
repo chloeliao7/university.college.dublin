@@ -1,0 +1,203 @@
+<p>Here is a sample program run:</p>
+<pre>Enter your move, a row (1-3) and column (1-3): 
+<b>1 1
+</b>|x  |
+|   |
+|   |
+
+Computer's move: 1 2
+|xo |
+|   |
+|   |
+
+Enter your move, a row (1-3) and column (1-3): 
+<b>1 3
+</b>|xox|
+|   |
+|   |
+
+Computer's move: 2 1
+|xox|
+|o  |
+|   |
+
+Enter your move, a row (1-3) and column (1-3): 
+<b>2 3
+</b>|xox|
+|o x|
+|   |
+
+Computer's move: 2 2
+|xox|
+|oox|
+|   |
+
+Enter your move, a row (1-3) and column (1-3): 
+<b>3 3
+</b>|xox|
+|oox|
+|  x|
+
+</pre>
+<p>Use the following class as your main class:</p>
+<pre>import java.util.Scanner;
+
+/**
+   This program runs a TicTacToe game. It prompts the
+   user to set positions on the board. The computer 
+   then takes a turn and prints out the results.
+*/
+public class TicTacToeUI
+{
+   public static void main(String[] args)
+   {
+      Scanner in = new Scanner(System.in);
+      TicTacToeBoard game = new TicTacToeBoard();
+      ITicTacToeStrategy strategy = new MockTicTacToeStrategy();
+      boolean done = false;
+      while (true)
+      {
+         // User's turn
+         System.out.println(
+               "Enter your move, a row (1-3) and column (1-3): " );
+         String move = in.nextLine();
+         game.makeMove(move, "x");
+         System.out.println(game.toString());
+         if (game.isOver()) return;
+         
+         // Computer's turn 
+         move = strategy.getMove(game);   
+         System.out.println("Computer's move: " + move);
+         game.makeMove(move, "o");
+         System.out.println(game.toString());                     
+         if (game.isOver()) return;
+      }
+   }
+}
+</pre>
+<p>Use the following classes in your solution:</p>
+<pre>/**
+   A 3 x 3 tic-tac-toe board.
+*/
+public class TicTacToeBoard
+{
+   private String[][] board;
+   private static final int ROWS = 3;
+   private static final int COLUMNS = 3;
+
+   /**
+      Constructs an empty board.
+   */
+   public TicTacToeBoard()
+   {
+      board = new String[ROWS][COLUMNS];
+      // Fill with spaces
+      for (int i = 0; i &lt; ROWS; i++)
+         for (int j = 0; j &lt; COLUMNS; j++)
+            board[i][j] = " ";
+   }
+
+   /**
+      Sets a field in the board. The field must be unoccupied.
+      @param move the move in the form "row col" (between 1 and 3)
+      for example "1 3" for the top right corner
+      @param player the player ("x" or "o")
+   */
+   public void makeMove(String move, String player)
+   {
+      int i = Integer.parseInt(move.trim().substring(0, 1)) - 1;
+      int j = Integer.parseInt(move.trim().substring(1).trim()) - 1;
+      if (board[i][j].equals(" "))
+         board[i][j] = player;
+   }
+
+   /**
+      Creates a string representation of the board, such as
+      |x  o|
+      |  x |
+      |   o|
+      @return the string representation
+   */
+   public String toString()
+   {
+      String r = "";
+      for (int i = 0; i &lt; ROWS; i++)
+      {
+         r = r + "|";
+         for (int j = 0; j &lt; COLUMNS; j++)         
+            r = r + board[i][j];
+         r = r + "|\n";
+      }
+      return r;
+   }
+   
+   /**
+      Checks whether the game is over
+      @return true if the game is over
+   */
+   public boolean isOver()
+   {  
+      // check rows
+      for (int i = 0; i &lt; ROWS; i++)
+      {           
+         String p = board[i][0];
+         if (!p.equals(" ") 
+               && p.equals(board[i][1]) && p.equals(board[i][2])) 
+            return true;
+      }
+      // check columns
+      for (int i = 0; i &lt; COLUMNS; i++)
+      {  
+         String p = board[0][i];
+         if (!p.equals(" ") 
+               && p.equals(board[1][i]) && p.equals(board[2][i])) 
+            return true;
+      }
+      // check diagonals
+      String p = board[1][1];
+      return !p.equals(" ") 
+         && (p.equals(board[0][0]) && p.equals(board[2][2])
+         || p.equals(board[2][0]) && p.equals(board[0][2]));
+   }   
+}
+<hr />
+/**
+   Mock strategy for a computer to pick the next move
+   on a 3 x 3 tic-tac-toe board. This strategy
+   searches for the first unoccupied square.
+*/
+public class MockTicTacToeStrategy implements ITicTacToeStrategy
+{
+   private static final int ROWS = 3;
+   private static final int COLUMNS = 3;
+
+   /**
+      @param the 3 x 3 tic tac toe board 
+      @return location - a two element array with
+              row and column of the computer's move 
+   */
+   /**
+      Computes the next move a computer makes.
+      @param a tic tac toe board
+      @return a string containing the row and column for the next move
+   */
+   public String getMove(TicTacToeBoard board);
+   {
+      . . .
+   }
+}
+<hr />
+/**
+   Describes any class that computes the next move for a
+   tic tac toe game, using any strategy.
+*/
+public interface ITicTacToeStrategy
+{
+   /**
+      Computes the next move a computer makes.
+      @param a tic tac toe board
+      @return a string containing the row and column for the next move
+   */
+   String getMove(TicTacToeBoard board);
+}
+</pre>

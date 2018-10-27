@@ -1,0 +1,26 @@
+<p>Here is a sample program run:</p>
+<pre>Enter a month (1-12):
+<b>5</b>31 days
+</pre>
+<p>Use the following class as your main class:</p>
+<pre>import java.util.Scanner;
+
+/**
+   This program prints the months in a given year.
+*/
+public class MonthPrinter
+{
+   public static void main(String[] args)
+   {
+      Scanner in = new Scanner(System.in);      
+      System.out.println("Enter a month (1-12):");
+      int month = in.nextInt();
+      Month m = new Month(month);
+      int days = m.getDays();
+      System.out.println(days + " days");
+   }
+}
+</pre>
+<p>You need to supply the following class in your solution:</p>
+<pre>Month
+</pre>

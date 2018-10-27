@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="bp" fx:controller="PolymorphismController" 
+            xmlns:fx="http://javafx.com/fxml" >        
+ <top>         
+   <VBox>
+        
+    <HBox fx:id="hBox1" alignment="center" spacing="10" >
+      <Label text="Enter t (Tortoise) or h (Hare)" fx:id="message" />
+      <TextField fx:id="inputTextField" minWidth="5" />
+      <Button text="Enter Racer" fx:id="enter"    
+          onAction="#activity"/>
+      <Button text="Start Race" fx:id="start"    
+          onAction="#race"/>
+    </HBox>
+    
+    <HBox fx:id="hBox2" alignment="center" spacing="10" >
+      <Label text="" fx:id="winner" />
+    </HBox>
+        
+   </VBox>
+ </top>  
+</BorderPane>
+

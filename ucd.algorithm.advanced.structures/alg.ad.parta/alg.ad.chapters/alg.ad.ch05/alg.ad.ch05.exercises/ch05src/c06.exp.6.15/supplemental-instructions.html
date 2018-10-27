@@ -1,0 +1,46 @@
+<p>Here is a sample program output:</p>
+<p>@MY_IMAGE_IN_STATEMENT@</p>
+<p>Your main class should be called <code>DrunkardViewer</code>.</p>
+<p>You need to supply the following classes in your solution:</p>
+<pre>Grid
+DrunkardComponent
+</pre>
+<p>Complete the following class in your solution:</p>
+<pre>public class Drunkard 
+{
+/**
+      Creates a Drunkard object representing an intoxicated person.
+      @param initialRow the initial grid row 
+      @param initialColumn the initial grid column
+   */
+   public Drunkard(int initialRow, int initialColumn) { . . . }
+
+   /**
+      Makes the drunkard move randomly into one of four directions.
+   */
+   public void move() { . . . }
+
+   /**
+      Gets the current row of the drunkard.
+   */
+   public int getRow() { . . . }
+
+   /**
+      Gets the current row of the drunkard.
+   */
+   public int getColumn() { . . . }
+}
+</pre>
+<p>Use the following class as your tester class:</p>
+<pre>public class DrunkardTester
+{
+   public static void main(String[] args)
+   {      
+      Drunkard d = new Drunkard(10, 10);
+      d.move();
+      System.out.println(d.getRow() != 10 && d.getColumn() == 10
+         || d.getColumn() != 10 && d.getRow() == 10);
+      System.out.println("Expected: true");
+   }
+}
+</pre>

@@ -1,0 +1,37 @@
+MINIMAL INSTRUCTIONS FOR RUNNING APACHE RIVER EXAMPLE
+=====================================================
+Pre-requisites: Apache Maven & Oracle jdk
+
+Step 1: Get the Example
+
+1) Download the apache-river example from moodle
+2) unzip it
+3) open a command prompt/terminal and goto the root river-examples folder
+4) Type:
+
+mvn install (downloaded dependencies & compiles source code)
+mvn site (creates the supporting documentation site - hosted in target/site subfolder)
+
+Step 2: Run the example
+1) Open 4 command prompts / terminals
+
+   In each one, change the dirctory to the river-examples.../home/target/home-... folder (for me, it was: \Development\river-examples-1.0\home\target\home-1.0-bin) 
+
+2) Start the services / read the documentation on the host site (links don't always work, but if you remove index.html, you can find the relevant page):
+
+i) start the service browser:
+java -Djava.security.manager -Djava.security.policy=server.policy -Djava.rmi.server.useCodebaseOnly=false -jar lib/start.jar start-browser.config
+This allows you to see what services are available
+
+ii) start the infrastructure:
+java -Djava.security.manager -Djava.security.policy=server.policy -Djava.rmi.server.useCodebaseOnly=false -jar lib/start.jar start-infra.config
+This deploys some core services (you should be able to see them in the service browser)
+(you should link the browser to the infrastructure via the "Register" menu.
+
+iii) start the greeter service:
+java -Djava.security.manager -Djava.security.policy=server.policy -Djava.rmi.server.useCodebaseOnly=false -jar lib/start.jar start-hello-service.config
+This should also appear in the Browser
+
+4) start the client:
+java -Djava.security.manager -Djava.security.policy=server.policy -Djava.rmi.server.useCodebaseOnly=false -jar lib/start.jar start-hello-client.config
+(Enter a name and see the stunning response!)

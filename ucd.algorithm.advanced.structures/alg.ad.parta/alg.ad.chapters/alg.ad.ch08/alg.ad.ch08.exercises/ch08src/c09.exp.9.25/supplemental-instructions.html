@@ -1,0 +1,97 @@
+<p>Use the following class as your main class:</p>
+<pre>import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+/**
+   This program demonstrates how an action listener can access 
+   a variable from a surrounding block.
+*/
+public class InvestmentViewer1
+{  
+   private static final double INTEREST_RATE = 10;
+   private static final double INITIAL_BALANCE = 1000;
+
+   private static final int FRAME_WIDTH = 120;
+   private static final int FRAME_HEIGHT = 60;
+
+   public static void main(String[] args)
+   {  
+      JFrame frame = new JFrame();
+
+      // The button to trigger the calculation
+      JButton button = new JButton("Add Interest");
+      frame.add(button);
+
+      // The application adds interest to this bank account
+      final BankAccount account = new BankAccount(INITIAL_BALANCE);
+      
+      ActionListener listener = new AddInterestListener(. . .);
+      button.addActionListener(listener);
+
+      frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      frame.setVisible(true);
+   }
+}
+</pre>
+<p>You need to supply the following class in your solution:</p>
+<pre>AddInterestListener
+</pre>
+<p>Use the following class in your solution:</p>
+<pre>/**
+   A bank account has a balance that can be changed by 
+   deposits and withdrawals.
+*/
+public class BankAccount
+{  
+   private double balance;
+
+   /**
+      Constructs a bank account with a zero balance.
+   */
+   public BankAccount()
+   {   
+      balance = 0;
+   }
+
+   /**
+      Constructs a bank account with a given balance.
+      @param initialBalance the initial balance
+   */
+   public BankAccount(double initialBalance)
+   {   
+      balance = initialBalance;
+   }
+
+   /**
+      Deposits money into the bank account.
+      @param amount the amount to deposit
+   */
+   public void deposit(double amount)
+   {  
+      double newBalance = balance + amount;
+      balance = newBalance;
+   }
+
+   /**
+      Withdraws money from the bank account.
+      @param amount the amount to withdraw
+   */
+   public void withdraw(double amount)
+   {   
+      double newBalance = balance - amount;
+      balance = newBalance;
+   }
+
+   /**
+      Gets the current balance of the bank account.
+      @return the current balance
+   */
+   public double getBalance()
+   {   
+      return balance;
+   }
+}
+</pre>

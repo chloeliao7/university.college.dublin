@@ -1,0 +1,71 @@
+<p>Write a program that takes user input describing a playing card in the following shorthand notation:
+<table border="1" cellspacing="2" cellpadding="2" align="center">
+<tr>
+    <td align="center" bgcolor="#FFFEC1" style="color: Blue;"><strong>Notation</strong></td>
+    <td align="center" bgcolor="#FFFEC1" style="color: Blue;"><strong>Meaning</strong></td>
+</tr>
+<tr>
+    <td align="center" bgcolor="#FFFEC1">A</td>
+    <td align="center" bgcolor="#FFFEC1">Ace</td>
+</tr>
+<tr>
+    <td align="center" bgcolor="#FFFEC1">2 . . . 10</td>
+    <td align="center" bgcolor="#FFFEC1">Card values</td>
+</tr>
+<tr>
+    <td align="center" bgcolor="#FFFEC1">J</td>
+    <td align="center" bgcolor="#FFFEC1">Jack</td>
+</tr>
+<tr>
+    <td align="center" bgcolor="#FFFEC1">Q</td>
+    <td align="center" bgcolor="#FFFEC1">Queen</td>
+</tr>
+<tr>
+    <td align="center" bgcolor="#FFFEC1">K</td>
+    <td align="center" bgcolor="#FFFEC1">King</td>
+</tr>
+<tr>
+    <td align="center" bgcolor="#FFFEC1">D</td>
+    <td align="center" bgcolor="#FFFEC1">Diamonds</td>
+</tr>
+<tr>
+    <td align="center" bgcolor="#FFFEC1">H</td>
+    <td align="center" bgcolor="#FFFEC1">Hearts</td>
+</tr>
+<tr>
+    <td align="center" bgcolor="#FFFEC1">S</td>
+    <td align="center" bgcolor="#FFFEC1">Spades</td>
+</tr>
+<tr>
+    <td align="center" bgcolor="#FFFEC1">C</td>
+    <td align="center" bgcolor="#FFFEC1">Clubs</td>
+</tr>
+</table>
+Your program should print the full description of the card. For example,
+<pre><font face="Courier New">
+Enter the card notation:
+4S
+Four of spades
+</font></pre>
+Implement a class <font face="Courier New">Card</font> whose constructor takes the card notation string and whose <font face="Courier New">getDescription</font> method returns a description of the card. If the notation string is not in the correct format, the <font face="Courier New">getDescription</font> method should return the string <font face="Courier New">"Unknown"</font>.
+Use the following class as your main class:
+<pre><font face="Courier New">
+import java. util.Scanner;
+
+/**
+   This is a test for the Card class, which outputs the full
+   description of a deck of cards.
+*/
+public class CardPrinter
+{
+   public static void main(String[] args)
+   {
+      Scanner in = new Scanner(System.in);
+
+      System.out.println("Enter the card notation:");
+      String input = in.nextLine();
+      Card card = new Card(input);
+      System.out.println(card.getDescription());
+   }
+}
+</font></pre></p>

@@ -1,0 +1,104 @@
+<p>Here is a sample program output:</p>
+<p>@MY_IMAGE_IN_STATEMENT@</p>
+<p>Your main class should be called <code>CannonballViewer</code>.</p>
+<p>Complete the following classes in your solution:</p>
+<pre>/**
+   This class simulates a cannonball fired at an angle.
+*/
+public class Cannonball
+{
+   // private implementation
+   . . .
+
+   /**
+      Constructs a Cannonball 
+      @param ivel the initial velocity of the ball
+      @param angle the angle at which the cannonball was launched
+      (in degrees)
+   */
+   public Cannonball(double ivel, double angle) { . . . }
+
+   /**
+      Updates the position and velocity of this cannon ball 
+      after a given time interval.
+      @param deltaT the time interval
+   */
+   public void move(double deltaT) { . . . }
+
+   /**
+      Gets the x position of this cannon ball.
+      @return the horizontal position
+   */
+   public double getX() { . . . }
+
+   /**
+      Gets the y position of this cannon ball.
+      @return the vertical position
+   */
+   public double getY() { . . . }
+}
+<hr />
+import javax.swing.JComponent;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.geom.Ellipse2D;
+
+/**
+   Draws the trajectory of a cannonball.
+*/
+public class CannonballComponent extends JComponent
+{
+   private double initialVelocity;
+   private double angle;
+
+   /**
+      Constructs a component that paints the flight of a cannonball 
+      @param ivel the initial velocity of the ball
+      @param ang the angle at which the cannonball was launched
+   */
+   public CannonballComponent(double ivel, double ang)
+   {
+      . . .
+   }
+
+   public void paintComponent(Graphics g)
+   {
+      Graphics2D g2 = (Graphics2D) g;
+      
+      while(ball.getY() &gt;= 0)
+      {
+         ball.move(DELTA_T);
+
+         . . .
+
+         g2.draw(circle);
+      }
+   }
+}
+</pre>
+<p>Use the following class as your tester class:</p>
+<pre>public class CannonballTester
+{
+   public static void main(String[] args)
+   {
+      Cannonball ball = new Cannonball(100, 45); // 100 m/sec
+      ball.move(1); // move by one second
+
+      double x = ball.getX();
+      System.out.println(x);
+      System.out.println("Expected: " + (100 * Math.sqrt(2) / 2));
+      double y = ball.getY();
+      System.out.println(y);
+      System.out.println("Expected: " + (100 * Math.sqrt(2) / 2));
+
+      ball.move(1); // move by one second
+
+      x = ball.getX();
+      System.out.println(x);
+      System.out.println("Expected: " + (200 * Math.sqrt(2) / 2));
+      y = ball.getY();
+      System.out.println(y);
+      System.out.println("Expected: " + (200 * Math.sqrt(2) / 2 - 9.81));
+   }
+}
+</pre>

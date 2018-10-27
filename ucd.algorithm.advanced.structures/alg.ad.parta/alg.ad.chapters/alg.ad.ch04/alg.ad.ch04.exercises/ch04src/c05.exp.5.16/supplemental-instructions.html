@@ -1,0 +1,33 @@
+<p>Here is a sample program run:</p>
+<pre>Hourly wage: 
+<b>10.5
+</b>Hours worked: 
+<b>42</b>Pay: 451.5
+</pre>
+<p>Use the following class as your main class:</p>
+<pre>import java.util.Scanner;
+
+/**
+   This program calculates the pay of an employee.
+*/
+public class PayCalculator
+{
+   public static void main(String[] args)
+   {
+      Scanner in = new Scanner(System.in);
+      
+      System.out.println("Hourly wage: ");
+      double hourlyWage = in.nextDouble();
+
+      System.out.println("Hours worked: ");
+      double hours = in.nextDouble();
+
+      PayCheck aPayCheck = new PayCheck(hourlyWage, hours);
+
+      System.out.println("Pay: " + aPayCheck.getPay());
+   }
+}
+</pre>
+<p>You need to supply the following class in your solution:</p>
+<pre>PayCheck
+</pre>

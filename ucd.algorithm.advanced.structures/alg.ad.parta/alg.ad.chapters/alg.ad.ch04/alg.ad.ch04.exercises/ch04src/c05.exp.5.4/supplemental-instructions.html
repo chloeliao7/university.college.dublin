@@ -1,0 +1,28 @@
+<p>Here is a sample program run:</p>
+<pre>Enter a letter grade:
+<b>B-</b>Numeric value: 2.7
+</pre>
+<p>Use the following class as your main class:</p>
+<pre>import java.util.Scanner;
+
+/**
+   This class prints the numeric value of a letter grade given by the user.
+*/
+public class GradePrinter
+{
+   public static void main(String[] args)
+   {
+      Scanner in = new Scanner(System.in);      
+      System.out.println("Enter a letter grade:");
+      String input = in.nextLine();
+      Grade g = new Grade(input);
+      double grade = g.getNumericGrade();
+      System.out.println("Numeric value: " + grade);
+   }
+}
+
+
+</pre>
+<p>You need to supply the following class in your solution:</p>
+<pre>Grade
+</pre>

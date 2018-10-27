@@ -1,0 +1,12 @@
+Explorations in Ruby: PracticalsWeek 5: Practical 5
+
+1) The main task this week is to get the iTunes program going and see how it runs. 
+Start by looking at the two .csv files. Change these to be your own songs, and 
+make sure the owners list corresponds to what you have done. 
+
+2) The methods for building all albums are empty. Please do the man make them 
+work properly. 
+
+3) If you get the song-ids wrong in the .csv files, all hell breaks loose. Check 
+this. The think about adding some methods to the program that could do some 
+simple checks to catch such input errors. 

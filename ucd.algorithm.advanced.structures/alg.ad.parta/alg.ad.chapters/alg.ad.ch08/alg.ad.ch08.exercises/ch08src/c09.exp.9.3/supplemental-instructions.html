@@ -1,0 +1,65 @@
+<p>Use the following class in your solution:</p>
+<pre>/**
+   This class represents a person's name and height
+*/
+public class Person
+{
+   private String name;
+   private double height;
+
+   /**
+      Constructs a Person object
+      @param aName the name of the person
+      @param aHeight the height of the person
+   */
+   public Person(String aName, double aHeight)
+   {
+      name = aName;
+      height = aHeight;
+   }
+   
+   /**
+      Gets the name of the person
+      @return name the person's name
+   */
+   public String getName()
+   {
+      return name;
+   }
+   
+   /**
+      Gets the height of the person
+      @return height the person's height
+   */
+   public double getHeight()
+   {
+      return height;
+   }
+}
+</pre>
+<p>Use the following class as your tester class:</p>
+<pre>/**
+   This program tests the measuring of Person objects.
+*/
+public class PersonTester
+{
+   public static void main(String[] args)
+   {
+      . . .
+
+      DataSet data = . . .
+
+      data.add(new Person("Joe", 183));
+      data.add(new Person("Chrissy", 158));
+      data.add(new Person("Bobby", 175));
+
+      double avg = . . .
+      Person max = . . .
+
+      System.out.println("Average height: " + avg);
+      System.out.println("Expected: 172");
+      System.out.println("Name of tallest person: " + max.getName());
+      System.out.println("Expected: Joe");
+   }
+}
+</pre>

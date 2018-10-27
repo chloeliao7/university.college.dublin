@@ -1,0 +1,159 @@
+<p>Use the following class as your main class:</p>
+<pre>import java.awt.geom.Point2D;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+/**
+   This program views a circle and a point.
+*/
+public class CircleViewer
+{
+   public static void main(String[] args)
+   {
+      JFrame frame = new JFrame();
+
+      final int FRAME_WIDTH = 400;
+      final int FRAME_HEIGHT = 400;
+
+      frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
+      frame.setTitle("CircleViewer");
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+      String input = JOptionPane.showInputDialog("x:");
+      double x = Double.parseDouble(input);
+
+      input = JOptionPane.showInputDialog("y:");
+      double y = Double.parseDouble(input);
+
+      Point2D.Double point = new Point2D.Double(x, y);
+            
+      CircleComponent component = new CircleComponent(point);
+      frame.add(component);
+
+      frame.setVisible(true);
+   }
+}
+</pre>
+<p>Complete the following classes in your solution:</p>
+<pre>import java.awt.Color;
+import java.awt.Graphics2D;
+import java.awt.geom.Point2D;
+import java.awt.geom.Ellipse2D;
+
+/**
+   This class implements a circle and a boolean function to
+   test if a user-given point is inside this circle.
+*/
+public class Circle
+{
+   private double xCenter;
+   private double yCenter;
+   private double radius;
+   private Color color;
+
+   /**
+      Constructs a circle.
+      @param x the x-coordinate of the center
+      @param y the y-coordinate of the center
+      @param r the radius
+      @param aColor the color
+   */
+   public Circle(double x, double y, double r, Color aColor)
+   {
+      xCenter = x;
+      yCenter = y;
+      radius = r;
+      color = aColor;
+   }
+
+   /**
+      Draws a circle and a point.
+      @param g2 the graphics content
+   */
+   public void draw(Graphics2D g2)
+   {
+      g2.setColor(color);
+      Ellipse2D.Double circle
+         = new Ellipse2D.Double(xCenter - radius, yCenter - radius,
+            2 * radius, 2 * radius);
+      g2.draw(circle);
+   }
+
+   /**
+      Determine if point is inside or outside the circle
+      @param p the point to test if it is inside the circle
+      @return true if the point is inside the circle
+   */
+   public boolean isInside(Point2D.Double p)
+   {
+      . . .
+   }
+}
+<hr />
+import javax.swing.JComponent;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.geom.Point2D;
+import java.awt.geom.Ellipse2D;
+import javax.swing.JOptionPane;
+
+/**
+   Draws a circle and a point. The point is colored green if it falls
+   inside the circle, red otherwise.
+*/
+public class CircleComponent extends JComponent
+{
+   private Circle circle;
+   private Circle smallCircle;
+
+   public CircleComponent(Point2D.Double point)
+   {
+      circle = new Circle(200, 200, 100, Color.BLACK);
+      final double SMALL_RADIUS = 3;
+      Color color;
+      if(. . .)
+         color = Color.GREEN;
+      else
+         color = Color.RED;
+      smallCircle = new Circle(point.getX(), point.getY(), SMALL_RADIUS, color);
+   }
+
+   public void paintComponent(Graphics g)
+   {
+      Graphics2D g2 = (Graphics2D) g;
+      circle.draw(g2);
+      smallCircle.draw(g2);
+   }
+}
+</pre>
+<p>Use the following class in your solution:</p>
+<pre>import java.awt.geom.Point2D;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+/**
+   This program views a circle and a pocint.
+*/
+public class CircleViewerSnap
+{
+   public static void main(String[] args)
+   {
+      JFrame frame = new JFrame();
+
+      final int FRAME_WIDTH = 400;
+      final int FRAME_HEIGHT = 400;
+
+      frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
+      frame.setTitle("CircleViewer");
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+      Point2D.Double point = new Point2D.Double(150, 150);
+            
+      CircleComponent component = new CircleComponent(point);
+      frame.add(component);
+
+      frame.setVisible(true);
+   }
+}
+</pre>

@@ -1,0 +1,90 @@
+Practical 1. 
+Gregoire Cousin 
+Sept/13/2018
+
+>> Part 1
+In	irb	and	each	of	the	primitives	class and	instance_of? test		the	following	to	see	
+what	types	of	object	they	are	and	explain	why	you	get	the	ANSWER	you	do:
+ANSWER: 
+fixnum in 2.3 instead of integer
+
+a. String, true
+b. Integer, true
+c. Float, true
+d. Float, true
+e. Array, true
+f. SyntaxError, false: cant call on operator 
+g. NameError 
+h. Float, true
+i. NameError
+j. NameError
+k. Integer, true
+l. String, true
+m. Float, true
+n. Integer, true
+o. String, true
+p. NameError
+q. NameError
+
+>> Part 2
+In	irb	what	happens	when	you	evaluate	the	following.	try	to	predict	it	before trying	them:
+ANSWER: 
+a. true
+b. NoMethodError
+c. false 
+d. ["a", "b", "c", "d"]
+e. TypeError
+f. "hello".capitalize
+g. "hello".upcase
+h. p "Gregoire Cousin" or puts "Gregoire Cousin"
+i. def callIt puts "Greg Cousin" end callIt
+j. def callIt name = gets puts name end callIt
+k. def callName name = gets	puts name end callName
+
+l. 
+def equality
+	maxi = 5
+	dick = 5 
+	twinko = 9
+	puts dick.eql?(maxi) 
+end 
+	
+	equality
+
+m. 
+def equality
+	maxi = "starstruck"
+	dick = "minion" 
+	twinko = "starstruck"
+	puts twinko.eql?("minion")
+	puts dick.eql?("minion")
+end 
+
+	equality
+
+>> Part 3
+What’s a	predicate	?
+ANSWER: it is a method that CHECKS a condition 
+ex: ==, =, eql, include, equal, and so on 
+
+>> Part 4
+Define	your	own	adding	method that	always	adds	5	and	6 together.		
+ANSWER: 
+def addition 
+	firstVal = 5
+	secondVal = 6
+	puts firstVal.to_i + secondVal.to_i
+end
+
+addition
+
+>> Part 5
+Put	this defined	method	in	a	file	and	call	it	using	the	ruby	command	outside	of irb
+ANSWER: 
+# file called it 
+def addition 
+	firstVal = 5
+	secondVal = 6
+	puts firstVal.to_i + secondVal.to_i
+end
+addition

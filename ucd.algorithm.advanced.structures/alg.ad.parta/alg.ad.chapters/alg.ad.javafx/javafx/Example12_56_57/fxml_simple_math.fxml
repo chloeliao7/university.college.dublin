@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:controller="SimpleMathController" 
+      xmlns:fx="http://javafx.com/fxml" 
+      alignment="center" spacing="10" >
+ 
+  <Label text="Enter a number" />
+  <TextField fx:id="operand" maxWidth="100" /> 
+  <Button fx:id="square" text="Square"    
+          onAction="#calculate" />
+  <Button fx:id="cube" text="Cube"     
+          onAction="#calculate" />
+  <Label text="Result" />
+  <Label fx:id="result" />
+
+</VBox>
+

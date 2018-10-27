@@ -1,0 +1,88 @@
+<p>Use the following class as your main class:</p>
+<pre>public class SequenceDemo
+{
+   public static void main(String[] args)
+   {
+      LastDigitDistribution dist1 = new LastDigitDistribution();
+      dist1.process(new SquareSequence(), 1000);
+      dist1.display();
+      System.out.println();
+
+      LastDigitDistribution dist2 = new LastDigitDistribution();
+      dist2.process(new RandomSequence(), 1000);
+      dist2.display();
+   }
+}
+</pre>
+<p>Use the following classes in your solution:</p>
+<pre>public class SquareSequence implements Sequence
+{
+   private int n;
+
+   public int next()
+   {
+      n++;
+      return n * n; 
+   }
+}
+<hr />
+public interface Sequence
+{
+   int next();
+}
+<hr />
+/**
+   This class analyzes the distribution of the last digit of values
+   from a sequence.
+*/
+public class LastDigitDistribution
+{
+   private int[] counters;
+
+   /**
+      Constructs a distribution whose counters are set to zero.
+   */
+   public LastDigitDistribution()
+   {
+      counters = new int[10];
+   }
+
+   /**
+      Processes values from this sequence.
+      @param seq the sequence from which to obtain the values
+      @param valuesToProcess the number of values to process
+   */
+   public void process(Sequence seq, int valuesToProcess)
+   {
+      for (int i = 1; i &lt;= valuesToProcess; i++)
+      {
+         int value = seq.next();
+         int lastDigit = value % 10;
+         counters[lastDigit]++;
+      }
+   }
+
+   /**
+      Displays the counter values of this distribution.
+   */
+   public void display()
+   {
+      // calculate scale factor
+      ...
+ 
+      for (int i = 0; i &lt; counters.length; i++)
+      {
+//         System.out.println(i + ": " + counters[i]);
+           ...
+      }
+   }
+}
+<hr />
+public class RandomSequence implements Sequence
+{
+   public int next()
+   {
+      return (int) (Integer.MAX_VALUE * Math.random());
+   }
+}
+</pre>

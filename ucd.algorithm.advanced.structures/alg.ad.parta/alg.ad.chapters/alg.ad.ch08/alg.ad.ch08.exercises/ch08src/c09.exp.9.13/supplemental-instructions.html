@@ -1,0 +1,69 @@
+<p>Complete the following class in your solution:</p>
+<pre>/**
+   Computes the minimum and maximum of a set of Comparable values.
+*/
+public class DataSet
+{
+   . . .
+
+   /**
+      Constructs an empty data set.
+   */
+   public DataSet()
+   {
+      . . .
+   }
+
+   /**
+      Adds a data value to the data set.
+      @param x a data value
+   */      
+   public void add(Comparable x) 
+   { 
+      . . .
+   }     
+
+   /**
+      Gets the largest of the added data.
+      @return the maximum or null if no data has been added
+   */
+   public Comparable getMaximum()
+   {
+      . . .
+   }
+   
+   /**
+      Gets the largest of the added data.
+      @return the maximum or null if no data has been added
+   */
+   public Comparable getMinimum()
+   {
+      . . .
+   }   
+}
+</pre>
+<p>Use the following class as your tester class:</p>
+<pre>/**
+   This program demonstrates the use of the DataSet that accepts
+   instances of the Comparable interface.
+*/
+public class DataSetTester
+{
+   public static void main(String[] args)
+   {
+      DataSet data = new DataSet();
+
+      data.add("Helen");
+      data.add("Andy");
+      data.add("Robert");
+      data.add("Vicky");      
+
+      Comparable max = data.getMaximum();
+      Comparable min = data.getMinimum();
+      System.out.println("Maximum: " + max);
+      System.out.println("Expected: Vicky");
+      System.out.println("Minimum: " + min);
+      System.out.println("Expected: Andy");
+    }
+}
+</pre>

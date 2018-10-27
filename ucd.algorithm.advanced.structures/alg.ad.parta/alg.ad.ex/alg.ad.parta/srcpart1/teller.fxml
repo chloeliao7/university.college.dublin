@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.cell.*?> 
+<?import javafx.collections.*?> 
+<?import fxmltableview.*?> 
+
+<VBox fx:controller="TellerController" 
+      xmlns:fx="http://javafx.com/fxml"
+       alignment="center" spacing="10" style="-fx-background-color:#000080">
+       
+  <HBox  alignment="center" spacing="20" >
+   <Button fx:id="changeRate" text="Change interest rate" 
+             onAction="#changeRate"/>
+   <Button fx:id="applyInterest" text="Apply interest"    
+         onAction="#applyInterest"/>
+  </HBox>
+  
+  <HBox  alignment="center" spacing="20" >
+   <Button fx:id="deposit" text="Deposit" 
+            onAction="#deposit" />
+   <Button fx:id="withdraw" text="Withdraw"    
+           onAction="#withdraw" />
+  </HBox>
+  
+  <HBox  alignment="center" spacing="20" >
+   <Button fx:id="display" text="Display account information" 
+            onAction="#display" />
+   <Button fx:id="exit" text="Exit"    
+            onAction="#exit"/>
+  </HBox>
+ 
+  <GridPane fx:id="ledger">
+    <TableView fx:id="tableView" GridPane.columnIndex="0" 
+                    GridPane.rowIndex="1">
+          <columns>
+              <TableColumn fx:id="activityLedger" text="ACTIVITY" prefWidth="250">
+                  <cellValueFactory>
+                      <PropertyValueFactory property="activity" />
+                  </cellValueFactory>            
+             </TableColumn>
+             
+             <TableColumn fx:id="balanceLedger" text="BALANCE" prefWidth="150">
+                  <cellValueFactory>
+                      <PropertyValueFactory property="currentBalance" />
+                  </cellValueFactory>                
+             </TableColumn>
+             
+              <TableColumn fx:id="rateLedger" text="INTEREST RATE" prefWidth="300">
+                  <cellValueFactory>
+                      <PropertyValueFactory property="currentRate" />
+                  </cellValueFactory>                 
+              </TableColumn>
+          </columns>
+     </TableView>
+  
+  </GridPane>
+  
+
+ </VBox>
+ 

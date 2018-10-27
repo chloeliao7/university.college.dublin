@@ -1,0 +1,157 @@
+> > > introduction lecture 1 
+ruby 2.3.1, GEM 2.6.7, irb 0.9.6
+formal written exams will be %100 
+
+-----------------------------------------
+
+# COMMANDS: 
+gem -v: will give you the gem
+gem list
+irb conf 
+
+irb: will start ruby on terminal 
+ruby -e “PUTS $PATH_PATH”
+
+load the file: 
+ruby hail.rb
+
+-----------------------------------------
+
+FUNCTIONS: 
+43.class - in lowercase 
+“string”.length - gives an int 
+5.to_s - needs underscore
+5.to_i - int
+5.float - float 
+"dna".include?("na") - gives you true or false 
+“dna”.include(“we”) - NoMethodError...
+"mag".insert(3, "Oooo") - magOooo
+puts(“hello”, “mo”) - one new line 
+p “hello” 
+“mark”.instance_of?(String) - true 
+“mark”.instance_of?(Array) - false 
+:mark.class - Symbol 
+
+PRINT VS PUTS: 
+puts vs. print. The puts (short for "put string") and print commands are both used to display the results of evaluating Ruby code. The primary difference between them is that puts adds a newline after executing, and print does not. 
+
+- printLN VS PRINT
+
+********************
+
+functions: 
+
+.upcase
+.downcase
+:Hello - const 
+
+-----------------------------------------------------------
+
+>> lecture 2 
+# gets name 
+
+def get_name 
+puts "What is your sureName?: "
+name = gets
+if check_name_ok?(name)
+then print_new_name(name)end
+end 
+
+def print_thanks 
+puts "thanks for that"
+end 
+
+def check_name_ok?(naMeo) 
+if naMeo.length > 10 
+then error("way too long ")
+else true end 
+end 
+
+def print_new_name(namer)
+newName = namer + "babyGirl"
+puts " your new name is "
+puts newName 
+end 
+
+// what is this
+def error(sp_message) 
+puts "/n**ERROR**:#{sp_message}.\n"
+end
+
+-----------------------------------------
+>> require && chomp 
+
+<!--  can use just require  -->
+// require relative - load in the thanks.rb before anything
+// if they weren't in the right directory, than would give the patch to them 
+
+require_relative 'thanks' 
+require_relative 'error'
+
+def get_name 
+puts "what is your sureName" 
+name = gets.chomp
+prints_thanks 
+if check_name_ok?(name) 
+then print_new_name(name) end 
+end
+ 
+ def check_name_ok? ... etc
+
+# chomp... if you use: 
+gets 
+ <!-- puts  print  -->
+
+you need chomp to not output the right string 
+
+// don't rename the same things in and use the same variables 
+
+# PART B CLASSES AND INSTANCES and gets: @ 
+
+ex: read only 
+class Person 
+
+def fname // replace with attr_reader :fname
+@fname 
+end 
+
+def give_fname(name)
+@fname = name 
+end 
+
+def lname replace with attr_reader :lname
+@lname 
+end 
+
+def give_lname(name)
+@lname = name 
+end 
+end 
+
+inst1 = Person.new 
+inst1.give_fname("Mark")
+inst1.give_lname("KarenName")
+
+p inst1 
+
+--------------------------------------------------
+
+ex: write and read 
+
+class treasure 
+	attr_reader :name 
+	attr_writer :name 
+	// has the effect of create both 1. instance variables 2. methods needed to access them 
+	// this is read and write = attr_accessor : name 
+
+	def initialize(aName) 
+	@name = aName 
+	end 
+
+	end 
+
+	t = Treasure.new("ruby")
+	p(t)
+	t.name = "Sapphire"
+	TreasureName = t.name
+	p(t)

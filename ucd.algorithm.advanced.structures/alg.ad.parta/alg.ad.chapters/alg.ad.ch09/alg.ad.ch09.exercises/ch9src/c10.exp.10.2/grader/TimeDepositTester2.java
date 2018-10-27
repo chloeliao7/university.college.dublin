@@ -1,0 +1,48 @@
+/**
+   This program tests the BankAccount class and its subclasses.
+*/
+public class TimeDepositTester2
+{
+   public static void main(String[] args)
+   {
+      SavingsAccount momsSavings = new SavingsAccount(5);
+
+      CheckingAccount harrysChecking = new CheckingAccount(100);
+
+      TimeDepositAccount collegeFund = new TimeDepositAccount(10, 3);
+
+      momsSavings.deposit(10000);
+
+      momsSavings.transfer(2000, harrysChecking);
+      harrysChecking.withdraw(1500);
+      harrysChecking.withdraw(80);
+      harrysChecking.deposit(200);
+
+      momsSavings.transfer(1000, harrysChecking);
+      harrysChecking.withdraw(400);
+      
+      momsSavings.deposit(2000);
+
+      momsSavings.transfer(3000, collegeFund);
+      collegeFund.withdraw(800);
+      
+      collegeFund.transfer(500, harrysChecking);
+
+      // simulate end of month
+      momsSavings.addInterest();
+      collegeFund.addInterest();
+      harrysChecking.deductFees();
+
+      System.out.println("Mom's savings balance: "
+            + momsSavings.getBalance());
+      System.out.println("Expected: 6300");
+
+      System.out.println("Harry's checking balance: "
+            + harrysChecking.getBalance());
+      System.out.println("Expected: 1812");
+
+      System.out.println("College fund's time deposit balance: "
+            + collegeFund.getBalance());
+      System.out.println("Expected: 1826");
+   }
+}

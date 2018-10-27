@@ -1,0 +1,38 @@
+<p>Use the following class as your main class:</p>
+<pre>import javax.swing.JFrame;
+
+public class FaceViewer
+{
+   public static void main(String[] args)
+   {
+      JFrame frame = new JFrame();
+
+      frame.setSize(300, 400);
+      frame.setTitle("FaceViewer");
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+      FaceComponent component = new FaceComponent();
+      frame.add(component);
+
+      frame.setVisible(true);
+   }
+}
+</pre>
+<p>Complete the following class in your solution:</p>
+<pre>import javax.swing.JComponent;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+. . .
+
+/**
+   Draws a face.
+ */
+public class FaceComponent extends JComponent
+{
+   public void paintComponent(Graphics g)
+   {
+      Graphics2D g2 = (Graphics2D) g;
+      . . .
+   }
+}
+</pre>

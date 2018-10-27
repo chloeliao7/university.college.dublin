@@ -1,0 +1,56 @@
+<p>Here is a sample program output:</p>
+<p>@MY_IMAGE_IN_STATEMENT@</p>
+<p>Use the following class as your main class:</p>
+<pre>import javax.swing.JFrame;
+
+/**
+   Displays a pie chart.
+*/
+public class ChartViewer
+{  
+   public static void main(String[] args)
+   {
+      JFrame frame = new JFrame();
+
+      final int FRAME_WIDTH = 300;
+      final int FRAME_HEIGHT = 300;
+
+      frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
+      frame.setTitle("ChartViewer");
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+      PieChartComponent component = new PieChartComponent();
+      frame.add(component);
+
+      frame.setVisible(true);
+   }
+}
+</pre>
+<p>You need to supply the following class in your solution:</p>
+<pre>PieChart
+</pre>
+<p>Use the following class in your solution:</p>
+<pre>import javax.swing.JComponent;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+
+/**
+   Component that displays a pie chart.
+ */
+public class PieChartComponent extends JComponent
+{
+   public void paintComponent(Graphics g)
+   {  
+      Graphics2D g2 = (Graphics2D) g;
+      PieChart p = new PieChart(getWidth(), getHeight());
+      p.add(1.1);
+      p.add(3.6);
+      p.add(4.0);
+      p.add(3.7);
+      p.add(2.1);
+      p.add(2.7);
+      p.add(2.6);
+      p.draw(g2);
+   }
+}
+</pre>

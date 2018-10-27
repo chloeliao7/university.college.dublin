@@ -1,0 +1,106 @@
+Cloud Computing practical 1.
+
+PART 1 AMAZON WEB SERVICES RACKSPACE WINDOWS CLOUD GOOGLE CLOUD
+
+1. What are cloud deployment models (types) for each companies and their differences: 
+AWS INFRASTRUCTURE AS A SERVICE IAA S PLATFORM AS A SERVICE PAA S SOFTWARE AS A SERVICE SAA S	 
+	 + the most advanced company with cloud computing. 
+	 + Cloud, Hybrid, on Premise
+	 + Low Key Pricings
+	 + Secure and Flexible 
+	 + Applicaiton hosting, websites, backup and storage, 
+	 + multi types of infrastructures and services for buisness needs 
+	 + Content delivery 
+	 + IT department with customer support and content delivery
+	 
+RACKSPACE PUBLIC PRIVATE HYBRID MULTICLOUD
+		+ more infrustracture, 
+		+ Very good for Visualization 
+		+ Cognitive recognition 
+		+ dedicated servers with high performace compute 
+		+ secure, scalable and cloud ready 
+
+WINDOWS CLOUD AZURE IAAS PAAS SAAS
+		+ mainly PAAS
+		+ Office 365 works well and is integrated 
+		+ more friendly than AWS for some people 
+		+ a platform based for building and deploying applications
+		+ high level artificial inteligence 
+		+ has machine learning capabilities for windows based applicaitons
+		+ building + testing + deploying
+		+ artificial inteligence could also means they have more resouces and have a bigger infrastructure. 
+		+ Web Sites and Cloud Services
+
+    - Google Cloud:
+		+ Compute Engine: IaaS : virtual machine isntances for workload hosting 
+		+ Google App Engine : PaaS : Developers have access to scalable hosting. Uses (SDK) to help develop producs 
+		+ not fully private fairly modular
+		+ Cloud Storage : Using noSQL and MySql 
+		+ Container Engines : using Docker containers to run googles public cloud  
+		+ provides analistic tools for speech, text, images and videos.
+
+2. 		
+- windows cloud azure:iaas, paas, saas
+- windows cloud azure:
+	IAAS: Virtual Machines 
+	PAAS: virtual interface that is independent of the actual hardware (VM)
+	SAAS: SaaS service with azure automatically scales according to the level of usage.
+
+- aws: more IaaS based 
+	IAAS EC2: Elastic Compute Cloud. 
+	>> 	FEATURES: secure, resizable compute capacity in the cloud, 
+	>>	PROVIDES: COMPLETELY CONTROLLED, ELASTIC WEB-SCALE COMPUTING, FLEXIBLE CLOUD HOSTING SERVICES, INTEGRATED, RELIABLE, SECURE, INEXPENSIVE, EASY TO START
+	PAAS: Elastic Beanstalk, Windows Azure, Heroku, Force.com, Google App Engine, Apache Stratos
+	SAAS AWS Partner Network (APN): provides a low cost and is reliable
+
+- google: more based on PaaS
+	IAAS: Virtual Machines 
+	PAAS: different options : VMS, Containers, PaaS and FaaS ( Google Cloud Functions )
+	SAAS: Big Table, B2B , GCP management services
+		>> 	FEATURES: secure, a good authorization and authentication, Isolation and Holistic Interface service
+
+All of these share : 
+	Public Cloud
+	Community Clouds
+	Private Clouds
+	Hybrid Clouds
+	Other Deployment Models
+
+3. what to consider to visualize data center? 
+designing, developing and deploying a data center can be quite tricky and needs the help of many of the fallowing steps to be taken in consideration. 
+It all depends on what type of virtualization aproach you would like to take. Weather you want your data center to be driven for os virtualization, 
+application-server virtualization, application virtualization, administrative virtualization, network virtualization, hardware virtualization or storage virtualization. 
+The big challenges to virtualizing your data centers are knowing how many servers you will need, how fast can you deploy data, what are the dedicated server and 
+how will you section them, how will migration work betweek the client to the server. Having a secure infrastructure for risk management to overcome any chaos. 
+gathering the right resources and being able to allocate data. Knowing how to deal with multiworkload using VM hypervisor, IO Streams and determining the increases 
+of IOPA needed for the workload. Last but not least. Being able to have a flexible team that with current technology. This is so that once technology does not need physical labor 
+you have experts that can take care of other complexities in your data center. 
+
+4. I have found that the cheapest cost provider between Amazon, Windows and Google cloud is AWS. Where a standard 2 vCPU with SSD would run you at a $0.133 hourly.  
+ in the same range: Azure would be $0.114 and google would be $0.212
+
+5. If I were to go with one provider over another I would choose Google cloud because of its ability, resources, price points and more. You first get a higher discount with Google cloud but 
+also get better benifits like live migration of virtual machines which neither of their competitors have. live migration of virtual machines provides such as patching, repairing, 
+and updating the software and hardware without any worries of rebooting or malfunctions of the machine. This is such an advantage since customers need a secure way to retain their data. 
+Google is also alway improoving their performance devcreasing load times and keeping up with the latest security measures. 
+they are world wide known and are always expanding acrross the world. 
+
+6. Computer networks are interconnected collection of computers with the abilityy to exchange information where as distributed systems 
+are multiple interconnected computers in a computer network that is transparent to the user. 
+in Distributed systems the system allocated workload to the processor moving files 
+among them without explicit intervention where as a network works 
+more remotely and can use automation to moves files around a network  
+
+>> Part Two 
+
+1. It is complicated because these files are distributed among not only a network system but also replicated among multiple instances of computers. 
+If you delete one and you do not have a strong backup system or network / hierarchy architecture then the wrong files might be replaced, deleted, updates and so on. 
+
+2. You can delete files that are completly secure to delete among your stable cloud system. This means that making sure you have a backup locally that isnt based on a network based/ distributed system
+
+3. You are able to delete authorized and replaceable data. where the client can still have access to it in some form of a backup or file structure. you can also not delete system files 
+that are part of the inter working of your cloud based system. 
+
+4. When deleting and finding what you want to keep you need to have a clear understanding on what security measures you need to take. making sure 
+that there are no dependencies between files is a key step to making sure you can safely delete and update the right files form your local computer to the cloud. 
+

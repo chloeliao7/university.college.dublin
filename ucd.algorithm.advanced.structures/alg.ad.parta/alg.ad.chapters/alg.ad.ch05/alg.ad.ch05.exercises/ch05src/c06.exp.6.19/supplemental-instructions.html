@@ -1,0 +1,83 @@
+<p>Your main class should be called <code>SpiralViewer</code>.</p>
+<p>Complete the following class in your solution:</p>
+<pre>public class SpiralGenerator
+{   
+   // private implementation
+   . . .
+
+   /**
+      Creates a spiral generator.
+      @param initialSize the size of the first (shortest) segment 
+      of the spiral, in pixels
+      @param start the starting point of the spiral
+   */
+   public SpiralGenerator(double initialSize, Point2D.Double start) { . . . }
+ 
+   /**
+      Returns the next segment of the spiral.
+      @return the next segment
+   */
+   public Line2D.Double nextSegment() { . . . }
+}
+</pre>
+<p>Use the following class in your solution:</p>
+<pre>import javax.swing.JComponent;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.geom.Point2D;
+import java.awt.geom.Line2D;
+
+public class SpiralComponent extends JComponent
+{
+   private int segments;
+
+   public void paintComponent(Graphics g)
+   {
+      Graphics2D g2 = (Graphics2D) g;
+      final int INITIAL_SIZE = 10;
+
+      int size = Math.min(getWidth(), getHeight());
+      SpiralGenerator gen = new SpiralGenerator(
+         INITIAL_SIZE,
+         new Point2D.Double(size / 2, size / 2));
+
+      while (true)
+      {
+         Line2D.Double segment = gen.nextSegment();
+         if (!segment.intersects(getBounds()))
+            return;
+         g2.draw(segment);
+      }
+   }
+}
+</pre>
+<p>Use the following class as your tester class:</p>
+<pre>import java.awt.geom.Point2D;
+import java.awt.geom.Line2D;
+
+public class SpiralTester
+{
+   public static void main(String[] args)
+   {
+      SpiralGenerator gen = new SpiralGenerator(10, new Point2D.Double(100, 100));
+      Line2D line = gen.nextSegment();
+      System.out.println(line.getX1()); 
+      System.out.println("Expected: 100");
+      System.out.println(line.getY1()); 
+      System.out.println("Expected: 100");
+      System.out.println(line.getX2()); 
+      System.out.println("Expected: 110");
+      System.out.println(line.getY2()); 
+      System.out.println("Expected: 100");
+      line = gen.nextSegment();
+      System.out.println(line.getX1()); 
+      System.out.println("Expected: 110");
+      System.out.println(line.getY1());
+      System.out.println("Expected: 100");
+      System.out.println(line.getX2());
+      System.out.println("Expected: 110");
+      System.out.println(line.getY2());
+      System.out.println("Expected: 90");
+   }
+}
+</pre>

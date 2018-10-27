@@ -1,0 +1,67 @@
+Assignment 1: Reading Groups
+This assignment will consist of 2 parts:
+
+1. The submission of a review of the assigned paper (75%)
+2. Participation in a reading group (25%)
+
+The review will consist of: - 
+A 1-page synopsis of the paper 
+- A list of references of other papers / articles read 
+- A list of 5 comments (2/3 sentences per comment only) about the paper 
+(positive / negative comments are allowed). Each comment should relate 
+to one issue / concept / feature / ... 
+- A word template has been provided that should be conformed to. 
+
+- The reading group will happen during the lab sessions for week 6. 
+- Each group will be expected to attend the lab for 20 MINUTES where they will discuss the paper. 
+- A moderator will be assigned to each group who will try to ensure that all group members get a chance to contribute.
+
+REVIEW MARKING SCHEME
+>> A - Excellent understanding of the paper and clear evidence that you have read and understood additional material relating to the assigned paper
+B - Clear understanding of the paper, but no or little evidence of reading around the subject
+C - Understand the main focus of the paper, but lacking on some of the finer details.
+D - Has a General Understanding of the paper
+E - General Lack of Understanding
+
+GRADES WILL BE BASED ON
+1. overall quality of the essay
+2. the length of the essay (i.e. too short / too long)
+5. submission of the 5 comments
+6. compliance with the template provided
+* provision of references to other papers / articles that you have 
+7. used to improve your understanding of the topic
+
+READING GROUP MARKING SCHEME
+For the reading group, the mark will be based on your contribution and will be in the range (0-5):
+5   	   - Good engagement, good comments, presented clearly and concisely.
+3.4 	   - Good engagement, some good comments, but clarity sometimes lacking.
+1.2 	   - Presented their comment, but little or no additional  contribution.
+0   	   - Did not attend.
+
+
+You will be marked down if you attempt to dominate the group 
+(the idea is to have an open and inclusive chat with your group members, not to compete with one another).
+
+
+----------------------------------------------------------------------
+
+// you can use the following questions as a guide for the synopsis (don’t use them as headings – in fact, please don’t use headings at all)
+// What is the paper about? What are the main features / issues discussed? What makes the proposed solution good (in the eyes of the authors)
+// How was it evaluated and what did the evaluation show?
+
+============================ THIS SHOULD NOT GO ONTO PAGE 2 ============================
+
+Refference Collier, R. 
+The Worst Assignment Template in the World, 
+
+// Submitted to COMP30220 Lectures, 2017
+// Collier, R., Quinn, J., COMP30220 on the CS Moodle Server, 
+// https://csmoodle.ucd.ie/moodle/course/view.php?id=580Reading Group Comments:•It is very important not to forget your comments. 
+// We will check that the comment you give in the reading group is one of the ones listed here. 
+// Each one should be no more than 3 sentences. Obviously, this comment is not correct because I have used 4 sentences!
+// hen you add references above, what I am really looking for is for you to cite those references in the synopsis, 
+// for example you could highlight a limitation of the system reviewed, pointing out that the criticism was taken from 
+// another paper/article/website, even quoting from that other paper. Note: this is a bad 
+// comment because the sentence is too long!•Comment 3•Comment 4•Comment 5
+
+

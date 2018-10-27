@@ -1,0 +1,175 @@
+<p>Here is a sample program output:</p>
+<p>@MY_IMAGE_IN_STATEMENT@</p>
+<p>Use the following class as your main class:</p>
+<pre>import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+/**
+   This program views two circles.
+*/
+public class CircleViewerSnap
+{
+   public static void main(String[] args)
+   {
+      JFrame frame = new JFrame();
+
+      final int FRAME_WIDTH = 400;
+      final int FRAME_HEIGHT = 400;
+
+      frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
+      frame.setTitle("CircleViewer");
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+      CircleComponent component = new CircleComponent(60, 85);
+      frame.add(component);
+
+      frame.setVisible(true);
+   }
+}
+</pre>
+<p>Use the following classes in your solution:</p>
+<pre>import java.awt.Color;
+import java.awt.Graphics2D;
+import java.awt.geom.Ellipse2D;
+import java.awt.geom.Point2D;
+
+/**
+   This class implements a Circle. It includes a method to test whether 
+   two circles intersect.
+*/
+public class Circle
+{
+   private double xCenter;
+   private double yCenter;
+   private double radius;
+   private Color color;
+
+   /**
+      Constructs a black circle.
+      @param x the x-coordinate of the center
+      @param y the y-coordinate of the center
+      @param r the radius
+   */
+   public Circle(double x, double y, double r)
+   {
+      xCenter = x;
+      yCenter = y;
+      radius = r;
+      color = Color.BLACK;
+   }
+   
+   /**
+      Sets the color of this circle.
+      @param aColor the color
+   */
+   public void setColor(Color aColor)
+   {
+      color = aColor;
+   }
+
+   /**
+      Draws the circles.
+      @param g2 the graphics context
+   */
+   public void draw(Graphics2D g2)
+   {
+      if (radius &lt; 0)
+         return;
+
+      g2.setColor(color);
+      // draw the circle
+      Ellipse2D.Double circle
+         = new Ellipse2D.Double(xCenter - radius, yCenter - radius,
+            2 * radius, 2 * radius);
+      g2.draw(circle);
+   }
+
+   /**
+      Tests whether or not the two circles intersect with each other.
+      @param other the other circle
+      @return true the two circles intersect
+   */
+   public boolean intersects(Circle other)
+   {
+      . . .
+   }
+}
+<hr />
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.geom.Ellipse2D;
+import java.awt.geom.Point2D;
+import javax.swing.JComponent;
+import javax.swing.JPanel;
+
+/**
+   Shows two Circles and tests whether they intersect or not.
+ */
+public class CircleComponent extends JComponent
+{
+   private Circle circle1;
+   private Circle circle2;
+
+ 
+   /**
+      Constructs a component for showing two circles.
+      @param r1 the radius of the first circle
+      @param r2 the radius of the second circle
+   */
+   public CircleComponent(double r1, double r2)
+   {
+      String message;
+
+      circle1 = new Circle(100, 200, r1);
+      circle2 = new Circle(200, 100, r2);
+      Color color;
+      if (. . .)
+         color = Color.GREEN;
+      else
+         color = Color.RED;
+      circle1.setColor(color);
+      circle2.setColor(color);
+   }
+
+   public void paintComponent(Graphics g)
+   {
+      Graphics2D g2 = (Graphics2D) g;
+
+      circle1.draw(g2);
+      circle2.draw(g2);
+   }
+}
+<hr />
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+/**
+   This program views two circles.
+*/
+public class CircleViewer
+{
+   public static void main(String[] args)
+   {
+      JFrame frame = new JFrame();
+
+      final int FRAME_WIDTH = 400;
+      final int FRAME_HEIGHT = 400;
+
+      frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
+      frame.setTitle("CircleViewer");
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+      String input = JOptionPane.showInputDialog("Radius 1:");
+      double r1 = Double.parseDouble(input);
+
+      input = JOptionPane.showInputDialog("Radius 2:");
+      double r2 = Double.parseDouble(input);
+
+      CircleComponent component = new CircleComponent(r1, r2);
+      frame.add(component);
+
+      frame.setVisible(true);
+   }
+}
+</pre>

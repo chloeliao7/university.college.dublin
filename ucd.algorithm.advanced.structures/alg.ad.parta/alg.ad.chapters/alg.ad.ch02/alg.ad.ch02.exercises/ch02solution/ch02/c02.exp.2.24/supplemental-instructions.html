@@ -1,0 +1,78 @@
+<p>Use the following class as your main class:</p>
+<pre>import javax.swing.JFrame;
+
+/**
+   Displays a "bull's eye".
+ */
+public class BullsEyeViewer
+{
+   public static void main(String[] args)
+   {
+      JFrame frame = new JFrame();
+
+      frame.setSize(220, 240);
+      frame.setTitle("BullsEye");
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+      BullsEyeComponent component = new BullsEyeComponent();
+      frame.add(component);
+
+      frame.setVisible(true);
+   }
+}
+</pre>
+<p>Complete the following class in your solution:</p>
+<pre>import java.awt.Graphics2D;
+import java.awt.geom.Ellipse2D;
+import java.awt.Color;
+
+/**
+   Draws a bull's eye.
+ */
+public class BullsEye
+{
+   /**
+      Creates a new instance of BullsEye.
+      @param r the radius
+      @param x the center x-coordinate
+      @param y the center y-coordinate
+    */
+   public BullsEye(double r, double x, double y)
+   {
+      . . .
+   }
+   
+   /**
+      Draws the bull's eye.
+      @param g2 the graphics context
+   */
+   public void draw(Graphics2D g2)
+   {
+      . . .
+   }
+   
+   . . .
+}
+</pre>
+<p>Use the following class in your solution:</p>
+<pre>import javax.swing.JComponent;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+
+/**
+   Displays a bull's eye.
+ */
+public class BullsEyeComponent extends JComponent
+{
+   public void paintComponent(Graphics g)
+   {
+      Graphics2D g2 = (Graphics2D) g;
+      
+      int radius = 100;
+      int xCenter = 100;
+      int yCenter = 100;
+      BullsEye be = new BullsEye(radius, xCenter, yCenter);
+      be.draw(g2);
+   }
+}
+</pre>

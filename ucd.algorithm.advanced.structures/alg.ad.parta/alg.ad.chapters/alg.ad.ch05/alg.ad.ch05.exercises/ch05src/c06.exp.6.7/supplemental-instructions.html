@@ -1,0 +1,94 @@
+<p>Here is a sample program run:</p>
+<pre>Enter value, Q to quit: <b>5
+</b>Enter value, Q to quit: <b>6
+</b>Enter value, Q to quit: <b>8
+</b>Enter value, Q to quit: <b>9
+</b>Enter value, Q to quit: <b>Q
+</b>There is a total of 4 values
+The average is 7.0
+The standard deviation is 1.8257418583505538
+</pre>
+<p>Your main class should be called <code>DataAnalyzer</code>.</p>
+<p>Complete the following class in your solution:</p>
+<pre>/**
+   This class is used to calculate the average and standard deviation
+   of a data set.
+*/
+public class DataSet
+{
+   private double sum;
+   private double sumSquare;
+   private int n;
+
+   /**
+      Constructs a DataSet object to hold the total number of inputs,
+      the sum, and the sum of square.
+   */
+   public DataSet()
+   {
+      . . .
+   }
+
+   /**
+      Adds a value to this data set.
+      @param x the input value
+   */
+   public void add(double x)
+   {
+      sum = sum + x;
+      sumSquare = sumSquare + x * x;
+      n++;
+   }
+
+   /**
+      Method used to calculate the average of the data set.
+      @return average the average of the data set
+   */
+   public double getAverage()
+   {
+      . . .
+   }
+
+   /**
+      Method used to calculate the standard deviation.
+      @return stddev the standard deviation of data set
+   */
+   public double getStandardDeviation()
+   {
+      . . .
+   }
+
+   /**
+      Gets the total number of input values.
+      @return n the total number of inputs
+   */
+   public int getCount()
+   {
+      . . .
+   }
+}
+</pre>
+<p>Use the following class as your tester class:</p>
+<pre>import java.util.Scanner;
+
+/**
+   This is a test driver class for DataSet class.
+*/
+public class DataSetTester
+{
+   public static void main(String[] args)
+   {
+      DataSet a = new DataSet();
+      a.add(5);
+      a.add(6);
+      a.add(8);
+      a.add(9);
+      System.out.println("count: " + a.getCount());
+      System.out.println("Expected: 4");
+      System.out.println("average: " + a.getAverage());
+      System.out.println("Expected: 7");
+      System.out.println("standard deviation: " + a.getStandardDeviation());
+      System.out.println("Expected: 1.83");
+   }
+}
+</pre>

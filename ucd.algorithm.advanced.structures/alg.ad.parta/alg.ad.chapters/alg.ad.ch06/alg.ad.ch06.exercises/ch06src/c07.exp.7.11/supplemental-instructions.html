@@ -1,0 +1,76 @@
+<p>Use the following class as your main class:</p>
+<pre>/**
+      Print diagrams of restroom stalls as they are occupied.
+      The premise is that people generally prefer to maximize
+      their distance from already occupied stalls, by occupying
+      the middle of the longest sequence of unoccupied places.
+*/
+
+public class RestroomSimulation
+{
+   public static void main(String[] args)
+   {
+      int STALLS = 10;
+      Restroom wc = new Restroom(STALLS);
+
+      for (int i = 1; i &lt;= STALLS; i++)
+      {
+         wc.addOccupant();
+         System.out.println(wc.getStalls());
+      }
+   }
+}
+</pre>
+<p>Complete the following class in your solution:</p>
+<pre>/**
+   A class that shows how restroom stalls are occupied.
+*/
+
+public class Restroom
+{
+   . . .
+
+   /**
+      Constructs a restroom with a given number of stalls.
+      @param ns the number of stalls
+   */
+   public Restroom(int ns)
+   {
+		. . .
+   }
+
+   /*
+      Adds an occupant in the middle of the longest sequence of
+      unoccupied places. 
+   */
+   public void addOccupant()
+   {
+      . . .
+   }
+
+   /*
+      Gets a string describing the current stall occupation
+      @return a string with _ for an empty stall and X for an occupied one
+   */
+   public String getStalls()
+   {
+      . . .
+   }
+}
+</pre>
+<p>Use the following class as your tester class:</p>
+<pre>public class RestroomTester
+{
+   public static void main(String[] args)
+   {
+      int STALLS = 12;
+      Restroom wc = new Restroom(STALLS);
+      wc.addOccupant();
+      System.out.println(wc.getStalls());
+      System.out.println("Expected: ______X_____");
+      wc.addOccupant();
+      System.out.println(wc.getStalls());
+      System.out.println("Expected: ___X__X_____");
+   }
+}
+</pre>

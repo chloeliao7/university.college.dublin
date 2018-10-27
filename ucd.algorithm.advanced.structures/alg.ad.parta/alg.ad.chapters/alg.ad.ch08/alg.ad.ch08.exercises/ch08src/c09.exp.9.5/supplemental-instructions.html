@@ -1,0 +1,95 @@
+<p>Complete the following class in your solution:</p>
+<pre>/**
+   Analyzes a set of data values.
+*/
+public class DataSet
+{
+   private double sum;
+   private Object maximum;
+   private int count;
+   private Measurer measurer;
+   . . .
+
+   /**
+      Constructs an empty data set with a given measurer.
+      @param aMeasurer the measurer that is used to measure data values
+   */
+   public DataSet(Measurer aMeasurer)
+   {
+      sum = 0;
+      count = 0;
+      maximum = null;
+      measurer = aMeasurer;
+      . . .
+   }
+
+   /**
+      Adds a data value to the data set.
+      @param x a data value
+   */
+   public void add(Object x)
+   {
+      sum = sum + measurer.measure(x);
+      if (count == 0 
+         || measurer.measure(maximum) &lt; measurer.measure(x))
+         maximum = x;         
+      count++;
+      . . .
+   }
+
+   /**
+      Gets the average of the added data.
+      @return the average or 0 if no data has been added
+   */
+   public double getAverage()
+   {
+      if (count == 0) return 0;
+      else return sum / count;
+   }
+
+   /**
+      Gets the largest of the added data.
+      @return the maximum or 0 if no data has been added
+   */
+   public Object getMaximum()
+   {
+      return maximum;
+   }
+
+   /**
+      Gets the smallest of the added data.
+      @return the minimum or 0 if no data has been added
+   */
+   public Object getMinimum()
+   {
+      . . .
+   }
+}
+</pre>
+<p>Use the following class as your tester class:</p>
+<pre>import java.awt.Rectangle;
+
+/**
+   This program demonstrates the use of a Measurer.
+*/
+public class DataSetTester
+{
+   public static void main(String[] args)
+   {
+      Measurer m = new RectangleMeasurer();
+
+      DataSet data = new DataSet(m);
+
+      data.add(new Rectangle(5, 10, 20, 30));
+      data.add(new Rectangle(10, 20, 30, 40));
+      data.add(new Rectangle(20, 30, 5, 15));
+
+      System.out.println("Average area: " + data.getAverage());
+      System.out.println("Expected: 625");
+
+      Rectangle min = (Rectangle) data.getMinimum();
+      System.out.println("Minimum area rectangle: " + min);
+      System.out.println("Expected: java.awt.Rectangle[x=20,y=30,width=5,height=15]");
+   }
+}
+</pre>

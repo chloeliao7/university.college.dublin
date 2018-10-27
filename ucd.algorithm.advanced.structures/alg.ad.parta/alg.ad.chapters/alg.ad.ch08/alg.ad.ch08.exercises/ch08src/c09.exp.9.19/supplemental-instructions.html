@@ -1,0 +1,42 @@
+<p>Here is a sample program output:</p>
+<p>@MY_IMAGE_IN_STATEMENT@</p>
+<p>Use the following class as your main class:</p>
+<pre>import javax.swing.JFrame;
+
+public class RandomShapeViewer
+{
+   public static void main(String[] args)
+   {
+      JFrame frame = new JFrame();
+
+      final int FRAME_WIDTH = 300;
+      final int FRAME_HEIGHT = 400;
+
+      frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
+      frame.setTitle("RandomShapeViewer");
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+      RandomShapesComponent component = new RandomShapesComponent();
+      frame.add(component);
+
+      frame.setVisible(true);
+   }
+}
+</pre>
+<p>Use the following class in your solution:</p>
+<pre>import javax.swing.JComponent;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+
+public class RandomShapesComponent extends JComponent
+{ 
+   public void paintComponent(Graphics g) 
+   {
+      Graphics2D g2 = (Graphics2D) g;
+      RandomShapeGenerator r = new RandomShapeGenerator(getWidth(), getHeight());
+
+      for (int i = 1; i &lt;= 10; i++)
+         g2.draw(r.randomShape());
+   }
+}
+</pre>

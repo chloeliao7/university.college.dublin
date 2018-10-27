@@ -1,0 +1,76 @@
+<p>Here is a sample program run:</p>
+<pre>Enter an integer: <b>123456
+</b>2
+2
+2
+2
+2
+2
+3
+643
+</pre>
+<p>Your main class should be called <code>FactorPrinter</code>.</p>
+<p>Complete the following class in your solution:</p>
+<pre>/**
+   This class generates all the factors of a number.
+*/
+public class FactorGenerator
+{
+   // TODO: instance fields
+
+   /**
+      Creates a FactorGenerator object used to determine the factor of
+      an input value.
+      @param aNum is the input value
+   */
+   public FactorGenerator(int aNum)
+   {
+      // TODO
+   }
+
+   /**
+      Determine whether or not there are more factors.
+      @return true there are more factors
+   */
+   public boolean hasMoreFactors()
+   {
+      // TODO
+   }
+
+   /**
+      Calculate the next factor of a value.
+      @return factor the next factor
+   */
+   public int nextFactor()
+   {
+      // TODO
+   }
+}
+</pre>
+<p>Use the following class as your tester class:</p>
+<pre>public class FactorGeneratorTester
+{
+   public static void main(String[] args)
+   {
+      FactorGenerator generator = new FactorGenerator(2 * 2 * 3 * 5);
+      System.out.println(generator.hasMoreFactors());
+      System.out.println("Expected: true");
+      System.out.println(generator.nextFactor());
+      System.out.println("Expected: 2");
+      System.out.println(generator.hasMoreFactors());
+      System.out.println("Expected: true");
+      System.out.println(generator.nextFactor());
+      System.out.println("Expected: 2");
+      System.out.println(generator.hasMoreFactors());
+      System.out.println("Expected: true");
+      System.out.println(generator.nextFactor());
+      System.out.println("Expected: 3");
+      System.out.println(generator.hasMoreFactors());
+      System.out.println("Expected: true");
+      System.out.println(generator.nextFactor());
+      System.out.println("Expected: 5");
+      System.out.println(generator.hasMoreFactors());
+      System.out.println("Expected: false");
+   }
+}
+</pre>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:controller="PhotoGrayerController" 
+    xmlns:fx="http://javafx.com/fxml" 
+    alignment="center" spacing="10" 
+    style="-fx-padding:0 10 0 10;" >
+ 
+  <ImageView fx:id="originalImageView" >
+    <Image url="sushi.jpg" />
+  </ImageView>
+
+  <ImageView fx:id="grayImageView" />
+ 
+  <Label text="&lt;-darker     lighter-&gt;" />   
+
+  <Slider fx:id="slider" min="0" max=".33" 
+          value=".165" showTickMarks="true"
+          showTickLabels="true" majorTickUnit="0.055" />
+
+</VBox>

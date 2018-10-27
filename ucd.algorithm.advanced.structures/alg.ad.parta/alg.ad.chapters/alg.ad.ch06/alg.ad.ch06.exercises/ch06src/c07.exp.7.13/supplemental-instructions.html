@@ -1,0 +1,97 @@
+<p>Complete the following class in your solution:</p>
+<pre>/**
+   A 3 x 3 Tic-Tac-Toe board.
+*/
+public class TicTacToe
+{
+   private String[][] board;
+   private static final int ROWS = 3;
+   private static final int COLUMNS = 3;
+
+   /**
+      Constructs an empty board.
+   */
+   public TicTacToe()
+   {
+      board = new String[ROWS][COLUMNS];
+
+      // fill with spaces
+      for (int i = 0; i &lt; ROWS; i++)
+         for (int j = 0; j &lt; COLUMNS; j++)
+            board[i][j] = " ";
+   }
+
+   /**
+      Sets a field in the board. The field must be unoccupied.
+      @param i the row index 
+      @param j the column index 
+      @param player the player ("x" or "o")
+   */
+   public void set(int i, int j, String player)
+   {
+      if (board[i][j].equals(" "))
+         board[i][j] = player;
+   }
+
+   /**
+      Creates a string representation of the board such as
+      |x  o|
+      |  x |
+      |   o|
+      @return the string representation
+   */
+   public String toString()
+   {
+      String r = "";
+      for (int i = 0; i &lt; ROWS; i++)
+      {
+         r = r + "|";
+         for (int j = 0; j &lt; COLUMNS; j++)         
+            r = r + board[i][j];
+         r = r + "|\n";
+      }
+      return r;
+   }
+   
+   /**
+      Gets the winner
+      @return the winner
+   */
+   public String getWinner()
+   {  
+      . . .
+   }   
+}
+</pre>
+<p>Use the following class as your tester class:</p>
+<pre>import java.util.Scanner;
+
+/**
+   This program tests the getWinner method of the TicTacToe class.
+*/
+public class TicTacToeTester
+{
+   public static void main(String[] args)
+   {
+      TicTacToe game = new TicTacToe();
+      game.set(0, 0, "x");
+      game.set(2, 0, "o");
+      game.set(1, 1, "x");
+      game.set(2, 1, "o");
+      
+      System.out.println("Winner: " + game.getWinner());
+      System.out.println("Expected: ");
+      game.set(2, 2, "x");
+      System.out.println("Winner: " + game.getWinner());
+      System.out.println("Expected: x");
+
+      game = new TicTacToe();
+      game.set(0, 0, "x");
+      game.set(2, 0, "o");
+      game.set(1, 1, "x");
+      game.set(2, 1, "o");      game.set(2, 2, "o");
+      System.out.println("Winner: " + game.getWinner());
+      System.out.println("Expected: o");            
+   }
+}
+</pre>

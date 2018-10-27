@@ -1,0 +1,85 @@
+<p>Here is a sample program output:</p>
+<p>@MY_IMAGE_IN_STATEMENT@</p>
+<p>Use the following class as your main class:</p>
+<pre>import javax.swing.JComponent;
+import javax.swing.JFrame;
+
+/**
+   This program draws cars and trucks in random order.
+*/
+public class RandomVehicleViewer
+{
+   public static void main(String args[])
+   {
+      JFrame frame = new JFrame();
+      final int FRAME_WIDTH = 600;
+      final int FRAME_HEIGHT = 600;
+
+      frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      
+      JComponent component = new RandomVehicleComponent();
+      frame.add(component);
+      frame.setVisible(true);
+   }
+}
+</pre>
+<p>Use the following class in your solution:</p>
+<pre>import java.awt.Graphics2D;
+
+/**
+   This class represents a vehicle.
+*/
+public abstract class Vehicle
+{
+   private int xleft;
+   private int ytop;
+
+   /**
+      Construct a Vehicle object.
+   */
+   public Vehicle()
+   {
+      xleft = 0;
+      ytop = 0;
+   }
+
+   /**
+      Draw the specified vehicle.
+      @param g2 the graphics context
+   */
+   public abstract void draw(Graphics2D g2);
+
+   /**
+      Set the location of the vehicle.
+      @param x the x coordinate
+      @param y the y coordinate
+   */
+   public void setLocation(int x, int y)
+   {
+      xleft = x;
+      ytop = y;
+   }
+   
+   /**
+      Returns the x coordinate of the left-top corner of the vehicle
+      @return the x coordinate
+    */
+   public int getX()
+   {
+      return xleft;
+   }
+   
+   /**
+      Returns the y coordinate of the left-top corner of the vehicle
+      @return the y coordinate
+    */
+   public int getY()
+   {
+      return ytop;
+   }
+   
+   public abstract int getHeight();
+   public abstract int getWidth();
+}
+</pre>

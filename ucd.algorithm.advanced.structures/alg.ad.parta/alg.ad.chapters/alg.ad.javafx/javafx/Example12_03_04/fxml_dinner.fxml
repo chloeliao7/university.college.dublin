@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="root" alignment="CENTER" spacing="25" >
+  <Label text="Sushi tonight?" textFill="BLUE" />
+  <ImageView>
+     <Image url="@sushi.jpg" />
+  </ImageView>
+</VBox>

@@ -1,0 +1,26 @@
+<p>Here is a sample program output:</p>
+<p>@MY_IMAGE_IN_STATEMENT@</p>
+<p>Use the following class as your main class:</p>
+<pre>import javax.swing.JFrame;
+
+public class CarViewer
+{
+   public static void main(String[] args)
+   {
+      JFrame frame = new JFrame();
+
+      frame.setSize(300, 400);
+      frame.setTitle("Cars");
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+      CarComponent component = new CarComponent();
+      frame.add(component);
+
+      frame.setVisible(true);
+   }
+}
+</pre>
+<p>You need to supply the following classes in your solution:</p>
+<pre>Car
+CarComponent
+</pre>

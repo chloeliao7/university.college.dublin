@@ -1,0 +1,94 @@
+<p>Here is a sample program run:</p>
+<pre>Enter the initial velocity: <b>100
+</b>Simulation position: 95.14404999999988 Velocity: 90.18999999999977
+The exact formula position is: 95.09500000000007
+Simulation position: 180.47809999999953 Velocity: 80.37999999999954
+The exact formula position is: 180.3800000000001
+Simulation position: 256.002149999999 Velocity: 70.56999999999931
+The exact formula position is: 255.8549999999986
+Simulation position: 321.7161999999982 Velocity: 60.75999999999908
+The exact formula position is: 321.5199999999975
+Simulation position: 377.62024999999716 Velocity: 50.94999999999885
+The exact formula position is: 377.3749999999968
+Simulation position: 423.714299999996 Velocity: 41.13999999999862
+The exact formula position is: 423.4199999999966
+Simulation position: 459.9983499999944 Velocity: 31.329999999998417
+The exact formula position is: 459.6549999999967
+Simulation position: 486.4723999999931 Velocity: 21.519999999998543
+The exact formula position is: 486.07999999999726
+Simulation position: 503.13644999999144 Velocity: 11.70999999999859
+The exact formula position is: 502.69499999999823
+Simulation position: 509.99049999999016 Velocity: 1.8999999999985846
+The exact formula position is: 509.4999999999997
+Simulation position: 507.03454999998866 Velocity: -7.9100000000014035
+The exact formula position is: 506.49500000000137
+Simulation position: 494.2685999999873 Velocity: -17.720000000001424
+The exact formula position is: 493.6800000000037
+Simulation position: 471.692649999986 Velocity: -27.530000000001298
+The exact formula position is: 471.05500000000643
+Simulation position: 439.3066999999846 Velocity: -37.34000000000137
+The exact formula position is: 438.62000000000944
+Simulation position: 397.11074999998306 Velocity: -47.1500000000016
+The exact formula position is: 396.37500000001296
+Simulation position: 345.1047999999814 Velocity: -56.96000000000183
+The exact formula position is: 344.32000000001676
+Simulation position: 283.28884999997956 Velocity: -66.77000000000206
+The exact formula position is: 282.4550000000095
+Simulation position: 211.66289999997727 Velocity: -76.58000000000229
+The exact formula position is: 210.7799999999986
+Simulation position: 130.22694999997486 Velocity: -86.39000000000252
+The exact formula position is: 129.29499999998507
+Simulation position: 38.98099999997224 Velocity: -96.20000000000275
+The exact formula position is: 37.999999999968395
+</pre>
+<p>Your main class should be called <code>CannonballRunner</code>.</p>
+<p>Complete the following class in your solution:</p>
+<pre>/**
+   This class simulates a cannonball fired up in the air.
+*/
+public class Cannonball
+{
+   // private implementation
+   . . .
+
+   /**
+      Creates a Cannonball object at position 0.
+      @param ivel the inital velocity
+   */
+   public Cannonball(double ivel) { . . . }
+
+   /**
+      Updates the position and velocity of this cannon ball 
+      after a given time interval.
+      @param deltaT the time interval
+   */
+   public void move(double deltaT) { . . . }
+
+   /**
+      Gets the velocity of this cannon ball.
+      @return the velocity
+   */
+   public double getVelocity() { . . . }
+
+   /**
+      Gets the position of this cannon ball.
+      @return the (vertical) position
+   */
+   public double getPosition() { . . . }
+}
+</pre>
+<p>Use the following class as your tester class:</p>
+<pre>public class CannonballTester
+{
+   public static void main(String[] args)
+   {
+      Cannonball ball = new Cannonball(100); // 100 m/sec
+      ball.move(1); // move by one second
+
+      System.out.println(ball.getPosition());
+      System.out.println("Expected: 100");      
+      System.out.println(ball.getVelocity());
+      System.out.println("Expected: " + (100 - 9.81));
+   }
+}
+</pre>

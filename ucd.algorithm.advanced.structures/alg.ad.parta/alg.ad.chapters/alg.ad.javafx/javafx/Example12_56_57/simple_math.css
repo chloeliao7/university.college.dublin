@@ -1,0 +1,21 @@
+VBox
+{
+  -fx-background-color: skyblue;
+}
+
+Label
+{
+  -fx-background-color: deepskyblue;
+  -fx-text-fill: blue;
+}
+
+#result
+{
+  -fx-background-color: aqua;
+  -fx-font-weight: bold;   
+}
+
+Button:hover 
+{
+  -fx-background-color: #00FF00;
+}

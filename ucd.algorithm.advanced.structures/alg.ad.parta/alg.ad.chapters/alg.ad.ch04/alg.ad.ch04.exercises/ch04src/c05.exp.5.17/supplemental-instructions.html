@@ -1,0 +1,42 @@
+<p>Here is a sample program run:</p>
+<pre>Convert from:
+<b>in
+</b>Convert to: 
+<b>mm
+</b>Value:
+<b>10</b>10.0 in = 254.0 mm
+</pre>
+<p>Use the following class as your main class:</p>
+<pre>import java.util.Scanner;
+
+/**
+   This class converts between two units.
+*/
+public class ConversionCalculator
+{
+   public static void main(String[] args)
+   {
+      Scanner in = new Scanner(System.in);
+      
+      System.out.println("Convert from:");
+      String fromUnit = in.nextLine();
+
+      System.out.println("Convert to: ");
+      String toUnit = in.nextLine();
+      
+      UnitConverter from = new UnitConverter(fromUnit);
+      UnitConverter to = new UnitConverter(toUnit);
+
+      System.out.println("Value:");
+      double val = in.nextDouble();
+
+      double meters = from.toMeters(val);
+      double converted = to.fromMeters(meters);
+
+      System.out.println(val + " " + fromUnit + " = " + converted + " " + toUnit);
+   }
+}
+</pre>
+<p>You need to supply the following class in your solution:</p>
+<pre>UnitConverter
+</pre>

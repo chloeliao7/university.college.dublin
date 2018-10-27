@@ -1,0 +1,54 @@
+<p>Here is a sample program run:</p>
+<pre>Enter a number that you want a square root of: <b>4
+</b>1.0
+2.5
+2.05
+2.000609756097561
+2.0000000929222947
+2.000000000000002
+2.0
+</pre>
+<p>Use the following class as your main class:</p>
+<pre>import java.util.Scanner;
+
+/**
+   This program calculates a square root without calling Math.sqrt.
+*/
+public class RootCalculator
+{
+   public static void main(String[] args)
+   {
+      Scanner in = new Scanner(System.in);
+      System.out.print("Enter a number that you want a square root of: ");
+      double a = in.nextDouble();
+      final double EPSILON = 1E-12;
+      
+      RootApproximator r = new RootApproximator(a, EPSILON);
+
+      while (r.hasMoreGuesses())
+         System.out.println(r.nextGuess());      
+   }
+}
+</pre>
+<p>You need to supply the following class in your solution:</p>
+<pre>RootApproximator
+</pre>
+<p>Use the following class as your tester class:</p>
+<pre>public class RootApproximatorTester
+{
+   public static void main(String[] args)
+   {
+      double a = 100;
+      final double EPSILON = 1; 
+      RootApproximator approx = new RootApproximator(a, EPSILON);
+      System.out.println(approx.nextGuess());  
+      System.out.println("Expected: 1");
+      System.out.println(approx.nextGuess());  
+      System.out.println("Expected: 50.5");
+      while (approx.hasMoreGuesses())
+         approx.nextGuess(); 
+      System.out.println(Math.abs(approx.nextGuess() - 10) &lt; EPSILON);
+      System.out.println("Expected: true");
+   }
+}
+</pre>

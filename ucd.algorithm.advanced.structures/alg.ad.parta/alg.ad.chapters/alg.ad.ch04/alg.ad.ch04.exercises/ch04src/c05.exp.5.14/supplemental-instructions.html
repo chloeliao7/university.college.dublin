@@ -1,0 +1,75 @@
+<p>Use the following class as your main class:</p>
+<pre>import java.util.Scanner;
+
+/**
+   This program checks whether two floating-point numbers are almost the same.
+*/
+public class NumberChecker
+{
+   public static void main(String[] args)
+   {
+      Comparer c = new Comparer(2);
+      Scanner in = new Scanner(System.in);
+      
+      System.out.println("Enter two floating-point numbers:");
+      double x1 = in.nextDouble();
+      double x2 = in.nextDouble();
+
+      System.out.print("They are ");
+      if (c.roundToSame(x1, x2))
+         System.out.print("the same ");
+      else
+         System.out.print("different ");
+      System.out.println("when rounded to two decimal places.");
+      System.out.print("They differ by ");
+      if (c.areClose(x1, x2))
+         System.out.print("less than ");
+      else
+         System.out.print("at least ");
+      System.out.println("0.01.");
+   }
+}
+</pre>
+<p>Complete the following class in your solution:</p>
+<pre>/**
+   This class is used to test whether two floating-point numbers are the same.
+*/
+public class Comparer
+{
+   . . .
+
+   /**
+      Creates a Comparer object to determine if two floating-point numbers
+      are approximately the same.
+      @param d the number of significant digits in the comparison
+   */
+   public Comparer(int d)
+   {
+      . . .
+   }
+
+   /**
+      Tests whether two numbers are close to each other.
+      @param x1 the first number
+      @param x2 the second number
+      @return true if the two numbers differ by less than the number of
+      significant digits
+   */
+   public boolean areClose(double x1, double x2)
+   {
+      . . .
+   }
+   
+   /**
+      Tests whether two numbers round to the same value.
+      @param x1 the first number
+      @param x2 the second number
+      @return true if the two numbers, when rounded to the number of 
+      significant digits, yield the same value 
+   */
+   public boolean roundToSame(double x1, double x2)
+   {
+      . . .
+   }
+}
+</pre>

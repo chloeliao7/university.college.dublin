@@ -1,0 +1,84 @@
+>> introduction 
+
+ Marking Scheme
+ Assignments 50%
+ Final Examination 50%
+ Course Duration
+ 12 weeks of lecturing
+ 1 week revision time
+ Exam (mid December)
+
+Java Concepts
+ Introduction to Object and Classes
+ Fundamental Data types
+ Decisions
+ Iteration
+ Arrays and Array Lists
+ Designing classes
+ Inheritance
+ Input / Output and Exception Handling
+ Object Oriented Design
+ Recursion
+ Sorting and Searching
+
+// Applet: program that runs inside a web browser 
+
+-----------------------------------
+
+The ENIAC (electronic numerical integrator and computer)
+
+first usable electronic
+computer. 
+- used vacuum tubes
+- test the wind resistance to check on missiles 
+- 1950s
+
+important functions 
+
+1. import java.awt.Rectangle; 
+Which call to translate is needed to move the box rectangle so
+that its top-left corner is the origin (0, 0)?
+
+Answer: box.translate(-5, -10), provided the method
+is called immediately after storing the new rectangle into box. 
+
+hint: you need to import: java.lang.util; 
+import java.awt.Rectangle; 
+
+2. trim
+what would " Hello, Space ! "? if you call trim
+
+Answer: "Hello, Space !" – 
+
+3. import java.util.Random;
+
+4. After calling greeting2.toUpperCase(), what are the
+contents of greeting and greeting2?
+
+Answer: Both variables still refer to the same string, and the
+string has not been modified. Recall that the toUpperCase
+method constructs a new string that contains uppercase
+characters, leaving the original string unchanged.
+
+----------------------- set frame
+
+5. 
+How can a program display two frames at once?
+
+Answer: Construct two JFrame objects, set each of their
+sizes, and call setVisible(true) on each of them.
+
+6. 
+How do you display a square frame with a title bar that reads
+"Hello, World!”?
+
+Answer: Modify the EmptyFrameViewer program as
+follows:
+frame.setSize(300, 300);
+frame.setTitle("Hello, World!");
+
+7. What happens if you call g.draw(box) instead of
+g2.draw(box)?
+
+Answer: The compiler complains that g doesn’t have a draw
+method. 

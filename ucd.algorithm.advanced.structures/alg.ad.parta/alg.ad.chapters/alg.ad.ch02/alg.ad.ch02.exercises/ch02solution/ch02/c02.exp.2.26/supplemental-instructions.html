@@ -1,0 +1,52 @@
+<p>Here is a sample program output:</p>
+<p>@MY_IMAGE_IN_STATEMENT@</p>
+<p>Use the following class as your main class:</p>
+<pre>import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+public class HouseViewer
+{
+   public static void main(String[] args)
+   {
+      JFrame frame = new JFrame();
+
+      frame.setSize(300, 400);
+      frame.setTitle("Houses");
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+      HousesComponent component = new HousesComponent();
+      frame.add(component);
+
+      frame.setVisible(true);
+   }
+}
+</pre>
+<p>You need to supply the following class in your solution:</p>
+<pre>House
+</pre>
+<p>Use the following class in your solution:</p>
+<pre>import javax.swing.JComponent;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+
+/**
+   Draws a few houses of different sizes.
+ */
+public class HousesComponent extends JComponent
+{
+   public void paintComponent(Graphics g)
+   {
+      // Draws a house with given coordinates
+
+      Graphics2D g2 = (Graphics2D) g;
+
+      House house1 = new House(100, 150, 100, 120);
+      House house2 = new House(210, 200, 50, 70);
+      House house3 = new House(260, 260, 20, 25);
+
+      house1.draw(g2);
+      house2.draw(g2);
+      house3.draw(g2);
+   }
+}
+</pre>

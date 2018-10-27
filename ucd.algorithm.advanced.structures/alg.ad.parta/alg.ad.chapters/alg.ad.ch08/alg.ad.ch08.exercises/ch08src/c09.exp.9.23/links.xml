@@ -1,0 +1,6 @@
+<itemfeedback view="All" ident="label_link">
+  <uni:links>
+    <uni:link idref="sec9.6">sec9.6</uni:link>
+    <uni:link idref="sec9.7">sec9.7</uni:link>
+  </uni:links>
+</itemfeedback>
