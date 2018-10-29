@@ -1,0 +1,79 @@
+Gregoire Cousin 
+UX Design Essay
+
+You are tasked to write an individual 1500 word essay on one of the following topics:
+1) Critically discuss the benefits and drawbacks of the third wave approach to HCI
+2) Discuss and assess the evidence for users seeing computers as social actors
+
+Gregoire Cousin 
+UX Design Essay
+
+In many ways the most creative, challenging and under-appreciated aspect of interaction design is evaluating designs of people. The insights that you'll get from testing designs of people can help you get new ideas, make changes, decide wisely and fix bugs. One reason I think design is such an interesting field is its relationship to truth and objectivity that surrounds us. I find design fascinating because we can say more in response to a question. Like how we can measure success, it's just personal preference or whatever feels right. At the same time the answers are more complex and more open-ended, more subjective and require more wisdom than just a number like seven or two.
+
+It can be difficult to tell how good an interface is until you've tried it out with actual users and that's because clients, designers and developers may know too much about the domain and the user interface or have acquired blinders through designing and building the users interface. At the same time, they may not know enough about the user's actual tasks and while experience in theory can help, it can still be hard to predict how real users will act with your interface.
+
+The value of having a broad toolbox of different methods can be especially be valuable in emerging areas like mobile and social software where people's use practices can be particularly context dependent and also evolve significantly over time in response to how other people use software through network effects, etc.
+
+one way to learn about the user experience of a design is to bring people into one place or potentially your office and have them try out the interface. We often call this process usability studies. The process of watching someone use an interface is a common Practice in HCI. This basic strategy for traditional user centered design is to iteratively bring people into one place until you run out of time and then evaluate. If you have the expenses, you can have the public being in one side of a mirror and the development team on the other side in a leaner environment. You can also achieve the same type of outcome of information but with a different method called focus groups. in a focus group you'll gather together a small group of people to discuss a design or idea. 
+
+There are also approaches and methods that are not as beneficial to gathering information for HCI. For example, If you're running controlled experiments online you don't get to see much about the person that's on the other side of the screen. If you're inviting people into your lab or office the behavior you're measuring might also not be very realistic. If realistic longitudinal behavior is what you're after, participant observation may be the approach for you. 
+
+This approach is just what it sounds like, observing what people actually do in their actual work environment. Long-term evaluations can be important for uncovering things that you might not see in shorter term ones. Brainstorming serves a number of other functions: like for example, brainstorming provides a way for members of a design team to demonstrate their creativity to their peers. It allows them to pass along knowledge that can then be reused in other projects and it creates a fun exciting environment that people like to work in and that clients like to participate in. 
+
+There are also studies on web surfing behavior models that have allowed us to be more accurate on what a user might do before he does it. These models enabled researchers to estimate for example which links somebody is most likely to click on by looking at the relevant link text. 
+
+In a real ecosystem all of these things are important to consider in addition to just how many ideas two people come up with. Nearly all experiments seek to build a theory on some level. These are just a few methods and approaches of HCI to help us have more understanding of human behavior and its interaction with a machine.
+
+Potentials:
+simulations it's often in conjunction with something like Monte Carlo optimization
+
+References: 
+Schumann Zion colleagues
+Joel Brandt and his colleagues at Adobe
+
+--------------------------
+
+FIRST WAVE
+Waves of HCI
+–  Engineering & Human factors
+–  Ergonomics
+–  Atheoretical
+–  Interaction = man + machine
+–  Optimize interaction
+–  Pragmatic solutions to problems
+–  Objective measures
+
+WAVES OF HCI
+------------
+ Second Wave
+–  Mind as information processor
+–  Rational users
+–  Cognitive Science/Psychological view
+–  How does design support/affect user as processor
+–  Generalisable
+–  Objective
+–  Theory driven
+
+THIRD WAVE
+------------
+Waves of HCI
+–  Ubiquitous computing
+–  User Experience
+–  Learning or creativity
+–  Non task oriented computing
+–  Ethnographic, context specific, participant driven
+–  Social orientation
+–  Embodiment
+
+-------------------------------
+
+HCI Professional Roles 
+-	Interaction designer 
+-	HCI designer, 
+-	User interface designer
+-	Usability engineer, 
+-	Usability engineer 
+-	Usability consultant 
+-	User interface developer
+-	Information architect
+-	Yser interface researcher

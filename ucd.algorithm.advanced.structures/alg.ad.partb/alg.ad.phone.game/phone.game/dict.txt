@@ -1,0 +1,36 @@
+apple
+ball
+cat
+
+
+public List<String> sorter(List<String> words, int position) {
+
+  foreach (word: words){
+    key = word.splitAt(position)(1st part) // use substring function
+    value = word.splitAt(position)(2nd part)
+    (key -> value) // Map.Entry
+  } // {ag -> age, bi -> bid, bi -> big}
+  .groupBy(key) // { ag -> [age], bi -> [bid, big] }
+  .foreachValue( values, length(values) ) // { ag -> ([age], 1), bi -> ([bid, big], 2) }
+  sortBy(values.length) // {  bi -> ([bid, big], 2), ag -> ([age], 1) }
+  take just values // {([bid, big], 2) ,  ([age], 1) }
+  flatten the inner arrays // [bid, big, age]
+}
+
+
+instead of sorting by length --- sort by the amount of times it has been used = word use freequency.
+
+public List<String> sorter(List<String> words, int position) {
+  foreach (word: words) {
+    key = word.splitAt(position)
+    value = word.splitAt(position)(2nd part)
+    (key -> value)
+  }
+  .groupBy(key)
+  .foreachValue( values, length(values) )
+  sortBy(values.length)
+  // flatten the inner arrays
+}
+
+
+instead of sorting by length --- sort by
