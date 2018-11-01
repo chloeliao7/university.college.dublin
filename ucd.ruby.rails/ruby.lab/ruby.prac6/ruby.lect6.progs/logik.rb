@@ -29,7 +29,6 @@ def wh_charades(att1, att2, att3)
 	end
 end
 
-
 def unlesso(test)
 	unless test
 		puts "ok"
@@ -43,6 +42,7 @@ puts unlesso(false)
 foo = "anything"
 puts unlesso(foo)
 puts unlesso(!foo)
+
 # Unless test
 # yuk
 # nil
@@ -52,8 +52,6 @@ puts unlesso(!foo)
 # nil
 # ok
 # nil
-
-
 
 puts "Running charades..."
 p charades("green","tall","woody")
@@ -79,6 +77,7 @@ p charades("red","small","woody")
 # nil
 # Is it a plant?
 # nil
+
 puts "And Now the Wh version..."
 p wh_charades("green","tall","woody")
 p wh_charades("green","round","plastiky")
@@ -103,4 +102,3 @@ p wh_charades("red","small","woody")
 # nil
 # Is it a plant?
 # nil
-

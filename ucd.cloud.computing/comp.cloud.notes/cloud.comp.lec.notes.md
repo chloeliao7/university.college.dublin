@@ -642,3 +642,7 @@ examples of mapreduce
 - inverted index 
 
 MAP REDUCE!!! LOOK IT UP !
+
+
+
+ 

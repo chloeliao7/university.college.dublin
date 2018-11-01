@@ -47,6 +47,7 @@ p jonas
 p seagull2
 p kiwi
 
+
 #stage 1:
 #<Bird:0x007f98e4084178 @name="jonas", @wings=2, @legs=2, @beak="long", @flies=true, @feathers=true>
 #<Seagull:0x007f98e4084128 @namer="henry", @winger=2, @legser=2>

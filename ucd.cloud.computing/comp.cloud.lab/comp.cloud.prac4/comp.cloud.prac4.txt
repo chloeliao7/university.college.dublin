@@ -1,0 +1,92 @@
+Exercise 1
+Suppose that we have a large web corpus. Its metadata file has lines of the form 
+(URL, size, date, ...). For each host, find the total number of bytes, i.e. the 
+sum of the page sizes for all URLs from that host. 
+
+1. Define the input and the output of the Map and Reduce functions.
+input would be: 
+
+
+INPUTS
+Map inputs: 
+a. Hostnames
+b. URLs
+
+Reduce inputs: 
+host and size
+
+OUTPUT 
+mapper: 
+map of hostname and urls
+
+reducer: 
+you have host . size 
+
+---------------------------------------
+
+2. Write Map and Reduce functions. (pseudo-code)
+<!-- make sure to build : /usr/lib/hadoop-0.20/hadoop-core.jar -->
+you need a mapper and a reducer 
+
+class Map and reduce : 
+extends Mapper<URL, Size, Date>{
+key is URL  
+host = extract host url 
+emit host
+emit size 
+}
+
+ReduceForWordCount extends Reducer<host and size>
+{
+	for(value: URLS, Size, Date){
+		sum += value.getall(values)
+	}
+	sys.out (sum)
+}
+
+<!-- 
+URLs = all_url_Objs
+size = URLs.length
+hostnames = URLs -->
+<!-- String[] generate = line.split(URLs")  -->
+
+
+
+Assume that we have generated two matrices from the previous file; A (n x n) and 
+B (n x n). One wants to calculate another matrix M (n x n), which the product of 
+the first two. 
+
+3. Define the input and the output of the Map and Reduce functions.
+
+a. the input of the map = would need both A(), B(), and a key_value index for both a and b to map them
+- this is because we need the same index of the mapping to the matrix. they need the same value. 
+
+b. the output of the map = will give you the ---> sum = M(a.An * b.Bn)
+- where small a and b are the index. a two d array would be a perfect description of how to gather the key
+
+a. the input of the reducer = 
+b. the output of the reducer = defined by the sum of the two products
+
+4. Write Map and Reduce functions of the matrix-matrix multiplication.
+
+5. What if the matrices A and B do not fit in the mappers’ memory? (How
+would you implement your Map-Reduce program?)
+
+
+
+
+Exercise 2
+K-Means is a simple clustering algorithm that aims to partition a set of objects into k clusters in which each object belongs to the cluster with the nearest mean. K-Means algorithm has 4 steps: 
+
+• Step 1: Given k, partition objects into k nonempty subsets 
+
+• Step 2: Compute seed points as the centroids of the clusters of the current
+partition. The centroid is the centre (mean point) of the cluster 
+
+• Step 3: Assign each object to the cluster with the nearest seed point 
+
+• Step 4: Go back to Step 2 until no more new assignment Define the input
+
+and the output of the Map and Reduce functions of KH Mean algorithm 
+Submission Instructions
+All submissions must be done via Moodle. The submission deadline is Friday October 9th at 17:00. Your submission should consist of one file (MS Word or PDFs), which contains the answers to the above questions. The submitted file should be named following the format:

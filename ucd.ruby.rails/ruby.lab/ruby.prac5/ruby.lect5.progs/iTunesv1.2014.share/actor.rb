@@ -3,6 +3,7 @@
 # Copyright Mark Keane, All Rights Reserved, 2014
 
 # Class that encodes details of actors that own songs/albums.
+
 class Actor
 	attr_accessor :name, :id
 	def initialize(name)
@@ -11,12 +12,14 @@ class Actor
 	end
 
   # Method that prints out the contents of an actor object nicely.
+	
 	def to_s
 		puts "Actor #{@name} has ID: #{@id}.\n"
 	end	
 	
 	# Method that checks if an object given to it is an actor.
-		def isa?
+	
+	def isa?
 			instance_of?(Actor)
 		end
 		
@@ -44,6 +47,6 @@ class Actor
 		def what_songs_does_he_own()
 				$songs.select{|song| song.owners.include?(@name)}
 		end
-	
+		
 end
 

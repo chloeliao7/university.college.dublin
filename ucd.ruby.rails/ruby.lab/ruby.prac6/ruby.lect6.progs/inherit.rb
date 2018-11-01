@@ -68,6 +68,7 @@ p kiwi1
 p jonas.beak_size
 p seagull2.beak_size
 p kiwi1.beak_size
+
 # "long"
 # "squat"
 # "long_and_thin"
@@ -75,6 +76,7 @@ p kiwi1.beak_size
 p jonas.can_fly?
 p seagull2.can_fly?
 p kiwi1.can_fly?
+
 # true
 # true
 # false

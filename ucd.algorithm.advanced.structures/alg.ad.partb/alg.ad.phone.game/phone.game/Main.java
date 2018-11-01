@@ -2,7 +2,7 @@
  * This class implements the main method for the application. You should
  * run this class. You will need to modify this file to load the dictionary
  * as is instructed in question A4.
- * 
+ *
  * @author remcollier
  */
 public class Main {
@@ -14,11 +14,14 @@ public class Main {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 Dictionary dictionary = new Dictionary();
-                
+
                 // TODO: Uncomment the line below to load a dictionary
-                //       file at startup.
-                // dictionary.load("");
-                
+                // file at startup.
+
+
+                dictionary.load("/Users/gregcousin/Documents/igithub/university.college.dublin/ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.phone.game/phone.game/dict.txt"); // change this to yours
+                System.out.println(dictionary.toString()); // prints it out
+
                 new Keyboard(new TextSystem(dictionary)).setVisible(true);
             }
         });

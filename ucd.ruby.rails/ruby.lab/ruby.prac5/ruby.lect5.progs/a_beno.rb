@@ -1,6 +1,7 @@
 # A BENO
 # Copyright Mark Keane, All Rights Reserved, 2013
 
+
 class Beno
 	def hi
 			puts "hi beno"
@@ -17,14 +18,12 @@ p c
 
 contents_a =  ObjectSpace.each_object(Beno)   # {|d| "do nothing"}
 p contents_a
-
 contents_b =  ObjectSpace.each_object(Beno).to_a
 p contents_b
 
+
 #contents_c =  ObjectSpace.each_object(Object){|x| p x}
 #p contents_c
-
-
 # ruby1.9 beno.rb
 # #<Beno:0x113b7c>
 # #<Beno:0x113b68>
