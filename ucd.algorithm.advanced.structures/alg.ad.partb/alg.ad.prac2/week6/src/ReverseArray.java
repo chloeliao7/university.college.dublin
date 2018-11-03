@@ -1,8 +1,6 @@
 import java.util.Arrays;
 
-
 public class ReverseArray {
-
 
     /** A nonrecursive generic method for reversing an array */
     public static <E> void reverse(E[] a) {
@@ -12,7 +10,6 @@ public class ReverseArray {
       for (int i=0; i < a.length; i++)
         a[i] = S.pop();
     }
-
 
     /** Tester routine for reversing arrays */
     public static void main(String args[]) {
