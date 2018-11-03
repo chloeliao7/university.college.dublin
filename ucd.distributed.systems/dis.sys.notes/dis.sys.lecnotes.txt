@@ -16,7 +16,7 @@ group representation: 20%
 practical work: 20%
 group project: 40% 
 
-lab will start week 2 
+a lab will start week 2 
 
 ---------------------------------------------
 
@@ -24,7 +24,7 @@ lab will start week 2
 had-hoop,
 synapse,
 Cassandra,
-chuby,
+chubby,
 zookeeper,
 dynamo,
 scribe,
@@ -34,7 +34,7 @@ Voldemort,
 megastore,
 spanner,
 percolator,
-ambrey,
+Aubrey,
 espresso,
 draft,
 
@@ -61,7 +61,7 @@ Strict Consistency, Sequential Consistency, Eventual Consistency
 if you want to to do any of these you need: 
 - TIMESTAMPS: vibration of different speed
   > Berkeley and CristiansAlgorithms  
-	> 
+    > 
 - Universal Coordinated Time UTC
 
 - Network Time Protocol (NTP
@@ -96,8 +96,8 @@ ARP resolves IP addresses to Media Access Control (MAC) addresses.
 
  Process: a running instance of a computer program 
 
- Threads: can be executed in parallel 
-	- all threads share the same bit of memory 
+ Threads: can be executed in parallel. 
+    - all threads share the same bit of memory 
 
 -------------------------------------------------
 
@@ -106,34 +106,34 @@ ARP resolves IP addresses to Media Access Control (MAC) addresses.
 
 serialization 
 
-RMI - takes objects serializes them , sends them to the net and 
-	on the other side and converted it back to an object 
-	
-	objects contain - state 
+RMI - takes objects serializes them, sends them to the net and 
+    on the other side and converted it back to an object 
+    
+    objects contain - state 
 
 sending binary 
-		+ DataOutputStream os = new DataOutSteam(socket.getOutputStream()); 
-		+ os.writeInt(3); 
-		+ os.writeFloat; 
-		+ os.writeByte 
-		+ os.writeByte('/n|)
+        + DataOutputStream os = new DataOutSteam(socket.getOutputStream()); 
+        + os.writeInt(3); 
+        + os.writeFloat; 
+        + os.writeByte 
+        + os.writeByte('/n|)
 
 receiving 
-	dataInputStream is = new DataInputStream(socket.getInputStream()); 
-	int n = us.readInt(); 
-	Float f  = is.readFloat(); 
-	String str = is.readLine(); 
+    dataInputStream is = new DataInputStream(socket.getInputStream()); 
+    int n = us.readInt(); 
+    Float f  = is.readFloat(); 
+    String str = is.readLine(); 
 
 >> can use xlm like  json 
 
-# TCP vs UDp: 
+# TCP vs UDP: 
 # Transmission Control Protocol (TCP)
 #
 TCP is designed for reliable communication 
 - lost or damaged data 
-- if packets arrive our of order tcp puts them back together 
+- if packets arrive our of order TCP puts them back together 
 - can slow down the transmission 
-- cant be offline : computer will not pick up from remote 
+- cant be offline: computer will not pick up from remote 
 
 # UDP
 - not reliable 
@@ -142,14 +142,14 @@ TCP is designed for reliable communication
 
 # UDP Datagrams
 - doesn't go through any type of checking like TCP 
-- if you use FTP you wouldn't use UDP
+- if you use FTP, you won't use UDP
 - not working with packets 
 <!-- - based on lifecycles -->
 - ! REMEMBER !!!! great for streaming 
 
-# Multicast: udp and tcp 
+# Multicast: up and TCP 
 - point to point 
-- some servers need one to many communication
+- some servers need one too many communication
 - : radio and tv 
 
 - multicast fills the gap 
@@ -164,21 +164,21 @@ Multicast application = audio, video, multiplayer, distributed file system
 >> difference between multicast and UDP 
 - one multicast to group all represented by a single multicast address 
 - all addresses are IP address in the range of 224.0.0.0 to 239.255.255.255
-- multicast group is a channel and you share an ip address
+- multicast group is a channel, and you share an IP address
 
 TCP would be a bad choice 
 
 >> dynamic health 
-- ip addresses can be used to identify different nodes 
+- IP addresses can be used to identify different nodes 
 
 # DNS - Multicast based 
 // Look it up 
 
 # How TCP Works
 
-# A third way (udp, tcp, dns and multicast )
+# A third way (udp, TCP, DNS and multicast )
 - socket based implementations can be slow 
-- spends time to read - blocking 
+- spends the time to read - blocking 
 
 So... JAVA NIO _ New IO is an alternative IO API FOR JAVA 
 - decouples data processing from connection handling 
@@ -188,14 +188,14 @@ So... JAVA NIO _ New IO is an alternative IO API FOR JAVA
 based on Channels buffers and selectors 
 - data is read from a buffer into a channel 
 - data is written from a channel into a buffer 
-- selector monitors channels and handle events 
+- selector monitors channels and handles events 
 
-NIO JAVA : NON BLOCKING IO 
+NIO JAVA: NON-BLOCKING IO 
 - one thread per connection is rubbish ( waiting and receiving )
-- one thread with a selector - events is ready to be processed ( multiple )
+- one thread with a selector - events are ready to be processed ( multiple )
 - processes it and out of all channels are ready it chooses one 
 - data comes in - process and data comes out 
-- once pushed back to the channel process it and pushes back 
+- once pushed back to the channel process it and pushed back 
 
 JAVA NIO Channels : like streams : Java: 
 - FileChannel 
@@ -203,19 +203,19 @@ JAVA NIO Channels : like streams : Java:
 
 Java Buffers: 
 - write or read mode
-- bytes in form of an array = up or down 
+- bytes in the form of an array = up or down 
 
 buffer mode: read or write - 
-- program determines what mode the buffer is in 
+- the program determines what mode the buffer is in 
 
-5 steps 
+Five steps 
 - create buffer
-- write data to buffer
+- write data to a buffer
 - flip the buffer 
 - read the data from the buffer
 - clear /' compact the buffer 
 
-hints : can rewind marking, and resting
+hints: can rewind marking, and resting
 
 NIO Selector : 
 // do research on this 
@@ -228,32 +228,32 @@ whereas, in multicast, the packet is forwarded only to intended recipients.
 
 TCP: 20 Bytes header: file transfer, remote access 
 - Transmission Control Protocol
-- 3 way 
-- + sync, sync back , acknowledgement received
+- Three-way 
+- + sync, sync back, acknowledgment received
 
-UDP: 8 bytes header : connectionless, file streaming
-- connectionless, does not establish a session
+UDP: 8 bytes header: connectionless, file streaming
+- connection-less does not establish a session
 - fire and forget 
-- sends data an doest care
+- sends data a doest care
 - will try to cram 
-- faster than tcp
+- faster than TCP
 
 ------------------------------------------
 
 >> lecture 5 
 
  Introduction 
- - idea: distributed objects are an object oriented approach to implementing remote procedure cell 
+ - idea: distributed objects are an object-oriented approach to implementing remote procedure cell 
 
 Distributed object framework 
 - Cobra 
-- DCoM
+- DCOM
 - Java RMI
-- JinI
+- JINI
 
-Cobra : standard for enabling interaction between applications written in heterogenous languages 
+Cobra: standard for enabling interaction between applications written in heterogenous languages 
 
-- BASED on the definition of public interfaces written the iDL (interface definition language); 
+- BASED on the definition of public interfaces written the IDL (interface definition language); 
 ----- typedef, structs, interface and so on 
 
 # COBRA: Process: Cobra is a general-purpose, object-oriented programming language
@@ -265,7 +265,7 @@ client process
 - -> orb (object request broker) 
 - ->  request 
 
-			< - request and reply - >
+            < - request and reply - >
 
 server process 
 - orb (object request broker) 
@@ -275,14 +275,14 @@ server process
 IIOP = GIOP + TCP/IP 
 
 GIOP: GENERAL INTER OR B PROTOCOL - is an abstract protocol 
-	- defines byte based data transfer syntax called common data representation 
-	- supports 8 basic message types: 
-	---- request, reply, cancel request, local request and so on
+    - defines byte based data transfer syntax called common data representation 
+    - supports 8 basic message types: 
+    ---- request, reply, cancel request, local request and so on
 
 IIOP: requires exceptions to be added to firewalls (unlike SOAP)
 
 RMI: Remote method invocation(RMI)
-idea - a mechanism to allow java objects in different JVMs to communicate "Directly" with each other
+idea - a mechanism to allow Java objects in different JVMs to communicate "Directly" with each other
 
 - remote lives on a server and has a remote interface 
 - local object interacts with the remote object by invoking method on a local stub that deals with invoking the method on the remote object
@@ -293,12 +293,12 @@ idea - separate the implementation from the public interface
 - export the implementation as a remote object 
 - generates a skeleton to act as the remote object server 
 - + skeleton registers object 
-- uses a stub (proxy) and acts like a client 
+- uses a stub (proxy) and acts as a client 
 - + java.lang.reflect.Proxy 
 
-- global registry naming service is used to resolve objects identifiers to remote objects addresses (url)
+- global registry naming service is used to resolve objects identifiers to remote objects addresses (URL)
 
-LOOK CLOSELY : RMI JAVA ARCHITECTURE 
+LOOK CLOSELY: RMI JAVA ARCHITECTURE 
 
 SERVER: 
 1. Create Object 
@@ -311,7 +311,7 @@ RMI REGISTRY
 
 CLIENT:
 1. Proxy - object 
-2. invoke method and back to create object 
+2. invoke method and back to create object
 
 ------------------------------------
 
@@ -319,98 +319,97 @@ CLIENT:
 
 How do proxies work 
 
-proxie class: immmitate classes when there is no classes 
-- you can cast the proxie 
+proxy class: imitate classes when there are no classes 
+- you can cast the promise 
 
 RMI works because the stub and skeleton can be 
 
-JINI : DECENTRALIZED OO Distributed System in JAVA 
-- uses custom remote method invocation protocal 
-- HTTP server  supports on demand distribution of compiled code (class server )
-- packaged with services for locking distributed eents leasing transaxtions ect. 
-- includes a tuple space implementation called JAVASPACE
+JINI: DECENTRALIZED OO Distributed System in JAVA 
+- uses custom remote method invocation protocol 
+- HTTP server  supports the on-demand distribution of compiled code (class server )
+- packaged with services for locking distributed events leasing transactions etc. 
+- includes a tuple space implementation called JAVA-SPACE
 
 Style: 
-Processor - operating system - java 2 platform - jini - jini services 
+Processor - operating system - java 2 platform - JINI - JINI services 
 
 JINI FLOW : 
-1. discover - network service discoveres available service 
-2. join - network service send service proxie to LUS
-3. discover - Network clinwnt discoveres available to LUS
-4. look up - network client sends a request to lus 
-5. recieve - lus recieves service proxy to network client 
+1. discover - network service discoveries available service 
+2. join - network service send service proxy to LUS
+3. discover - Network client discovered available to LUS
+4. look up - network client sends a request to plus 
+5. receive - plus receives service proxy to network client 
 6. use - network uses it 
 
 Lookup service : unique identifiers, associate set of attributable, .....? 
 
 building the service : 
-- you write a class that impliments the service , net jini lookup serviceIDListeneer
-- impliments a constructor 
+- you write a class that implements the service, net JINI lookup serviceIDListener
+- implements a constructor 
 
 ------------------------------------
 
 What is a service : 
->> a service us a reusable commponent that can be used as a building block to form larger more complex buisness application functionality. 
->> object a can talk to b --- without the users intervention can now talk to C 
+>> a service us a reusable component that can be used as a building block to form larger more complex business application functionality. 
+>> object a can talk to b --- without the user's intervention can now talk to C 
 
-stateless means that its a new request in the system. 
+stateless means that it's a new request in the system. 
 
-Service composition : key feature of SOA is the ability to build composite services from existing services 
-ex: buscatcher: how much it will cost and where they are : fare, time, bus, and map 
+Service composition: the key feature of SOA is the ability to build composite services from existing services 
+ex: bus-catcher: how much it will cost and where they are: fare, time, bus, and map 
 
-HEIARCHI.... lower and lower services: 
+HEARTY.... lower and lower services: 
 SERVICE ORCHESTRATION - one service to rule them all 
-SERVICE CHROREOGRAPHY - no central controler but services need to know when to interact with other services 
+SERVICE CHOREOGRAPHY - no central controller but services need to know when to interact with other services 
 
-What is web Services: 
+What is Web Services: 
 service 
-- communicates protocols: xml - describes its message usinh xml schema 
+- communicates protocols: XML - describes its message using XML schema 
 - SOAP - simple object access protocol 
 - provide endpoint description language 
-- can be discovered using UDDI - universal description discovery and integration specification - user friendly
+- can be discovered using UDDI - universal description discovery and integration specification - user-friendly
 
 steps web service 
 - look for a service searching in UDDI directory
 ....
 
-3 things about soap 
+Three things about soap 
 
-A Soap message is a xml document containing the fallowing statements
+A Soap message is an XML document containing the following statements
 
 ------------------------------------
 
-learn JUddy
+learn JUDDY
 >> lecture 8 
 
 JAX WS IS A FULLY
 - we will reuse quotation examples from before 
-- simalar to RMI to define a webstervice 
-- anotation needed: @webservice , @ webmethod
+- similar to RMI to define a web service 
+- annotation needed: @Web-service , @ web method
 
-anotate the class using webservice and 
+annotate the class using Web-service and 
 - @soapBinding(style = style.RPC, use=Use.LITERAL)
 
-publish enpoint 
-- Enpoint.pushlish('http/localhost/stockservice', new StockImpl)
-<!-- http/localhost/stockservice/GetStockQuote?WSDL -->
+publish endpoint 
+- Endpoint.publish('http/localhost/stock-service', new Stock-Impl)
+<!-- http/localhost/stock-service/GetStockQuote?WSDL -->
 
-URL wsdlURL = new URL('http... local host'); 
-qNam qname = new qname('http quote', 'stock implservice')
+URL wsd-lURL = new URL('http... local host'); 
+qNam qname = new qname('http quote', 'stock implementation-service')
 
 ///// name in () needs to match the interface name ; 
 
-REST crud = database : Create, read, update and delete 
-put : create and update 
+REST crud = database: Create, read, update and delete put: create and update 
 
 get -> 
 URL: https://stock.org/stock/<stock-code> 
 
-REST RESPONCE CODE
-200 = get/post ok entity works in body 
-201 - post . put crrated link in location header 
-204 - delete : no connetent 
-401 - not authoried 
-403 - forbiffen 
+REST Response CODE
+200 = get/post ok entity works in the body 
+201 - post. put a crafted link in the location header 
+204 - delete: no content 
+401 - not authorized 
+403 - forbidden 
 404 - resource not found 
 
 Finally: HATEOAS : 
@@ -425,16 +424,31 @@ Browser, application - four services:
 
 >> Lecture 9 = REST
 
-RULE : When send JSON it must be part of the body of the HTTP request; HTTP:/a;ksdjlkajs?>/JSON-VALUE/aksdjkj/CALCULATION{ID}
+RULE: When sending JSON it must be part of the body of the HTTP request; HTTP:/HHHHH?>/JSON-VALUE/HHHHH/CALCULATION{ID}
 
 - STATE PROBLEMS WITH JSON = cant update URL !!!! 
 - SOLUTION : DATA IS STATIC, 
 
 FORMS ONT FORMULATE JSON 
 
-
-
 SPRING: code that you want to use in your service... (static method in a class)
 - pull them on demand when you want to use them per object 
 - SAME PRINCIPLE but for SERVICES 
 - injection framework 
+
+MOM - MESSAGE ORIENTED MIDDLEWARE: async = true scalable systems  
+- point to point model: based on fifo, multiple senders can post to queue 
+- client => msg => SENDS TO QUEUE <= consumes / agnoledge message <= client 2
+
+PUBLISH SUBSCRIBE: async = true scalable systems  
+    - topical message queue 
+    - fully decouples sender (publisher) and receiver (subscriber)
+    - delivered to all active subscriber 
+    Client => topic <= (subscribe and delivers) client 1 & 2 
+
+    Client => request => Broker => <= clients, clients clients 
+
+
+    JMS API Programming Model 
+    - connection factory => connection => session => 
+    - Pub/Sub = JVM messages 

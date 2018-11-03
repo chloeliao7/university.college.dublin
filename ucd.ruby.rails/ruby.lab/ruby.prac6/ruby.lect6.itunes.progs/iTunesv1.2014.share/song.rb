@@ -1,5 +1,10 @@
+#!/usr/bin/ruby -w
+require_relative 'data'
+require_relative 'pred'
+
 
 class Song
+  include Pred # module 
   attr_accessor :name, :album, :artist, :time, :owners, :id
   def initialize(name, album, artist, time, owners, id)
     @name = name
@@ -14,13 +19,16 @@ class Song
     puts "<< #{@name} >> by #{@artist} in their album #{@album} is owed by #{@owners} .\n"
   end
 
-  def isa?
-    instance_of?(Song)
-  end
+
+  # because its in module
+  # def isa?
+  #   instance_of?(Song)
+  # end
 
   def play_song
-    no = rand(10)``
+    no = rand(10)
     no.times { print "#{@name} do be do..." }
     puts "\n"
   end
+
 end

@@ -1,7 +1,8 @@
+require_relative 'data'
 
 module Util
-  def self.fetch(string_item, _out = [])
-    all = $songs + $actors #+ $albums
+  def self.fetch(data, string_item, _out = [])
+    all = data.songs + data.actors + data.albums
     found = all.select { |obj| string_item == obj.name }
     if found.empty?
       then MyErr.new('not_found_error', string_item, 'fetch').do_it

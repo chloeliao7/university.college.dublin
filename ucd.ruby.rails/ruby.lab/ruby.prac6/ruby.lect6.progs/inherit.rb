@@ -1,42 +1,40 @@
 #!/usr/bin/ruby -w
 # INHERIT
 # Copyright Mark Keane, All Rights Reserved, 2010
+class Organism
+	attr_accessor :name, :wings, :legs, :beak, :plead_human, :feathers
+	def initialize(name, wings,legs,beak)	
+	end
+end
 
-class Bird
-	attr_accessor :name, :wings, :legs, :beak, :flies, :feathers
+
+class Animal
+	attr_accessor :name, :wings, :legs, :beak, :human, :feathers
 	def initialize(name, wings,legs,beak)	
 		@name = name
 		@wings = wings
 		@legs = legs
 		@beak = beak
-		@flies = true
+		@human = true
 		@feathers = true
 	end
 	
-	def beak_size
-		@beak
-	end
-	
-	def can_fly?
-		if @feathers && @flies then true
-    elsif !@flies then false
+	def ishuman?
+		if @arms && @legs then true
+    elsif !@plead_human then false
 		end
 	end
+
 end
 
 class Seagull < Bird
 	def eats_garbage?
 		instance_of?(Seagull)
 	end
-	
-	def  beak_size
-		@beak + @beak
-	end
-
 end
 
 class Kiwi < Bird
-	attr_accessor  :cute
+	attr_accessor :cute
 	def initialize(name, wings,legs,beak)	
 		@name = name
 		@wings = false

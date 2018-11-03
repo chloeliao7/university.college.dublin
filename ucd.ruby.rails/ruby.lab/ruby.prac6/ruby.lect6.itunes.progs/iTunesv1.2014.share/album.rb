@@ -1,5 +1,10 @@
 #!/usr/bin/ruby -w
+require_relative 'data'
+require_relative 'pred'
+
+
 class Album
+  include Pred # module 
   attr_accessor :name, :tracks, :length, :artist, :owners, :id
   def initialize(name, tracks, length, artist, owners)
     @name = name
@@ -14,20 +19,21 @@ class Album
     puts "The album #{@name} by #{@artist}. \n"
   end
 
-  def isa?
-    instance_of?(Album)
-  end
+  # can delete because the pred has an ISA??? 
+  # def isa? 
+  #   instance_of?(Album)
+  # end
 
   def self.make_album(name, tracks, length, artist, owners)
     Album.new(name, tracks, length, artist, owners)
   end
 
-  def self.build_all(albums = [])
-    $songs.map { |song| build_an_album_called(song.album) } 
+  def self.build_all(data, albums = [])
+    data.songs.map { |song| build_an_album_called(data, song.album) } 
   end
   
-  def self.build_an_album_called(album_name)
-    tracks = $songs.select { |s| s.album == album_name }
+  def self.build_an_album_called(data, album_name)
+    tracks = data.songs.select { |s| s.album == album_name }
     Album.new(album_name, tracks, tracks.map(&:time), tracks.map(&:artist).uniq, tracks.map(&:owners).uniq)
   end
 end

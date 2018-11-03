@@ -23,13 +23,14 @@ class Seagull < Bird
   end
 end
 
+# does nothing 
 class Kiwi < Bird
 	:nothing
 end
 
 jonas = Bird.new("jonas", 2, 2, "long")
 seagull2 = Seagull.new("henry", 2, 2)
-kiwi = Kiwi.new("K", 3, 3, "very long")
+kiwi = Kiwi.new("K", 3, 3, "very long") # passes in off to bird so no need
 
 puts "stage 1:"
 p jonas
@@ -46,7 +47,6 @@ seagull2.flies = true
 p jonas
 p seagull2
 p kiwi
-
 
 #stage 1:
 #<Bird:0x007f98e4084178 @name="jonas", @wings=2, @legs=2, @beak="long", @flies=true, @feathers=true>
