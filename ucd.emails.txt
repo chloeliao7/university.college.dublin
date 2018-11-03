@@ -12,8 +12,7 @@ teachers:
 	ux: benjamin.cowan@ucd.ie 
 	ruby: mark.keane@ucd.ie
 
-
-	tutors: 
+tutors: 
 	Hi, My name is Gaurav Singhal
 	- https://github.com/krazygaurav
 	- http://krazygaurav.com/
