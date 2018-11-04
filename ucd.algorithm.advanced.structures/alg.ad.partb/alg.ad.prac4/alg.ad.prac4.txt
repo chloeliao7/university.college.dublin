@@ -12,7 +12,7 @@ enqueue('Scotland'), dequeue(), enqueue('France'), enqueue('Germany')
 
 | state of stack (input) | command             | num of elements | output                 |
 | ---------------------- | ------------------- | --------------- | ---------------------- |
-| [null]                 | enqueue('Ireland'), | 1               | '‘Ireland']            |
+| [null]{size of array}  | enqueue('Ireland'), | 1               | '‘Ireland']            |
 | ---------------------  | ------------------  | --------------  | ---------------------- |
 | ['Ireland']            | dequeue()           | 0               | [null]                 |
 | ---------------------  | ------------------  | --------------  | ---------------------- |

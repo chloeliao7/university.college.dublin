@@ -2,7 +2,6 @@ import java.util.*;
 import java.util.Scanner;
 
 public class A7 {
-
   public static void main(String args[]) {
     int minValueIndex = 0;
     
@@ -23,7 +22,6 @@ public class A7 {
     for (j = 0; j <= n -1; j++) { 
       // OPERATIONS: 2(n), j <= n -1 
       // OPERATIONS: 2(n -1)  j++
-      
       runningSum = runningSum + A[j]; // OPERATION : 3(n - 1) // ASSIGN J to A[] + adding both + assign it to runningSum
       A[j] = runningSum / (j + 1); // OPERATION : 4(n - 1) // (j + 1) + runningSum / (j + 1) + A[j] = runningSum / (j + 1) + A[j] <-- j
  

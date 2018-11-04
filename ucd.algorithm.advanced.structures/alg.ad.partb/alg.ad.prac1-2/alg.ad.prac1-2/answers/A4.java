@@ -14,7 +14,7 @@ public class A4 {
     testdurration(80000000);
     testdurration(90000000);
     testdurration(100000000);
-	}
+  }
 
   public static int Difference(int a, int b) {
 	if (a > b){ // Compare operation 1

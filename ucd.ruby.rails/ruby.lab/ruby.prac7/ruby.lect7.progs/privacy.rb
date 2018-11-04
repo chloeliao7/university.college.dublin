@@ -20,7 +20,7 @@ class Testo
 	end
 	
 	public :santa, :wicked_elf, :snooty
-	protected #  :wicked_elf
+	protected # :wicked_elf
 	private # :snooty
 end
 

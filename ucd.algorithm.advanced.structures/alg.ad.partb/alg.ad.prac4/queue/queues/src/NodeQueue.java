@@ -51,8 +51,7 @@ public class NodeQueue<E> implements Queue<E> {
     while (temp != null) {
       s += temp.getElement() + "\n";
       temp = temp.getNext();
-		}
+    }
     return s;
   }
-  
 }

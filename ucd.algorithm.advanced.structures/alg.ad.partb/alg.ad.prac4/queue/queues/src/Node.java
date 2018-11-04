@@ -6,6 +6,7 @@ public class Node<E> {
 
   /** Creates a node with null references to its element and next node. */
   public Node() { this(null, null); }
+  
 
   /** Creates a node with the given element and next node. */
   public Node(E e, Node<E> n) {
@@ -20,3 +21,4 @@ public class Node<E> {
   public void setElement(E newElem) { element = newElem; }
   public void setNext(Node<E> newNext) { next = newNext; }
 }
+
