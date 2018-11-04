@@ -7,8 +7,6 @@ public class NodeQueue<E> implements Queue<E> {
 	 * default constructor
 	 */
 
-
-	
   public NodeQueue() {
     head = null;
     tail = null;
@@ -55,6 +53,6 @@ public class NodeQueue<E> implements Queue<E> {
       temp = temp.getNext();
 		}
     return s;
-	}
-	
+  }
+  
 }

@@ -1,0 +1,4 @@
+
+class BoundaryViolationException extends Exception {
+
+}
