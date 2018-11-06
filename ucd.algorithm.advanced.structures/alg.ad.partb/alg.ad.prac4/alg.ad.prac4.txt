@@ -3,7 +3,7 @@
 
 3A. Show how the state of both an array-based and a link-based Queue changes 
 after each of the following operations: enqueue('Ireland'), 
-dequeue(),enqueue('England'), dequeue(),enqueue('Wales'), dequeue(), 
+dequeue(), enqueue('England'), dequeue(), enqueue('Wales'), dequeue(), 
 enqueue('Scotland'), dequeue(), enqueue('France'), enqueue('Germany') 
 
 
@@ -12,7 +12,7 @@ enqueue('Scotland'), dequeue(), enqueue('France'), enqueue('Germany')
 
 | state of stack (input) | command             | num of elements | output                 |
 | ---------------------- | ------------------- | --------------- | ---------------------- |
-| [null]{size of array}  | enqueue('Ireland'), | 1               | '‘Ireland']            |
+| [null] {size_of_array} | enqueue('Ireland'), | 1               | ['Ireland']            |
 | ---------------------  | ------------------  | --------------  | ---------------------- |
 | ['Ireland']            | dequeue()           | 0               | [null]                 |
 | ---------------------  | ------------------  | --------------  | ---------------------- |
@@ -66,12 +66,17 @@ enqueue('Scotland'), dequeue(), enqueue('France'), enqueue('Germany')
 insertFirst(o) pseudo code is given below as an example of a similar 
 operation
 
+
+
+
 NOTE: once you have written a first version of your pseudo code, test it using 
 two dry runs: 
 
 	(1) inserting into an empty Deque,
-
+	
 	(2) inserting into a non-empty Deque. 
+	
+	
 
 5A. Write out the pseudo code for the removeLast() and removeFirst() operations 
 of the Deque ADT. As with question 4, for each removal operation consider 2 
@@ -97,7 +102,6 @@ list the countries that were removed from the Deque and the countries held in th
 array-based Queue implementation strategy. As with the Stack implementations 
 (Assignment 4), remember to implement a toString() method to help you debug / 
 visualize the operation of the class. 
-
 
 
 3B. LinkedDeque: Create a new Java class called LinkedDeque that realizes the 

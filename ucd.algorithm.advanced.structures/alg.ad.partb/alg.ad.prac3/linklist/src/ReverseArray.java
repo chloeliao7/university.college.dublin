@@ -20,6 +20,7 @@ public class ReverseArray {
       System.out.println("Reversing...");
       reverse(a);
       reverse(s);
+      
       System.out.println("a = " + Arrays.toString(a));
       System.out.println("s = " + Arrays.toString(s));
     }
