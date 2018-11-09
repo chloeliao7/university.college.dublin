@@ -9,6 +9,7 @@ package dsai.core;
  *
  * @author remcollier
  */
+
 public interface Position<T> {
     public T element();
 }

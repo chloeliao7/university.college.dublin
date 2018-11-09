@@ -10,6 +10,7 @@ public class Main {
     /**
      * @param args the command line arguments
      */
+
     public static void main(String[] args) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -17,7 +18,6 @@ public class Main {
 
                 // TODO: Uncomment the line below to load a dictionary
                 // file at startup.
-
 
                 dictionary.load("./dict.txt"); // change this to yours
                 System.out.println(dictionary.toString()); // prints it out

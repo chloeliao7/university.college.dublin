@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23647bbf-7f8c-4913-b77f-34a534abc122" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/phone.game/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/phone.game/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/phone.game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/phone.game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/phone.game/dict.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/phone.game/dict.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../alg.ad.prac3/alg.ad.prac3/2A-3A-tables.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../alg.ad.prac3/alg.ad.prac3/2A-3A-tables.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../alg.ad.prac4/alg.ad.prac4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../alg.ad.prac4/alg.ad.prac4/alg.ad.prac4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../alg.ad.prac4/alg.ad.prac4/alg.ad.prac4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../ucd.cloud.computing/comp.cloud.todolist/todolist/assets/js/todos.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ucd.cloud.computing/comp.cloud.todolist/todolist/assets/js/todos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../ucd.cloud.computing/comp.cloud.todolist/todolist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ucd.cloud.computing/comp.cloud.todolist/todolist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../ucd.emails.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ucd.emails.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dict.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dict.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsai/core/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsai/core/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac1/comp.cloud.prac1a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac1/comp.cloud.prac1a.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,135 +19,100 @@
     <session id="1380048000">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.13" value="3" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.13" value="4" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
-          <entry key="java" value="31" />
+          <entry key="java" value="37" />
           <entry key="txt" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="31" />
+          <entry key="JAVA" value="37" />
           <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2823" />
-          <entry key="txt" value="45" />
+          <entry key="java" value="2830" />
+          <entry key="txt" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2823" />
-          <entry key="PLAIN_TEXT" value="45" />
+          <entry key="JAVA" value="2830" />
+          <entry key="PLAIN_TEXT" value="65" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dsai/core/BoundaryViolationException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="docComment;class#BoundaryViolationException#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dsai/core/PriorityQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Keyboard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dictionary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+            <state relative-caret-position="660">
+              <caret line="297" column="57" lean-forward="true" selection-start-line="297" selection-start-column="57" selection-end-line="297" selection-end-column="57" />
               <folding>
                 <element signature="docComment;class#Keystroke#0;class#Dictionary#0" expanded="true" />
                 <element signature="docComment;method#Keystroke#0;class#Keystroke#0;class#Dictionary#0" expanded="true" />
                 <element signature="docComment;method#addWord#0;class#Keystroke#0;class#Dictionary#0" expanded="true" />
                 <element signature="docComment;method#getWords#0;class#Keystroke#0;class#Dictionary#0" expanded="true" />
                 <element signature="docComment;method#toString#0;class#Keystroke#0;class#Dictionary#0" expanded="true" />
-                <element signature="method#toString#0;class#Keystroke#0;class#Dictionary#0" />
                 <element signature="docComment;field#characterMap#0;class#Dictionary#0" expanded="true" />
                 <element signature="docComment;field#tree#0;class#Dictionary#0" expanded="true" />
                 <element signature="docComment;method#Dictionary#0;class#Dictionary#0" expanded="true" />
                 <element signature="docComment;method#load#0;class#Dictionary#0" expanded="true" />
                 <element signature="docComment;method#insert#0;class#Dictionary#0" expanded="true" />
+                <element signature="e#9543#9579#0" expanded="true" />
                 <element signature="docComment;method#toString#0;class#Dictionary#0" expanded="true" />
                 <element signature="docComment;method#findWords#0;class#Dictionary#0" expanded="true" />
+                <marker date="1540999708461" expanded="true" signature="3691:5368" ph="{...}" />
+                <marker date="1540999708461" expanded="true" signature="3836:4524" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dsai/core/List.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dsai/core/Position.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            <state relative-caret-position="140">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
               <folding>
-                <element signature="e#510#564#0" expanded="true" />
+                <element signature="docComment;method#main#0;class#Main#0" expanded="true" />
+                <element signature="e#511#565#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dict.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dsai/core/Deque.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dsai/core/Comparator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -169,6 +126,7 @@
       <find>for</find>
       <find>getWords</find>
       <find>main</find>
+      <find>.next</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -179,10 +137,11 @@
       <list>
         <option value="$PROJECT_DIR$/dsaii/core/AbstractTree.java" />
         <option value="$PROJECT_DIR$/dsaii/core/Map.java" />
-        <option value="$PROJECT_DIR$/Dictionary.java" />
         <option value="$PROJECT_DIR$/dsaii/core/Tree.java" />
         <option value="$PROJECT_DIR$/Main.java" />
         <option value="$PROJECT_DIR$/dict.txt" />
+        <option value="$PROJECT_DIR$/dsai/core/Position.java" />
+        <option value="$PROJECT_DIR$/Dictionary.java" />
       </list>
     </option>
   </component>
@@ -193,7 +152,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="960" />
+    <option name="width" value="1920" />
     <option name="height" value="1200" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -202,8 +161,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Course" />
       <pane id="PackagesPane" />
+      <pane id="Course" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,23 +171,33 @@
               <item name="phone.game" type="b2602c69:ProjectViewProjectNode" />
               <item name="phone.game" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="phone.game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phone.game" type="462c0819:PsiDirectoryNode" />
+              <item name="dsai" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phone.game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phone.game" type="462c0819:PsiDirectoryNode" />
+              <item name="dsai" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541754601005" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541775546580" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Rainbow Brackets" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -306,8 +276,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.094791666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.094791666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="DB Browser" order="3" />
@@ -357,20 +328,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dsai/core/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsai/core/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dsai/impl/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -442,20 +399,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dsai/core/BoundaryViolationException.java">
+    <entry file="file://$PROJECT_DIR$/dsai/impl/SortedListPriorityQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="docComment;class#BoundaryViolationException#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsai/core/PriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="547">
+          <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -466,32 +413,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dictionary.java">
+    <entry file="file://$PROJECT_DIR$/dsai/core/PriorityQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
-          <folding>
-            <element signature="docComment;class#Keystroke#0;class#Dictionary#0" expanded="true" />
-            <element signature="docComment;method#Keystroke#0;class#Keystroke#0;class#Dictionary#0" expanded="true" />
-            <element signature="docComment;method#addWord#0;class#Keystroke#0;class#Dictionary#0" expanded="true" />
-            <element signature="docComment;method#getWords#0;class#Keystroke#0;class#Dictionary#0" expanded="true" />
-            <element signature="docComment;method#toString#0;class#Keystroke#0;class#Dictionary#0" expanded="true" />
-            <element signature="method#toString#0;class#Keystroke#0;class#Dictionary#0" />
-            <element signature="docComment;field#characterMap#0;class#Dictionary#0" expanded="true" />
-            <element signature="docComment;field#tree#0;class#Dictionary#0" expanded="true" />
-            <element signature="docComment;method#Dictionary#0;class#Dictionary#0" expanded="true" />
-            <element signature="docComment;method#load#0;class#Dictionary#0" expanded="true" />
-            <element signature="docComment;method#insert#0;class#Dictionary#0" expanded="true" />
-            <element signature="docComment;method#toString#0;class#Dictionary#0" expanded="true" />
-            <element signature="docComment;method#findWords#0;class#Dictionary#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="260">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsai/core/BoundaryViolationException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dict.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="60">
+          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -509,12 +448,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Dictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="297" column="57" lean-forward="true" selection-start-line="297" selection-start-column="57" selection-end-line="297" selection-end-column="57" />
+          <folding>
+            <element signature="docComment;class#Keystroke#0;class#Dictionary#0" expanded="true" />
+            <element signature="docComment;method#Keystroke#0;class#Keystroke#0;class#Dictionary#0" expanded="true" />
+            <element signature="docComment;method#addWord#0;class#Keystroke#0;class#Dictionary#0" expanded="true" />
+            <element signature="docComment;method#getWords#0;class#Keystroke#0;class#Dictionary#0" expanded="true" />
+            <element signature="docComment;method#toString#0;class#Keystroke#0;class#Dictionary#0" expanded="true" />
+            <element signature="docComment;field#characterMap#0;class#Dictionary#0" expanded="true" />
+            <element signature="docComment;field#tree#0;class#Dictionary#0" expanded="true" />
+            <element signature="docComment;method#Dictionary#0;class#Dictionary#0" expanded="true" />
+            <element signature="docComment;method#load#0;class#Dictionary#0" expanded="true" />
+            <element signature="docComment;method#insert#0;class#Dictionary#0" expanded="true" />
+            <element signature="e#9543#9579#0" expanded="true" />
+            <element signature="docComment;method#toString#0;class#Dictionary#0" expanded="true" />
+            <element signature="docComment;method#findWords#0;class#Dictionary#0" expanded="true" />
+            <marker date="1540999708461" expanded="true" signature="3691:5368" ph="{...}" />
+            <marker date="1540999708461" expanded="true" signature="3836:4524" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsai/core/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsai/core/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        <state relative-caret-position="140">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
           <folding>
-            <element signature="e#510#564#0" expanded="true" />
+            <element signature="docComment;method#main#0;class#Main#0" expanded="true" />
+            <element signature="e#511#565#0" expanded="true" />
           </folding>
         </state>
       </provider>
