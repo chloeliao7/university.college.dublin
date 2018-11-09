@@ -19,7 +19,7 @@ public class Main {
                 // file at startup.
 
 
-                dictionary.load("/Users/gregcousin/Documents/igithub/university.college.dublin/ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.phone.game/phone.game/dict.txt"); // change this to yours
+                dictionary.load("./dict.txt"); // change this to yours
                 System.out.println(dictionary.toString()); // prints it out
 
                 new Keyboard(new TextSystem(dictionary)).setVisible(true);

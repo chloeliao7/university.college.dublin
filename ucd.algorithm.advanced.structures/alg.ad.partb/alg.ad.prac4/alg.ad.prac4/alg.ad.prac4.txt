@@ -33,27 +33,27 @@ enqueue('Scotland'), dequeue(), enqueue('France'), enqueue('Germany')
           
 --- Linked List Based  // NO UNUSED MEMORY => extra memory for pointer
 
-| state of stack (input) | command             | Rear      | Front        | top(REMOVE) | size         | output       |
-| ---------------------- | ------------------- | --------- | ------------ | ----------- | ------------ | ------------ |
-| [null]                 | enqueue('Ireland')  | Ireland   | Ireland      | Ireland     | 1            |              |
-| ---------------        | ---                 | --------- | ------------ | ---------   | ------------ | ---------    |
-| ['Ireland']            | dequeue()           | null      | null         |             | 0            | ['Ireland']  |
-| ---------------        | ---                 | --------- | ------------ | ---------   | ------------ | ---------    |
-| [null]                 | enqueue('England')  | England   | England      |             | 1            |              |
-| ---------------        | ---                 | --------- | ------------ | ---------   | ------------ | ---------    |
-| ['England']            | dequeue()           | null      | null         |             | 0            | ['England']  |
-| ---------------        | ---                 | --------- | ------------ | ---------   | ------------ | ---------    |
-| [null]                 | enqueue('Wales')    | Wales     | Wales        |             | 1            |              |
-| ---------------        | ---                 | --------- | ------------ | ---------   | ------------ | ---------    |
-| ['Wales']              | dequeue()           | null      | null         |             | 0            | ['Wales']    |
-| ---------------        | ---                 | --------- | ------------ | ---------   | ------------ | ---------    |
-| [null]                 | enqueue('Scotland') | Scotland  | Scotland     |             | 1            |              |
-| ---------------        | ---                 | --------- | ------------ | ---------   | ------------ | ---------    |
-| ['Scotland']           | dequeue()           | null      | null         |             | 0            | ['Scotland'] |
-| ---------------        | ---                 | --------- | ------------ | ---------   | ------------ | ---------    |
-| [null]                 | enqueue('France')   | France    | France       |             | 1            |              |
-| ---------------        | ---                 | --------- | ------------ | ---------   | ------------ | ---------    |
-| ['France']             | enqueue('Germany')  | Germany   | France       |             | 2            |              |
+| state of stack (input) | command             | Rear      | Front        |  size         | output       |
+| ---------------------- | ------------------- | --------- | ------------ |  ------------ | ------------ |
+| [null]                 | enqueue('Ireland')  | Ireland   | Ireland      |  1            |              |
+| ---------------        | ---                 | --------- | ------------ |  ------------ | ---------    |
+| ['Ireland']            | dequeue()           | null      | null         |  0            | ['Ireland']  |
+| ---------------        | ---                 | --------- | ------------ |  ------------ | ---------    |
+| [null]                 | enqueue('England')  | England   | England      |  1            |              |
+| ---------------        | ---                 | --------- | ------------ |  ------------ | ---------    |
+| ['England']            | dequeue()           | null      | null         |  0            | ['England']  |
+| ---------------        | ---                 | --------- | ------------ |  ------------ | ---------    |
+| [null]                 | enqueue('Wales')    | Wales     | Wales        |  1            |              |
+| ---------------        | ---                 | --------- | ------------ |  ------------ | ---------    |
+| ['Wales']              | dequeue()           | null      | null         |  0            | ['Wales']    |
+| ---------------        | ---                 | --------- | ------------ |  ------------ | ---------    |
+| [null]                 | enqueue('Scotland') | Scotland  | Scotland     |  1            |              |
+| ---------------        | ---                 | --------- | ------------ |  ------------ | ---------    |
+| ['Scotland']           | dequeue()           | null      | null         |  0            | ['Scotland'] |
+| ---------------        | ---                 | --------- | ------------ |  ------------ | ---------    |
+| [null]                 | enqueue('France')   | France    | France       |  1            |              |
+| ---------------        | ---                 | --------- | ------------ |  ------------ | ---------    |
+| ['France']             | enqueue('Germany')  | Germany   | France       |  2            |              |
 
 4A. Write out the pseudo code for the insertLast(o) operation of the Deque ADT. The 
 insertFirst(o) pseudo code is given below as an example of a similar 
