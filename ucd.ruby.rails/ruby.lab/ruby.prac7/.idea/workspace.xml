@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b73d9bd1-a734-494f-9d7f-bca779017bdf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.phone.game/phone.game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.phone.game/phone.game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.phone.game/phone.game/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.phone.game/phone.game/Dictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.phone.game/phone.game/dict.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.phone.game/phone.game/dict.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.phone.game/phone.game/out/production/phone.game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.phone.game/phone.game/out/production/phone.game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.phone.game/phone.game/out/production/phone.game/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.phone.game/phone.game/out/production/phone.game/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.phone.game/phone.game/out/production/phone.game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.phone.game/phone.game/out/production/phone.game/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.phone.game/phone.game/out/production/phone.game/dict.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.phone.game/phone.game/out/production/phone.game/dict.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.prac3/alg.ad.prac3/2A-3A-tables.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.prac3/alg.ad.prac3/PCQ2A_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.prac3/alg.ad.prac3/PCQ2A_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.prac3/alg.ad.prac3/PCQ2A_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.prac3/alg.ad.prac3/PCQ2A_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.prac3/alg.ad.prac3/PCQ3L_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.prac3/alg.ad.prac3/PCQ3L_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.prac3/alg.ad.prac3/PCQ3L_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.prac3/alg.ad.prac3/PCQ3L_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.prac4/alg.ad.prac4/ArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.prac4/alg.ad.prac4/ArrayQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.prac4/alg.ad.prac4/LinkedDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.prac4/alg.ad.prac4/LinkedDeque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.prac4/alg.ad.prac4/PCQ4A.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.prac4/alg.ad.prac4/PCQ4A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.prac4/alg.ad.prac4/PCQ4L.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.prac4/alg.ad.prac4/PCQ4L.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.prac4/alg.ad.prac4/alg.ad.prac4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ucd.distributed.systems/dis.sys.lab/dis.sys.prac3.soap/other/task4.sol/BasicQuoteService/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ucd.distributed.systems/dis.sys.lab/dis.sys.prac3.soap/other/task4.sol/BasicQuoteService/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ucd.distributed.systems/dis.sys.notes/dis.sys.lecnotes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ucd.distributed.systems/dis.sys.notes/dis.sys.lecnotes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ucd.distributed.systems/dis.sys.notes/dis.sys.random/Rest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ucd.distributed.systems/dis.sys.notes/dis.sys.random/Rest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ruby.prac8/ruby.lec8.progs/.idea/RubyLect8.progs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ruby.prac8/ruby.lec8.progs/.idea/RubyLect8.progs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ruby.prac8/ruby.lec8.progs/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ruby.prac8/ruby.lec8.progs/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ruby.prac8/ruby.lec8.progs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ruby.prac8/ruby.lec8.progs/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-960139736">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="55" />
+    <option name="y" value="197" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b73d9bd1-a734-494f-9d7f-bca779017bdf" name="Default Changelist" comment="" />
+      <created>1542282752285</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542282752285</updated>
+      <workItem from="1542282754412" duration="58000" />
+      <workItem from="1542287437257" duration="201000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="259000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="55" y="197" width="1400" height="1000" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>groovy-2.4.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>9.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>9.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <last-edited>musettings</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -72,7 +72,8 @@ public class Dictionary {
 
         public void addWord(String word) {
             words.insertLast(word);
-            // TODO: This method must be implemented in answer to question A1
+
+            /* TODO: This method must be implemented in answer to question A1 */
         }
 
         /**
@@ -231,6 +232,7 @@ public class Dictionary {
         } catch (FileNotFoundException ex) {
             System.out.println("No Such File: " + filename);
         }
+
         try {
             String line = in.readLine(); // reads a line from the file or returns
             // null if there is no more to read
@@ -241,6 +243,7 @@ public class Dictionary {
         } catch (IOException ioe) {
             System.out.println("Error reading from: " + filename);
         }
+        
         try {
             in.close(); // closes the file
         } catch (IOException ioe) {
@@ -313,7 +316,6 @@ public class Dictionary {
                 currentNode = tree.addChild(currentNode, newKeystroke);
             }
         }
-
     }
 
     /**

@@ -1,4 +1,4 @@
-public class TestLinkedDeque {
+public class PCQ4L {
   public static void main(String[] args) {
     LinkedDeque linkedDeque = new LinkedDeque();
     linkedDeque.insertFirst("Ireland");
@@ -11,6 +11,9 @@ public class TestLinkedDeque {
     linkedDeque.removeFirst();
     linkedDeque.removeLast();
     linkedDeque.insertLast("Germany");
-    linkedDeque.toString();
+    // linkedDeque.toString();
+    System.out.println(linkedDeque.toString());
+
+
   }
 }

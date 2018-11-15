@@ -3,10 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="23647bbf-7f8c-4913-b77f-34a534abc122" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dict.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dict.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsai/core/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsai/core/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac1/comp.cloud.prac1a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac1/comp.cloud.prac1a.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/phone.game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/phone.game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/phone.game/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/phone.game/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/phone.game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/phone.game/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/phone.game/dict.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/phone.game/dict.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../alg.ad.prac3/alg.ad.prac3/2A-3A-tables.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../alg.ad.prac3/alg.ad.prac3/PCQ2A_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../alg.ad.prac3/alg.ad.prac3/PCQ2A_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../alg.ad.prac3/alg.ad.prac3/PCQ2A_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../alg.ad.prac3/alg.ad.prac3/PCQ2A_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../alg.ad.prac3/alg.ad.prac3/PCQ3L_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../alg.ad.prac3/alg.ad.prac3/PCQ3L_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../alg.ad.prac3/alg.ad.prac3/PCQ3L_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../alg.ad.prac3/alg.ad.prac3/PCQ3L_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../alg.ad.prac4/alg.ad.prac4/ArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../alg.ad.prac4/alg.ad.prac4/ArrayQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../alg.ad.prac4/alg.ad.prac4/LinkedDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../alg.ad.prac4/alg.ad.prac4/LinkedDeque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../alg.ad.prac4/alg.ad.prac4/PCQ4A.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../alg.ad.prac4/alg.ad.prac4/PCQ4A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../alg.ad.prac4/alg.ad.prac4/PCQ4L.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../alg.ad.prac4/alg.ad.prac4/PCQ4L.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../alg.ad.prac4/alg.ad.prac4/alg.ad.prac4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ucd.distributed.systems/dis.sys.lab/dis.sys.prac3.soap/other/task4.sol/BasicQuoteService/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ucd.distributed.systems/dis.sys.lab/dis.sys.prac3.soap/other/task4.sol/BasicQuoteService/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ucd.distributed.systems/dis.sys.notes/dis.sys.random/Rest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ucd.distributed.systems/dis.sys.notes/dis.sys.random/Rest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,41 +33,46 @@
     <session id="1380048000">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="21" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.12" value="2" />
-          <entry key="project.open.time.13" value="4" />
-          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="3" />
+          <entry key="project.open.time.13" value="7" />
+          <entry key="project.open.time.14" value="2" />
+          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.16" value="3" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="2" />
-          <entry key="java" value="37" />
-          <entry key="txt" value="6" />
+          <entry key="class" value="6" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="49" />
+          <entry key="txt" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="37" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="CLASS" value="6" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="49" />
+          <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2830" />
-          <entry key="txt" value="65" />
+          <entry key="java" value="2905" />
+          <entry key="txt" value="69" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2830" />
-          <entry key="PLAIN_TEXT" value="65" />
+          <entry key="JAVA" value="2905" />
+          <entry key="PLAIN_TEXT" value="69" />
         </counts>
       </usages-collector>
     </session>
@@ -63,55 +82,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dictionary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="297" column="57" lean-forward="true" selection-start-line="297" selection-start-column="57" selection-end-line="297" selection-end-column="57" />
+            <state relative-caret-position="84">
+              <caret line="253" lean-forward="true" selection-start-line="253" selection-end-line="253" />
               <folding>
                 <element signature="docComment;class#Keystroke#0;class#Dictionary#0" expanded="true" />
-                <element signature="docComment;method#Keystroke#0;class#Keystroke#0;class#Dictionary#0" expanded="true" />
-                <element signature="docComment;method#addWord#0;class#Keystroke#0;class#Dictionary#0" expanded="true" />
-                <element signature="docComment;method#getWords#0;class#Keystroke#0;class#Dictionary#0" expanded="true" />
-                <element signature="docComment;method#toString#0;class#Keystroke#0;class#Dictionary#0" expanded="true" />
-                <element signature="docComment;field#characterMap#0;class#Dictionary#0" expanded="true" />
-                <element signature="docComment;field#tree#0;class#Dictionary#0" expanded="true" />
-                <element signature="docComment;method#Dictionary#0;class#Dictionary#0" expanded="true" />
-                <element signature="docComment;method#load#0;class#Dictionary#0" expanded="true" />
-                <element signature="docComment;method#insert#0;class#Dictionary#0" expanded="true" />
-                <element signature="e#9543#9579#0" expanded="true" />
-                <element signature="docComment;method#toString#0;class#Dictionary#0" expanded="true" />
-                <element signature="docComment;method#findWords#0;class#Dictionary#0" expanded="true" />
-                <marker date="1540999708461" expanded="true" signature="3691:5368" ph="{...}" />
-                <marker date="1540999708461" expanded="true" signature="3836:4524" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dsai/core/List.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dsai/core/Position.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-              <folding>
-                <element signature="docComment;method#main#0;class#Main#0" expanded="true" />
-                <element signature="e#511#565#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -138,9 +112,9 @@
         <option value="$PROJECT_DIR$/dsaii/core/AbstractTree.java" />
         <option value="$PROJECT_DIR$/dsaii/core/Map.java" />
         <option value="$PROJECT_DIR$/dsaii/core/Tree.java" />
-        <option value="$PROJECT_DIR$/Main.java" />
-        <option value="$PROJECT_DIR$/dict.txt" />
         <option value="$PROJECT_DIR$/dsai/core/Position.java" />
+        <option value="$PROJECT_DIR$/dict.txt" />
+        <option value="$PROJECT_DIR$/Main.java" />
         <option value="$PROJECT_DIR$/Dictionary.java" />
       </list>
     </option>
@@ -152,8 +126,33 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="461" />
+    <option name="y" value="171" />
     <option name="width" value="1920" />
     <option name="height" value="1200" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>JBoss Seam</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SeamBijectionIllegalScopeParameterInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -163,7 +162,6 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Course" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -171,33 +169,23 @@
               <item name="phone.game" type="b2602c69:ProjectViewProjectNode" />
               <item name="phone.game" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="phone.game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="phone.game" type="462c0819:PsiDirectoryNode" />
-              <item name="dsai" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="phone.game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="phone.game" type="462c0819:PsiDirectoryNode" />
-              <item name="dsai" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541775546580" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542075943584" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -275,10 +263,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
+    <frame x="461" y="171" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.094791666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12291667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="DB Browser" order="3" />
@@ -288,7 +276,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3292683" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3283972" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -359,36 +347,10 @@
     <entry file="file://$PROJECT_DIR$/Word.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WordProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TextSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Keyboard.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1384" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dsaii/impl/LinkedTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
           <caret line="227" column="23" selection-start-line="227" selection-start-column="23" selection-end-line="227" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Word.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -406,13 +368,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Keyboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dsai/core/PriorityQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -424,13 +379,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dict.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -448,37 +396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="297" column="57" lean-forward="true" selection-start-line="297" selection-start-column="57" selection-end-line="297" selection-end-column="57" />
-          <folding>
-            <element signature="docComment;class#Keystroke#0;class#Dictionary#0" expanded="true" />
-            <element signature="docComment;method#Keystroke#0;class#Keystroke#0;class#Dictionary#0" expanded="true" />
-            <element signature="docComment;method#addWord#0;class#Keystroke#0;class#Dictionary#0" expanded="true" />
-            <element signature="docComment;method#getWords#0;class#Keystroke#0;class#Dictionary#0" expanded="true" />
-            <element signature="docComment;method#toString#0;class#Keystroke#0;class#Dictionary#0" expanded="true" />
-            <element signature="docComment;field#characterMap#0;class#Dictionary#0" expanded="true" />
-            <element signature="docComment;field#tree#0;class#Dictionary#0" expanded="true" />
-            <element signature="docComment;method#Dictionary#0;class#Dictionary#0" expanded="true" />
-            <element signature="docComment;method#load#0;class#Dictionary#0" expanded="true" />
-            <element signature="docComment;method#insert#0;class#Dictionary#0" expanded="true" />
-            <element signature="e#9543#9579#0" expanded="true" />
-            <element signature="docComment;method#toString#0;class#Dictionary#0" expanded="true" />
-            <element signature="docComment;method#findWords#0;class#Dictionary#0" expanded="true" />
-            <marker date="1540999708461" expanded="true" signature="3691:5368" ph="{...}" />
-            <marker date="1540999708461" expanded="true" signature="3836:4524" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsai/core/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dsai/core/Position.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -486,13 +403,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/io/BufferedReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsai/core/EmptyPriorityQueueException.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phone.game.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WordProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state relative-caret-position="320">
+          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsai/core/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="122" column="19" selection-start-line="122" selection-start-column="19" selection-end-line="122" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dict.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dictionary.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Keyboard.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Keyboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TextSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="114" column="19" selection-start-line="114" selection-start-column="19" selection-end-line="114" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="253" lean-forward="true" selection-start-line="253" selection-end-line="253" />
           <folding>
-            <element signature="docComment;method#main#0;class#Main#0" expanded="true" />
-            <element signature="e#511#565#0" expanded="true" />
+            <element signature="docComment;class#Keystroke#0;class#Dictionary#0" expanded="true" />
           </folding>
         </state>
       </provider>

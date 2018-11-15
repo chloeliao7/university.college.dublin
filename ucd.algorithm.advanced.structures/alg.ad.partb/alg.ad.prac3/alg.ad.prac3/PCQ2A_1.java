@@ -25,5 +25,6 @@ public class PCQ2A_1 {
 		System.out.println(linkedStack);
 		linkedStack.push(new Character('h'));
 		System.out.println(linkedStack);
+		System.out.println(linkedStack.toString());
 	}
 }

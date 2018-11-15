@@ -451,4 +451,21 @@ PUBLISH SUBSCRIBE: async = true scalable systems
 
     JMS API Programming Model 
     - connection factory => connection => session => 
-    - Pub/Sub = JVM messages 
+    - Pub/Sub = JVM messages
+
+Actors => 
+    - Anatomy of an actor 
+    - > thread____ mailbox, method, state ___ > thread
+    - A SYNC MESSAGE => (ACTORS = state + behavior + mailbox + autonomy) => interface 
+
+
+
+ACTORS LANGUAGES : 
+- Erlang 
+- RevActor
+- Salsa
+- Kilim 
+- RevActorAkka
+- Project Orleans
+
+

@@ -81,7 +81,6 @@ class LinkedDeque {
 }
 
 class Node {
-
 	public Node() {
 		super();
 	}

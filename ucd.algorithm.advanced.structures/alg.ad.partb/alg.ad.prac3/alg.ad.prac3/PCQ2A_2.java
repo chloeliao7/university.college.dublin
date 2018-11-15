@@ -25,5 +25,9 @@ public class PCQ2A_2 {
 		System.out.println(arrayStack);
 		arrayStack.push(new Character('h'));
 		System.out.println(arrayStack);
+		System.out.println("----------");
+
+		System.out.println(arrayStack.toString());
+
 	}
 }

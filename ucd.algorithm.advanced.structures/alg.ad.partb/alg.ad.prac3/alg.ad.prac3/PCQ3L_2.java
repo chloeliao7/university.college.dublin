@@ -23,5 +23,8 @@ public class PCQ3L_2 {
 		System.out.println(arrayStack);
 		arrayStack.push("Germany");
 		System.out.println(arrayStack);
+		System.out.println("----------");
+		
+		System.out.println(arrayStack.toString());
 	}
 }
