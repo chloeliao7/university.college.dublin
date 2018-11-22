@@ -4,6 +4,7 @@ Gregoire.cousin@ucdconnect.ie
 Cloud Computing PRAC2
 Questions: You were asked by your manager to look into the question whether it is worth migrating to the cloud or not. To answer this question, it is necessary to
 follow some key steps to help to make a decision.
+
 1 - As a first step, would you make the decision yourself or assemble a team to help you reach the decision? Justify your answer.
 1a. I would consult with a group of people within my team to make the decision on which provider and what to send to the cloud since it will be critical and detrimental to the future of my company. Having multiple thoughts on what to send to the cloud not only covers you on justifying why you chose but also helps you figure out what will be necessary to keep private as well.
 2 - How will you approach the question? (Hint: develop organization cloud strategy and business case).
@@ -15,7 +16,7 @@ The first question I would ask myself is how fast my customer, I or the company 
 4a. Yes, I think that if you don't you will be missing out on vital functionality and services that the cloud can provide. for example, if you need your data stored externally you will need PAAS.
 5 - Do you think you should consider at this stage the security and privacy issues in relation to your organization? Why?
 5a. Privacy is a necessity in todays modern organizations. An organization is only as good as its clients, which means with multiple clients registering, storing and sending their own private data on the cloud it becomes
- 
+
 vital to know that that data isn't accessible just by anyone. The organization should have the ability to choose to whom that information is accessible by. Cloud providers have services and infrastructures in place to keep your data private.
 At this point, you made your (yourself or with your team) decision and met with
 you manager. You presented your study. The manager was happy with what that has been done so far, but s/he asked more questions, which are as follows:
