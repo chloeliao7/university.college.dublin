@@ -3,8 +3,8 @@ Cloud Computing practical 1.
 PART 1 AMAZON WEB SERVICES RACK-SPACE WINDOWS CLOUD GOOGLE CLOUD
 
 1. What are cloud deployment models (types) for each company and their differences: 
-AWS INFRASTRUCTURE AS A SERVICE IAA S PLATFORM AS A SERVICE PAA S SOFTWARE AS A SERVICE SAA S     
-     + the most advanced company with cloud computing. 
+AWS INFRASTRUCTURE AS A SERVICE IAA S PLATFORM AS A SERVICE PAA S SOFTWARE AS A SERVICE SAA S: 
+     + the most advanced company with cloud computing 
      + Cloud, Hybrid, on Premise
      + Low Key Pricing
      + Secure and Flexible 
@@ -13,53 +13,53 @@ AWS INFRASTRUCTURE AS A SERVICE IAA S PLATFORM AS A SERVICE PAA S SOFTWARE AS A 
      + Content delivery 
      + IT department with customer support and content delivery
      
-RACK-SPACE PUBLIC PRIVATE HYBRID MULTI-CLOUD
+RACK-SPACE PUBLIC PRIVATE HYBRID MULTI-CLOUD:
         + more infrastructure, 
         + Very good for Visualization 
         + Cognitive recognition 
         + dedicated servers with high performance compute 
         + secure, scalable and cloud ready 
 
-WINDOWS CLOUD AZURE IAAS PAAS SAAS
+WINDOWS CLOUD AZURE IAAS PAAS SAAS:
         + mainly PAAS
         + Office 365 works well and is integrated 
         + more friendly than AWS for some people 
         + a platform based for building and deploying applications
         + high level artificial intelligence 
-        + has machine learning capabilities for windows based applicaitons
+        + has machine learning capabilities for windows based applications
         + building + testing + deploying
         + artificial intelligence could also means they have more resources and have a bigger infrastructure. 
         + Web Sites and Cloud Services
-
-    - Google Cloud:
-        + Compute Engine: IaaS : virtual machine instances for workload hosting 
-        + Google App Engine : PaaS : Developers have access to scalable hosting. Uses (SDK) to help develop producs 
+        
+Google Cloud:
+        + Compute Engine: IaaS: virtual machine instances for workload hosting 
+        + Google App Engine: PaaS: Developers have access to scalable hosting. Uses (SDK) to help develop producs 
         + not fully private fairly modular
-        + Cloud Storage : Using noSQL and MySql 
-        + Container Engines : using Docker containers to run googles public cloud  
+        + Cloud Storage: Using noSQL and MySql 
+        + Container Engines: using Docker containers to run googles public cloud  
         + provides analytic tools for speech, text, images and videos.
 
 2.         
-- windows cloud azure:iaas, paas, saas
+- windows cloud azure:iaas, paas, saas:
 - windows cloud azure:
     IAAS: Virtual Machines 
     PAAS: the virtual interface that is independent of the actual hardware (VM)
     SAAS: SaaS service with azure automatically scales according to the level of usage.
 
-- aws: more IaaS based 
+- aws: more IaaS based:
     IAAS EC2: Elastic Compute Cloud. 
-    >>     FEATURES: secure, resizable compute capacity in the cloud, 
-    >>    PROVIDES: COMPLETELY CONTROLLED, ELASTIC WEB-SCALE COMPUTING, FLEXIBLE CLOUD HOSTING SERVICES, INTEGRATED, RELIABLE, SECURE, INEXPENSIVE, EASY TO START
+    >>   FEATURES: secure, resizable compute capacity in the cloud, 
+    >>   PROVIDES: COMPLETELY CONTROLLED, ELASTIC WEB-SCALE COMPUTING, FLEXIBLE CLOUD HOSTING SERVICES, INTEGRATED, RELIABLE, SECURE, INEXPENSIVE, EASY TO START
     PAAS: Elastic Beanstalk, Windows Azure, Heroku, Force.com, Google App Engine, Apache Stratus
     SAAS AWS Partner Network (APN): provides a low cost and is reliable
 
-- google: more based on PaaS
+- google: more based on PaaS:
     IAAS: Virtual Machines 
-    PAAS: different options : VMS, Containers, PaaS and FaaS ( Google Cloud Functions )
+    PAAS: different options: VMS, Containers, PaaS and FaaS ( Google Cloud Functions )
     SAAS: Big Table, B2B , GCP management services
-        >>     FEATURES: secure, a good authorization and authentication, Isolation and Holistic Interface service
+        >>   FEATURES: secure, a good authorization and authentication, Isolation and Holistic Interface service
 
-All of these share : 
+- all of these share: 
     Public Cloud
     Community Clouds
     Private Clouds
@@ -96,4 +96,3 @@ If you delete one and you do not have a strong backup system or network/hierarch
 3. You are able to delete authorized and replaceable data. where the client can still have access to it in some form of a backup or file structure. you can also not delete system files that are part of the interworking of your cloud-based system. 
 
 4. When deleting and finding what you want to keep you need to have a clear understanding on what security measures you need to take. making sure that there are no dependencies between files is a key step to making sure you can safely delete and update the right files from your local computer to the cloud. 
-
