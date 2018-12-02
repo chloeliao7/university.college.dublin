@@ -1,0 +1,26 @@
+1. WHAT DO THE FALLOWING EVALUATE ONE TYPE OF QUESTION: TYPE QUESTIONS
+a. "hello there big boy" 
+b. 56
+c. 34.00
+d. 0.20000
+e. ['a', 'b']
+f. +  // = error
+g. PI.... // = error = Math::PI
+
+2. ESSAY TYPE OF QUESTIONS PAGE OR TWO OF WRITING 
+define a class for family member that has at least 5 properties (name, sex, 
+status, age) and then create 5 instances of that class, each of which should be 
+assigned to the fallowing variable : fm1, fm2, fm3 
+
+3. CONCEPT QUESTION FOUR PARAGRAPH ON EACH
+write a short paragraph on any four of the key property that are asserted to 
+be characteristic of the Object-Oriented Programming paradigm, using appropriate 
+methods 2. what are ruby gems? write an essay on the functionality of two gems 
+with which you are firmiliar illustrating your answers with examples 
+
+4. PROGRAMMING QUESTION
+
+INFO
+- five QUESTIONs answer 5 from 7 
+- all questions carry equal marks  
+- 24 min per questions : //! TIMING IS IMPORTANT!!!!

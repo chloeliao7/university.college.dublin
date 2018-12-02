@@ -37,10 +37,15 @@ module Urihacker
 	elsif tag == :film
 		then return self + "_(film)"
 	end
-  end 
+  end
 
 
 # ADD_FULL_URI: Takes the name of an actor/film as a string and adds the http wikipedia path
+
+
+
+
+
 
   def add_full_uri
 		   "http://en.wikipedia.org/wiki/" + self
