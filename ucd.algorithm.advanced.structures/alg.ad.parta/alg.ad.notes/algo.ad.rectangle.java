@@ -6,7 +6,6 @@ public class MoveTester {
 
 		// Move the rectangle
 		box.translate(15, 25);
-
 		// Print information about the moved rectangle
 		System.out.print("x: ");
 		System.out.println(box.getX());

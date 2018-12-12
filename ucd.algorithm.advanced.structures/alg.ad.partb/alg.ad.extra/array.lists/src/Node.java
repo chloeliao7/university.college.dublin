@@ -1,5 +1,3 @@
-
-
     /** Node of a singly linked list of strings. */
     public class Node {
       private String element;	// we assume elements are character strings
@@ -19,4 +17,3 @@
       /** Sets the next node of this node. */
       public void setNext(Node newNext) { next = newNext; }
     }
-

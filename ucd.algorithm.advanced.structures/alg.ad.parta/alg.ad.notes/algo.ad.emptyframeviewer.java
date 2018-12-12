@@ -17,8 +17,6 @@ public class RectangleComponent extends JComponent {
 	}
 }
 
-
-
 public class RectangleComponent extends JComponent {
 	public void paintComponent(Graphics g) {
 		// Recover Graphics2D
@@ -71,7 +69,7 @@ public class MyApplet extends JApplet {
 		// Recover Graphics2D
 		Graphics2D g2 = (Graphics2D) g;
 		// Drawing instructions go here
-		
+
 	}
 }
 // difference between applet and graphics

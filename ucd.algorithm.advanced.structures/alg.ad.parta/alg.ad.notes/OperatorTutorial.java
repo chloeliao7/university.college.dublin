@@ -4,7 +4,6 @@ public class OperatorTutorial {
 		// int b = 19;
 		// int c = 7;
 
-
 		}
 		/* 		
 				if(true  | true)  pass will check both
@@ -28,4 +27,3 @@ public class OperatorTutorial {
 				if(false &&  false) fuck it 
 		 */
 	}
-}

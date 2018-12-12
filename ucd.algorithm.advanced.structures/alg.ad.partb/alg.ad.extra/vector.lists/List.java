@@ -13,3 +13,16 @@ public interface List {
     public Object replace(Position p, Object e);
     public Object remove(Position p);
 }
+
+
+private gregLousise(){
+
+    for(int i = 0; i < spendTimewithLouise; i++) {
+        life = goodSex + dayChats; 
+        while(life != null){
+            gregLousise()
+        }
+    }
+}
+
+spendTimewithLouise = MaxTimeStamp

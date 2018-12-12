@@ -3,25 +3,25 @@ import java.util.Scanner;
 
 public class A8 {
 
-	public static void main(String args[]) {
-		int a = 5;
-		int d = Factorial(a);
-		System.out.println("FACTORIAL OUTPUT IS: " + d);
-	}
-	public static int Factorial(int a) {
-		int k; 
-		int factorial = 1; // OPERATIONS: 1
-		for (k = 1; k <= a; k++) {
-			// OPERATIONS: 2(n), k <= a -1
-      // OPERATIONS: 2(n -1) k++
+  public static void main(String args[]) {
+    int a = 5;
+    int d = Factorial(a);
+    System.out.println("FACTORIAL OUTPUT IS: " + d);
+  }
 
-			factorial = factorial * k; // OPERATIONS: 2(n) 
-			System.out.println("K : " + k + "    A : " + a + "    Factorial : " + factorial);
+  public static int Factorial(int a) {
+    int k;
+    int factorial = 1; // OPERATIONS: 1
+    for (k = 1; k <= a; k++) {
+      // OPERATIONS: 2(n), k <= a -1 // OPERATIONS: 2(n -1) k++
 
-		}
+      factorial = factorial * k; // OPERATIONS: 2(n) 
+      System.out.println("K : " + k + "    A : " + a + "    Factorial : " + factorial);
 
-		return factorial; // OPERATIONS: 1
-	}
+    }
+
+    return factorial; // OPERATIONS: 1
+  }
 
 }
 
@@ -49,8 +49,8 @@ K : 5    A : 5    Factorial : 120
  iii. O(n)
  */
 
- /* 
- ASSIGN OPERATION #1 ASSIGNING: 1 to factorial 
+/* 
+ASSIGN OPERATION #1 ASSIGNING: 1 to factorial 
 EVALUATE OPERATION #2 EVALUATING First Evaluation: Forloop: inwt k = 1 
 ASSIGN OPERATION #3 ASSIGNING: factorial = factorial * k : 1 
 ITERATE OPERATION #4 ITTERATING: K++ : 1 
