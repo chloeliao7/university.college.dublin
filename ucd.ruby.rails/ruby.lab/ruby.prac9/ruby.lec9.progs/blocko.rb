@@ -6,8 +6,9 @@ low_vat_rate = 10
 high_vat_rate = 21
 
 blocktest = lambda do |x|
+	# p x
 	if x > 100 then p(x * low_vat_rate)
-	elsif x < 100 then p(x * high_vat_rate)
+	elsif x < 100 then p(x * high_vat_rate) # this one gets called 
 	elsif x == 100 then puts "not sure what to do" end
  end
  

@@ -12,6 +12,7 @@ end
 
 ablock = lambda {puts "-------CUT HERE-------"}
 block_eg1(ablock)
+# block_eg1() {puts "-------- Cut HERE -------"}
 
 
 def block_eg2(&cutblock)

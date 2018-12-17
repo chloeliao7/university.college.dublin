@@ -8,8 +8,7 @@ ActiveRecord::Base.establish_connection(
     :database  => ":memory:"
 )
 
-ActiveRecord::Schema.define do
-    create_table :albums do |table|
+ActiveRecord::Schema.define do create_table :albums do |table|
         table.column :title, :string
         table.column :performer, :string
     end

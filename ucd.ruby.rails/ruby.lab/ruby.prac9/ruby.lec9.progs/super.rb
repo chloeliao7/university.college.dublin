@@ -4,14 +4,12 @@ class Foo
   end
 end
 
-
 class FooLet < Foo
   def foo_it
     super
     puts "Then do the rest..."
   end
 end
-
 
 a =  Foo.new
 b = FooLet.new

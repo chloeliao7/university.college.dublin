@@ -21,7 +21,7 @@ def load_uri(uri, flag)
   	  doc = open(uri,:allow_redirections => :safe)
   	  rescue OpenURI::HTTPError => the_error
   	  puts "Error, found bad status code: #{the_error}" 
-   end
+   end+
    if the_error.instance_of?(OpenURI::HTTPError)
 	   then puts "...so, we are not doing #{uri}"
    else doc = Nokogiri::HTML(open(uri, :allow_redirections => :safe))

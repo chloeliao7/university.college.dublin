@@ -15,7 +15,6 @@ require_relative 'wikisearcher'
 #require_relative 'sixdegrees'
 # NB this key file is excluded from the program for your own safety
 
-
 # Makes sure all the uri-hacking methods can be applied to strings.
 
 class String

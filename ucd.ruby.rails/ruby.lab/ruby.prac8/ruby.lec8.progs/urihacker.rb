@@ -26,7 +26,6 @@ module Urihacker
 	name
   end
 
-
 # ADD_TAG: Adds the actor/film bracked ending to a http-string.  Most
 # page refs to wikipages have this at the end of the name to disambiguate
 # it within Wikipedia.
@@ -39,18 +38,11 @@ module Urihacker
 	end
   end
 
-
 # ADD_FULL_URI: Takes the name of an actor/film as a string and adds the http wikipedia path
-
-
-
-
-
 
   def add_full_uri
 		   "http://en.wikipedia.org/wiki/" + self
   end
-
 
 # MAKE_WIKI_URI: checks to see whether the uri has the right start-bit to make a 
 # successful wikipedia search; if it has not it fixes it and returns it.
@@ -58,7 +50,7 @@ module Urihacker
   def make_wiki_uri
 	if  self =~ /\/wiki/  && !( self =~ /en.wikipedia.org/) 
 		then  return "http://en.wikipedia.org" + self
-		else puts "Given non-wiki uri in make_wiki_uri: #{ self}"; return self end
+		else puts "Given non-wiki uri in make_wiki_uri: #{self}"; return self end
   end
   
 # CAPITALISE_URL_NAME: is a bit of a hack.  Sometimes the names of a film/actor have lower case
@@ -73,4 +65,3 @@ module Urihacker
   end
 
 end
-

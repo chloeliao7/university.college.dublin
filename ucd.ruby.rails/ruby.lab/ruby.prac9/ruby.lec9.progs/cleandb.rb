@@ -5,7 +5,7 @@ ActiveRecord::Base.establish_connection(
     :database  => "memory")
 
 
-class Clean < ActiveRecord::Migration	
+class Clean < ActiveRecord::Migration[5.0]
    def self.up
     create_table :towns do |table|
         table.column :name, :string
@@ -23,10 +23,8 @@ end
 class Town < ActiveRecord::Base    
 end
 
-#Clean.down
+# Clean.down
 Clean.up
      
 p Town.create(:name => "ff", :continent => "fa", :size => 333)
-
-
 

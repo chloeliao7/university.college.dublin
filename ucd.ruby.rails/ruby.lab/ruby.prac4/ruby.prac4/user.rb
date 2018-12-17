@@ -3,16 +3,20 @@ require_relative './library'
 
 class User
   def initialize(opts={})
-    @name = opts[:name]
+    @name = opts[:name] 
     @library = opts[:library]
     # puts opts = checking 
   end
 
   def borrow(title_param)
     if @library.book_is_available?(title_param)
+
       @library.lend(title_param, @name) # we pass the users's name to the library 
+      puts "book #{title_param} has been borrowed"
+
     else
       puts "Sorry but #{title_param} is not available"
+      puts " "
     end
   end
 

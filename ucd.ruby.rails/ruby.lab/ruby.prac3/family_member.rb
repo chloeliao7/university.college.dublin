@@ -21,13 +21,14 @@ class FamilyMember
   end
 
   def child?
-    @children.empty?
-    @species.to_s == 'child'
+    # @children.empty?
+    # @species.to_s == 'child'
+    @age < 39
   end
 
   def dad?
     # parent && male
-    @age.to_i == 13
+    @age.to_i == 40
   end
 
   # functions as accessor 
@@ -51,7 +52,7 @@ class FamilyMember
   end
 end
 
-# notes
+# # notes
 # # Initializing
 # arthur = FamilyMember.new(name: 'arthur', sex: 'male', status: 'male', age: 27, children: [], species: 'human')
 # puts arthur.inspect

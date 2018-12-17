@@ -3,7 +3,7 @@ require_relative './user'
 require_relative './library'
 
 # other Books
-thesecretwindow = Book.new(title: 'thesecretwindow', author:'string')
+# thesecretwindow = Book.new(title: 'thesecretwindow', author:'string')
 cosmeticstories = Book.new(title: 'cosmeticstories', author: 'warlord 3rd')
 artstil = Book.new(title: 'artstil', author: 'frankenstein')
 constenstein = Book.new(title: 'constenstein', author: 'camelot')

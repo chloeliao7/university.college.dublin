@@ -10,7 +10,6 @@ end
 #bloggie.rb:2:in `<main>': uninitialized constant Object::Bloggie (NameError)
 =end
 
-
 class Bloggie
 
 	def self.please

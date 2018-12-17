@@ -10,12 +10,14 @@ john = FamilyMember.new(name: "Tim", sex: :male, status: :single, age: 27, child
 
 #array cycle
 [greg, tim, john].each do |family_member| #  puts family_member
-  puts family_member.inspect
+  puts family_member.inspect # prints out all family memebers in object
 end
 
-print_info(greg)
-puts umm.parent?
-puts greg.parent?
+print_info(greg) # outputs objecy of greg 1.  
+# puts "umm is parent: " + "#{umm.parent?}"
+puts  "greg is parent: " + "#{greg.parent?}"
+puts  "greg is parent: " + "#{greg.child?}"
+puts  "greg is parent: " + "#{greg.dad?}"
 
 
 # notes
