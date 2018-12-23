@@ -12,7 +12,7 @@ import service.registry.ServiceRegistry;
 /**
  * Implementation of the broker service that uses the Service Registry.
  * 
- * @author Rem
+*
  *
  */
 public class LocalBrokerService implements BrokerService {

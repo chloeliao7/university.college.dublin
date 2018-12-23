@@ -12,33 +12,29 @@ public class TCPSocketServer {
       try {
          my_serverSocket = new ServerSocket(a_port, my_backlog);
          System.out.println("TCP socket listening on port " + a_port);
-      } catch (IOException ioe) {
-         ioe.printStackTrace();
-      } catch (SecurityException se) {
+      } catch (IOException ioe) { ioe.printStackTrace(); } catch (SecurityException se) {
          se.printStackTrace();
       }
-    }
-
+   }
+   
    public void listen() {
       while (true) {
          try {
-          Socket socket = my_serverSocket.accept(); 
-          BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            String msg = in.readLine(); 
+            Socket socket = my_serverSocket.accept();
+            BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            String msg = in.readLine();
             System.out.println("Recceived message: " + msg);
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
             out.println(msg);
             in.close();
             socket.close();
             
-          } catch (IOException ioe) {
-            ioe.printStackTrace();
-         } catch (SecurityException se) {
+         } catch (IOException ioe) { ioe.printStackTrace(); } catch (SecurityException se) {
             se.printStackTrace();
          }
       }
    }
-
+   
    public static void main(String[] args) {
       int port = 0;
       if (args.length == 1) {
@@ -54,4 +50,4 @@ public class TCPSocketServer {
          System.out.println("Usage: java TCPSocketServer <port>");
       }
    }
-} 
+}

@@ -16,7 +16,7 @@ public class Server {
     GPQApplication GPQApp = new GPQApplication();
     BrokerApplication BRok = new BrokerApplication();
 
-    // Starting objects 
+    // Starting objects
     BRok.main(null);
     AFApp.main(null);
     DDQApp.main(null);

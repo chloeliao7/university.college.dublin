@@ -8,7 +8,7 @@ import service.core.QuotationService;
 /**
  * Implementation of Quotation Service for Dodgy Drivers Insurance Company
  *  
- * @author Rem
+*
  *
  */
 public class DDQService extends AbstractQuotationService implements QuotationService {

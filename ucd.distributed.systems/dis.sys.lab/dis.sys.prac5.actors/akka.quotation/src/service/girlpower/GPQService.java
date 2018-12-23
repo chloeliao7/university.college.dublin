@@ -8,7 +8,7 @@ import service.core.QuotationService;
 /**
  * Implementation of the Girl Power insurance quotation service.
  * 
- * @author Rem
+*
  *
  */
 public class GPQService extends AbstractQuotationService implements QuotationService {
