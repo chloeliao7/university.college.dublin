@@ -458,8 +458,6 @@ Actors =>
     - > thread____ mailbox, method, state ___ > thread
     - A SYNC MESSAGE => (ACTORS = state + behavior + mailbox + autonomy) => interface 
 
-
-
 ACTORS LANGUAGES : 
 - Erlang 
 - RevActor
