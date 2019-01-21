@@ -1,11 +1,32 @@
 Information security 
 
-
 authenticity 
 integrity 
 privacy
 
+DISCRETE INFORMATION SOURCE : any device that sequentially generates element from a discrete alphabet
+>>>> _()_ = { a,b,....w, z, space }
 
+DISCRETE RANDOM VARIABLE: defined by mapping element from omega to an alphabet  
+
+
+
+
+	>>> p|x = 2|
+	>>> p|x = 64|
+	>>> p|x = 222|
+>>> means PMF 
+
+  probability of mass functions (pmf) 
+  >>> X| x,y, .... xn = assign 
+| size of the set |
+
+the expectation of rb is the sum of ll its possible outcomes 
+
+E(x) is also the average of x
+
+
+sigma means sum of something 
 
 
 
