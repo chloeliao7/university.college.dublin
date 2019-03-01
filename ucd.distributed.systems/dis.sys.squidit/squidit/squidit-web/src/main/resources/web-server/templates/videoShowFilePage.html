@@ -1,0 +1,14 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="videoHeader:: copy"></head>
+<body>
+  <div style="text-align:center">
+    <h1>BELOW IS The File UPLOADED</h1>
+    <h3>VIDEO</h3>
+    <p th:text="${fileNameForm}">Current Video</p>
+  </div>
+  <!-- th:src="@{${'/img/icons/' + subTask.issueTypeId + '.png'}}" -->
+  <video id="galleryVideoId" class="hide-normal video-js vjs-default-skin vjs-big-play-centered" autoplay="autoplay" controls="controls" preload="auto" width="100%" height="100%" data-setup="{}"><source th:src="@{${'/video/videoShowFile/' + fileNameForm}}" type="video/mp4" /></video>
+  <div th:replace="videoFooter:: copy"></div>
+</body>
+</html>

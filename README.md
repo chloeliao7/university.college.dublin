@@ -1,6 +1,40 @@
 # Welcome to university.college.dublin.s1
 
 
+## Table of Content
+ ALL folders contain : lecture slides, notes and exercises
+
+> ucd.algorithm.advanced.structures 
++ [part.a](./ucd.algorithm.advanced.structures/alg.ad.parta) exercises(racing graphics with java)
++ [partb](./ucd.algorithm.advanced.structures/alg.ad.partb) trees, linklist, heap, hash.tables, dictionaries, array lists/stacks and queues, big o, vectors, and exercises(phone game with trees)
+
+> ucd.cloud.computing
++ [lab1](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac1) (service research)
++ [lab2](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac2) (preparing for cloud services)
++ [lab3](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac3) (google app engine)
++ [lab4](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac4) (map reduce basic)
++ [lab5](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac5) (pig latin)
++ [lab6](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac6) (map reduce advanced)
++ [lecs](./ucd.cloud.computing/comp.cloud.lec) (lecture slides pdf)
++ [notes](./ucd.cloud.computing/comp.cloud.notes) (lecture notes)
++ [project](./ucd.cloud.computing/comp.cloud.todolist) (project with angular and firebase)
+
+> ucd.distributed.systems
++ [lab1](./ucd.distributed.systems/dis.sys.lab/dis.sys.actor.programming) (service quotation broker)
++ [lab2](./ucd.distributed.systems/dis.sys.lab/dis.sys.group.final.assignment) (details on final assignment)
++ [lab3](./ucd.distributed.systems/dis.sys.lab/dis.sys.group.paper) (group paper)
++ [lab4](./ucd.distributed.systems/dis.sys.lab/dis.sys.message.oriented.system) (jms)
++ [lab5](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac1.socket) (socket)
++ [lab6](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac2.rmi) (rmi)
++ [lab7](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac3.soap) (soap)
++ [lab8](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac4.rest) (rest)
++ [lab9](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac5.actors) (actors)
++ [lecs](./ucd.distributed.systems/dis.sys.lec) (lecture slides pdf)
++ [notes](./ucd.distributed.systems/dis.sys.notes) (lecture notes)
++ [project](./ucd.distributed.systems/dis.sys.squidit) (project with angular and firebase)
+
+> ucd.ruby.rails
+
 
 ## Course Description
 Students have the opportunity to negotiate a programme of learning that is tailored to their own career goals and requirements. Instead of there being a rigorous set of modules that each student must take, as is typical in standard taught MSc programmes, students can prefer to broaden their knowledge acrossa diverse cross-section of modules offering by Schools such as the UCD School of Computer Science, UCD School of Business, UCD School of Maths & Statistics and the UCD School of Information & Communication Studies. Students enrolling in this MSc are also provided with the opportunity to work on a specialised research task and/or work as part of a research group as part of this programme.

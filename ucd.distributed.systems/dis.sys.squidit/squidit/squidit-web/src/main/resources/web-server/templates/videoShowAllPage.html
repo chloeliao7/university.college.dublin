@@ -1,0 +1,22 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="videoHeader:: copy"></head>
+<body>
+  <form method="POST" action="/video/videoForm">
+    <table>
+      <tr>
+        <td></td>
+        <td><input type="text" name="fileNameForm" /></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" value="Submit" /></td>
+      </tr>
+    </table>
+  </form>
+  <h3>ALL VIDEOS</h3>
+  <div style="text-align:center"><h1>BELOW ARE THE FULL LIST OF VIDEOS RETRIEVED</h1></div>
+  <p th:each="vids : ${videoNames}" th:text="${vids}">Current Video</p>
+  <div th:replace="videoFooter:: copy"></div>
+</body>
+</html>

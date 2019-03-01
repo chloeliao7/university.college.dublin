@@ -1,0 +1,353 @@
+package com.squidit.controller;
+import static java.time.ZoneId.of;
+import static java.time.ZonedDateTime.now;
+import static java.time.format.DateTimeFormatter.RFC_1123_DATE_TIME;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+import java.util.concurrent.TimeUnit;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import com.mongodb.BasicDBObject;
+import com.mongodb.DB;
+import com.mongodb.DBCursor;
+import com.mongodb.DBObject;
+import com.mongodb.MongoClient;
+import com.mongodb.ServerAddress;
+import com.mongodb.gridfs.GridFSDBFile;
+import com.mongodb.util.JSONSerializers;
+import com.mongodb.util.ObjectSerializer;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.core.io.InputStreamResource;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.gridfs.GridFsCriteria;
+import org.springframework.data.mongodb.gridfs.GridFsOperations;
+import org.springframework.data.mongodb.gridfs.GridFsTemplate;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
+
+@RestController
+@RequestMapping("/api")
+public class MongoMainController {
+  
+  
+  private DiscoveryClient discoveryClient;
+  private String imageFileId = "";
+  private final GridFsTemplate gridFsTemplate;
+  GridFsOperations gridOperations;
+  public List<InputStream> streams = new ArrayList<InputStream>();
+  
+  @Autowired
+  public MongoMainController(GridFsTemplate gridFsTemplate) {
+    this.gridFsTemplate = gridFsTemplate;
+  }
+  
+  
+  // check if it already exists 
+  private Optional<GridFSDBFile> maybeLoadFile(String name) {
+    GridFSDBFile file = gridFsTemplate.findOne(getFilenameQuery(name));
+    return Optional.ofNullable(file);
+  }
+  
+  
+  @RequestMapping(value = "/save", method = RequestMethod.POST)
+  public HttpEntity<byte[]> createOrUpdate(@RequestParam("file") MultipartFile file) {
+    DBObject metaData = new BasicDBObject();
+    String fileName = file.getOriginalFilename();
+    
+    
+    
+    try {
+      Optional<GridFSDBFile> existing = maybeLoadFile(fileName);
+      if (existing.isPresent()) { gridFsTemplate.delete(getFilenameQuery(fileName)); }
+      metaData.put("type", "video");
+      metaData.put("size", file.getSize());
+      gridFsTemplate.store(file.getInputStream(), fileName, file.getContentType());
+  
+    } catch (IOException e) { return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR); }
+  }
+  
+  
+  private static Query getFilenameQuery(String name) { return Query.query(GridFsCriteria.whereFilename().is(name)); }
+  
+  @RequestMapping({"/{filename:.+}"})
+  public void get(@PathVariable final String filename, final HttpServletRequest request, final HttpServletResponse response) throws IOException {
+    final GridFSDBFile file = gridOperations.findOne(Query.query(Criteria.where("filename").is(filename)));
+    if (file == null) {
+      response.setStatus(HttpServletResponse.SC_NOT_FOUND);
+    } else {
+      final int cacheForDays = 365;
+      response.setHeader("Content-Type", file.getContentType());
+      response.setHeader("Content-Disposition", String.format("inline; filename=\"%s\"", file.getFilename()));
+      response.setHeader("Expires", now(of("UTC")).plusDays(cacheForDays).format(RFC_1123_DATE_TIME));
+      response.setHeader("Cache-Control", String.format("max-age=%d, %s", TimeUnit.DAYS.toSeconds(cacheForDays), "public"));
+      file.writeTo(response.getOutputStream());
+      response.flushBuffer();
+    }
+  }
+  
+  @GetMapping("/delete/image")
+  public String deleteFile() {
+    gridOperations.delete(new Query(Criteria.where("_id").is(imageFileId)));
+    return "Done";
+  }
+  
+  @GetMapping("/retrieve/imagefile")
+  public String retrieveImageFile() throws IOException {
+    GridFSDBFile imageFile = gridOperations.findOne(new Query(Criteria.where("_id").is(imageFileId)));
+    imageFile.writeTo("/Users/gregcousin/Documents/igithub/gecbox.squidit/squidit/squidit-mongo-server1/src/main/media/mediaretrieve/newdog.mp4");
+    
+    
+    return imageFile.toString();
+  }
+  
+  class MultipartInputStreamFileResource extends InputStreamResource {
+    private final String filename;
+    MultipartInputStreamFileResource(InputStream inputStream, String filename) {
+      super(inputStream);
+      this.filename = filename;
+    }
+    
+    @Override
+    public String getFilename() {
+      return this.filename;
+    }
+    
+    @Override
+    public long contentLength() throws IOException {
+      return -1;
+    }
+  }
+  
+  @GetMapping("/retrieve/all")
+  @RequestMapping(value = "/retrieve/all", produces = MediaType.APPLICATION_JSON_VALUE)
+  ResponseEntity<List<String>> retrieveMongoFiles() throws IOException {
+    
+    List<GridFSDBFile> videoShowFiles = gridFsTemplate.find(new Query(Criteria.where("metadata.type").is("video")));
+    MongoClient mongoClient = new MongoClient(new ServerAddress("localhost", 27017));
+    DB db = mongoClient.getDB("squidit-mongodb1");
+    DBCursor cursor = db.getCollection("fs.chunks").find();
+    List<String> responseVideos = new ArrayList<>();
+    while (cursor.hasNext()) {
+      DBObject doc = cursor.next();
+      ObjectSerializer serializer = JSONSerializers.getStrict();
+      String response = serializer.serialize(doc);
+      responseVideos.add(response);
+    }
+    return new ResponseEntity<List<String>>(responseVideos, HttpStatus.OK);
+  }
+}
+
+   // MongoClient mongoClient = new MongoClient(new ServerAddress("localhost", 27017));
+    // DB db = mongoClient.getDB("squidit-mongodb1");
+    // DBCursor cursor = db.getCollection("fs.chunks").find();
+    // return new ResponseEntity<>(HttpStatus.OK);// Below is code to write the inputStream to a folder, we can write every response from mongo in a temp folder maybe
+
+    //  InputStream initialStream = new FileInputStream(
+    //   new File("src/main/resources/sample.txt"));
+    // File targetFile = new File("src/main/resources/targetFile.tmp");
+ 
+    // java.nio.file.Files.copy(
+    //   initialStream, 
+    //   targetFile.toPath(), 
+    //   StandardCopyOption.REPLACE_EXISTING);
+ 
+    // IOUtils.closeQuietly(initialStream);
+
+
+
+/*
+InputStreamResource inputStreamResource = new InputStreamResource(response.getBody().getInputStream());
+InputStream inputStream = response.getBody().getInputStream();
+HttpHeaders responseHeader = new HttpHeaders();
+responseHeader.setContentLength(response.getBody().contentLength());
+return new ResponseEntity<>(inputStreamResource, responseHeader, HttpStatus.OK);
+ResponseEntity<?>
+*/
+
+
+package com.squidit.web.web;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.stereotype.Service;
+import org.springfEramework.web.client.RestTemplate;
+
+
+@Service
+public class WebVideoService {
+  private static final String VIDEO_SERVICE_URL = "http://VIDEO-SERVICE";
+  
+  @LoadBalanced
+  private RestTemplate restTemplate;
+  
+  @Autowired
+  public WebVideoService(RestTemplate restTemplate) {
+    this.restTemplate = restTemplate;
+  }
+}
+
+
+public List<GridFsResource> getUploadedFileResource() {
+  // GridFSDBFile file = this.gridFsTemplate.find(new Query(Criteria.where("filename").is("dog.mp4")));
+  List<GridFSDBFile> mongovideoShowFiles = this.gridFsTemplate.find(new Query((Criteria.where("metadata.type").is("video"))));
+  List<GridFsResource> mongoVideoResource = new ArrayList<>();
+  for (GridFSDBFile videoShowFiles : mongovideoShowFiles) { mongoVideoResource.add(new GridFsResource(videoShowFiles)); }
+  return mongoVideoResource;
+}
+
+// ===========================================================================
+// MONGO MONGO RETRIEVE -  MAPPING
+// ===========================================================================
+
+@GetMapping("/mongoRetrieve")
+public ResponseEntity<List<GridFsResource>> getUploadedFile() throws IOException {
+  List<GridFsResource> resources = getUploadedFileResource();
+  
+  // ResponseEntity.ok().contentType(MediaType.parseMediaType(resources.get(0).getContentType())).contentLength(resources.get(0).getContentType().body(resources);
+  return ResponseEntity.ok().contentType(MediaType.parseMediaType(resources.get(0).getContentType())).body(resources);
+}
+
+
+//   @GetMapping("/video/videoShowFile")
+//   public ByteArrayResource videoShowFile(Model model) throws IOException {
+  
+  //     List<ServiceInstance> instances = discoveryClient.getInstances("mongo-server1-service");
+  //     ServiceInstance serviceInstance = instances.get(0);
+  //     String baseUrl = serviceInstance.getUri().toString();
+  //     
+  
+  //     baseUrl = baseUrl + "/mongo/mongoRetrieve";
+  //     RestTemplate restTemplate = new RestTemplate();
+  //     HttpHeaders headers = new HttpHeaders();
+  //     headers.add("Accept", MediaType.APPLICATION_JSON_VALUE);
+  //     HttpEntity entity = new HttpEntity<>(headers);
+  //     ResponseEntity<List> responseList = restTemplate.exchange(baseUrl, HttpMethod.GET, entity, List.class);
+  
+  //     ObjectMapper strToJsonMapper = new ObjectMapper();
+  //     JsonNode jNodeVideo = strToJsonMapper.readTree(responseList.getBody().get(0).toString());
+  //     
+  //     byte[] fileByteArr = jNodeVideo.get("data").get("$binary").binaryValue();
+  
+  //     // ByteArrayResource byteResource = new ByteArrayResource(fileByteArr);
+  
+  //     return new ByteArrayResource(fileByteArr);
+  //   }
+  // }
+  
+  // return new ByteArrayResource(fileByteArr) ;
+  // InputStreamResource fileTargetStreamResource = new InputStreamResource(fileTargetStream);
+  // ResponseEntity.ok().contentType(MediaType.parseMediaType(resources.get(0).getContentType())).contentLength(resources.get(0).getContentType().body(resources);
+  
+  
+   @GetMapping("/video/videoResource")
+  public ResponseEntity<Resource> videoResource(Model model) throws IOException {
+    List<ServiceInstance> instances = discoveryClient.getInstances("mongo-server1-service");
+    ServiceInstance serviceInstance = instances.get(0);
+    String baseUrl = serviceInstance.getUri().toString();
+    baseUrl = baseUrl + "/mongo/mongoRetrieve";
+    RestTemplate restTemplate = new RestTemplate();
+    HttpHeaders headers = new HttpHeaders();
+    headers.add("Accept", MediaType.APPLICATION_JSON_VALUE);
+    HttpEntity entity = new HttpEntity<>(headers);
+    ResponseEntity<List> response = restTemplate.exchange(baseUrl, HttpMethod.GET, entity, List.class);
+    
+    String thing = response.getBody().get(0).toString();
+    ObjectMapper mapper = new ObjectMapper();
+    JsonNode actualObj = mapper.readTree(thing);
+    byte[] byteArray = actualObj.get("data").get("$binary").binaryValue();
+    byte[] encoded = Base64.getEncoder().encode(byteArray);
+    HttpHeaders videoHeader = new HttpHeaders();
+    videoHeader.setContentType(MediaType.APPLICATION_OCTET_STREAM);
+    
+    FileUtils.writeByteArrayToFile(new File("/Users/gregcousin/Documents/igithub/gecbox.squidit/squidit/squidit-web/src/main/java/com/squidit/web/web/jsons/Video.mp4"), byteArray);
+    try (FileWriter file = new FileWriter("/Users/gregcousin/Documents/igithub/gecbox.squidit/squidit/squidit-web/src/main/java/com/squidit/web/web/jsons/Clientinfo.json")) {
+      Object json = mapper.readValue(actualObj.toString(), Object.class);
+      file.write(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(json));
+    } catch (Exception e) { 
+    return ResponseEntity.ok(
+    new FileSystemResource(new File("/Users/gregcousin/Documents/igithub/gecbox.squidit/squidit/squidit-web/src/main/java/com/squidit/web/web/jsons/Video.mp4")));
+  }
+  
+  
+  
+   // ===========================================================================
+  // VIDEO RESOURCE { VIDEO RETRIEVE } - GET FROM MONGO FILE
+  // NEVER GETS CALLED !!!!
+  // ===========================================================================
+  
+  @GetMapping("/video/videoResource")
+  public ResponseEntity<Resource> videoResource(Model model) throws IOException {
+    List<ServiceInstance> instances = discoveryClient.getInstances("mongo-server1-service");
+    ServiceInstance serviceInstance = instances.get(0);
+    String baseUrl = serviceInstance.getUri().toString();
+    baseUrl = baseUrl + "/mongo/mongoRetrieve";
+    RestTemplate restTemplate = new RestTemplate();
+    HttpHeaders headers = new HttpHeaders();
+    headers.add("Accept", MediaType.APPLICATION_JSON_VALUE);
+    HttpEntity entity = new HttpEntity<>(headers);
+    ResponseEntity<List> response = restTemplate.exchange(baseUrl, HttpMethod.GET, entity, List.class);
+    
+    String thing = response.getBody().get(0).toString();
+    ObjectMapper mapper = new ObjectMapper();
+    JsonNode actualObj = mapper.readTree(thing);
+    byte[] byteArray = actualObj.get("data").get("$binary").binaryValue();
+    byte[] encoded = Base64.getEncoder().encode(byteArray);
+    HttpHeaders videoHeader = new HttpHeaders();
+    videoHeader.setContentType(MediaType.APPLICATION_OCTET_STREAM);
+    
+    FileUtils.writeByteArrayToFile(new File("/Users/gregcousin/Documents/igithub/gecbox.squidit/squidit/squidit-web/src/main/java/com/squidit/web/web/jsons/Video.mp4"), byteArray);
+    try (FileWriter file = new FileWriter("/Users/gregcousin/Documents/igithub/gecbox.squidit/squidit/squidit-web/src/main/java/com/squidit/web/web/jsons/Clientinfo.json")) {
+      Object json = mapper.readValue(actualObj.toString(), Object.class);
+      file.write(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(json));
+    } catch (Exception e) { 
+    return ResponseEntity.ok(
+    new FileSystemResource(new File("/Users/gregcousin/Documents/igithub/gecbox.squidit/squidit/squidit-web/src/main/java/com/squidit/web/web/jsons/Video.mp4")));
+  }
+
+      <source th:src="@{${'/video/videoShowFile/' + fileNameForm'}}" type="video/mp4" />    
+
+
+      @RequestMapping(value = "/video/videoUpload", method = RequestMethod.POST)
+  public String videoUpload(@RequestPart("file") final MultipartFile[] files) throws IOException {
+    LinkedMultiValueMap<String, Object> map = new LinkedMultiValueMap<>();
+    ResponseEntity<String> response;
+    HttpStatus httpStatus = HttpStatus.CREATED;
+    try {
+      for (MultipartFile file : files) {
+        if (!file.isEmpty()) map.add("file", new VideoMultipartResource(file.getInputStream(), file.getOriginalFilename()));
+      }
+      HttpHeaders headers = new HttpHeaders();
+      headers.setContentType(MediaType.MULTIPART_FORM_DATA);
+      
+      List<ServiceInstance> instances = discoveryClient.getInstances("mongo-service1");
+      ServiceInstance serviceInstance = instances.get(0);
+      String baseUrl = serviceInstance.getUri().toString();
+      baseUrl = baseUrl + "/mongo/mongoCreate";
+      RestTemplate restTemplate = new RestTemplate();
+      HttpEntity<LinkedMultiValueMap<String, Object>> requestEntity = new HttpEntity<>(map, headers);
+      response = restTemplate.postForEntity(baseUrl, requestEntity, String.class);
+      
+    } catch (HttpStatusCodeException e) {
+      httpStatus = HttpStatus.valueOf(e.getStatusCode().value());
+      
+    } catch (Exception e) {
+      httpStatus = HttpStatus.INTERNAL_SERVER_ERROR;
+      
+    }
+    return "videoShowMainPage";
+  }
+

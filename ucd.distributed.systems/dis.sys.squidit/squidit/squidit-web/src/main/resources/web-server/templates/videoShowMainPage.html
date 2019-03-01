@@ -1,0 +1,17 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="videoHeader :: copy"></head>
+<body>
+  <h1>Welcome to Squidit</h1>
+  <h3>Overview</h3>
+  <ul>
+    <li>The most comprehensive distributed video service</li>
+  </ul>
+  <h3>Eureka Options Below</h3>
+  <ul class="openlist">
+    <li>Eureka Dashboard: <a href="http://localhost:1111">http://localhost:1111</a></li>
+    <li>Check applications registered: <a href="http://localhost:1111/eureka/apps/">http://localhost:1111/eureka/apps/</a></li>
+  </ul>
+  <div th:replace="videoFooter:: copy"></div>
+</body>
+</html>
