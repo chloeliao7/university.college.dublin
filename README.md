@@ -59,7 +59,7 @@
 + [lectures](./ucd.user.experience/ux.lec) (lecture slides pdf)
 + [notes](./ucd.user.experience/ux.notes) (lecture notes)
 
-### cloud computing
+### contemp development
 ---
 + [lab 1](./ucd.contemp.development/contemp.dev.assignments/contemp.lab1) (agile term research)
 + [lab 2](./ucd.contemp.development/contemp.dev.assignments/contemp.lab2) (uml exercise)
