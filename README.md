@@ -1,7 +1,7 @@
 # Welcome to university.college.dublin.s1
 
 ## Table of Content
-All folders contain : lecture slides, notes and exercises
+*All folders contain : lecture slides, notes and exercises*
 
 ### ucd.algorithm.advanced.structures 
 ---
@@ -58,7 +58,7 @@ All folders contain : lecture slides, notes and exercises
 + [user experience essay](./ucd.user.experience/ux.lab/ux.essay) (ux three waves)
 + [user experience lectures](./ucd.user.experience/ux.lec) (lecture slides pdf)
 + [user experience notes](./ucd.user.experience/ux.notes) (lecture notes)
-
+---
 
 ## Course Description
 Students have the opportunity to negotiate a programme of learning that is tailored to their own career goals and requirements. Instead of there being a rigorous set of modules that each student must take, as is typical in standard taught MSc programmes, students can prefer to broaden their knowledge acrossa diverse cross-section of modules offering by Schools such as the UCD School of Computer Science, UCD School of Business, UCD School of Maths & Statistics and the UCD School of Information & Communication Studies. Students enrolling in this MSc are also provided with the opportunity to work on a specialised research task and/or work as part of a research group as part of this programme.
