@@ -1,4 +1,4 @@
-# Welcome to university.college.dublin.s1
+# Welcome to university.college.dublin
 
 ## Table of Content
 *All folders contain : lecture slides, notes and exercises*
@@ -55,10 +55,50 @@
 
 ### user experience
 ---
-+ [essay](./ucd.user.experience/ux.lab/ux.essay) (ux three waves)
++ [essay](./ucd.user.experience/ux.lab/ux.essay) (ux the three waves)
 + [lectures](./ucd.user.experience/ux.lec) (lecture slides pdf)
 + [notes](./ucd.user.experience/ux.notes) (lecture notes)
+
+### cloud computing
 ---
++ [lab 1](./ucd.contemp.development/contemp.dev.assignments/contemp.lab1) (agile term research)
++ [lab 2](./ucd.contemp.development/contemp.dev.assignments/contemp.lab2) (uml exercise)
++ [lab 3](./ucd.contemp.development/contemp.dev.assignments/contemp.lab3) (ger hartnett : talk mongodb)
++ [lab 4](./ucd.contemp.development/contemp.dev.assignments/contemp.lab4) (junit)
++ [lab 5](./ucd.contemp.development/contemp.dev.assignments/contemp.lab5) (peter : talk 8bytes)
++ [lectures](./ucd.contemp.development/contemp.dev.pdf) (lecture slides pdf)
++ [notes](./ucd.contemp.development/contemp.dev.notes.txt) (lecture notes)
+
+### game development
+---
++ [lab 1](./ucd.game.development/game.dev.game/game.assignment1) (chicken game with gml)
++ [lab 2](./ucd.game.development/game.dev.game/game.assignment2) (drone game with unity)
++ [lectures](./ucd.game.development/game.dev.pdf) (lecture slides pdf)
++ [notes](./ucd.game.development/game.dev.notes.txt) (lecture notes)
+
+### ios cocotouch
+---
++ [lab 1](./ucd.ios.cocotouch/ios.student.projects/ios.projects.assignment.submissions/ios.projects.connect.4) (ai bot connect 4 game)
++ [lab 2](./ucd.ios.cocotouch/ios.student.projects/ios.projects.assignment.submissions/ios.projects.tweetertags) (twitter tags bot)
++ [projects](./ucd.ios.cocotouch/ios.teacher.projects) (teachers projects)
++ [lectures](./ucd.ios.cocotouch/ios.pdf) (lecture slides pdf)
++ [notes](./ucd.ios.cocotouch/ucd.ios.notes.txt) (lecture notes)
+
+### java advanced
+---
++ [lectures](./ucd.java.advanced) (advanced java course pdfs)
+
+### python data analystics
+---
++ [labs](./ucd.python.data.analystics/python.labs) (labs for python with a variety of exercises)
++ [project](./ucd.python.data.analystics/python.assignments/python.assignment.pythongraph.1) (pythongraph : using api and json to collect weather data)
++ [lectures](./ucd.python.data.analystics/python.pdf) (lecture slides pdf)
++ [notes](./ucd.python.data.analystics/python.notes.txt) (lecture notes)
+
+### spanish 101
++ [lectures](./ucd.spanish.101) (spanish 101 course pdfs)
+---
+
 
 ## Course Description
 Students have the opportunity to negotiate a programme of learning that is tailored to their own career goals and requirements. Instead of there being a rigorous set of modules that each student must take, as is typical in standard taught MSc programmes, students can prefer to broaden their knowledge acrossa diverse cross-section of modules offering by Schools such as the UCD School of Computer Science, UCD School of Business, UCD School of Maths & Statistics and the UCD School of Information & Communication Studies. Students enrolling in this MSc are also provided with the opportunity to work on a specialised research task and/or work as part of a research group as part of this programme.

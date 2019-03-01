@@ -1,0 +1,48 @@
+Requirement & Guideline for Homework2
+------------------------------------------------------------------------------------------
+Part1: From Raw Data to Clean Representation of Documents (10% of your score)
+	
+Part2: Analysis of Data (20%)
+
+Part3: From Clean Representation of Documents to Numerical Representation Vectors (10%)
+
+Part4: <Model Learning> and <Analysis of the model> and <Model Evaluation and Discussion> (35%)
+	
+Part5: Model Accuracy on Test Data (25%) (NO HARD CODING!)
+	+ If you don't have predicted labels, then your score will be Zero. 
+	+ If you have the prediction then your score will be calculated as the formula:
+				[(YourAccuracy - MinAccuracy) / (MaxAccuracy - MinAccuracy)] * 25%
+	Example:
+		MaxAcc = 92%
+		MinAcc = 72%
+		YourAcc = 89%
+		==> Your corressponding percentage score is: [(89-72)/(92-72)] * 25% = 21.25%
+		
+------------------------------------------------------------------------------------------
+Please check each part one-by-one, slowly and carefully before submitting
+------------------------------------------------------------------------------------------
+Guideline:
+		- Explaination: Clear and full-meaning
+			+ What do you want to do?
+			+ How can you do it?
+			+ Why do you want to do it?
+			+ What can you see from results?
+			+ Can you think about the idea (with code) to improve your results?
+		- Coding + Notebook:
+			+ Clean
+			+ Clear
+			+ Well-structured
+			+ Efficiency
+			+ Try to use the unit test for your analysis where you think it is important.
+		- Data:
+			+ All necessary data should be saved for re-run
+			+ Reload for checking the saved data
+		- Model/models: (NO HARD CODING!)
+			+ Should be saved for re-run
+			+ Should compare the performances based on:
+				. Change the input parameters?
+				. Change the input data?
+				. Time complexity if change <input parameters> or <size of data>
+				. Between the other models (if have)
+		-- Please re-run your code once again in different machine before submitting.
+------------------------------------------------------------------------------------------

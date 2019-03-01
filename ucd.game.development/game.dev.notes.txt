@@ -1,0 +1,299 @@
+# FIRST LECTURE : GAME DEV
+
+1st assignment set Wednesday 23 Jan, due by 11am Monday 4 March, worth 25%
+• 2nd assignment set Wednesday 30 Jan, due by 11am Monday 15 April, worth 25%
+• 2-hour written exam in RDS – worth 50% – will occur after semester end.
+   - note there are likely to be other assignments due at similar times
+   - note that assignments contribute 50%, a very important fraction of total marks
+   - note that final year projects need time to finish, write up, prepare presentation 
+
+# SECOND LECTURE
+### GENRES
+
+- 1d is : no width , Picture an x-y axis
+   - If you were to draw one line in any direction on a sheet of paper, that would be a 1 dimensional line.
+   - 1D Predetermined path – “on rails shooter”
+   - 1D side-to-side, eg Pong, Space Invaders (misnomer)
+   - Rotating (eg MuShoot)
+
+- 2D continuous, eg Angry Birds (misnomer); or maze, eg PacMan
+   - 2D grid of cells, eg rogue-like games, SimCity
+   - 2D plat-former
+
+   - more than one line that exist on a plane
+   - measurable dimensions when placed on an x-y axis
+   - It must have no thickness to it.
+
+- 3D plat-former or other
+   - http://www.racketboy.com/retro/platformers/platforming-games-101-all-you-need-to-know
+
+### SPRITES 
+---
+Unpleasant effect = flicker, tear 
+
+transparency - may involve special color codes, additional bit masking 
+takes TIME ++ 
+
+- Nevertheless - sprites 
+   - tools for indy devs 
+   - easy intro to gave dev 
+   - big games 
+- same to memory, allows more content (music, and so on)
+   - effects really hard to model in 3D 
+- fire smoke rain 
+   - also for 1 up and 50 points and so on 
+
+- modern defies - rely on 3d graphics 
+   - for 2d games they disable perspective calc 
+   - then simulates sprites with texture 
+
+> Obtaining: 
+rotoscoping - animation by artist of filed performance by actor 
+claymation - live actors 
+pre rendered computer generated imagery - CGI 
+   - where a dynamic may be 3d scene can be generated
+   - but not generated fast enough for use of in game 
+
+### SPRITE REQ 
+---
+   - vanishes
+   - proper perspective 
+   - many angles 
+   - distant 
+   - artificial 
+   - accepted 
+
+# THIRD LECTURE 
+### SPRITES & COLLISION
+what is 2.5D : with perspective vs with projection 
+- 2d means that you have a 2d field in a 3d world 
+
+perspicuity:
+
+vs projections: long far away with straight camera 
+trimetric: above mid side
+dimetric: front very mid side
+isometric: above large side
+
+2d images pros and cons : 
+-  is enough to do calculations on bitmaps (translation, rotation, scaling, shearing, parallaxing, bump mapping, normal mapping)
+-  but is not enough to handle everything through 3D modeling
+-  ------sprites can be layered : back-round, foreground, and so on 
+
+> COLLISION
+
+- rigid objects that bounce - ball
+- rigid immovable objects = ground, wall, floor
+- deformable objects that can be broken - balloon
+- insubstantial objects that offer no resistance - cloud
+- objects with special gameplay physics - jumping 
+
+- sprites are represented as rectangular arrays of pixels 
+
+### O(N2) complexity & BroadPhase
+---
+COLLISION is not based on transparency pixels 
+O(N2) complexity of sprite/sprite comparisons
+ 
+Simple and obvious ways to reduce the N2 complexity
+- Concentrate effort on current game level / room
+- Ignore pairs of objects that didn’t move and weren’t in collision last frame
+
+Ways to reduce the complexity of individual sprite/sprite comparison
+- BROAD PHASE                                    : quickly eliminate pairs that cannot possibly be in collision 
+- NARROW PHASE FOLLOWS                           : determine pairs that are actually in collision
+   - Sometimes even acceptable to cheat and omit narrow phase! “colliders” 
+- MIDDLE PHASE ALSO POSSIBLE                     : determine pairs that must be in collision
+- Scaling & Translation may be applied to AABB   : Rotation cannot (unless ...?)
+
+AABBs : means Axis-Aligned Bounding Boxes
+AABBs : can easily be checked for potential  
+   - no possibly of collision
+
+This forms basis of a useful technique for broad phase of collision detection
+-  take two objects in same room / level, at least one of which is moving
+-  test for potential overlap in the positions of those objects in the next frame 
+-  (and perhaps useful for establishing direction of response)
+   - test weather it is possible to check on future frames 
+
+## COLLISION
+### Multi-phase collision detection
+---
+BroadPhase [1 of 4] AABBs (Axis-Aligned Bounding Boxes)
+   - aabbas can easily be checked for potential overlap within 
+   -  take two objects in same room / level, at least one of which is moving
+   -  test for potential overlap in the positions of those objects in the next frame 
+   -  (and perhaps useful for establishing direction of response)
+
+> Bounding Circles : Bounding Circles can easily be checked for potential overlap of sprites within
+   - Bounding Circle for its visible pixels 
+   - Scaling & Translation & Rotation may all be applied to Bounding Circle
+
+> radii : circle 
+   - test whether distance between circle centers is less than the sum of circle radii
+   -  more cheaply, saving sqrts: is square of distance less than square of sum of radii
+
+> Middle Phase : Inner circles, all of whose pixels are visible, may be used for a 
+   - This can sometimes avoid the need for pixel-to-pixel Narrow Phase
+   - Broad Phase can sometimes give a quick “No”, Middle Phase a quick “Yes”
+
+> Separating Axis Theorem SAT
+   - Convex polygons do not overlap if any separating axis can be found : ie there is some vector onto which the projections of the polygons do not overlap
+   - AABBs are a very simple example of convex polygons
+   - can not be fully tested depending on the point of view 
+
+   - If any separating axis is found, immediately stop, knowing polygons do not overlap
+   - If no separating axis is found, polygons do overlap 
+
+> Collision Points : if you can test for these six points and test if you can test if it was inside of inside of a polygon of some sort then you know you have a collision 
+1. CONS 
+   - the amount of code I found I needed was getting excessive
+   - with all points inside the block, there was no clearly correct way to resolve
+   - when the player was moving quickly and became embedded inside a block
+   - the player being automatically bumped onto the surface was very jarring and often left me wondering what had happened while playing the game
+
+> create bounding box : to make sure its not there : REAL BOUNDING BOX TO TEST 
+> Fast-moving objects
+   - In a Broad phase, this will allow potential collisions to be detected
+   - The Narrow phase will need to estimate positions of objects between frames 
+   - The Broad phase may need to compare AABBs with Bounding Circles, etc
+   - "one frame means its here and one frame its there" - check speed between both frames
+   
+```md
+|  ---  |  ---  |  ---  |
+|       |       |       |
+| [][][][][][][]   ---  |
+|       |  [X]  |       |
+|  ---  |  ---  |  ---  |
+|       |       |       |
+|  ---  |  ---  |  ---  |
+
+```
+
+> lots of objects means to use Quadtrees :  partitioning 2D space
+   - in bottom checking quarters of the vertices 
+   - Each node may have four child nodes, dividing its area in four quarters
+
+- few depths as you require : 
+1.  If tree is deep, each node covers a small area and usually contains few objects 
+  a. but it probably contains only parts of those objects, other parts of those objects will be CONTAINED IN MULTIPLE OTHER NODES
+  b. If tree is shallow, ... large area : 
+  c. many objects – objects may still be spread out 
+  d. Tree depth does not in principle have to be uniform
+  
+   - Only moving objects need to be 
+      a. added/removed from lists between frames 
+      b. checked for collisions with other objects : moving objects need be checked only against other objects (in the same list)
+         
+   1. TREES: 
+      - deep tree: objects typically in many lists, each such list quite small
+      - shallow tree: objects typically in one or a few lists, but each list may be large
+    
+# FOURTH LECTURE
+### COLLISION
+Quad trees can suck 
+   - sub devisions of places 
+   - convex polygons 
+      - not interesting for AABB special case : but needed for dealing with triangles 
+
+<!-- *(
+Not particularly interesting for the AABB special case: 
+but needed for dealing with Triangles, 
+non-axis-aligned rectangles, 
+general convex polygons
+)* -->
+
+- record the min and max scalar projections of all vertices of A onto this vector
+- record the min and max scalar projections of all vertices of B onto this vector
+
+Non-convex polygons : A general polygon with concavities can be made by joining several convex polygons.
+   - Polygons with concavities must have more than three vertices: there is always more than one way to carve up a many-sided polygon into smaller parts
+   - Intersection of general polygons can be handled by breaking them into convex polygons, then determining intersections of these smaller parts
+
+<!-- However, if collision detection is required to give more than yes/no information about collisions between two shapes, say for use in collision response, it may be necessary to distinguish between internal edges and external edges:
+eg for platforms (even convex ones) with start-middle-end sections – you want to check for a bounce off an external edge but not an internal one
+(if shallow approach as below, ‘deepest penetration’ & ‘direction’ both mislead) -->
+
+# FITH LECTURE : PAINTERS ALGORITH
+
+Z-BUFFERING, method naturally ha an x and y but adds 
+   - paints pixels of the polygon 
+   - chooses whats in front vs whats in the back 
+   
+BSP - BINARY SPACE PARTITIONNING : well suited for  organising polys representing a rigid object 
+   - before you can use this tree you need to build this tree 
+   - O(N.logN)
+   - trees that can grab everything in a scene and you can duplicate it for different behavior s
+   - based on front or rear of a poly  - 2d 
+   - spaced out of whats in front vs whats in the back of the poly
+   - Merging of the trees need to happen 
+
+INSTRUCTION: 
+   - subdevide whats in front and whats in back, 
+   - sub devide over and over again
+   - this tree can be based on for loops in the construction 
+   - changing all trees based on trees 
+   - 
+
+Definition of a Polygon. 
+   - A polygon is any 2-dimensional shape formed with straight lines
+
+## PSUDO ALGO : PAINTERS ALGORITH
+---
+
+if "from front"
+   - recursively pain the scene to the rear 
+   - paint its front face, (different textures may  applu to the front and back) 
+   - paint other polus coplanar with it, their fronts or backs as appropriate 
+   - paints the scene to front of it 
+
+if "front rear"
+   - paint the to front partition 
+   - then the pivots back and other coplanar 
+   - and then the to rear partition 
+
+if edge-on : visual feild is not there : NOT PAINTED AT ALL 
+   - ignore it and those coplanar; you fontt see them as they are edge on 
+   - paints to front and rear partitions in either order, they wont overlap
+
+>> distance maters from obscure
+
+combining BSPTs 
+   - combininng whats in front of the tree and whats in the reer 
+   - add a new object to it
+    
+   AABB stands for "Axis-Aligned Bounding Box." : NEEDS 8 boxes FOR EVERY TREE - BSPTs
+   - typically used to see if two objects might be touching.
+   - AABB checks are often used as a coarse first-approximation
+   - If you have the AABB for two objects, you can do some pretty simple math to see if those AABBs overlap
+   - smallest Cuboid that can completely contain the shape
+
+   AABB - is Axis-Aligned Bounding Box.
+   OBB - Oriented Bounding Box.
+   -  Those are well established computer science terms. The difference is pretty simple 
+   - AABB is not rotated, OBB can be rotated.
+   - The reason for having the AABB is that they are cheaper to test against versus a OBB 
+   
+   AXIS ALIGNED BOX - combination of multiple BSPTS 
+   
+   BOXES IN BOXES : OBB, AABB, AND CONVEX HULL 
+   
+# SIXTH LECTURE
+
+Combining two BSPTs means splitting two of them depending on the plane of the + PIVOT PLANE 
+FACTORIAL RECURSIVELY : In mathematics, the factorial of a positive integer n, denoted by n!, is the product of all positive integers less than or equal to 
+
+pivots plane non trivially intersects BSPT's 3D region  : dont worry on whats behind and whats in front of the BS
+
+WHen using with collition make sure you use BSPTs 
+
+
+# SEVENTH LECTURE 
+
+does triangle T with vertixies A, B , C intersect Plane P 
+T is parallel to P if TU = += ()
+
+
+prologue stage vs 
+collision stage 
+epilogue stage 

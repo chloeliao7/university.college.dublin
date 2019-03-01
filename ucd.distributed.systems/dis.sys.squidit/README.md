@@ -2,7 +2,7 @@
 
 ## Project Proposal
 - Eoin Goslin: 18204142, eoin.goslin@ucdconnect.ie 
-- Greg Cousin: 18204188, g​ regoire.cousin@ucconnect.ie 
+- Greg Cousin: 18204188, g​regoire.cousin@ucconnect.ie 
 
 ## SQUIDIT : A CROWD-VOTED CONTENT SITE
 

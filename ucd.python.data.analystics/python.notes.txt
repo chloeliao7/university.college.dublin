@@ -1,0 +1,97 @@
+
+https://csmoodle.ucd.ie/moodle/course/view.php?id=702
+
+The enrollment key is ‘dsip2019’ - Pádraig
+
+General
+Workshops 3pm - 5pm.
+
+Friday Week 1 (25/01) H2.38 + H2.20
+Friday Week 4 (15/02) H2.38 + H2.20
+Friday Week 7 (08/03) H2.38 + H2.20
+Friday Week 10 (12/04) H2.38 + H2.40
+Assignments
+
+Assignment 1: Deadline 25th March (Wk8)
+Assignment 2: Deadline 26th April (Wk12)
+
+>> Sets are unordered lists which contain NO DUPLICATE VALUES!!! 
+>> They can be created from lists, strings or any other iterable value, using the set function. Sets do not have an order, so we cannot index into them by position.
+ 
+ 3**2 is a power to 
+ 
+ fullist[1:] # all items from the 2nd one onwards
+ fullist[:4] # start at 1st item, end before 5th item
+ 
+THE FIRST ASSIGNMENT IS AVAILABLE ON THE MOODLE (SEE WK 5).
+THE SECOND ASSIGNMENT WILL BE RELEASED BEFORE WEEK 9 - A DRAFT (NOT DEFINITIVE) IS BELOW.
+
+## Intro to DATA SCIENCE 
+
+The data era - Vs 
+volume, 
+velocitty, 
+variety, 
+veracity: truthfullness of data
+
+math + stats skills -> tech + hacking skills -> domain expertise
+
+Examples of common data science tasks; 
+
+ prediction, 
+ regression, 
+ clustering, 
+ anomaly detection,
+ visualization
+ 
+ KDD: Raw Data =/ valuable or actionable insight 
+ 
+ raw data -> target data -> clean data -> transform data -> pattern result -> knowledge 
+ 
+ ABT : crisp-dm : basic structure used to represent datase
+ TABULAR DATA: 
+ 
+ Data Availability: do we have access to the data required to the create feature 
+ Timing: when will the data require 
+ Longevity: 
+ 
+ ---
+ 
+ Data Acquisition: Collect/import data from a variety of different sources
+ Data Preparation: Clean, manipulate and aggregate data into a form that can be analysed
+ Reporting & Visualisation: Interpret results, summarise & disseminate them in a compelling way
+ Analysis & Modeling: Apply algorithms to explore relationships and make predictions
+ 
+ ---
+ 
+ CRISP-DM Model:  ANALYTICS BASE TABLE (ABT)!!!
+ 
+1. Business Understanding: What is the business problem?
+2. Data Understanding: What is the data required to solve the business problem?
+3. Data Preparation: Where is the data, how should it be collected, transformed, and stored?
+4. Modeling: What data mining algorithms should be used to solve the business problem, given the data available?
+5. Evaluation: How well do the algorithms work?
+6. Deployment: How can the analytics results/model be
+integrated into the current workflow for the organisation?
+
+
+Ordinal -> Textual -> interval -> binary -> original -> categorical -> numeric 
+
+
+1. Data availability: Do we have access to the data required to create the feature?
+2. Timing: When will the data required for the feature be available? 
+3. Longevity: How long will the data used in a feature stay
+relevant? Will it quickly become "stale" or inaccurate?
+
+
+ABT + Features: 
+- RAW FEATURES: 
+		1. These come directly from the original data.
+- DERIVED FEATURES: 
+		2. Do not exist in the original data, but are constructed in some way from the raw data.
+		
+		
+1. Brainstorm features: Understand the business problem, explore the data, study previous solutions from other tasks/domains. Identify availability, timing, and longevity constraints.
+2. Devise features: Manually and/or automatically create raw and/ or derived representative features from the data.
+3. Select features: Identify subset of all possible features, which provide one or more “views” for our models to operate upon.
+4. Evaluate models: Estimate how effective the features were for the analytics problem that we are trying to solve.

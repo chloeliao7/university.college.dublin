@@ -1,0 +1,787 @@
+# FIRST CLASS
+
+<!-- comp47390enrol2019 -->
+
+TA Duties:
+- Answer questions relating to assignments (email/Moodle, organize Q/A session if need be)
+- Grade assignments (3 in total) and provide timely feedback
+- Assist in programming test invigilation (Feb 27th, 9-11am)
+
+Schedule:
+1. Ungraded Assignment    - HelloUCD.           	Friday, February 1st (5pm)
+2. Ungraded Assignment    - TipCalc.            	Friday, February 8th (5pm)
+3. Graded Assignment      - Programming Test.     Wednesday, February 27th (9-11 am)
+4. Graded Assignment      - Tweeter Tags.         Monday, March 11th (9am)
+5. Graded Assignment      - Connect4 Game.        Friday, March 29th (5pm)
+
+> Class size is small ~20 students. Also, as TA, you can claim for extra preparation time. Payment is at the standard demonstrator rate of €16.88 per hour.
+> If you are interested, have experience with the platform, and are not taking the module, please get in touch.
+
+10,000 for any app in the store
+its 11 but 13 and up 
+coco = graphics api developed by next 
+frameworks - foundation, ui kit, coreData, core motion 
+design strategies - mvc 
+
+---
+
+tools = Xcode,  Instruments, 
+
+Interface builder
+objective c crashed a lit 
+
+- Kernel os = power management
+- sockets = file management
+- file access = preferences
+- sqlLiteURL utilities
+- Quartz = (2d)
+- audio recording = core animation
+- video playback = open GLS ES
+
+core audio = api = very powerful 
+core image = api = very power-full 
+COCOA = Cocoa Touch is a UI framework for building software programs to run on iOS
+
+UIKit 
+	- ui interface elements 
+	- application runtimes 
+	- event handling 
+	- hardware apis 
+Foundation 
+	- utility classes 
+	- collection classes 
+	- object wrappers 
+	- subset for cocoa 
+NS = next// step 
+
+Objective c (legacy) 
+- swift is new prog lang 
+- powerful intuitive modern syntax 
+- easy to learn about 
+
+*DEMO - take away === creating project in IOS 10 
+ui label is a sub property of a ui view 
+main story board is where all your MVC ARE*
+
+## SECOND CLASS : OTHER INFO 
+
+defaults write com.apple.dt.Xcode NSWindowDarkChocolate -bool true
+defaults write com.apple.dt.Xcode NSRequiresAquaSystemAppearance -bool true
+defaults write com.apple.dt.Xcode _NSSystemAppearanceOverride DarkAppearance
+
+# THIRD CLASS
+
+ mvc - divide objects 
+ model = what your application is but not show how it is displayed
+ controller - how your model is presented to the user 
+ - not reusable 
+
+view = your controllers minion 
+
+controller > model : directly  
+controller > view  : directly 
+model <<> will not t0 view 
+the controller can drop a target on itself 
+
+view and controller p---- action protocol - delegation 
+--- generates a controller from the view 
+
+> data source protocol : not model : (not model) controller interest/format model information for the view 
+> : tells where to go with multiple MVC(s) 
+
+VIEW ----> CONTROLLER
+protocol > delegate : 
+___ << outlet 
+___ > target 
+action > (data count, and so on)
+
+VIEW IN STORY.BOARD 
+CONTROLLER IN FILE 
+
+OOP JARGON 
+
+CLASS                          : defines the grouping of data and code - type of object 
+INSTANCE:											 : A specific allocation of a class 
+METHOD                         : a function that an object know how to preform 
+INSTANCE VARIABLE OR IVAR      : a specific of a data belonging to an object 
+ENCAPSULATION                  : keep implementation private and separate from interface 
+POLY                           : difference object , same object 
+INHERITANCE                    : hearchichal organization share code customize or extends behavior 
+NO NEED FOR AN ABSTRACT CLASS  : doesn't exist 
+
+SUPER CLASS AND SUBCLASS :
+> NSObject(next // step) (memory management) ---> UIControl (generic behavior) ----> UIButton & UITextField (examples - Specific behavior)
+
+NSObject(next // step): 
+- basic behavior from object 
+- increase and decrease variable instance 
+- hash keys to store and search object 
+
+UIControl: 
+
+CLASS * INSTANCES are BOTH Objects 
+ 
+CLASS
+> singleton where as INSTANCES CAN BE MULTIPLIED : THEORY 
+- declare state 
+- behavior is implemented using methods 
+- instances variable - typically hidden accessible by getter and setter 
+
+## THIRD CLASS: INFO ON CODE (SWIFT)
+---
+------------ IN CALC
+
+VIEW - actions : UILabel : UIButton : ---> OP and digitPressed -----> to CONTROLLER 
+
+func multiply(_ op1: Double, _ op2: Double) -> Double 
+> _ omitted : 
+- don't need a name outside of the function 
+> _: _: means can do polymorphism 
+
+DON'T PUT SEMI!!!
+> @IBOutlet weak var calcDisplay : UILabel! 
+car calcModel 
+weak : MEMORY MANAGEMENT 
+
+performOperation({ $1 - $0 }) // means any attribute 
+
+## THIRD CLASS : SWIFT 
+---
+- announced in 2014 
+- open source in 2015 
+- modern, safe and powerful,
+- fast,
+- concise and interactive, 
+- designed for work side-by-side with OBJECTIVE-C
+
+new lang reference : 
+- super switch statement 
+- type reference - no need to instantiate var 
+- closures : functional programing : lambda > signature of the (double) --> double 
+- tuples: (collection of values of different types) 
+- ------------   var a , var b = (a,b) = (b,a)
+- optionals = ??? nil or value in optional 
+- arrays, strings, dictionaries 
+- enhanced struct and enum types = struct : define , enum : red, blue, and so on 
+- func can return multiple values 
+- operator overloading 
+- generic - place holder 
+- integer overflow checking 
+- string interpolation 
+- nested types 
+
+Safer Language 
+- {} required around body of every control statement 
+- no POINTERS : but can find them 
+- the assignment operator = DOES NOT RETURN THE VALUE 
+- ---------- >= or += 
+- semi optional 
+- parentheses around condition optional 
+-  variable and constants must be initialized before they are used : EXCEPT optional = var d: Double? .. = null 
+-  integer calculations are checked by overflow 
+
+Stronger typed language 
+- no implicit conversion between NUMERIC TYPES : FLOAT AND DOUBLE : 32 bits : NEEDS CASTING
+- Array indices are bounds checked at execution time : (hackers love to overflow buffer)
+- AUTOMATIC MEMORY MANAGEMENT - not garbage collector 
+- - ----- eliminates most memory leaks 
+- ------- use automatic reference counting 
+- ---------- possibility to keep references to objects that are longer used 
+- ---------- reference avoid circular reference between objects preventing memory from being reclaimed 
+
+weak : can be released if objects aren't used 
+-- object
+
+## THIRD CLASS : SWIFT 
+
+## OPTIONAL 
+--- 
+
+```javascript
+OPTIONAL TYPE : 
+- OPTIONAL is a new type -- enum 
+- ---- enum Optional<Wrapped_type> { case none; case some(Wrapped_type) }
+
+let x: string? = null 
+.. is same as 
+let x = Optional<String>.some("hello UCD")
+
+var y = x 
+... is same as 
+switch x { case some(let value): y = value; case none: // raise an exception  }
+
+## ARRAYS 
+---
+
+var a = Array<String>()
+var a = [String]() 
+
+for car in cars{
+	print("\car")
+}
+
+## DICTIONARIES 
+---
+
+ var vehicle = dictionary<String, Int>() 
+ var vehicle = [string:Int]() 
+ 
+ vehicles = ["Car":4, "tricycle":3]
+ let wheels = vehicles["truck"]
+	
+	//! TODO 
+ 
+ for (key, value) in vehicle { print("\(key)= \(value)") }
+ 
+ for item in toolbarItems { // item’s type is AnyObject if let toolbarItem = item as? UIBarButtonItem {
+// do something with the toolbarItem (which will be a UIBarButtonItem here)
+} }
+```
+ 
+MEANS HASHTAG IS LIKE ## IN RUBY
+- string interpolation
+
+## RANGE 
+ ---
+ 
+... include 
+...<_ less than the last one 
+
+EXAMPLES ---
+- you can add methods and properties to a _class 
+- possible even _if you don't have the source 
+- not possible to reimplement already existing methods 
+- added properties can not have storage associated with them 
+
+- ---- this feature _if already abused 
+- should be used to add clarity to readability not obfuscation! 
+- don't use it _as a substitute 
+- don't use-it _as a substitute _for good OOP
+- organized but needs organized architecture 
+- small functions 
+
+## THIRD CLASS : OTHER 
+PROPERTIES 
+---
+
+```swift
+you can add will set vs didnet
+var someStoredProperty: Int = 2018 { 
+	willSet {
+		newValue // is the new value }
+	didSet {
+		oldValue // is the old value
+} 
+}
+// lazy initialization : WILL ONLY BE CALLED ONCE ITS CALLED UPON 
+lazy var calcModel = CalcModel() // nice if CalcModel used lots of resources
+ ```
+
+## INIT 
+--- 
+
+## OTHER CLASSES 
+--- 
+ 
+NSObject - base class for all ob c classes 
+ - some advance feature will require to subclass 
+
+NSNumber 
+- generic number-holding classes 
+- let n = NsNumber(3.5.4555)
+
+NSDATE 
+- used to find out a date for future and past 
+- NS CALENDAR, NSDATEFORMATTER, NSDATECOMPONENTS 
+- CHECK ON LOCALIZATION 
+
+NSData
+- sending, "BAG OF BITS" 
+- json, image and all in backing into an object 
+- archive dump 
+
+3 types of fundamental building blocks of data structures on swift 
+- classes , structure, enum 
+
+STRUCTURE and DIFFERENCE : 
+- inheritance > class only
+- introspection and casting (class only) 
+- value type (struct, enum ), vs reference type (class)
+
+struct vs enum : COPIED 
+- copied when passed as an argument 
+- immutable if assigned to a variable 
+- functions are constants by default 
+- ----- can put VAR in front 
+- ----- MUTATING if you don't want it to change at all!!
+
+REFERENCE
+- stored on the heap and regenerated counted 
+- constant pointer to a class(let) still can mutate by calling the method and changing properties 
+
+choose which 
+	--- usually choose class 
+	---- struct tend to be more fundamental type 
+	---- enum is situational 
+	
+	/// OPTIONAL IS IMPORTANT - PLAYGROUND FILE : COOL EXAMPLES SEND IT 
+	
+# FORTH CLASS : OTHER : Swift Language
+
+Value (struct and enum) 
+
+FUNC : METHODS
+- using override in front of func will override it 
+
+- a method can be marked final : classes also 
+- ---- prevent subclasses from being able to override 
+- isSignMinus is a instance property of double 
+- abs is a type method of double 
+
+```swift
+> PARAMS INTERNAL NAME VS EXTERNAL
+use external 
+
+func foo(_ internal: Int) ?????
+func foo(_ external: Int) 
+
+> FIRST AND SECOND
+func foo(_ first Int, externalSecond second: Double){
+	
+}
+
+> PROPERTY OBSERVERS: 
+willSet and didSet ????? 
+
+var someStoredProperty : Int = 2016 {
+	willSet { newValue : new value that will get set }
+	didSet { value : old value after it is set  }
+}
+
+override var someStoredProperty : INT 2016 {
+}
+```
+
+> PROPERTIES OBSERVERS
+LAZY VAR : only be loaded when start using it 
+lazy var calcModel = CalcModel() // nice if calcModel used lots of resource 
+
+> INIT METHOD 
+init methods are not common because properties have their own set using = 
+- starts out as nil
+- you can initialize a property by executing closer 
+- use lazy instantiation
+
+> FREE INIT METHODS 
+- if all properties in a base class have defaults you get init() fro free 
+- if a strut has no initializer : it will default with all properties 
+
+> CLASS INIT 
+- any property value
+
+// Supper class : default and designated class 
+- designated <- convenience <- convenience 
+- designated (up) designated (up)& <- convenience 
+
+INHERITED INIT - already there
+REQUIRED INIT - needs to call upon its inherited one 
+
+FAILED INIT : if an init is declared with a ? after the work init, it returns optional 
+init?(arg1L Type1, ...){
+	// this would turn nil 
+}
+
+TO FIX : IF STATEMENTS
+
+> OBJECTS : 
+```swift
+let x = calc()
+let y = calc(arg:2018, arg2:"")
+let z = [String]()
+
+let button = UIButton(type: .System) ?????
+
+var arr = ["1"]
+
+class func button(buttonType: UIButton Type) -> AnyObject 
+```
+
+> AnyObject: important
+- used primary for compatibility with existing objective c apis 
+- AS PROPERTIES - either singularly or as an array of them ????????????
+
+---- var destinationViewController :AnyObject
+
+---- as argument function : func digitPressed(senderL AnyObject)
+
+HOW TO USE: 
+- we don't directly 
+- convert and cast : CASTING OPERATOR : as? 
+---- let calcVC = destinationVS as CalViewController
+
+AS KEYWORD: We "force" an AnyObject to be something else by “casting” it using the as keyword ...
+
+```swift
+(for any errors use as?)
+- casting in arrays is possible : var toolbar: [AnyObject]
+- for item in toolbar {
+if let new : toolbar as UIObject { ????? }
+}
+
+for item in toolbarItems {  // item’s type is AnyObject 
+	if let toolbarItem = item as? UIBarButtonItem { // do something with the toolbarItem (which will be a UIBarButtonItem here)
+} 
+}
+
+(can also do with @IBAction)
+@IBAction func appendDigit(sender: AnyObject) {}
+```
+
+> SWIFT 3  can also define Any. Does not have to be an object. 
+- a little more general than AnyObject
+
+> ARRAY - array.sort((Type, Type) -> bool)
+
+what is a topple in SWIFT: 
+
+array.ma(transform: (Type) throws -> T){
+ 	//array.map {"\($0)"}
+}
+
+## ARRAYS 
+---
+let sum: Int = [1,2,3].reduce(0) {$0+$1} // sums the numbers in the array 
+
+## STRINGS ---
+---
+
+```swift
+STRINGS SERIES OF CHARACTER : AS OPOSED TO COLLECTION (UNI CODE COMPLIANT)
+let components = "~/COMP/ASSIGNMENT".pathComponents 	
+// ["~", "COMP", "Assignments"] 
+
+string.characters
+string.unicodeScalars 
+
+string.utf8
+string.utf16
+
+Strings also has functions 
+important : ?????? 
+```
+
+> EMIJI : UNICODE : 32 bits will not work 
+> TYPE CONVERSION
+
+```swift
+let d: Double = 3.4
+let f: Float = 3.44
+let x = Int(d) / x = 3 
+```
+
+Strings provide views that conform to CollectionType
+– characters is a collection of Character values, or extended grapheme clusters. – unicodeScalars is a collection of Unicode scalar values.
+– utf8 is a collection of UTF–8 code units.
+– utf16 is a collection of UTF–16 code units.
+
+Strings: Other useful string functions
+greetings.hasPrefix(String)      					-> Bool greetings.hasSuffix(String)  -> Bool																			
+greetings.endIndex               					-> Bool																				
+Int(greetings)                   					-> Int?																		
+greetings.capitalizedString      					-> String greetings.lowercaseString > String																	
+greetings.uppercaseString        					-> String [String].joinWithSeparator(String) -> String		
+														
+["U", "C", "D"].joinWithSeparator(",") = "U,C,D" String.componentsSeparatedByString(String) -> [String]
+
+## STRUCTS AND ENUMS
+---
+- not inherit or implement deli-gate 
+- needs to do a couple things to mutate 
+
+```swift
+struct Rectangle { 
+	var width: int 
+	var height : int 
+	func area() -> Int {
+		return width * height 
+	}
+}
+```
+
+# FITH CLASS
+
+```swift
+- Error handling 
+
+- Optional Binding 
+----  Improved handling of optional binding 
+---- possibility to test multiple binding at once 
+
+func filterByAge(name: String?, age: Int?) {
+	guard let name = name, age = age where name.characters.count > 0 && age >= 18 else {
+	print("not allowed")
+return }
+
+print("\(name) is allowed to vote") }
+```
+
+## CLEANUP ACTIONS 
+---
+- defers statement defers execution until the current scope is exited 
+
+```swift
+func processFile(filename: String?) throws { if exists(filename) {
+let file = open(filename) defer {
+  close(file) }
+
+while let line = try file.readline() { print("\(line)") // Work with the file } 
+{
+  var loudDescription: String {
+    return "\(self.description.uppercaseString)" }}
+
+let greetings = ["Hello", "UCD"]
+print("\(greetings.description)") print("\(greetings.loudDescription)")
+let numbers = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+```
+
+## Protocol extensions
+---
+
+```swift
+>  Class, enum, struct and now protocols can be extended without the need to subclass
+extension CustomStringConvertible { var loudDescription: String {
+return "\(self.description.uppercaseString)"}}
+let greetings = ["Hello", "UCD"]
+print("\(greetings.description)") print("\(greetings.loudDescription)")
+
+>  Powerful feature
+let numbers = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+> SWIFT 1
+let list = find(filter(map(numbers, { $0 * 2}), { $0 % 3 == 0 }), 42))
+> SWIFT 2
+let list = numbers.map { $0 * 2 }.filter { $0 % 3 == 0 }.indexOf(42) print("\(list)") // Output?
+```
+
+## DEBUGGING, ASSERTIONS, XCODE : NEXT PACKET 
+---
+
+1. Playground
+- executes as you type
+- rapid debug cycle
+- results immediately 
+- no need to build and run the code to debug
+- timeline feature
+- inspect how algorithm
+
+2. Read-Eval-Print-Loop (REPL) ??? 
+- debugging tool for interacting (for running app) 
+
+## EMULATOR VS SIMULATOR
+--- 
+
+The key difference is that:
+- With an emulator, you want the output exactly match what the object you are emulating would produce.
+- With a simulator, you want certain properties of your output to be similar to what the object would produce.
+- writing statements that execute immediately
+
+## OBJECTIVE C
+--- 
+- IOS was developed in  a language called objective c 
+-  virtual all 
+
+NSString is bridge to Strings, 
+array to array 
+dictionary to dictionary 
+int float double and bool to NS number 
+not vice versa 
+
+-- CASTING 
+- casting to from  bridged types 
+- you can also cast without the need for as? to from a bridged type 
+- et text  string = ICD 
+- let length = (text as NSString).length
+-  SWIFT VS OBJECTIVE-C = swift has object vs swift isn't 
+
+## PROPERTY LIST
+--- 
+property list is really kist a definition for anyOBJECT which is known to be a collection of objects which are only one of: 
+NSString, NSArray, NSDictionary, NSNumber, NSData, NSDAte
+
+Persistence - UserDefaults 
+- a storage mechanism for property list data 
+- it can be store/retrieve entire property by name 
+- it can also store retrieve little pieces of data 
+
+## UIView
+--- 
+- subclass UIVIEW : defines a coordinate space 
+- draws 
+
+addSubview(aView:UIView) 
+removeFromSuperView()
+
+where does a view hierarchy start? 
+- top of the hierarchy is the controllers var view: UIVIEW 
+- the simple property is a very important thing to understand 
+- bounds will change on rotation 
+- the view will be one you will programmatically add subviews to 
+- all mvcs views UIView will have this view as an ancestor 
+- automatically hooked up for you when you create an mvc in xcode 
+
+insertSubView() 
+initialize UView()
+
+CGFloat
+CGPoint 
+CGSize 
+CGRect
+
+## COORDINATES: 
+---
+CGContextBeginpath, MoveToPoint, AddLineToPoint, AddLineToPoint, ClosePath
+UIColor.greenColor().setFill()
+
+UIBezierPath 
+let path = UIBezierPath()
+path.move(toL GCPoint(85,10))
+path.addLine(toL GCPoint(85,10))
+path.addLine(toL GCPoint(85,10))
+path.close
+
+FONTS : 
+three aspects of a protocol 
+protocol : 
+
+## GESTURE 
+---
+	- We’ve seen how to draw in a UIView, how do we get touches?
+	- Gestures are recognized by instances of UIGestureRecognizer
+	- There are two sides to using a gesture recognizer
+1. Adding a gesture recognizer to a UIView (asking the UIView to “recognize” that gesture) Usually the first is done by a Controller
+	- Occasionally a UIView will do this itself if the gesture is integral to its existence
+2. Providing a method to “handle” that gesture
+
+UIPanGesture 
+func translation(in: UIView?) -> CGPoint // cumulative since start of recognition 
+func velocity(in: UIView?) -> CGPoint // how fast the finger is moving (points/s) 
+func setTranslation(CGPoint, in: UIView?)
+
+- The abstract superclass also provides state information 
+- var state: UIGestureRecognizerState { get set }
+
+- So, given this information, what would the pan handler look like?
+
+```swift
+func pan(gesture: UIPanGestureRecognizer) { switch gesture.state {
+	case .changed: fall-through
+	case .ended:
+	let translation = gesture.translation(in: pannableView)
+	// update anything that depends on the pan gesture using translation.x and .y gesture.setTranslation(CGPointZero, in: pannableView)
+	default: break
+} }
+```
+
+# LECTURE NEXT 
+
+> Multiple mvcs x
+like a tab bar controller 
+1. combines mvc to build more complex apps 
+2. ios provides some controllers whose view is other mvcs 
+* UITabBarController:
+* UISplitViewController: displays two mvc side by side 
+* UINavigationController: lets thte user push and pop mvcs off of a stacks = like a stack of cards 
+	- like navigation menues in the iphone SETTINGS
+	-
+
+> accessing the sub MVC 
+> ??? 
+
+> connecting multiple mvcs 
+* how do we wire mvcs? 
+- drag out a split view controller from the object library and delete all the extra ones 
+
+# NEXT LECTURE
+
+pop over - over text code on the ui
+- a text view MVC
+- akk segues are manageed via a UIPresentationController 
+	vc = segue.destinationViewController as? MyController{
+		if let ppc = vs.popoverPresentationController {
+	}
+}
+
+```md
+1. Show - Pushes the destination view controller onto the navigation stack, moving the source view controller out of the way (destination slides overtop from right to left), providing a back button to navigate back to the source - on all devices.
+EXAMPLE: NAVIGATING INBOXES/FOLDERS IN MAIL.
+
+2. Show Detail - Replaces the detail/secondary view controller when in a UISplitViewController with no ability to navigate back to the previous view controller.
+EXAMPLE: IN MAIL ON IPAD IN LANDSCAPE, TAPPING AN EMAIL IN THE SIDEBAR REPLACES THE VIEW CONTROLLER ON THE RIGHT TO SHOW THE NEW EMAIL.
+
+3. Present Modally - Presents a view controller in various different ways as defined by the Presentation option, covering up the previous view controller - most commonly used to present a view controller that animates up from the bottom and covers the entire screen on iPhone, but on iPad it's common to present it in a centered box format overtop that darkens the underlying view controller.
+EXAMPLE: TAPPING THE + BUTTON IN CALENDAR ON IPHONE.
+
+4. Popover Presentation - When run on iPad, the destination appears in a small popover, and tapping anywhere outside of this popover will dismiss it. On iPhone, popovers are supported as well but by default if it performs a Popover Presentation segue, it will present the destination view controller modally over the full screen.
+EXAMPLE: TAPPING THE + BUTTON IN CALENDAR ON IPAD (OR IPHONE, REALIZING IT IS CONVERTED TO A FULL SCREEN PRESENTATION AS OPPOSED TO AN ACTUAL POPOVER)
+
+5. Custom - You may implement your own custom segue and have complete control over its appearance and transition.
+``` 
+
+## Delegates: 
+
+```swift
+Here's a little help on delegates between two view controllers:
+
+//?   Step 1: Make a protocol in the UIViewController that you will be removing/will be sending the data.
+
+protocol FooTwoViewControllerDelegate:class {
+    func myVCDidFinish(_ controller: FooTwoViewController, text: String)
+}
+//?  Step2: Declare the delegate in the sending class (i.e. UIViewcontroller)
+
+class FooTwoViewController: UIViewController {
+    weak var delegate: FooTwoViewControllerDelegate?
+    [snip...]
+}
+//?  Step3: Use the delegate in a class method to send the data to the receiving method, which is any method that adopts the protocol.
+
+@IBAction func saveColor(_ sender: UIBarButtonItem) {
+        delegate?.myVCDidFinish(self, text: colorLabel.text) //? assuming the delegate is assigned otherwise error
+}
+//?  Step 4: Adopt the protocol in the receiving class
+
+class ViewController: UIViewController, FooTwoViewControllerDelegate {
+//?  Step 5: Implement the delegate method
+
+func myVCDidFinish(_ controller: FooTwoViewController, text: String) {
+    colorLabel.text = "The Color is " +  text
+    controller.navigationController.popViewController(animated: true)
+}
+//?  Step 6: Set the delegate in the prepareForSegue:
+
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "mySegue" {
+        let vc = segue.destination as! FooTwoViewController
+        vc.colorString = colorLabel.text
+        vc.delegate = self
+    }
+}
+```
+
+Study carefully the MVC design pattern in iOS, in particular the communication between view, controller and model using protocol and delegation. Ensure you know how to create a custom view with bezier path, how to save data using property lists and user defaults. You should also be familiar with target/actions, outlets, gesture recognisers and the Swift syntax.
+
+# AUTOLAYOUT 
+
+compactt, regular, any, 
+
+# NEXT LECTURE 
+
+CLOSURES = capture  variables in the surrounding context 
+- that means 
+
+
+calcModel.session = expressToGraph
+grapher.plot = {(x: Double) } -> Double? in calcModel.
+
+
+Ques multithreading is mostly abot queues , functions usually closures - are lined up in a quee s
+

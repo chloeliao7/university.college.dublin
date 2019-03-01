@@ -1,0 +1,39 @@
+http://csserver.ucd.ie/~meloc/47480/47480.htm
+
+http://www.extremeprogramming.org/rules.html
+
+http://csserver.ucd.ie/~meloc/47480/47480.htm
+
+# MODULE
+The module web page is here:
+http://csserver.ucd.ie/~meloc/47480/47480.htm
+username : 47480
+password: Tuesday
+
+# GRADES 
+The Continuous Assessment grade (worth 40% overall) breaks down as follows:
+Practical Submissions:10%
+Final Lab Journal:10%
+Practical Exam: 20%
+I’ll describe these further in lecture.
+
+Here are your Linux account details. These will be required for Monday's Practical.
+Your TA will explain how to login to the server.
+
+Server hostname: csserver.ucd.ie
+Username: cs18204188
+Password:  e2xrewXm
+
+CS-Tech
+School of Computer Science
+
+
+# Other
+
+Tuesday, Feb 12: Ger Harnett from MongoDB will deliver the first talk in the 'How We Build Software' series. You should attend the talk from 3-4, and then write up your lab journal in the room. Sam and Mashal will be there to discuss with you, and I'll drop in for a bit as well.
+
+Thursday, Feb 14: Lecture: Software Testing II
+
+Tuesday, Feb 19: Lecture: Software Testing III, Lab on Software Testing
+
+Thursday, Feb 21: No lecture

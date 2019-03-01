@@ -1,0 +1,53 @@
+Homework1
+============================================
+Please upload to Moodle a .zip archive containing your Jupyter Notebook with solutions and all data required to reproduce your solutions. 
+
+Please also prepare a requirements.txt file which lists all the packages that you have used for your homework, one package per line. 
+This will allow us to install all required packages in one go, by using "pip install -r requirements.txt".
+
+Please name your .zip archive using your full name and student id as follows - *Firstname_Lastname_12345678_COMP30810_Homework1.zip*. 
+
+For your Notebook, please split the code and explanations into many little cells so it is easy to see and read the results of each step of your solution. 
+Please remember to name your variables and methods with self-explanatory names. 
+Please remember to write comments and where needed, justifications, for the decisions you make and code you write. 
+Feel free to revisit *tips_to_keep_your_ipython_notebook_readable_and_easy_to_debug.html* provided on Moodle.
+
+Your code and analysis is like a story that awaits to be read, make it a nice story please !!!
+
+The accepted file formats for the homework are:
+    - .ipynb
+    - .zip
+    - .pdf
+    - .csv    
+
+Please keep the whole code in a single notebook. Usage of external tools/files is discouraged for portability reasons. 
+Files in any other format but mentioned above can be used but will be ignored and not considered for the submission 
+(including .doc, .rar, .7z, .pages, .xlsx, .tex etc.). 
+
+Any image format is allowed to be used as far as the images appear embedded in your report (.ipynb or .pdf or .html).
+
+========================================================================================
+			** Deadline: Sunday, 21 October, 2018, midnight. ** 
+========================================================================================
+DATA: 	-  Your data will be in the *zip file with the structure: *YourID-YourName.zip*. Please extract before using.
+	-  There are 5 topics for documents ['business', 'entertainment', 'politics', 'sport', 'tech']. 
+	-  50 documents belong to exactly one of these topics. The remaining special document is in another one.
+============================================	
+Note: please use NLTK.
+TASKS: 
+	1)	Read documents into a dataframe and save as CSV "H1_raw_data.csv"
+	2)	Extract the Tokens from raw text, separately for each document. 
+		Please apply tokenization; decapitalization; remove punctuations, numbers, special character.
+		To the dataframe add the column "tokens"  which contains those tokens. 
+	3)	Merge all tokens in the corpus and use wordcloud to have a first visualization. Save that figure into "img_wordcloud.png"
+	4)	Plot separated wordclouds for first 5 documents. Give the opinion on what you see.
+	5)	Find and plot the top-10 most common words for whole corpus. Save that figure into "img_top10_common.png"
+	6)	Find and plot the top-10 most common words for each document. Give the opinion on what you see.
+	7)	Find 5-top most common bigram, and 5-top most common trigram for corpus. Does it contain any information? Give the opinion.
+	8)	Extract noun tokens for each document using POS. To the dataframe, add a column "noun_tokens" which contains those noun_tokens.
+		Save your dataframe as "H1_tokens_data.csv"
+		Repeat the question number 6 for noun_tokens. 
+		Discuss what you observe.
+	9)	Please assign a topic to each of the documents programatically and describe your strategy. 
+	10)	Identify the special document. Please provide the code for your idea.
+	

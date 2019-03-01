@@ -1,0 +1,9 @@
+# EMAILS
+
+arthur.cater@ucd.ie           - GAME DEV : COMP30540
+guenole.silvestre@ucd.ie      - IOS : COMP47390
+mel.ocinneide@ucd.ie          - CONTEMP SCIENCE : COMP47480
+padraig.cunningham@ucd.ie     - PYTHON : COMP47670
+michael.omahony@ucd.ie        - REC SYS : COMP47580
+maria.ramirez@ucd.ie          - SPANISH : LANG10230
+

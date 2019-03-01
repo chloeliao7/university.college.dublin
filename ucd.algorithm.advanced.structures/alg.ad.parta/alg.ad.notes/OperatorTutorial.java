@@ -14,9 +14,7 @@ public class OperatorTutorial {
 				if(true  || false) pass doestn check the second one 
 				if(false || true)  pass if false it checks the second 
 				if(false || false) no pass
-
 				--------
-
 				if(true & true)  pass will still check the second one 
 				if(true  & false) pass will still chcek the second one 
 				if(false & true)  pass will not check the second one 
