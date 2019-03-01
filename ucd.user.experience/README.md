@@ -1,4 +1,4 @@
-# Human Computer Interaction (COMP47680)
+# HUMAN COMPUTER INTERACTION (COMP47680)
 Human-Computer Interaction (HCI) is a distinctive branch of computer science dedicated to understanding the relationship between people and computers. It provides a set of techniques that enable designers and software engineers to develop computing applications that better respond to the needs, abilities and interests of customers, clients and end-users. This module provides theoretical grounding, practical knowledge, and hands on experience of key skills needed to design and build better interfaces for computing systems.
 The module addresses core areas of the ACM SIGCHI Curricula for Human-Computer Interaction and is intended for students with diverse disciplinary backgrounds and experiences, including Computer Science, Cognitive Science and Design.
 

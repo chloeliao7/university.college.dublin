@@ -1,4 +1,4 @@
-# Distributed Systems (COMP30220)
+# DISTRIBUTED SYSTEMS (COMP30220)
 This course is practically oriented and focuses primarily on a number of core distributed programming models, such as: distributed objects, remote method invocation, web services (SOAP / REST), message-oriented middleware, and zero-conf. Additionally, it will explore a range of distributed systems concepts, including: architectural styles (P2P, Client-Server), global state & time, coordinator & election algorithms, and routing overlays. Students will also be exposed to additional programming models (MapReduce and Actor programming), distributed applications (e.g. distributed file systems), and advanced concepts (replication systems, fault tolerance) through peer learning.
 
 ## What will I learn?
