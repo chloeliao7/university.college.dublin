@@ -10,7 +10,7 @@ Nowadays Cloud Computing is everywhere. Cloud Computing (CC) is not a revolution
 - Business Cost models and Service Level Agreements for CC
 - Case Studies: Google Cloud, Microsoft Cloud, and Amazon Cloud
 
-# What will I learn?
+## What will I learn?
 - Define Cloud Computing and identify its capabilities.
 - Understand Elasticity, Resiliency, On-Demand Services and Measured Usage.
 - Differentiate between Cloud Services, Cloud Platforms, and Cloud Infrastructures.
@@ -19,7 +19,7 @@ Nowadays Cloud Computing is everywhere. Cloud Computing (CC) is not a revolution
 - Identify the technologies used by the majority of the cloud providers.
 - Design and implement CC applications that can use one of the existing CC.
 
-# How will I learn? (Hrs/Semester)
+## How will I learn? (Hrs/Semester)
 - Lectures	24
 - Specified Learning Activities	36
 - Autonomous Student Learning	65

@@ -17,7 +17,7 @@ It also introduces advance topics within the field of HCI. For example:
 
 Advanced topics are addressed through concrete case studies of successful and innovative design projects.
 
-# What will I learn?
+## What will I learn?
 On completing the module, students will be able to:
 1. Understand different theoretical perspectives on cognition and human behaviour that are relevant to the design of interactive systems.
 2. Propose and apply design approaches that are suitable to different classes of interactive system.
@@ -25,7 +25,7 @@ On completing the module, students will be able to:
 4. Identify appropriate techniques for analysis and critique of user interfaces.
 5. Undertake quantitative and qualitative studies in order to evaluate and improve the design of interactive systems.
 
-# How will I learn? (Hrs/Semester)
+## How will I learn? (Hrs/Semester)
 - Lectures	24
 - Practical	12
 - Specified Learning Activities	44
