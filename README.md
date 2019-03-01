@@ -3,61 +3,61 @@
 ## Table of Content
 *All folders contain : lecture slides, notes and exercises*
 
-### ucd.algorithm.advanced.structures 
+### algorithm advanced structures 
 ---
-+ [algorithm advanced structures part a](./ucd.algorithm.advanced.structures/alg.ad.parta) exercises(racing graphics with java)
-+ [algorithm advanced structures part b](./ucd.algorithm.advanced.structures/alg.ad.partb) exercises(phone game with trees)
++ [part a](./ucd.algorithm.advanced.structures/alg.ad.parta) exercises(racing graphics with java)
++ [part b](./ucd.algorithm.advanced.structures/alg.ad.partb) exercises(phone game with trees)
 	- trees, linklist, heap, hash.tables, dictionaries, array lists and stacks and queues, big o, vectors, and 
 
-### ucd.cloud.computing
+### cloud computing
 ---
-+ [cloud computing lab 1](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac1) (service research)
-+ [cloud computing lab 2](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac2) (preparing for cloud services)
-+ [cloud computing lab 3](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac3) (google app engine)
-+ [cloud computing lab 4](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac4) (map reduce basic)
-+ [cloud computing lab 5](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac5) (pig latin)
-+ [cloud computing lab 6](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac6) (map reduce advanced)
-+ [cloud computing project](./ucd.cloud.computing/comp.cloud.todolist) (project with angular and firebase)
-+ [cloud computing lectures](./ucd.cloud.computing/comp.cloud.lec) (lecture slides pdf)
-+ [cloud computing notes](./ucd.cloud.computing/comp.cloud.notes) (lecture notes)
++ [lab 1](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac1) (service research)
++ [lab 2](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac2) (preparing for cloud services)
++ [lab 3](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac3) (google app engine)
++ [lab 4](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac4) (map reduce basic)
++ [lab 5](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac5) (pig latin)
++ [lab 6](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac6) (map reduce advanced)
++ [project](./ucd.cloud.computing/comp.cloud.todolist) (project with angular and firebase)
++ [lectures](./ucd.cloud.computing/comp.cloud.lec) (lecture slides pdf)
++ [notes](./ucd.cloud.computing/comp.cloud.notes) (lecture notes)
 
-### ucd.distributed.systems
+### distributed systems
 ---
-+ [distributed systems lab 1](./ucd.distributed.systems/dis.sys.lab/dis.sys.actor.programming) (service quotation broker)
-+ [distributed systems lab 2](./ucd.distributed.systems/dis.sys.lab/dis.sys.group.final.assignment) (details on final assignment)
-+ [distributed systems lab 3](./ucd.distributed.systems/dis.sys.lab/dis.sys.group.paper) (group paper)
-+ [distributed systems lab 4](./ucd.distributed.systems/dis.sys.lab/dis.sys.message.oriented.system) (jms)
-+ [distributed systems lab 5](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac1.socket) (socket)
-+ [distributed systems lab 6](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac2.rmi) (rmi)
-+ [distributed systems lab 7](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac3.soap) (soap)
-+ [distributed systems lab 8](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac4.rest) (rest)
-+ [distributed systems lab 9](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac5.actors) (actors)
-+ [distributed systems project](./ucd.distributed.systems/dis.sys.squidit) (project with angular and firebase)
-+ [distributed systems lectures](./ucd.distributed.systems/dis.sys.lec) (lecture slides pdf)
-+ [distributed systems notes](./ucd.distributed.systems/dis.sys.notes) (lecture notes)
++ [lab 1](./ucd.distributed.systems/dis.sys.lab/dis.sys.actor.programming) (service quotation broker)
++ [lab 2](./ucd.distributed.systems/dis.sys.lab/dis.sys.group.final.assignment) (details on final assignment)
++ [lab 3](./ucd.distributed.systems/dis.sys.lab/dis.sys.group.paper) (group paper)
++ [lab 4](./ucd.distributed.systems/dis.sys.lab/dis.sys.message.oriented.system) (jms)
++ [lab 5](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac1.socket) (socket)
++ [lab 6](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac2.rmi) (rmi)
++ [lab 7](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac3.soap) (soap)
++ [lab 8](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac4.rest) (rest)
++ [lab 9](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac5.actors) (actors)
++ [project](./ucd.distributed.systems/dis.sys.squidit) (project with angular and firebase)
++ [lectures](./ucd.distributed.systems/dis.sys.lec) (lecture slides pdf)
++ [notes](./ucd.distributed.systems/dis.sys.notes) (lecture notes)
 
-### ucd.ruby.rails
+### ruby rails
 ---
-+ [ruby lab 1](./ucd.ruby.rails/ruby.lab/ruby.prac1) (ruby & command line setup)
-+ [ruby lab 2](./ucd.ruby.rails/ruby.lab/ruby.prac2) (basic do's and dont's)
-+ [ruby lab 3](./ucd.ruby.rails/ruby.lab/ruby.prac3) (inheritance and seperate files)
-+ [ruby lab 4](./ucd.ruby.rails/ruby.lab/ruby.prac4) (book library simulator)
-+ [ruby lab 5](./ucd.ruby.rails/ruby.lab/ruby.prac5) (itunes simulator with cvs 1)
-+ [ruby lab 6](./ucd.ruby.rails/ruby.lab/ruby.prac6) (itunes simulator with cvs 2)
-+ [ruby lab 7](./ucd.ruby.rails/ruby.lab/ruby.prac7) (fraud email check with scraping)
-+ [ruby lab 8](./ucd.ruby.rails/ruby.lab/ruby.prac8) (film actors net search with scraping)
-+ [ruby lab 9](./ucd.ruby.rails/ruby.lab/ruby.prac9) (book library simulator advanced with lambda)
-+ [ruby lab 10](./ucd.ruby.rails/ruby.lab/ruby.prac10) (create your own app)
-+ [ruby lab 11](./ucd.ruby.rails/ruby.lab/ruby.prac11) (chicken game rails)
-+ [ruby lab 12](./ucd.ruby.rails/ruby.lab/ruby.prac12) (blog rails)
-+ [ruby lectures](./ucd.ruby.rails/ruby.lec) (lecture slides pdf)
-+ [ruby notes](./ucd.ruby.rails/ruby.notes) (lecture notes)
++ [lab 1](./ucd.ruby.rails/ruby.lab/ruby.prac1) (ruby & command line setup)
++ [lab 2](./ucd.ruby.rails/ruby.lab/ruby.prac2) (basic do's and dont's)
++ [lab 3](./ucd.ruby.rails/ruby.lab/ruby.prac3) (inheritance and seperate files)
++ [lab 4](./ucd.ruby.rails/ruby.lab/ruby.prac4) (book library simulator)
++ [lab 5](./ucd.ruby.rails/ruby.lab/ruby.prac5) (itunes simulator with cvs 1)
++ [lab 6](./ucd.ruby.rails/ruby.lab/ruby.prac6) (itunes simulator with cvs 2)
++ [lab 7](./ucd.ruby.rails/ruby.lab/ruby.prac7) (fraud email check with scraping)
++ [lab 8](./ucd.ruby.rails/ruby.lab/ruby.prac8) (film actors net search with scraping)
++ [lab 9](./ucd.ruby.rails/ruby.lab/ruby.prac9) (book library simulator advanced with lambda)
++ [lab 10](./ucd.ruby.rails/ruby.lab/ruby.prac10) (create your own app)
++ [lab 11](./ucd.ruby.rails/ruby.lab/ruby.prac11) (chicken game rails)
++ [lab 12](./ucd.ruby.rails/ruby.lab/ruby.prac12) (blog rails)
++ [lectures](./ucd.ruby.rails/ruby.lec) (lecture slides pdf)
++ [notes](./ucd.ruby.rails/ruby.notes) (lecture notes)
 
-### ucd.user.experience
+### user experience
 ---
-+ [user experience essay](./ucd.user.experience/ux.lab/ux.essay) (ux three waves)
-+ [user experience lectures](./ucd.user.experience/ux.lec) (lecture slides pdf)
-+ [user experience notes](./ucd.user.experience/ux.notes) (lecture notes)
++ [essay](./ucd.user.experience/ux.lab/ux.essay) (ux three waves)
++ [lectures](./ucd.user.experience/ux.lec) (lecture slides pdf)
++ [notes](./ucd.user.experience/ux.notes) (lecture notes)
 ---
 
 ## Course Description
