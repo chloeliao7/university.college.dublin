@@ -11,12 +11,12 @@
 
 ### ucd.cloud.computing
 ---
-+ [cloud computing lab 1](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac1) (service research)
-+ [cloud computing lab 2](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac2) (preparing for cloud services)
-+ [cloud computing lab 3](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac3) (google app engine)
-+ [cloud computing lab 4](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac4) (map reduce basic)
-+ [cloud computing lab 5](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac5) (pig latin)
-+ [cloud computing lab 6](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac6) (map reduce advanced)
++ [cloud computing lab 1](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac1) (service research)
++ [cloud computing lab 2](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac2) (preparing for cloud services)
++ [cloud computing lab 3](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac3) (google app engine)
++ [cloud computing lab 4](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac4) (map reduce basic)
++ [cloud computing lab 5](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac5) (pig latin)
++ [cloud computing lab 6](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac6) (map reduce advanced)
 + [cloud computing project](./ucd.cloud.computing/comp.cloud.todolist) (project with angular and firebase)
 + [cloud computing lectures](./ucd.cloud.computing/comp.cloud.lec) (lecture slides pdf)
 + [cloud computing notes](./ucd.cloud.computing/comp.cloud.notes) (lecture notes)
