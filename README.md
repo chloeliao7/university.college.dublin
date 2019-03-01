@@ -17,9 +17,9 @@ All folders contain : lecture slides, notes and exercises
 + [cloud computing lab 4](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac4) (map reduce basic)
 + [cloud computing lab 5](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac5) (pig latin)
 + [cloud computing lab 6](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac6) (map reduce advanced)
++ [cloud computing project](./ucd.cloud.computing/comp.cloud.todolist) (project with angular and firebase)
 + [cloud computing lectures](./ucd.cloud.computing/comp.cloud.lec) (lecture slides pdf)
 + [cloud computing notes](./ucd.cloud.computing/comp.cloud.notes) (lecture notes)
-+ [cloud computing project](./ucd.cloud.computing/comp.cloud.todolist) (project with angular and firebase)
 
 ### ucd.distributed.systems
 ---
@@ -32,9 +32,9 @@ All folders contain : lecture slides, notes and exercises
 + [distributed systems lab 7](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac3.soap) (soap)
 + [distributed systems lab 8](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac4.rest) (rest)
 + [distributed systems lab 9](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac5.actors) (actors)
++ [distributed systems project](./ucd.distributed.systems/dis.sys.squidit) (project with angular and firebase)
 + [distributed systems lectures](./ucd.distributed.systems/dis.sys.lec) (lecture slides pdf)
 + [distributed systems notes](./ucd.distributed.systems/dis.sys.notes) (lecture notes)
-+ [distributed systems project](./ucd.distributed.systems/dis.sys.squidit) (project with angular and firebase)
 
 ### ucd.ruby.rails
 ---
@@ -55,9 +55,9 @@ All folders contain : lecture slides, notes and exercises
 
 ### ucd.user.experience
 ---
-+ [user experience lab 1](./ucd.user.experience/ux.lab/ux.essay) (ux three waves)
-+ [user experience notes](./ucd.user.experience/ux.notes) (lecture notes)
++ [user experience essay](./ucd.user.experience/ux.lab/ux.essay) (ux three waves)
 + [user experience lectures](./ucd.user.experience/ux.lec) (lecture slides pdf)
++ [user experience notes](./ucd.user.experience/ux.notes) (lecture notes)
 
 
 ## Course Description
