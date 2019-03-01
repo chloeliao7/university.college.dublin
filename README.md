@@ -1,40 +1,63 @@
 # Welcome to university.college.dublin.s1
 
-
 ## Table of Content
- ALL folders contain : lecture slides, notes and exercises
+All folders contain : lecture slides, notes and exercises
 
-> ucd.algorithm.advanced.structures 
-+ [part.a](./ucd.algorithm.advanced.structures/alg.ad.parta) exercises(racing graphics with java)
-+ [partb](./ucd.algorithm.advanced.structures/alg.ad.partb) trees, linklist, heap, hash.tables, dictionaries, array lists/stacks and queues, big o, vectors, and exercises(phone game with trees)
+### ucd.algorithm.advanced.structures 
+---
++ [part a](./ucd.algorithm.advanced.structures/alg.ad.parta) exercises(racing graphics with java)
++ [part b](./ucd.algorithm.advanced.structures/alg.ad.partb) exercises(phone game with trees)
+	- trees, linklist, heap, hash.tables, dictionaries, array lists and stacks and queues, big o, vectors, and 
 
-> ucd.cloud.computing
-+ [lab1](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac1) (service research)
-+ [lab2](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac2) (preparing for cloud services)
-+ [lab3](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac3) (google app engine)
-+ [lab4](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac4) (map reduce basic)
-+ [lab5](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac5) (pig latin)
-+ [lab6](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac6) (map reduce advanced)
-+ [lecs](./ucd.cloud.computing/comp.cloud.lec) (lecture slides pdf)
+### ucd.cloud.computing
+---
++ [lab 1](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac1) (service research)
++ [lab 2](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac2) (preparing for cloud services)
++ [lab 3](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac3) (google app engine)
++ [lab 4](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac4) (map reduce basic)
++ [lab 5](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac5) (pig latin)
++ [lab 6](./ucd.cloud.computing/comp.cloud.lab/comp.cloud..prac6) (map reduce advanced)
++ [lectures](./ucd.cloud.computing/comp.cloud.lec) (lecture slides pdf)
 + [notes](./ucd.cloud.computing/comp.cloud.notes) (lecture notes)
 + [project](./ucd.cloud.computing/comp.cloud.todolist) (project with angular and firebase)
 
-> ucd.distributed.systems
-+ [lab1](./ucd.distributed.systems/dis.sys.lab/dis.sys.actor.programming) (service quotation broker)
-+ [lab2](./ucd.distributed.systems/dis.sys.lab/dis.sys.group.final.assignment) (details on final assignment)
-+ [lab3](./ucd.distributed.systems/dis.sys.lab/dis.sys.group.paper) (group paper)
-+ [lab4](./ucd.distributed.systems/dis.sys.lab/dis.sys.message.oriented.system) (jms)
-+ [lab5](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac1.socket) (socket)
-+ [lab6](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac2.rmi) (rmi)
-+ [lab7](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac3.soap) (soap)
-+ [lab8](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac4.rest) (rest)
-+ [lab9](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac5.actors) (actors)
-+ [lecs](./ucd.distributed.systems/dis.sys.lec) (lecture slides pdf)
+### ucd.distributed.systems
+---
++ [lab 1](./ucd.distributed.systems/dis.sys.lab/dis.sys.actor.programming) (service quotation broker)
++ [lab 2](./ucd.distributed.systems/dis.sys.lab/dis.sys.group.final.assignment) (details on final assignment)
++ [lab 3](./ucd.distributed.systems/dis.sys.lab/dis.sys.group.paper) (group paper)
++ [lab 4](./ucd.distributed.systems/dis.sys.lab/dis.sys.message.oriented.system) (jms)
++ [lab 5](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac1.socket) (socket)
++ [lab 6](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac2.rmi) (rmi)
++ [lab 7](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac3.soap) (soap)
++ [lab 8](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac4.rest) (rest)
++ [lab 9](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac5.actors) (actors)
++ [lectures](./ucd.distributed.systems/dis.sys.lec) (lecture slides pdf)
 + [notes](./ucd.distributed.systems/dis.sys.notes) (lecture notes)
 + [project](./ucd.distributed.systems/dis.sys.squidit) (project with angular and firebase)
 
-> ucd.ruby.rails
+### ucd.ruby.rails
+---
++ [lab 1](./ucd.ruby.rails/ruby.lab/ruby.prac1) (ruby & command line setup)
++ [lab 2](./ucd.ruby.rails/ruby.lab/ruby.prac2) (basic do's and dont's)
++ [lab 3](./ucd.ruby.rails/ruby.lab/ruby.prac3) (inheritance and seperate files)
++ [lab 4](./ucd.ruby.rails/ruby.lab/ruby.prac4) (book library simulator)
++ [lab 5](./ucd.ruby.rails/ruby.lab/ruby.prac5) (itunes simulator with cvs 1)
++ [lab 6](./ucd.ruby.rails/ruby.lab/ruby.prac6) (itunes simulator with cvs 2)
++ [lab 7](./ucd.ruby.rails/ruby.lab/ruby.prac7) (fraud email check with scraping)
++ [lab 8](./ucd.ruby.rails/ruby.lab/ruby.prac8) (film actors net search with scraping)
++ [lab 9](./ucd.ruby.rails/ruby.lab/ruby.prac9) (book library simulator advanced with lambda)
++ [lab 10](./ucd.ruby.rails/ruby.lab/ruby.prac10) (create your own app)
++ [lab 11](./ucd.ruby.rails/ruby.lab/ruby.prac11) (chicken game rails)
++ [lab 12](./ucd.ruby.rails/ruby.lab/ruby.prac12) (blog rails)
++ [lectures](./ucd.ruby.rails/ruby.lec) (lecture slides pdf)
++ [notes](./ucd.ruby.rails/ruby.notes) (lecture notes)
 
+### ucd.user.experience
+---
++ [lab 1](./ucd.user.experience/ux.lab/ux.essay) (ux three waves)
++ [notes](./ucd.user.experience/ux.notes) (lecture notes)
++ [lectures](./ucd.user.experience/ux.lec) (lecture slides pdf)
 
 ## Course Description
 Students have the opportunity to negotiate a programme of learning that is tailored to their own career goals and requirements. Instead of there being a rigorous set of modules that each student must take, as is typical in standard taught MSc programmes, students can prefer to broaden their knowledge acrossa diverse cross-section of modules offering by Schools such as the UCD School of Computer Science, UCD School of Business, UCD School of Maths & Statistics and the UCD School of Information & Communication Studies. Students enrolling in this MSc are also provided with the opportunity to work on a specialised research task and/or work as part of a research group as part of this programme.
