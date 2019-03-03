@@ -22,7 +22,6 @@
 	- trees, linklist, heap, hash.tables, dictionaries, array lists and stacks and queues, big o, vectors, and 
 
 ### cloud computing
-
 + [lectures](./ucd.cloud.computing/comp.cloud.lec) (lecture slides pdf)
 + [notes](./ucd.cloud.computing/comp.cloud.notes) (lecture notes)
 + [lab 1](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac1) (service research)
@@ -34,7 +33,6 @@
 + [project](./ucd.cloud.computing/comp.cloud.todolist) (project with angular and firebase)
 
 ### distributed systems
-
 + [lectures](./ucd.distributed.systems/dis.sys.lec) (lecture slides pdf)
 + [notes](./ucd.distributed.systems/dis.sys.notes) (lecture notes)
 + [lab 1](./ucd.distributed.systems/dis.sys.lab/dis.sys.actor.programming) (service quotation broker)
@@ -49,7 +47,6 @@
 + [project](./ucd.distributed.systems/dis.sys.squidit) (project with angular and firebase)
 
 ### ruby rails
-
 + [lectures](./ucd.ruby.rails/ruby.lec) (lecture slides pdf)
 + [notes](./ucd.ruby.rails/ruby.notes) (lecture notes)
 + [lab 1](./ucd.ruby.rails/ruby.lab/ruby.prac1) (ruby & command line setup)
@@ -66,13 +63,11 @@
 + [lab 12](./ucd.ruby.rails/ruby.lab/ruby.prac12) (blog rails)
 
 ### user experience
-
 + [lectures](./ucd.user.experience/ux.lec) (lecture slides pdf)
 + [notes](./ucd.user.experience/ux.notes) (lecture notes)
 + [essay](./ucd.user.experience/ux.lab/ux.essay) (ux the three waves)
 
 ### contemp development
-
 + [lectures](./ucd.contemp.development/contemp.dev.pdf) (lecture slides pdf)
 + [notes](./ucd.contemp.development/contemp.dev.notes.txt) (lecture notes)
 + [lab 1](./ucd.contemp.development/contemp.dev.assignments/contemp.lab1) (agile term research)
@@ -82,7 +77,6 @@
 + [lab 5](./ucd.contemp.development/contemp.dev.assignments/contemp.lab5) (peter : talk 8bytes)
 
 ### game development
-
 + [lectures](./ucd.game.development/game.dev.pdf) (lecture slides pdf)
 + [notes](./ucd.game.development/game.dev.notes.txt) (lecture notes)
 + [project 1](./ucd.game.development/game.dev.game/game.assignment1) (chicken game with gml)
@@ -93,20 +87,16 @@
 + [project 2](./ucd.game.development/game.dev.game/game.assignment2) (drone game with unity)
 
 ### ios cocotouch
-
-+ [lectures](./ucd.ios.cocotouch/ios.pdf) (lecture slides pdf)
++ [ectures](./ucd.ios.cocotouch/ios.pdf) (lecture slides pdf)
 + [notes](./ucd.ios.cocotouch/ucd.ios.notes.txt) (lecture notes)
 + [teachers projects](./ucd.ios.cocotouch/ios.teacher.projects) (teachers projects)
 + [project 1](./ucd.ios.cocotouch/ios.student.projects/ios.projects.assignment.submissions/ios.projects.connect.4) (ai bot connect 4 game) 
-
 + [project 2](./ucd.ios.cocotouch/ios.student.projects/ios.projects.assignment.submissions/ios.projects.tweetertags) (twitter tags bot)
 
 ### java advanced
-
 + [lectures](./ucd.java.advanced) (advanced java course pdfs)
 
 ### python data analystics
-
 + [lectures](./ucd.python.data.analystics/python.pdf) (lecture slides pdf)
 + [notes](./ucd.python.data.analystics/python.notes.txt) (lecture notes)
 + [labs](./ucd.python.data.analystics/python.labs) (labs for python with a variety of exercises)
@@ -114,7 +104,7 @@
 
 ### spanish 101
 + [lectures](./ucd.spanish.101) (spanish 101 course pdfs)
-
+---
 
 ## Course Description
 Students have the opportunity to negotiate a programme of learning that is tailored to their own career goals and requirements. Instead of there being a rigorous set of modules that each student must take, as is typical in standard taught MSc programmes, students can prefer to broaden their knowledge acrossa diverse cross-section of modules offering by Schools such as the UCD School of Computer Science, UCD School of Business, UCD School of Maths & Statistics and the UCD School of Information & Communication Studies. Students enrolling in this MSc are also provided with the opportunity to work on a specialised research task and/or work as part of a research group as part of this programme.
