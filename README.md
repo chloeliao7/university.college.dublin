@@ -71,10 +71,12 @@
 
 ### game development
 ---
-+ [lab 1](./ucd.game.development/game.dev.game/game.assignment1) (chicken game with gml)
-+ [lab 2](./ucd.game.development/game.dev.game/game.assignment2) (drone game with unity)
++ [project 1](./ucd.game.development/game.dev.game/game.assignment1) (chicken game with gml)
++ ![project gif](./ucd.game.development/game.dev.game/game.assignment1/chicken.game.gif)
++ [project 2](./ucd.game.development/game.dev.game/game.assignment2) (drone game with unity)
 + [lectures](./ucd.game.development/game.dev.pdf) (lecture slides pdf)
 + [notes](./ucd.game.development/game.dev.notes.txt) (lecture notes)
+
 
 ### ios cocotouch
 ---
