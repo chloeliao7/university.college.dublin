@@ -191,10 +191,10 @@
 </details> 
 
 
-## Course Description
+### Course Description
 Students have the opportunity to negotiate a programme of learning that is tailored to their own career goals and requirements. Instead of there being a rigorous set of modules that each student must take, as is typical in standard taught MSc programmes, students can prefer to broaden their knowledge acrossa diverse cross-section of modules offering by Schools such as the UCD School of Computer Science, UCD School of Business, UCD School of Maths & Statistics and the UCD School of Information & Communication Studies. Students enrolling in this MSc are also provided with the opportunity to work on a specialised research task and/or work as part of a research group as part of this programme.
 
-## Vision and Values Statement
+### Vision and Values Statement
 - Purpose
 This programme aims to provide students with a wide range of specialist learning opportunities that can be selected in a bespoke manner to suit the individual skills and aspirations of the individual.  It can thus serve both as a form of extended continued professional development, as a means to upskill or to reorient a technical career.  The programme is also suited as a foundation for advanced research within IT. An extensive variety of learning pathways is offered, with many modules grouped into thematic streams, providing coherent clusters in specific technical areas.  
 
@@ -207,7 +207,7 @@ Students will select modules from a very broad list, and will therefore encounte
 - Approaches to teaching learning and assessment
 Because of the variety of courses on offer, many different forms of evaluation may be used, including exercises, written assignments, programming challenges, literature reviews and end of module examinations.  The programme aspires to encourage the intellectual skills required to synthesise and integrate insights from many perspectives. 
 
-## Programme Outcomes
+### Programme Outcomes
 - Work effectively within a small team of specialists to achieve specific practical goals in solving problems within the IT domain and in cooperation with other stakeholders
 - Effectively marshall a variety of expert skills towards focussed goals within the student's chosen IT domain
 - Develop an awareness of the current state of the art within their specific domain of expertise, including future prospects and opportunities
@@ -223,11 +223,11 @@ Because of the variety of courses on offer, many different forms of evaluation m
 - Recognise and manage the theoretical diversity found within the many specialties within information technology.
 - Work effectively within a small team of specialists to achieve specific practical goals in solving problems within the IT domain and in cooperation with other stakeholders
 
-## Entry Requirements
+### Entry Requirements
 This programme is intended for applicants with a Computer Science or ICT background. An upper second class honours degree, or the international equivalent in computer science or a related area or a minimum of three years’ relevant industrial work experience is required.
 Applicants whose first language is not English must also demonstrate English language proficiency of IELTS 6.5 (no band less than 6.0 in each element), or equivalent.
 
-## Testimonial
+### Testimonial
 > Graduate Profile : Rohan Singla, India,
 > Assistant Manager : Advisory at Grant Thornton
 
