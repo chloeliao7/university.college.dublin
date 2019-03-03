@@ -143,7 +143,7 @@
 <p>
 
 > topics : 
-+ [ectures](./ucd.ios.cocotouch/ios.pdf) (lecture slides pdf)
++ [lectures](./ucd.ios.cocotouch/ios.pdf) (lecture slides pdf)
 + [notes](./ucd.ios.cocotouch/ucd.ios.notes.txt) (lecture notes)
 + [teachers projects](./ucd.ios.cocotouch/ios.teacher.projects) (teachers projects)
 + [project 1](./ucd.ios.cocotouch/ios.student.projects/ios.projects.assignment.submissions/ios.projects.connect.4) (ai bot connect 4 game) 
@@ -189,6 +189,26 @@
 + [lectures](./ucd.spanish.101) (spanish 101 course pdfs)
 </p>
 </details> 
+
+<br>
+
+<details>
+<summary>
+<i>audited courses :</i>
+<a href="./ucd.course.audit">csaudits</a>
+</summary>
+<p>
+
+> topics : big data, french, intro security, recommended systems, text analystics
+[big data](./ucd.course.audit/ucd.big.data)
+[french](./ucd.course.audit/ucd.french)
+[intro security](./ucd.course.audit/ucd.intro.security)
+[recommended systems](./ucd.course.audit/ucd.rec.sys)
+[text analystics](./ucd.course.audit/ucd.text.analystics)
+</p>
+</details> 
+
+
 
 ---
 
