@@ -74,7 +74,7 @@
 + [project 1](./ucd.game.development/game.dev.game/game.assignment1) (chicken game with gml)
 ---
 <section data-markdown>
-<img src="./ucd.game.development/game.dev.game/game.assignment1/chicken.game.gif" width="500" height="200">
+<img src="./ucd.game.development/game.dev.game/game.assignment1/chicken.game.gif" width="500" height="300">
 <!-- <img src="./mu.software.project/softp.pdf/softp.project/softp.info.traveldumb.poster.png" width="500" height="600"> -->
 </section>
  <!-- ![project gif](./ucd.game.development/game.dev.game/game.assignment1/chicken.game.gif) -->
