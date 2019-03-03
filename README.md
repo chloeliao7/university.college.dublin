@@ -33,6 +33,9 @@
 + [lab 5](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac5) (pig latin)
 + [lab 6](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac6) (map reduce advanced)
 + [project](./ucd.cloud.computing/comp.cloud.todolist) (project with angular and firebase)
+	<section data-markdown>
+	<img src="./ucd.cloud.computing/comp.cloud.todolist/smart-todo-now-share.png" width="500" height="300">
+	</section>
 </p>
 </details>
 
@@ -127,9 +130,9 @@
 + [lectures](./ucd.game.development/game.dev.pdf) (lecture slides pdf)
 + [notes](./ucd.game.development/game.dev.notes.txt) (lecture notes)
 + [project 1](./ucd.game.development/game.dev.game/game.assignment1) (chicken game with gml)
-<section data-markdown>
-<img src="./ucd.game.development/game.dev.game/game.assignment1/chicken.game.gif" width="500" height="300">
-</section>
+	<section data-markdown>
+	<img src="./ucd.game.development/game.dev.game/game.assignment1/chicken.game.gif" width="500" height="300">
+	</section>
 
 + [project 2](./ucd.game.development/game.dev.game/game.assignment2) (drone game with unity)
 </p>

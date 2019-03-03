@@ -26,3 +26,4 @@ Nowadays Cloud Computing is everywhere. Cloud Computing (CC) is not a revolution
 - Total Workload	125
 
 
+
