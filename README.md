@@ -72,7 +72,7 @@
 ### game development
 ---
 + [project 1](./ucd.game.development/game.dev.game/game.assignment1) (chicken game with gml)
-+ ![project gif](./ucd.game.development/game.dev.game/game.assignment1/chicken.game.gif =100x20)
++ ![project gif](./ucd.game.development/game.dev.game/game.assignment1/chicken.game.gif=100x20)
 + [project 2](./ucd.game.development/game.dev.game/game.assignment2) (drone game with unity)
 + [lectures](./ucd.game.development/game.dev.pdf) (lecture slides pdf)
 + [notes](./ucd.game.development/game.dev.notes.txt) (lecture notes)
