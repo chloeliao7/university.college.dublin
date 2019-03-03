@@ -202,7 +202,7 @@
 > topics : big data, french, intro security, recommended systems, text analystics
 + [big data](./ucd.course.audit/ucd.big.data)
 + [french](./ucd.course.audit/ucd.french)
-+ [intro security](./ucd.course.audit/ucd.intro.security)
++ [intro to security](./ucd.course.audit/ucd.intro.security)
 + [recommended systems](./ucd.course.audit/ucd.rec.sys)
 + [text analystics](./ucd.course.audit/ucd.text.analystics)
 </p>
