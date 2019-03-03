@@ -1,16 +1,30 @@
 # Welcome to university.college.dublin
 
+## All Modules
+- algorithm advanced structures 
+- cloud computing
+- distributed systems
+- ruby rails
+- user experience
+- contemp development
+- game development
+- ios cocotouch
+- java advanced
+- python data analystics
+- spanish 101
+- algorithm advanced structures 
+
 ## Table of Content
 *All folders contain : lecture slides, notes and exercises*
 
-### algorithm advanced structures 
----
 + [part a](./ucd.algorithm.advanced.structures/alg.ad.parta) exercises(racing graphics with java)
 + [part b](./ucd.algorithm.advanced.structures/alg.ad.partb) exercises(phone game with trees)
 	- trees, linklist, heap, hash.tables, dictionaries, array lists and stacks and queues, big o, vectors, and 
 
 ### cloud computing
----
+
++ [lectures](./ucd.cloud.computing/comp.cloud.lec) (lecture slides pdf)
++ [notes](./ucd.cloud.computing/comp.cloud.notes) (lecture notes)
 + [lab 1](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac1) (service research)
 + [lab 2](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac2) (preparing for cloud services)
 + [lab 3](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac3) (google app engine)
@@ -18,11 +32,11 @@
 + [lab 5](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac5) (pig latin)
 + [lab 6](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac6) (map reduce advanced)
 + [project](./ucd.cloud.computing/comp.cloud.todolist) (project with angular and firebase)
-+ [lectures](./ucd.cloud.computing/comp.cloud.lec) (lecture slides pdf)
-+ [notes](./ucd.cloud.computing/comp.cloud.notes) (lecture notes)
 
 ### distributed systems
----
+
++ [lectures](./ucd.distributed.systems/dis.sys.lec) (lecture slides pdf)
++ [notes](./ucd.distributed.systems/dis.sys.notes) (lecture notes)
 + [lab 1](./ucd.distributed.systems/dis.sys.lab/dis.sys.actor.programming) (service quotation broker)
 + [lab 2](./ucd.distributed.systems/dis.sys.lab/dis.sys.group.final.assignment) (details on final assignment)
 + [lab 3](./ucd.distributed.systems/dis.sys.lab/dis.sys.group.paper) (group paper)
@@ -33,11 +47,11 @@
 + [lab 8](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac4.rest) (rest)
 + [lab 9](./ucd.distributed.systems/dis.sys.lab/dis.sys.prac5.actors) (actors)
 + [project](./ucd.distributed.systems/dis.sys.squidit) (project with angular and firebase)
-+ [lectures](./ucd.distributed.systems/dis.sys.lec) (lecture slides pdf)
-+ [notes](./ucd.distributed.systems/dis.sys.notes) (lecture notes)
 
 ### ruby rails
----
+
++ [lectures](./ucd.ruby.rails/ruby.lec) (lecture slides pdf)
++ [notes](./ucd.ruby.rails/ruby.notes) (lecture notes)
 + [lab 1](./ucd.ruby.rails/ruby.lab/ruby.prac1) (ruby & command line setup)
 + [lab 2](./ucd.ruby.rails/ruby.lab/ruby.prac2) (basic do's and dont's)
 + [lab 3](./ucd.ruby.rails/ruby.lab/ruby.prac3) (inheritance and seperate files)
@@ -50,60 +64,57 @@
 + [lab 10](./ucd.ruby.rails/ruby.lab/ruby.prac10) (create your own app)
 + [lab 11](./ucd.ruby.rails/ruby.lab/ruby.prac11) (chicken game rails)
 + [lab 12](./ucd.ruby.rails/ruby.lab/ruby.prac12) (blog rails)
-+ [lectures](./ucd.ruby.rails/ruby.lec) (lecture slides pdf)
-+ [notes](./ucd.ruby.rails/ruby.notes) (lecture notes)
 
 ### user experience
----
-+ [essay](./ucd.user.experience/ux.lab/ux.essay) (ux the three waves)
+
 + [lectures](./ucd.user.experience/ux.lec) (lecture slides pdf)
 + [notes](./ucd.user.experience/ux.notes) (lecture notes)
++ [essay](./ucd.user.experience/ux.lab/ux.essay) (ux the three waves)
 
 ### contemp development
----
+
++ [lectures](./ucd.contemp.development/contemp.dev.pdf) (lecture slides pdf)
++ [notes](./ucd.contemp.development/contemp.dev.notes.txt) (lecture notes)
 + [lab 1](./ucd.contemp.development/contemp.dev.assignments/contemp.lab1) (agile term research)
 + [lab 2](./ucd.contemp.development/contemp.dev.assignments/contemp.lab2) (uml exercise)
 + [lab 3](./ucd.contemp.development/contemp.dev.assignments/contemp.lab3) (ger hartnett : talk mongodb)
 + [lab 4](./ucd.contemp.development/contemp.dev.assignments/contemp.lab4) (junit)
 + [lab 5](./ucd.contemp.development/contemp.dev.assignments/contemp.lab5) (peter : talk 8bytes)
-+ [lectures](./ucd.contemp.development/contemp.dev.pdf) (lecture slides pdf)
-+ [notes](./ucd.contemp.development/contemp.dev.notes.txt) (lecture notes)
 
 ### game development
----
+
++ [lectures](./ucd.game.development/game.dev.pdf) (lecture slides pdf)
++ [notes](./ucd.game.development/game.dev.notes.txt) (lecture notes)
 + [project 1](./ucd.game.development/game.dev.game/game.assignment1) (chicken game with gml)
 <section data-markdown>
-<!-- <kbd> -->
 <img src="./ucd.game.development/game.dev.game/game.assignment1/chicken.game.gif" width="500" height="300">
-<!-- </kbd> -->
 </section>
 
 + [project 2](./ucd.game.development/game.dev.game/game.assignment2) (drone game with unity)
-+ [lectures](./ucd.game.development/game.dev.pdf) (lecture slides pdf)
-+ [notes](./ucd.game.development/game.dev.notes.txt) (lecture notes)
 
 ### ios cocotouch
----
-+ [lab 1](./ucd.ios.cocotouch/ios.student.projects/ios.projects.assignment.submissions/ios.projects.connect.4) (ai bot connect 4 game)
-+ [lab 2](./ucd.ios.cocotouch/ios.student.projects/ios.projects.assignment.submissions/ios.projects.tweetertags) (twitter tags bot)
-+ [projects](./ucd.ios.cocotouch/ios.teacher.projects) (teachers projects)
+
 + [lectures](./ucd.ios.cocotouch/ios.pdf) (lecture slides pdf)
 + [notes](./ucd.ios.cocotouch/ucd.ios.notes.txt) (lecture notes)
++ [teachers projects](./ucd.ios.cocotouch/ios.teacher.projects) (teachers projects)
++ [project 1](./ucd.ios.cocotouch/ios.student.projects/ios.projects.assignment.submissions/ios.projects.connect.4) (ai bot connect 4 game) 
+
++ [project 2](./ucd.ios.cocotouch/ios.student.projects/ios.projects.assignment.submissions/ios.projects.tweetertags) (twitter tags bot)
 
 ### java advanced
----
+
 + [lectures](./ucd.java.advanced) (advanced java course pdfs)
 
 ### python data analystics
----
-+ [labs](./ucd.python.data.analystics/python.labs) (labs for python with a variety of exercises)
-+ [project](./ucd.python.data.analystics/python.assignments/python.assignment.pythongraph.1) (pythongraph : using api and json to collect weather data)
+
 + [lectures](./ucd.python.data.analystics/python.pdf) (lecture slides pdf)
 + [notes](./ucd.python.data.analystics/python.notes.txt) (lecture notes)
++ [labs](./ucd.python.data.analystics/python.labs) (labs for python with a variety of exercises)
++ [project](./ucd.python.data.analystics/python.assignments/python.assignment.pythongraph.1) (pythongraph : using api and json to collect weather data)
 
 ### spanish 101
 + [lectures](./ucd.spanish.101) (spanish 101 course pdfs)
----
+
 
 ## Course Description
 Students have the opportunity to negotiate a programme of learning that is tailored to their own career goals and requirements. Instead of there being a rigorous set of modules that each student must take, as is typical in standard taught MSc programmes, students can prefer to broaden their knowledge acrossa diverse cross-section of modules offering by Schools such as the UCD School of Computer Science, UCD School of Business, UCD School of Maths & Statistics and the UCD School of Information & Communication Studies. Students enrolling in this MSc are also provided with the opportunity to work on a specialised research task and/or work as part of a research group as part of this programme.
