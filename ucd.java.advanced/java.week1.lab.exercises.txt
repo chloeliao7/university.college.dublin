@@ -3,8 +3,6 @@
 
 page 5, "Robot class constructor method" should be "Robot class constructor"
 
-
-
 Data Types and Operators
 ========================
 Answer to Review Questions 1, Question 4 (page 33):
@@ -12,18 +10,15 @@ Answer to Review Questions 1, Question 4 (page 33):
 The answer (C) is correct but the reason is incorrect. It
 should read "The data type byte is signed and 8 bits in size"
 
-
 Answer to Review Questions 2, Question 6 (page 36):
 
 "and not to a reference to an empty string, as suggested by C"
 should be
 "and not to a reference to an empty string, as suggested by B"
 
-
 Answer to Review Questions 2, Question 9 (page 36):
 
 The correct answers are A and C (not just C)
-
 
 Answer to Review Questions 3, Question 3 (page 37):
 
@@ -32,14 +27,11 @@ The answer is correct, but
 should be
 "D is illegal because the last statement tries to assign a String to an int"
 
-
-
 Classes Methods and Interfaces
 =========================================
 Review question 21 (page 52):
 
 In parts C and D, the reference 'object' should be 'ob'
-
 
 Answer to Review question 6 (page 54):
 
@@ -47,14 +39,11 @@ The answer should state that the constructor in B will
 be called by the second constructor, & the constructor
 in C will be called by first and third constructors.
 
-
 Answer to Review question 16 (page 55):
 
 The answer should be: A, C, E. The sentence "A is illegal
 because the list of names must be terminated by a semicolon"
 should be ignored.
-
-
 
 Java Language Fundamentals
 =========================================
@@ -63,11 +52,9 @@ Review Question 8 (page 67):
 Option B should read that the compiler error occurs on
 Line 3, rather than Line 2.
 
-
 Answer to Review Question 1 (page 78):
 
 The correct answers are A, B, C and D (not just A, B, and C)
-
 
 Answer to Review Question 2 (page 78):
 
@@ -76,13 +63,10 @@ The answers are correct (A and B) but the statement
 should be
 "An abstract class ... has a finalize() method"
 
-
 Answer to Review Question 21 (page 79): answer is correct, but
 'A is illegal because "default" is not a keyword'
 should be
 'A is illegal because this is not how default access is assigned'
-
-
 
 Object Oriented Programming
 ===========================
@@ -90,8 +74,6 @@ Object Oriented Programming
 Review Question 8 (page 87):
 
 in line 4, "student_id" should be "studentId"
-
-
 
 Execution Control Flow
 ======================
@@ -101,16 +83,13 @@ On page 109, parts B and C should have 'k' (not 'K').
 On page 114, the answer should be B (not A), but the
 explanation is correct.
 
-
 Review Question 10 (page 109):
 The code in line 5 of the code snippet should not be
 there (the answer on page 114 is correct).
 
-
 Review Question 14 (page 111):
 2nd line of part C should be
 	for (int k=0; j+k != 10; j++,k++) {
-
 
 Answer to Review Question 4 (page 113):
 
@@ -118,8 +97,6 @@ The answer (E) is correct but the explanation should state
 "The argument of switch must be of type byte, short, char,
 int or enum"
 
-
 Answer to Review Question 16 (page 115):
 "the expression itself is a constant" should be
 "the expression 2 + 1 is evaluated at compile time as the int constant 3"
-

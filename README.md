@@ -10,7 +10,7 @@
 </summary>
 <p>
 
-> topics : trees, linklist, heap, hash.tables, dictionaries, array lists and stacks and queues, big o, vectors
+> topics : trees, linklist, heap, hash tables, dictionaries, array lists and stacks and queues, big o, vectors
 + [part a](./ucd.algorithm.advanced.structures/alg.ad.parta) exercises(racing graphics with java)
 + [part b](./ucd.algorithm.advanced.structures/alg.ad.partb) exercises(phone game with trees)
 </p>
@@ -202,7 +202,7 @@
 </summary>
 <p>
 
-> topics : big data, french, intro security, recommended systems, text analystics
+> topics : big data, french, intro to security, recommended systems, text analystics
 + [big data](./ucd.course.audit/ucd.big.data)
 + [french](./ucd.course.audit/ucd.french)
 + [intro to security](./ucd.course.audit/ucd.intro.security)
@@ -210,8 +210,6 @@
 + [text analystics](./ucd.course.audit/ucd.text.analystics)
 </p>
 </details> 
-
-
 
 ---
 
