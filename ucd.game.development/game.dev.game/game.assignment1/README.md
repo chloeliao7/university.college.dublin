@@ -1,18 +1,5 @@
-## COMP30540 "Game Development"
+# 1st Game Programming Assignment
 
-## 1st Game Programming Assignment (of two in total)
-
-```
-Announced Wednesday 23 January 2019. Due Monday 4 March before 11am.
-```
-### This assignment is worth 25% of the marks for the module.
-
-```
-Note that plagiarism is an offence taken seriously in UCD, Science, and CS. Do not
-present work as your own that is provided to you by someone else or copied from
-them. Acknowledge the sources of materials you use fairly, such as photographs or
-stock images. Do not allow or encourage others to copy your own work.
-```
 ## Egg Collectors
 
 Use GameMaker (free trial version) to develop a 2-dimensional game for laptop (PC or Mac or
@@ -88,7 +75,6 @@ downward.
 You are encouraged to add further features to the game that you think will improve it, perhaps
 based on your experience of game playing. Beware however of spending too much time on
 improvements.
-
 
 **Experiment**
 Experiment to find satisfying values for various quantities, such as for example:
