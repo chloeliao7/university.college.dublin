@@ -181,7 +181,7 @@
 <details>
 <summary>
 <i>spanish 101 :</i>
-<a href="./ucd.spanish.101">cspanish</a>
+<a href="./ucd.spanish.101">cs.spanish</a>
 </summary>
 <p>
 
@@ -195,7 +195,7 @@
 <details>
 <summary>
 <i>audited courses :</i>
-<a href="./ucd.course.audit">csaudits</a>
+<a href="./ucd.course.audit">cs.audits</a>
 </summary>
 <p>
 
