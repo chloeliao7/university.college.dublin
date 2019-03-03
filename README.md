@@ -144,5 +144,5 @@ Applicants whose first language is not English must also demonstrate English lan
 The reputation of the UCD School of Computer Science and Informatics made me feel secure about my decision to move to Ireland from Mumbai. I was drawn to the wide range of modules available. Through the ‘negotiated learning’ format, I got an option to choose my modules ranging from information security to cloud computing. The masters degree gave me both a theoretical and practical background allowing me to develop and convey technical and strategic advice to my wide range of Fortune 500 clients at work, be it Deloitte in the past or Grant Thornton now. Apart from studies, UCD is a great campus with many activities going on across its parks and student facilities every day.
 
 
-DOWNLOAD PDF HERE: [ucd brochure](./university.college.dublin)
+~ download pdf here: [ucd brochure](./university.college.dublin.pdf)
 
