@@ -76,7 +76,7 @@
 <section data-markdown>
 <!-- <kbd> -->
 
-<img src="./ucd.game.development/game.dev.game/game.assignment1/chicken.game.gif" width="500" height="300" style="border: 1px solid black" >
+<img src="./ucd.game.development/game.dev.game/game.assignment1/chicken.game.gif" width="500" height="300" style="border: 1px solid blue" >
 <!-- </kbd> -->
 </section>
 
