@@ -1,19 +1,5 @@
 # Welcome to university.college.dublin
 
-## All Modules
-- algorithm advanced structures 
-- cloud computing
-- distributed systems
-- ruby rails
-- user experience
-- contemp development
-- game development
-- ios cocotouch
-- java advanced
-- python data analystics
-- spanish 101
-- algorithm advanced structures 
-
 ## Table of Content
 *All folders contain : lecture slides, notes and exercises*
 
@@ -73,8 +59,6 @@
 </p>
 </details> 
 
-
-
 <details>
 <summary>
 <i>ruby rails :</i>
@@ -132,7 +116,6 @@
 </p>
 </details> 
 
-
 <details>
 <summary>
 <i>game development :</i>
@@ -152,7 +135,6 @@
 </p>
 </details> 
 
-
 <details>
 <summary>
 <i>ios cocotouch :</i>
@@ -168,7 +150,6 @@
 + [project 2](./ucd.ios.cocotouch/ios.student.projects/ios.projects.assignment.submissions/ios.projects.tweetertags) (twitter tags bot)
 </p>
 </details> 
-
 
 <details>
 <summary>
@@ -208,7 +189,7 @@
 + [lectures](./ucd.spanish.101) (spanish 101 course pdfs)
 </p>
 </details> 
----
+
 
 ## Course Description
 Students have the opportunity to negotiate a programme of learning that is tailored to their own career goals and requirements. Instead of there being a rigorous set of modules that each student must take, as is typical in standard taught MSc programmes, students can prefer to broaden their knowledge acrossa diverse cross-section of modules offering by Schools such as the UCD School of Computer Science, UCD School of Business, UCD School of Maths & Statistics and the UCD School of Information & Communication Studies. Students enrolling in this MSc are also provided with the opportunity to work on a specialised research task and/or work as part of a research group as part of this programme.
@@ -252,6 +233,4 @@ Applicants whose first language is not English must also demonstrate English lan
 
 The reputation of the UCD School of Computer Science and Informatics made me feel secure about my decision to move to Ireland from Mumbai. I was drawn to the wide range of modules available. Through the ‘negotiated learning’ format, I got an option to choose my modules ranging from information security to cloud computing. The masters degree gave me both a theoretical and practical background allowing me to develop and convey technical and strategic advice to my wide range of Fortune 500 clients at work, be it Deloitte in the past or Grant Thornton now. Apart from studies, UCD is a great campus with many activities going on across its parks and student facilities every day.
 
-
 ~ download pdf here: [ucd brochure](./university.college.dublin.pdf)
-
