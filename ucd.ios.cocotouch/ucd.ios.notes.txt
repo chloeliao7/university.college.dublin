@@ -778,10 +778,42 @@ compactt, regular, any,
 CLOSURES = capture  variables in the surrounding context 
 - that means 
 
-
 calcModel.session = expressToGraph
 grapher.plot = {(x: Double) } -> Double? in calcModel.
 
-
 Ques multithreading is mostly abot queues , functions usually closures - are lined up in a quee s
 
+# Next lecture 
+
+> notification 
+appCycle - life cycle 
+
+states changes in an ios app 
+
+```swift 
+let center = notificationCenter.defaults 
+center.addObserver(forname: UIContentSize Category.didCHangeNotification)
+```
+
+application did enter backround 
+Application will enter foreground
+
+ninfo.plist 
+capabilities 
+
+archiving - very rarely ised for persistence but it is how 
+sqLite 
+file system - 
+==== get root path into an nsurl , appendpath
+==== sandbx is there to protect the integrity of the application 
+
+coredata - where core data is stored : 
+
+NSManaged  - 
+visua map : this is your database schema 
+
+flickerpick = xdatamodel 
+
+class flickrTVC UITableViewController {
+	pricate var photos = [String : AnyObject] () {}
+}

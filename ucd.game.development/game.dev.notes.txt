@@ -287,13 +287,32 @@ pivots plane non trivially intersects BSPT's 3D region  : dont worry on whats be
 
 WHen using with collition make sure you use BSPTs 
 
-
 # SEVENTH LECTURE 
 
 does triangle T with vertixies A, B , C intersect Plane P 
 T is parallel to P if TU = += ()
 
-
 prologue stage vs 
 collision stage 
 epilogue stage 
+
+## Eighth lecture 
+
+checking for oberlappign = simplex = GJK - finding some simplex to find intersection 
+tetrahedron
+
+calculating numbers negative vs positive 
+
+Game crash
+- Issues to avoid in physics simulation
+   •  which can be caused by numerical integration over discrete time steps with bizarre results - infinite forces, objects squashed into negative volume, ...
+- Unrealistic collision behaviour
+   •  energy and direction of object movements after collision should be believable
+- Inaccurate friction behaviour
+   •  friction should not cause objects to start moving in reverse
+- Framerate drop
+   •  physics simulation time step can be independent of graphics rendering time step
+- Unrealistic oscillations
+   •  dropped objects should not lie forever chattering on the floor
+   
+Parellelism 

@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <!-- D3js and zingchart scripts -->
     <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -7,7 +6,6 @@
     <script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
         ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3edaf6d"];</script>
 </head>
-
 <body>
     <style>
         .zc-ref {
@@ -15,12 +13,9 @@
         }
     </style>
     <div id='myChart'><a class="zc-ref" href="https://www.zingchart.com/">Charts by ZingChart</a></div>
-
-
     <!-- script -->
     <script>
         d3.json("http://0.0.0.0:8000/data/weather_data.json", function(error, data) {
-
         const list = data.list
         const day_temp = []
         const humidity = []
@@ -30,7 +25,6 @@
             degree.push(day.deg)
             humidity.push(day.humidity)
         }
-
         zingchart.THEME = "classic";
         var myConfig =
         {
@@ -195,7 +189,6 @@
                 }
             ]
         };
-
         zingchart.render({
             id: 'myChart',
             data: myConfig
@@ -203,5 +196,4 @@
     });
     </script>
 </body>
-
 </html>

@@ -74,15 +74,12 @@ Examples of common data science tasks;
 6. Deployment: How can the analytics results/model be
 integrated into the current workflow for the organisation?
 
-
 Ordinal -> Textual -> interval -> binary -> original -> categorical -> numeric 
-
 
 1. Data availability: Do we have access to the data required to create the feature?
 2. Timing: When will the data required for the feature be available? 
 3. Longevity: How long will the data used in a feature stay
 relevant? Will it quickly become "stale" or inaccurate?
-
 
 ABT + Features: 
 - RAW FEATURES: 
@@ -90,8 +87,19 @@ ABT + Features:
 - DERIVED FEATURES: 
 		2. Do not exist in the original data, but are constructed in some way from the raw data.
 		
-		
 1. Brainstorm features: Understand the business problem, explore the data, study previous solutions from other tasks/domains. Identify availability, timing, and longevity constraints.
 2. Devise features: Manually and/or automatically create raw and/ or derived representative features from the data.
 3. Select features: Identify subset of all possible features, which provide one or more “views” for our models to operate upon.
 4. Evaluate models: Estimate how effective the features were for the analytics problem that we are trying to solve.
+
+## Vidualization with Matlib
+
+simple plot plt.plot(data) 
+cells have to be the same 
+looking at relationships with two different vairables 
+
+matplotlib.pyplot.scatter(x,y) 
+matplotlib.pyplot.scatter(x,y, s = 250, c = r, marker = "d") 
+plt.xlabel('x axis', ... )
+
+
