@@ -149,8 +149,11 @@
 + [lectures](./ucd.ios.cocotouch/ios.pdf) (lecture slides pdf)
 + [notes](./ucd.ios.cocotouch/ucd.ios.notes.txt) (lecture notes)
 + [teachers projects](./ucd.ios.cocotouch/ios.teacher.projects) (teachers projects)
-+ [project 1](./ucd.ios.cocotouch/ios.student.projects/ios.projects.assignment.submissions/ios.projects.connect.4) (ai bot connect 4 game) 
-+ [project 2](./ucd.ios.cocotouch/ios.student.projects/ios.projects.assignment.submissions/ios.projects.tweetertags) (twitter tags bot)
++ [project 1](./ucd.ios.cocotouch/ios.student.projects/ios.projects.tweetertags/ios.projects.connect.4) (ai bot connect 4 game) 
++ [project 2](./ucd.ios.cocotouch/ios.student.projects/ios.projects.tweetertags/ios.projects.tweetertags) (twitter tags bot)
+<section data-markdown>
+<img src="./ucd.ios.cocotouch/ios.student.projects/ios.projects.tweetertags/ios.twittertag.img.png" width="350" height="450">
+</section>
 </p>
 </details> 
 
