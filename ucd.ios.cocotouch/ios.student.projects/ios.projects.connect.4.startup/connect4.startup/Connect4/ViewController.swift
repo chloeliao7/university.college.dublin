@@ -11,14 +11,16 @@ class ViewController: UIViewController {
     private func playGame() {
         // Game session
         let gameSession = GameSession()
-
+        
         // Visualisation
         var board: [[String]] = Array(repeating: Array(repeating: " ", count: gameSession.boardLayout.columns), count: gameSession.boardLayout.rows)
         let printBoard = { (player: String, actions: [Int], piece: String) -> String in
             _ = actions.map {
                 let row = $0 / gameSession.boardLayout.columns
                 let column = $0 % gameSession.boardLayout.columns
+                
                 board[row][column] = piece
+                
             }
             return "\(player)\n" + (board.map { $0.reduce("") { "\($0)|\($1)" } + "|" }).reduce("") { "\($0)\n\($1)" } + "\n---------------\n"
         }
@@ -42,6 +44,7 @@ class ViewController: UIViewController {
                         DispatchQueue.main.async {
                             self.gameLabel.text = printBoard("Random", [move.action], move.color == UIColor.red ? "X" : "O")
                         }
+                        
                     }
                     Thread.sleep(forTimeInterval: 0.38)
                     if let move = gameSession.move {

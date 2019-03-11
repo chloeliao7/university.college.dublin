@@ -12,6 +12,7 @@
 # ? Zoe
 
 import sys
+
 lines = []
 
 # arguments - how many arguments you get
@@ -19,7 +20,7 @@ lines = []
 
 for i in range(len(sys.argv)):
     if i >= 1:
-    lines.append(sys.argv[i])
+        lines.append(sys.argv[i])
 # arguments = sys.argv[i]
 nameOfFile = sys.argv[1]
 print("name of the file is ", nameOfFile, " and lines to choose are ", lines)
@@ -34,9 +35,9 @@ except:
     print("Does not exist")
 
 for num in fileChosen:
-    counter = counter+1
+    counter = counter + 1
     try:
-    if counter == lines.index(str(counter)):
-    print(num),
-except:
-    pass
+        if counter == lines.index(str(counter)):
+            print(num),
+    except:
+        pass

@@ -9,7 +9,7 @@ class Male
     @name = nme
     @age = age
   end
-
+  
   def is_he_old?
     age_of_pers = @age
     if age_of_pers > 21
