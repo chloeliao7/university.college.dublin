@@ -19,8 +19,6 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.fs.Path;
 
-
-
 // QUESTION 1 :
 // in the IPnum MAP we need a LongWritable, Text as INPUT
 //      ----> Key Value Pair
@@ -40,13 +38,11 @@ public class IPnum {
     }
   }
 
-
   // QUESTION 2 :
   // in the IPnum REDUCE we need a Text, IntWritable as INPUT
   //      ----> because we we need a key value pair with an iterable value and string as the key
   // in the IPnum REDUCE we need a Text, IntWritable as OUTPUT
   //      ----> because this time we need to have out key value pair as our output = IntWritable((sum))); the sum of the numbers
-
 
   // reduce
   public static class Reduce extends Reducer<Text, IntWritable, Text, IntWritable> { // not null because we finally have our key value pair
@@ -87,4 +83,3 @@ public class IPnum {
     System.exit(job.waitForCompletion(true) ? 0 : 1);
   }
 }
-
