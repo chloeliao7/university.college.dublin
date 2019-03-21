@@ -3,8 +3,6 @@
  * pop on an empty stack.
  */
 
-public class EmptyStackException extends RuntimeException {  
-  public EmptyStackException(String err) {
-    super(err);
-  }
+public class EmptyStackException extends RuntimeException {
+	public EmptyStackException(String err) { super(err); }
 }

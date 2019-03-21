@@ -6,6 +6,7 @@ import java.util.Random;
  * @author Jonathan Engelsma (http://www.cis.gvsu.edu/~engelsma)
  *
  */
+
 public class Race {
 	private int place = 0;
 	/**
@@ -13,12 +14,20 @@ public class Race {
 	 * @throws InterruptedException
 	 */
 	public synchronized void getReadyToRace() throws InterruptedException { this.wait(); }
+	
+	
 	/**
-	 * Called to start the race.
+	 * Called
+	 * to
+	 * start
+	 * the
+	 * race.
 	 */
+	
+	 
 	public synchronized void startRace() { this.notifyAll(); }
-	/**
-	 * Called by each horse to cross the finish line.
-	 */
+
+	/** * Called by each horse to cross the finish line. */
+
 	public synchronized int crossFinishLine() { return ++place; }
 }

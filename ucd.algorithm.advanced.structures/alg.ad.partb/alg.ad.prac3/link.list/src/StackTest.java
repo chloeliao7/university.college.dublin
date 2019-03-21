@@ -1,9 +1,10 @@
 // Testing the Stack class of the java.util package
-import java.util.Stack;
-import java.util.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.*;
+import java.util.Stack;
 import javax.swing.*;
+
 
 public class StackTest extends JFrame {
 	public StackTest() {
@@ -17,20 +18,16 @@ public class StackTest extends JFrame {
 		c.add(input);
 		JButton pushBtn = new JButton("Push");
 		pushBtn.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				status.setText("Pushed: " + s.push(input.getText()));
-			}
+			public void actionPerformed(ActionEvent e) { status.setText("Pushed: " + s.push(input.getText())); }
 		});
-		
+
 		c.add(pushBtn);
 		JButton popBtn = new JButton("Pop");
 		popBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					status.setText("Popped: " + s.pop());
-				} catch (EmptyStackException exception) {
-					status.setText(exception.toString());
-				}
+				} catch (EmptyStackException exception) { status.setText(exception.toString()); }
 			}
 		});
 
@@ -40,18 +37,14 @@ public class StackTest extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					status.setText("Top: " + s.peek());
-				} catch (EmptyStackException exception) {
-					status.setText(exception.toString());
-				}
+				} catch (EmptyStackException exception) { status.setText(exception.toString()); }
 			}
 		});
 
 		c.add(peekBtn);
 		JButton emptyBtn = new JButton("Is Empty?");
 		emptyBtn.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				status.setText(s.empty() ? "Stack is empty" : "Stack is not empty");
-			}
+			public void actionPerformed(ActionEvent e) { status.setText(s.empty() ? "Stack is empty" : "Stack is not empty"); }
 		});
 
 		c.add(emptyBtn);
@@ -73,8 +66,7 @@ public class StackTest extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				Enumeration enum1 = s.elements();
 				StringBuffer buf = new StringBuffer();
-				while (enum1.hasMoreElements())
-					buf.append(enum1.nextElement()).append(" ");
+				while (enum1.hasMoreElements()) buf.append(enum1.nextElement()).append(" ");
 				JOptionPane.showMessageDialog(null, buf.toString(), "Display", JOptionPane.PLAIN_MESSAGE);
 			}
 		});
@@ -87,10 +79,7 @@ public class StackTest extends JFrame {
 	public static void main(String args[]) {
 		StackTest app = new StackTest();
 		app.addWindowListener(new WindowAdapter() {
-			public void windowClosing(WindowEvent e) {
-				System.exit(0);
-			}
+			public void windowClosing(WindowEvent e) { System.exit(0); }
 		});
-
 	}
 }

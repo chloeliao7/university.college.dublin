@@ -9,7 +9,6 @@
 
 # SECOND LECTURE
 ### GENRES
-
 - 1d is : no width , Picture an x-y axis
    - If you were to draw one line in any direction on a sheet of paper, that would be a 1 dimensional line.
    - 1D Predetermined path – “on rails shooter”
@@ -69,7 +68,6 @@ what is 2.5D : with perspective vs with projection
 - 2d means that you have a 2d field in a 3d world 
 
 perspicuity:
-
 vs projections: long far away with straight camera 
 trimetric: above mid side
 dimetric: front very mid side
@@ -256,7 +254,7 @@ if edge-on : visual feild is not there : NOT PAINTED AT ALL
    - ignore it and those coplanar; you fontt see them as they are edge on 
    - paints to front and rear partitions in either order, they wont overlap
 
->> distance maters from obscure
+> distance maters from obscure
 
 combining BSPTs 
    - combininng whats in front of the tree and whats in the reer 

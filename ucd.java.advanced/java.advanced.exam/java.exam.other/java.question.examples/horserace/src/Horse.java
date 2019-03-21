@@ -18,11 +18,8 @@ public class Horse implements Runnable {
 		this.trough = trough;
 	}
 
-	/**
-	 * Called by each horse to run a lap.  Note that laps are run concurrently.
-	 * @return the time it took to run a lap.
-	 * @throws InterruptedException
-	 */
+	/** * Called by eac	h horse to run a lap. Note that laps are run concurrently. * @return the time it took to run a lap. * @throws InterruptedException */
+
 	public long runLap() throws InterruptedException {
 		// Horse takes between 4-6 seconds to get a drink!
 		long duration = Math.abs((this.rand.nextLong())) % 4000 + 2000;
@@ -30,9 +27,8 @@ public class Horse implements Runnable {
 		return duration;
 	}
 
-	/**
-	 * This is the entry method for each 'Horse' thread we create.
-	 */
+	/** * This is the entry method for each 'Horse' thread we create. */
+
 	public void run() {
 		try {
 			// lineup for the race

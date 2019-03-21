@@ -1,13 +1,9 @@
 class Link {
-  public int iData;
+	public int iData;
 
-  public Link next;
+	public Link next;
 
-  public Link(int id) {
-    iData = id;
-  }
+	public Link(int id) { iData = id; }
 
-  public String toString() {
-    return "{" + iData + "} ";
-  }
+	public String toString() { return "{" + iData + "} "; }
 }

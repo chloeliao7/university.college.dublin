@@ -3,8 +3,6 @@
  * pop on an empty Queue.
  */
 
-public class EmptyDequeException extends RuntimeException {  
-  public EmptyDequeException(String err) {
-    super(err);
-  }
+public class EmptyDequeException extends RuntimeException {
+	public EmptyDequeException(String err) { super(err); }
 }

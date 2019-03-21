@@ -3,8 +3,6 @@
  * pop on an empty Queue.
  */
 
-public class EmptyQueueException extends RuntimeException {  
-  public EmptyQueueException(String err) {
-    super(err);
-  }
+public class EmptyQueueException extends RuntimeException {
+	public EmptyQueueException(String err) { super(err); }
 }

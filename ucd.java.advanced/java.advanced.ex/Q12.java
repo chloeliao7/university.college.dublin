@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 // public class test {
 // 	public static void main(String args[]) {
@@ -8,8 +9,8 @@
 // 			if (i == j) i++;
 // 		} catch (ArithmeticException e) { System.out.println(0); } catch (ArrayIndexOutOfBoundsException e) {
 // 			System.out.println(1);
-// 		} catch (Exception e) { System.out.println(2); } 
-		
+// 		} catch (Exception e) { System.out.println(2); }
+
 // 		finally {
 // 			System.out.println(3);
 // 		}
@@ -42,6 +43,9 @@ D. FileWriter w = new FileWriter (new BufferedWriter (new PrintWriter (file)));
 E. PrintWriter w = new PrintWriter (new BufferedWriter (new FileWriter (file))); 
 F. FileWriterw=newFileWriter(newPrintWriter(newBufferedWriter(file))); */
 
+
+
+
 public class Q12 {
 	public static void main(String args[]) {
 		String s1 = "abc";
@@ -66,15 +70,13 @@ class Synch {
 		synchronized (this) {}
 		synchronized (s) {}
 	}
-} 
+}
 
 /* 21. The TreeSet class is used to directly implement which collection interface?
 A. Set
 B. SortedSet C. List
 D. Tree
  */
-
-
 
  ArrayList<ObjectOne> list = new ArrayList<ObjectOne>(); 
  list.add(new ObjectOne());
@@ -83,5 +85,6 @@ D. Tree
  private int y = 0;
  }
  
- 
 // all this works but if you do int x in there it wont work 
+
+

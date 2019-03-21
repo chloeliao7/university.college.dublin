@@ -4,7 +4,7 @@ This module is aimed at students who are already programmers (could be Java or a
 ## What will I learn?
 On completion of this module students should be able to:
 1. understand the structure and the syntax of the Java programming language;
-2. create simple Java applications;
+2. create simple Java applications
 3. have an in-depth detailed knowledge of the Java run time environment.
 
 ## How will I learn? (Hrs/Semester)
