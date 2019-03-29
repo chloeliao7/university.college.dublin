@@ -19,15 +19,15 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 public class Distinct {
-	// QUESTION 1 :
-	// in the Distinct MAP we need a LongWritable, Text as INPUT
+	// question 1 :
+	// in the distinct map we need a longwritable, text as input
 	//      ----> because we we need so we can pass a key (offset of the file) and a value (one of records)
-	// in the Distinct MAP we need a new Text(tokenizer.nextToken()), new IntWritable(1) as OUTPUT
-	//      ----> because we because we need to map the token. which is done in the line that were on, and a IntWritable as the value
+	// in the distinct map we need a new text(tokenizer.nexttoken()), new intwritable(1) as output
+	//      ----> because we because we need to map the token. which is done in the line that were on, and a intwritable as the value
 
 	public static class Map extends Mapper<LongWritable, Text, Text, IntWritable> { // first two are inputs, second are outputs
 		public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-			// Key = file offsets (char offset) , Value = one of records, context = map reduce job context >> GIVE OUTPUT
+			// key = file offsets (char offset) , value = one of records, context = map reduce job context >> give output
 			StringTokenizer tokenizer = new StringTokenizer(value.toString()); // used to break a string = uses space as default
 			if (tokenizer.hasMoreTokens()) {
 				context.write(new Text(tokenizer.nextToken()), new IntWritable(1)); // context.write = output of the map
@@ -35,11 +35,11 @@ public class Distinct {
 		}
 	}
 
-	// QUESTION 2 :
-	// in the Distinct REDUCE we need a Text, IntWritable as INPUT
-	//      ----> because we we need two value pairs where one is the key and one is the iteration = Iterable<IntWritable> from the mapper
-	// in the Distinct REDUCE we need a Text, NullWritable as OUTPUT
-	//      ----> because we need to get out the key of the distincted IP so just Text(string)
+	// question 2 :
+	// in the distinct reduce we need a text, intwritable as input
+	//      ----> because we we need two value pairs where one is the key and one is the iteration = iterable<intwritable> from the mapper
+	// in the distinct reduce we need a text, nullwritable as output
+	//      ----> because we need to get out the key of the distincted ip so just text(string)
 
 	// reduce
 	public static class Reduce extends Reducer<Text, IntWritable, Text, NullWritable> { // because its one column and no need to iterate
@@ -64,7 +64,7 @@ public class Distinct {
 		Path outputPath = new Path(args[1]);
 		Path tempPath = new Path("output/temp");
 
-		// Configuring the input/output path from the filesystem into the job
+		// configuring the input/output path from the filesystem into the job
 		FileInputFormat.addInputPath(job, new Path(args[0]));
 		FileOutputFormat.setOutputPath(job, tempPath);
 
@@ -76,12 +76,12 @@ public class Distinct {
 		if (distinctStatus) {
 			Job distinctLineCounter = Job.getInstance(conf, "Count distinct");
 
-			// reff the Counting class Map and reduce.
+			// reff the counting class map and reduce.
 			distinctLineCounter.setJarByClass(CountingConnections.class);
 			distinctLineCounter.setMapperClass(CountingConnections.Map.class);
 			distinctLineCounter.setReducerClass(CountingConnections.Reduce.class);
 
-			// reff the Counting class ins and outs
+			// reff the counting class ins and outs
 			distinctLineCounter.setMapOutputKeyClass(IntWritable.class);
 			distinctLineCounter.setMapOutputValueClass(IntWritable.class);
 

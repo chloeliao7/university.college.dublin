@@ -1,0 +1,228 @@
+fileFormatVersion: 2
+guid: 4797dea4ed1f241bdbab27b29e8013a4
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: airport_building
+    100004: airport_terrain
+    100006: Collider1
+    100008: Collider2
+    100010: Plane_01
+    100012: Plane_02
+    100014: RoofBackup
+    400000: //RootNode
+    400002: airport_building
+    400004: airport_terrain
+    400006: Collider1
+    400008: Collider2
+    400010: Plane_01
+    400012: Plane_02
+    400014: RoofBackup
+    2300000: airport_building
+    2300002: airport_terrain
+    2300004: Collider1
+    2300006: Collider2
+    2300008: Plane_01
+    2300010: Plane_02
+    2300012: RoofBackup
+    3300000: airport_building
+    3300002: airport_terrain
+    3300004: Collider1
+    3300006: Collider2
+    3300008: Plane_01
+    3300010: Plane_02
+    3300012: RoofBackup
+    4300000: Plane_01
+    4300002: Collider2
+    4300004: Collider1
+    4300006: RoofBackup
+    4300008: airport_building
+    4300010: airport_terrain
+    4300012: Plane_02
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 8c28847b01f0d35498adf37db5fd6589, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: airport_blocking_pole
+    second: {fileID: 2100000, guid: bdc15450a7434fb46a9df06ca55ab778, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: airport_boarding_bridge
+    second: {fileID: 2100000, guid: c17062a6aefc34445bee42e267306d4e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: airport_boarding_door
+    second: {fileID: 2100000, guid: 7333ba7681170f04c9f87474e8f40680, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: airport_boarding_flex
+    second: {fileID: 2100000, guid: 33c969aaacba85e4a8c33bff7a749d8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: airport_boarding_plates
+    second: {fileID: 2100000, guid: dd6ccde28a6c42b48ae69a0ee91a41a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: airport_building_glass
+    second: {fileID: 2100000, guid: fb2ab9826e7e4184287cf749f55f6102, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: airport_building_top
+    second: {fileID: 2100000, guid: ff6e6c2f6481004489a408f8c329e1e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: airport_conc
+    second: {fileID: 2100000, guid: 0ceb088b3ca234d40b0e7ea29740efdc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: airport_floor_conc
+    second: {fileID: 2100000, guid: 0a8e3eb21c89d5547957e66f661df4b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: airport_metal
+    second: {fileID: 2100000, guid: 4b8b02078ff019c48a71f4e29e2eb3e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: airport_plane
+    second: {fileID: 2100000, guid: 95bd7c1fcd424184bb25b288eb50bf52, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: airport_stairs_conc
+    second: {fileID: 2100000, guid: 7891c363b2cd558418581240a280b37c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: airport_stairs_elctrc
+    second: {fileID: 2100000, guid: b4fe2038beb0f174790a1d6ba87a3740, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: airport_stairs_elctrc_ends
+    second: {fileID: 2100000, guid: 46f2c772fc4ad77419d6edf6d10ae574, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: airport_supports
+    second: {fileID: 2100000, guid: 34145c0307299ef44b60ac7953ffaa8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: misc_asphalt
+    second: {fileID: 2100000, guid: 10d00750f95015c48bedc821261094f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: misc_road_edge
+    second: {fileID: 2100000, guid: 2c74137eb4003eb439eeb58b84880af0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: misc_sand_a
+    second: {fileID: 2100000, guid: 2749e5ec4dda7174c8b99e7b73200d1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: warehouse_floor_metal
+    second: {fileID: 2100000, guid: aede7b51f93d5ac4e9739a5e959024d7, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

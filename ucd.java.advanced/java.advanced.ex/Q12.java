@@ -45,11 +45,10 @@ F. FileWriterw=newFileWriter(newPrintWriter(newBufferedWriter(file))); */
 
 
 
-
 public class Q12 {
 	public static void main(String args[]) {
-		String s1 = "abc";
-		String s2 = new String("abc");
+		String s1 = "there";
+		String s2 = new String("there");
 		if (s1 == s2)
 			System.out.println(1);
 		else
@@ -83,6 +82,7 @@ D. Tree
  class ObjectOne {
  private int x = 0;
  private int y = 0;
+
  }
  
 // all this works but if you do int x in there it wont work 

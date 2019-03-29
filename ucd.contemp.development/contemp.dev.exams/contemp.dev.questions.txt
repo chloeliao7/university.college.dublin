@@ -1,15 +1,15 @@
-SEMESTER 2 EXAMINATION – 2014/2015
-COMP 30160 Object-Oriented Design Prof. Simon Dobson Prof. Pádraig Cunningham 
-Dr. Mel Ó Cinnéide* Time Allowed: 2 hours Instructions for candidates Question 
-1 carries Questions 2-6 carryeach. Attempt any set of 
+semester 2 examination – 2014/2015
+comp 30160 object-oriented design prof. simon dobson prof. pádraig cunningham 
+dr. mel ó cinnéide* time allowed: 2 hours instructions for candidates question 
+1 carries questions 2-6 carryeach. attempt any set of 
 questions such that the total numberfor the attempted questions is 50. 
-© UCD 2014/15 Modular Page !1 of !2 
+© ucd 2014/15 modular page !1 of !2 
 
-# Question 0
-Write an account of the Unified Process and Agile Processes, and describe how 
+# question 0
+write an account of the unified process and agile processes, and describe how 
 these processes are applied in current software development practice.  
 
- 1. Unified Process
+ 1. unified process
   - buisness modeling : modeling
   - requirements : specifications
   - analysis and design : design
@@ -17,10 +17,10 @@ these processes are applied in current software development practice.
   - test
   - deployment
 
-# Question 1
-For each of the three UML diagram types use case diagram, class diagram, and 
+# question 1
+for each of the three uml diagram types use case diagram, class diagram, and 
 interaction diagram, describe the essential notation briefly and explain what 
-the diagram is used for in designing a software system. Describe how the 
+the diagram is used for in designing a software system. describe how the 
 different diagram types are related to one another.  
 
 1. use case : use case diagrams model the functionality of a system using actors and use cases. use cases are a set of actions, services, and functions that the system needs to perform
@@ -28,47 +28,52 @@ different diagram types are related to one another.
 2. class diagram : static structure diagram that describes the structure of a system by showing the system's classes, their attributes, operations (or methods), and the relationships among objects.
 3. interaction diagrams : how a group of objects collaborate in some behavior - typically a single use-case
 
-# Question 2
-Describe Test-Driven Development (TDD) from a SOFTWARE DEVELOPER’S perspective. 
-In the context of code coverage, explain MODIFIED CONDITION/DECISION COVERAGE. 
-How does TDD aim to achieve code coverage?  
+# question 2
+describe test-driven development (tdd) from a software developer’s perspective. 
+in the context of code coverage, explain modified condition/decision coverage. 
+how does tdd aim to achieve code coverage?  
 
-- MODIFIED CONDITION * DECISION: 
-   - Each entry and exit point is invoked
-   - Each decision takes every possible outcome
-   - Each condition in a decision takes every possible outcome
-   - Each condition in a decision is shown to independently affect the outcome of the decision.
+- modified condition * decision: 
+   - each entry and exit point is invoked
+   - each decision takes every possible outcome
+   - each condition in a decision takes every possible outcome
+   - each condition in a decision is shown to independently affect the outcome of the decision.
 
-  - CONDITION: Every CONDITION in a DECISION in the program has taken all possible outcomes at least once.
-  - DECISION: EVERY *POINT OF ENTRY* and exit in the program has been invoked at least once
-    - and every decision in the program HAS TAKEN ALL POSSIBLE OUTCOMES at least once.
+  - condition: every condition in a decision in the program has taken all possible outcomes at least once.
+  - decision: every *point of entry* and exit in the program has been invoked at least once
+    - and every decision in the program has taken all possible outcomes at least once.
 
-How does TDD aim to achieve code coverage?  
-   - TDD acheives code coverage by going through each one of the test cases when dealing with conditions and decitions but in segments meaning that if you have a method doing one job you would want to test everythy decition in that method before going to the next
+how does tdd aim to achieve code coverage?  
+   - tdd acheives code coverage by going through each one of the test cases when dealing with conditions and decitions but in segments meaning that if you have a method doing one job you would want to test everythy decition in that method before going to the next
 
-# Question 3
-Describe the DEPENDENCY INVERSION PRINCIPLE and explain its importance. Show how 
+# question 3
+describe the dependency inversion principle and explain its importance. show how 
 a direct dependency between classes can be inverted, again explaining your 
 example.  
 
-- The general idea of this principle is as simple as it is important: High-level modules, which provide complex logic, should be easily reusable and unaffected by changes in low-level modules, which provide utility features. 
+- the general idea of this principle is as simple as it is important: high-level modules, which provide complex logic, should be easily reusable and unaffected by changes in low-level modules, which provide utility features. 
   - dependency inversion principle is a specific form of decoupling software modules
   - high-level, policy-setting modules to low-level (object-oriented design)
 
 - five principles:
-  - Single Responsibility Principle   : every module, class, or function should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class.
-  - Open/Closed Principle             : software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification
-  - Interface Segregation Principle   : states that no client should be forced to depend on methods it does not use
-  - Liskov Substitution Principle     : functions that use pointers to base classes must be able to use objects of derived classes without knowing it.
-  - Dependency Inversion Principle    : both should depend on abstractions.
+  - single responsibility principle   : every module, class, or function should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class.
+  - open/closed principle             : software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification
+  - interface segregation principle   : states that no client should be forced to depend on methods it does not use
+  - liskov substitution principle     : functions that use pointers to base classes must be able to use objects of derived classes without knowing it.
+  - dependency inversion principle    : both should depend on abstractions.
 
-# Question 4 : STILL NEEDS FINISHING !!!! 
-In relation to ANY DESIGN PATTERN with which you are familiar, answer the following: 
-   - (i) What is the intent of the pattern?
-   - (ii) Using the appropriate UML diagrams, describe the typical structure and interactions of the pattern.
-   - (iii) Describe three issues related to the applicability or implementation of this pattern.
+# question 4 : still needs finishing !!!! 
+in relation to any design pattern with which you are familiar, answer the following: 
+   - (i) what is the intent of the pattern?
+     - abstract factory :  creates an instance of several families of classes
+   - (ii) using the appropriate uml diagrams, describe the typical structure and interactions of the pattern.
+     -   <section data-markdown>
+    	<img src="./factory.png" width="500" height="300">
+    	</section>
+   - (iii) describe three issues related to the applicability or implementation of this pattern.
+     - 
 
-    - CREATIONAL DESIGN PATTERNS:   
+    - creational design patterns:   
       - abstract factory             : creates an instance of several families of classes
       - factory method               : creates an instance of several derived classes
       - singleton                    : a class of which only a single instance can exist
@@ -77,7 +82,7 @@ In relation to ANY DESIGN PATTERN with which you are familiar, answer the follow
       - prototype                    : a fully initialized instance to be copied or cloned
       - structural design patterns   : these design patterns are all about class and object composition. structural class-creation patterns use inheritance to compose interfaces. structural object-patterns define ways to compose objects to obtain new functionality.
 
-    - STRUCTURAL DESIGN PATTERNS: 
+    - structural design patterns: 
       - adapter                      : match interfaces of different classes
       - bridge                       : separates an object’s interface from its implementation
       - composite                    : a tree structure of simple and composite objects
@@ -88,7 +93,7 @@ In relation to ANY DESIGN PATTERN with which you are familiar, answer the follow
       - private class data           : restricts accessor/mutator access
       - behavioral design patterns   : these design patterns are all about class's objects communication. behavioral patterns are those patterns that are most specifically concerned with communication between objects.
 
-    - BEHAVIORAL DESIGN PATTERNS:
+    - behavioral design patterns:
       - chain of responsibility      : a way of passing a request between a chain of objects
       - null object                  : designed to act as a default value of an object
       - interpreter                  : a way to include language elements in a program
@@ -102,107 +107,107 @@ In relation to ANY DESIGN PATTERN with which you are familiar, answer the follow
       - visitor                      : defines a new operation to a class without change
       - template method              : defer the exact steps of an algorithm to a subclass
 
-# Question 5 : STILL NEEDS FINISHING !!!! 
-For each of the three code smells listed below, 
+# question 5 : still needs finishing !!!! 
+for each of the three code smells listed below, 
 (i) describe the code smell 
 (ii) suggest how this smell can come about in practice and 
 (iii) outline the refactorings you might perform in order to remove the smell. 
 
-    - (i) Feature Envy : term used to describe a situation in which one object gets at the fields of another object in order to perform some sort of computation or make a decision. EX: consider a class representing a rectangle
-    - (ii) Duplicated Code : source code that occurs more than once
-    - (iii) Refused Bequest : The contract of the base class is not honored by the derived class, and that forms this code smell. 
+    - (i) feature envy : term used to describe a situation in which one object gets at the fields of another object in order to perform some sort of computation or make a decision. ex: consider a class representing a rectangle
+    - (ii) duplicated code : source code that occurs more than once
+    - (iii) refused bequest : the contract of the base class is not honored by the derived class, and that forms this code smell. 
        
 			  // base class
-				public class Tax {  
-          protected double CalculateBaseTax(){}  
-        	protected double AddTax(double tax) {}  
-            public virtual double GetTaxAmount() {  
-                double tax = CalculateBaseTax();  
-                var taxAmount =  AddTax(tax);  
-                return taxAmount;
+				public class tax {  
+          protected double calculatebasetax(){}  
+        	protected double addtax(double tax) {}  
+            public virtual double gettaxamount() {  
+                double tax = calculatebasetax();  
+                var taxamount =  addtax(tax);  
+                return taxamount;
         				}} 
 								
 				// derived class 		
-				public class Person: Tax {  
-					private double CalculateTax(){}  
-					public override double GetTaxAmmount() {
-						double tax = CalculateTax();  
-						var taxAmount = AddTax(tax);  
-						return taxAmount;
+				public class person: tax {  
+					private double calculatetax(){}  
+					public override double gettaxammount() {
+						double tax = calculatetax();  
+						var taxamount = addtax(tax);  
+						return taxamount;
 						}}  
 				
-# Question 6
-Compare and contrast the software development practices of the companies who delivered seminars during the module. Include in your answer an account of how 
-these practices relate to the UNIFIED PROCESS AND AGILE PROCESSES.  
+# question 6
+compare and contrast the software development practices of the companies who delivered seminars during the module. include in your answer an account of how 
+these practices relate to the unified process and agile processes.  
 
-# Question 7
-  - (a) In thecontext of the UML Class Model, use examples to explain the following terms: ASSOCIATION, AGGREGATION, COMPOSITION, MULTIPLICITY. 
-      - ASSOCIATION : is a class that is part of an association relationship between two other classes. 
-      - AGGREGATION : A special form of association that specifies a whole-part relationship between the aggregate (whole) and a component part. composition
-        - Aggregation and Composition are subsets of association
+# question 7
+  - (a) in thecontext of the uml class model, use examples to explain the following terms: association, aggregation, composition, multiplicity. 
+      - association : is a class that is part of an association relationship between two other classes. 
+      - aggregation : a special form of association that specifies a whole-part relationship between the aggregate (whole) and a component part. composition
+        - aggregation and composition are subsets of association
         - a tail is a part of both dogs and cats (aggregation / composition)
-      - COMPOSITION : composition implies a relationship where the child cannot exist independent of the parent.
+      - composition : composition implies a relationship where the child cannot exist independent of the parent.
         - a tail is a part of both dogs and cats
         - example: house (parent) and room (child)
-      - MULTIPLICITY : We can indicate the multiplicity of an association by adding multiplicity adornments to the line denoting the association. The example indicates that a Student has one or more Instructors
+      - multiplicity : we can indicate the multiplicity of an association by adding multiplicity adornments to the line denoting the association. the example indicates that a student has one or more instructors
         - 1..*
       
-  - (b) What is an association class? Explain under what circumstances an association class should be replaced with a regular class. 
-    - An association class is a class built with behaviors that are associated and linked together 
-      - it can be replacd by a regular class when the behaviors of the association class NO LONGER NEEDS TO CARRY THEM
+  - (b) what is an association class? explain under what circumstances an association class should be replaced with a regular class. 
+    - an association class is a class built with behaviors that are associated and linked together 
+      - it can be replacd by a regular class when the behaviors of the association class no longer needs to carry them
  
-# Question 8
-  - (a) Describe Test-Driven Development (TDD) from a software developer’s perspective.
+# question 8
+  - (a) describe test-driven development (tdd) from a software developer’s perspective.
     - development process that relies on the repetition of a very short development cycle,
     - first the developer writes an (initially failing) automated test case that defines a desired improvement or new function, then produces the minimum amount of code to pass that test
 
-  - (b) In the following decision statement, what set of assignments for a, b and c will provide modified condition/decision test coverage? 
+  - (b) in the following decision statement, what set of assignments for a, b and c will provide modified condition/decision test coverage? 
       - if (a || (b && c)) ...
 
-      - CONDITION: Every CONDITION in a DECISION in the program has taken all possible outcomes at least once.
-      - DECISION: EVERY *POINT OF ENTRY* and exit in the program has been invoked at least once
+      - condition: every condition in a decision in the program has taken all possible outcomes at least once.
+      - decision: every *point of entry* and exit in the program has been invoked at least once
 
-      -  A: for condition : 
+      -  a: for condition : 
          -  it will calculate weather a is present to decide and then 
             -  for decision: decide weather it compares with (b&&c) 
          -  it will see it by itself if the answer is true and evaluate that equation 
             -  for decision: it will decide the on the other problem and then calculate it as well
 
-# Question 9
-Write a note on any three of the SOLID principles of object-oriented design. In 
+# question 9
+write a note on any three of the solid principles of object-oriented design. in 
 each case describe the benefits of the principle and the consequences of not 
 observing the principle.  
 
-  - Single Responsibility Principle   : every module, class, or function should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class.
-  - Open/Closed Principle             : software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification
-  - Interface Segregation Principle   : states that no client should be forced to depend on methods it does not use
+  - single responsibility principle   : every module, class, or function should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class.
+  - open/closed principle             : software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification
+  - interface segregation principle   : states that no client should be forced to depend on methods it does not use
 
-# Question 10
-In relation to any DESIGN PATTERN with which you are FAMILIAR, answer the following:
-  - (i) What is the INTENT OF THE PATTERN?
-      - ABSTRACT FACTORY             : CREATES AN INSTANCE OF SEVERAL FAMILIES OF CLASSES
+# question 10
+in relation to any design pattern with which you are familiar, answer the following:
+  - (i) what is the intent of the pattern?
+      - abstract factory             : creates an instance of several families of classes
       - factory method               : creates an instance of several derived classes
       - singleton                    : a class of which only a single instance can exist
       - state                        : alter an object's behavior when its state changes
       - strategy                     : encapsulates an algorithm inside a class
       - observer                     : a way of notifying change to a number of classk[text](https://link)s
       
-  - (ii) Using the appropriate UML diagrams, describe the typical structure and interactions of the pattern.
+  - (ii) using the appropriate uml diagrams, describe the typical structure and interactions of the pattern.
   <section data-markdown>
 	<img src="./factory.png" width="500" height="300">
 	</section>
   
-    - ABSTRACT FACTORY : CREATES AN INSTANCE OF SEVERAL FAMILIES OF CLASSES
+    - abstract factory : creates an instance of several families of classes
     
-  - (iii) Describe three issues related to the applicability or implementation of this pattern.
+  - (iii) describe three issues related to the applicability or implementation of this pattern.
     0. portability = encapsulate platform dependencies : windowing system, operating system, database, etc. 
     1. adding more layers of abstraction and complexity,
     2. to use is made at runtime meaning it depending on how your code is structured it might be fragile to run 
     3. if there are any changes to any underlying detail of one factory, the interface might need to be modified for all the factories
-    4. The code may become more complicated than it should be,
+    4. the code may become more complicated than it should be,
 
-# Question 11
-For each of these refactoring Xs, explain what the refactoring does, what its 
+# question 11
+for each of these refactoring xs, explain what the refactoring does, what its 
 preconditions are and in what context you would apply it: 
   - (i) extract method, 
     - the extract method refactoring lets you take a code fragment that can be grouped together, move it into a separated method and replace the old code with call to the method
@@ -213,13 +218,13 @@ preconditions are and in what context you would apply it:
     - after this refactoring, all references to the local variable now refer to the field
   - (iii) extract class. 
     - if you have duplicated code in two unrelated classes
-    - A "God Class" is an object that controls way too many other objects in the system - extract class may help 
-    - when Divergent change occurs
+    - a "god class" is an object that controls way too many other objects in the system - extract class may help 
+    - when divergent change occurs
       - (when one class is commonly changed in different ways for different reasons)
       
-# Question 12 (compulsory)
-Answer each of the following questions. In each case, only a short answer is required.
-  - (i) Outline the main problems with the Waterfall methodology. What are the key features of current software methodologies?
+# question 12 (compulsory)
+answer each of the following questions. in each case, only a short answer is required.
+  - (i) outline the main problems with the waterfall methodology. what are the key features of current software methodologies?
     - sequential software development process : flowing steadily downwards. 
     - issues arrize that may affect other stages 
       - meaning it wont be able to be flexible when going towards a different stage 
@@ -227,42 +232,89 @@ Answer each of the following questions. In each case, only a short answer is req
       
   - (ii) explain the roles of testing and refactoring in the context of extreme programming.
     - intended to improve software quality and responsiveness to changing customer requirements.
-        - All code must have unit tests
-        - All code must PASS ALL UNIT TESTS before it can be released.
-        - When a bug is found, tests are created before the bug is addressed
+        - all code must have unit tests
+        - all code must pass all unit tests before it can be released.
+        - when a bug is found, tests are created before the bug is addressed
         - in extreem programing refactoring their code when necessary and courage is invoked to programners 
         - since code is shared among a team refactoring also needs to be respected in the context of how the other programmer has coded the program
       
   - (iii) explain what is meant by object identity. what impact this has on an association class in the uml class model?
     - with object identity, objects can contain or refer to other objects
-    - it can clutter a uml if the objects are not propperly isolated and the rest of the UML principles are not in place 
+    - it can clutter a uml if the objects are not propperly isolated and the rest of the uml principles are not in place 
     - or gane gain readibiity if they are
     
   - (iv) show how you might implement an aggregation relationship with a cardinality of 1 to 1..* in any object-oriented language with which you are familiar.
-    - Aggregation : protects the integrity of an assembly of objects by defining a single point of control
+    - aggregation : protects the integrity of an assembly of objects by defining a single point of control
     - cardinality : the number of elements in a set or other grouping, as a property of that grouping.
 
-  - (v) classes a and b both implement the interface INF. it transpires that a new method must be added that makes sense for a but not for b. explain briefly the possible solutions and the advantages and disadvantages of each solution.
+  - (v) classes a and b both implement the interface inf. it transpires that a new method must be added that makes sense for a but not for b. explain briefly the possible solutions and the advantages and disadvantages of each solution.
+  	 - what you would want to do is put the method in the interface in a way to call the method and then the interface between two subjects or systems is the area in which they affect each other or have links with each other
+      - to declare a class that implements an interface, you include an implements clause in the class declaration. your class can implement more than one interface
+      - you would want to refrain from using the single responsibility principle (srp) principle since it indicates you want to use it for only one behavior for one class 
+      	- this would be the opposite of what you would want to look for.
+      - interface-segregation principle 
+      	- by adhering to the isp, a program can further eliminate unnecessary coupling, thereby increasing long-term flexibility, maintainability, and mobility.
+      - (isp) states that no client should be forced to depend on methods it does not use. 
+      - what you would need to do is create a class based on certain behaviors that are both relevant for a and b as if one was an broker and another a client. then take this behavior class and feed it to the interface so that the broker and client can both inherit the method. 
+         - downfall: 
+           - this could also mean confusing too many methods and making unrelevant ones. 
+           - it could also lead to meshing classes together 
+           - it could lead to not being able to reuse the class later on down the chain of the program
+
+      - you could also use multiple interface with the same schema and direct the behavior class(concrete class) to inject specific behaviors on those interfaces via a call from the interface so that the broker and client can make use of the appropriate behaviors 
+        - downfall: too many interfaces, and separation of too many  behaviors can lead to now understanding where they come from 
+
   - (vi) describe the response for a class (rfc) metric from the chidamber&kemerer metrics suite and explain what a low or high value of this metric can mean.
+    - explain: is partly evaluated by applying principles of measurement theory of oob
+     - low and high: analysing ck metrics through the identification of outlying values (extreme deviations), may be a signal of 
+    	- high complexity ir design vioalations 
+      - low complexity and easy readibility
+      - wmc, cbo, rfc, noc, dit, and lcom
+
   - (vii) in the context of testing, define equivalence class partitioning and boundary value analysis and explain what these techniques are used for.
+    - boundary value analysis tests the boudaries of a code and is highly influenced by black box testing 
+    - boundary testing comes after the equivalence class partitioning
+    - boundary testing also is the principle of deviding the values of a test and evaluating them 
+    - equivalent class partitioning is a black box technique (code is not visible to tester)
+    - equivalent class partitioning is good for large numbers and testing their owverall result 
+
   - (viii) explain briefly the law of demeter, and the benefits of following it.
+      - the law of demeter essentially avoids encoding the details of class structure in individual methods. 
+      - each unit should have only limited knowledge about other units: only units "closely" related to the current unit
+      - each unit should only talk to its friends; don't talk to strangers.
+      - only talk to your immediate friends.
+      - guideline than a principle to help reduce coupling between components.
+      - benifit: would be a clear understanding on what the rules are when programing to not make errors or provoke potential issues in your code
+
   - (ix) explain covariance and contravariance and demonstrate how the latter is snecessary to ensure type security.
+    - terms that refer to the ability to use a more derived type (more specific) or a less derived type (less specific) than originally specified. generic type parameters support covariance and contravariance to provide greater flexibility in assigning and using generic types
+      - for instance, if the type cat is a subtype of animal, then an expression of type cat can be used wherever an expression of type animal is used.
+    - contravariance. the alternative, covariance, may lead to run-time type errors if substitutivity is permitted.
+      - liskov: contravariance : using a similar argument, we can show that the return type of the overriding method must remain the same or be made more specialised.
+        - when a context that is expecting an instance of the superclass which can lead to security issues 
+
   - (x) explain the role of design patterns in software development. per part
-	
-# Question 13
-  - (a) Describe the Unified Process and contrast it with an Agile Process such as Extreme Programming.
-       - Inception phase 	
-       - Elaboration phase 	
-       - Construction phase 	
-       - Transition phase
+  	  - abstract factory             : creates an instance of several families of classes
+      - factory method               : creates an instance of several derived classes
+      - singleton                    : a class of which only a single instance can exist
+      - state                        : alter an object's behavior when its state changes
+      - strategy                     : encapsulates an algorithm inside a class
+      - observer                     : a way of notifying change to a number of class
 
-       - Continual Customer Involvement
-       - Testing
-       - Pay as you go design
+# question 13
+  - (a) describe the unified process and contrast it with an agile process such as extreme programming.
+       - inception phase 	
+       - elaboration phase 	
+       - construction phase 	
+       - transition phase
 
-  - (b) For each of the three UML diagram types (use case diagram, class diagram, and interaction diagram) describe the essential notation briefly and explain what the diagram is used for in designing a software system. Describe how the different diagram types are related to one another.
+       - continual customer involvement
+       - testing
+       - pay as you go design
+
+  - (b) for each of the three uml diagram types (use case diagram, class diagram, and interaction diagram) describe the essential notation briefly and explain what the diagram is used for in designing a software system. describe how the different diagram types are related to one another.
     
-    - use case diagram               : is a dynamic or behavior diagram in UML. Use case diagrams model the functionality of a system using actors and use cases. Use cases are a set of actions, services, and functions that the system needs to perform.
+    - use case diagram               : is a dynamic or behavior diagram in uml. use case diagrams model the functionality of a system using actors and use cases. use cases are a set of actions, services, and functions that the system needs to perform.
       - this diagram is used to understand the technical functionality of a program works alloweing cycleing through cause and affect between one (user)actor and the used cases. 
       - it relates to the others because behavior and time based interactions are part of the functionality of a working system
     
@@ -270,31 +322,68 @@ Answer each of the following questions. In each case, only a short answer is req
       - a class diagram describes the behavior of a system and gets to the closest part of how code is shown by deviding each sections in classes, their behavior, how they relate towards one another and is the closest uml design to code
       - it relates to the others because functionality and time based interactions are part of the behavior mechanism of a working system. 
     
-    - interaction diagrams           : are models that describe how a group of objects collaborate in some behavior - typically a single use-case. The diagrams show a number of example objects and the messages that are passed between these objects within the use-case
+    - interaction diagrams           : are models that describe how a group of objects collaborate in some behavior - typically a single use-case. the diagrams show a number of example objects and the messages that are passed between these objects within the use-case
       - an interaction design is to illustrate how a program works in a segmented and cycled way over a period of sequences
       - it relates to the others because functionality and behavior are part of the sequencial programming of a working system
 
-# Question 14
-  - (a) Draw a Control Flow Graph (CFG) for the following method. Provide three sets of test cases, each providing a different level of code coverage, namely (i) statement coverage, (ii) modified condition/decision coverage and (iii) path coverage
+# question 14
+  - (a) draw a control flow graph (cfg) for the following method. provide three sets of test cases, each providing a different level of code coverage, namely (i) statement coverage, (ii) modified condition/decision coverage and (iii) path coverage
+      
+      // do it there ------------------------> 
       boolean foo(int i, int j){
       	if (i<=0 || j>100)
       	7 return j==100; 8}
-      			System.out.println("...");
+      			system.out.println("...");
       	while(i>0 && j<100){
       	i=i/2; j++;
 	
-  - (b) Describe the Open/Closed Principle the Dependency Inversion Principle. Provide an example of a module that is both open and closed and explain in what way it is open and in what way it is closed. Show also how a direct dependency between classes can be inverted, again explaining your example.
+  - (b) describe the open/closed principle the dependency inversion principle. 
+  - provide an example of a module that is both open and closed and 
+  - explain in what way it is open and in what way it is closed.
+  - show also how a direct dependency between classes can be inverted, again explaining your example.
+      - open closed principle. software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification. the main idea behind this one is that in one part of your code, you have your abstractions such as classes, modules, higher order functions that do one thing and do it well.
+      - dependency inversion principle is a specific form of decoupling software modules. the principle states: high-level modules should not depend on low-level modules.
+        -  dip resolves these problems by removing direct dependencies between classes
+           -  "abstractions should not depend on details"
+           -  we tend to think of systems in a top-down way, where the higher levels depend on the lowers ones.
+              -  interfacing them and reinventing the way we see down up dependencies to top down to something more abstract 
+              
+# question 15
+  - (a) in relation to any two design patterns with which you are familiar, answer the following. take care to answer parts (i) to (iii) for each design pattern in turn.
+  - (i) what is the intent of the pattern?
+        - abstract factory : creates an instance of several families of classes
 
-# Question 15
-  - (a) In relation to any two design patterns with which you are familiar, answer the following. Take care to answer parts (i) to (iii) for each design pattern in turn.
-  - (i) What is the intent of the pattern?
-  - (ii) Using the appropriate UML diagrams, describe the typical structure and interactions of the pattern.
-  - (iii) Describe two issues related to the applicability or implementation of this pattern that you find interesting.
-  - (b) For each of the four code smells listed below,
+  - (ii) using the appropriate uml diagrams, describe the typical structure and interactions of the pattern.
+<section data-markdown>
+	<img src="./factory.png" width="500" height="300">
+</section>
+
+  - (iii) describe two issues related to the applicability or implementation of this pattern that you find interesting.
+    0. portability = encapsulate platform dependencies : windowing system, operating system, database, etc. 
+    1. adding more layers of abstraction and complexity,
+    2. to use is made at runtime meaning it depending on how your code is structured it might be fragile to run 
+    3. if there are any changes to any underlying detail of one factory, the interface might need to be modified for all the factories
+    4. the code may become more complicated than it should be,
+
+  - (b) for each of the four code smells listed below,
 		- describe the code smell
 		- suggest how this smell can come about in practice
 		- outline the refactorings you might perform in order to remove the smell. 
-  - (i) Feature Envy
-  - (ii) Speculative Generality
-  - (iii) Duplicated Code
-  - (iv) Refused Bequest
+        - (i) feature envy: situation in which one object gets at the fields of another object
+          - code smell: situation in which one object gets at the fields of another object
+          - smell can come about in practice: This smell may occur after fields are moved to a data cla
+          - refactorings for codesmell: Consider moving this method to the class it is so envious of.
+        - (ii) speculative generality:  There’s an unused class, method, field or parameter.
+          - code smell: There is an unused class, method, field or parameter.
+          - smell can come about in practice: Sometimes code is created “just in case” to support anticipated future features
+          - refactorings for codesmell: Merge the subclass and superclass.
+        - (iii) duplicated code: Two code fragments look almost identical.
+          - code smell: Two code fragments look almost identical
+          - smell can come about in practice: Duplication usually occurs when multiple programmers are working on different parts of the same program
+          - refactorings for codesmell:  two or more methods in the same class: use extract methodand place calls for the new method in both places.
+          	-  extract method, pull up field, pull up constructor body, form template method, substitute algorithm, extract superclass and class, consolidate conditional expression, consolidate duplicate conditional fragments.
+
+- (iv) refused bequest : If a subclass uses only some of the methods and properties inherited from its parents, the hierarchy is off-kilter. 
+          -  code smell:  If a subclass uses only some of the methods and properties inherited from its parents, the hierarchy is off-kilter. 
+          - smell can come about in practice: Someone was motivated to create inheritance between classes only by the desire to reuse the code in a superclass.
+          - refactorings for codesmell:  If inheritance makes no sense and the subclass really does have nothing in common with the superclass, eliminate inheritance in favor of Replace Inheritance with Delegation.

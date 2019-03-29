@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18D109" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDGameSequence" representedClassName="CDGameSequence" syncable="YES">
+        <attribute name="action" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="userType" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="session" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDGameSession" inverseName="sequence" inverseEntity="CDGameSession" syncable="YES"/>
+    </entity>
+    <entity name="CDGameSession" representedClassName="CDGameSession" syncable="YES">
+        <attribute name="winningSequence" attributeType="Transformable" customClassName="[Int]" syncable="YES"/>
+        <attribute name="wonBy" attributeType="String" syncable="YES"/>
+        <relationship name="sequence" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDGameSequence" inverseName="session" inverseEntity="CDGameSequence" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CDGameSequence" positionX="278.546875" positionY="122.24609375" width="128" height="103"/>
+        <element name="CDGameSession" positionX="-68.671875" positionY="-16.11328125" width="128" height="88"/>
+    </elements>
+</model>

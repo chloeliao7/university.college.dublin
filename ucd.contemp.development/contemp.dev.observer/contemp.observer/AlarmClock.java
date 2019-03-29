@@ -32,9 +32,7 @@ public class AlarmClock {
 	}
 
 	public String getTime() { return Integer.toString(hours) + ":" + Integer.toString(minutes) + ":" + Integer.toString(seconds); }
-
 	public boolean alarmReached() { return (hours == alarmHours && minutes == alarmMinutes && seconds == alarmSeconds); }
-
 	private int hours, minutes, seconds;
 	private int alarmHours, alarmMinutes, alarmSeconds;
 }

@@ -129,12 +129,14 @@
 > topics : 
 + [lectures](./ucd.game.development/game.dev.pdf) (lecture slides pdf)
 + [notes](./ucd.game.development/game.dev.notes.txt) (lecture notes)
-+ [project 1](./ucd.game.development/game.dev.game/game.assignment1/game.chicken.game) (chicken game with gml)
++ [project 1](./ucd.game.development/game.dev.game/game.assignment1) (chicken game with gml)
 	<section data-markdown>
 	<img src="./ucd.game.development/game.dev.game/game.assignment1/chicken.game.gif" width="500" height="300">
 	</section>
-
 + [project 2](./ucd.game.development/game.dev.game/game.assignment2) (drone game with unity)
+	<section data-markdown>
+	<img src="./ucd.game.development/game.dev.game/game.assignment2/game.destroyer.gif" width="500" height="300">
+	</section>
 </p>
 </details> 
 
@@ -149,11 +151,15 @@
 + [lectures](./ucd.ios.cocotouch/ios.pdf) (lecture slides pdf)
 + [notes](./ucd.ios.cocotouch/ucd.ios.notes.txt) (lecture notes)
 + [teachers projects](./ucd.ios.cocotouch/ios.teacher.projects) (teachers projects)
-+ [project 1](.//ucd.ios.cocotouch/ios.student.projects/ios.projects.connect.4) (ai bot connect 4 game) 
-+ [project 2](./ucd.ios.cocotouch/ios.student.projects/ios.projects.tweetertags) (twitter tags bot)
-<section data-markdown>
-<img src="./ucd.ios.cocotouch/ios.student.projects/ios.projects.tweetertags/ios.twittertag.img.png" width="350" height="450">
-</section>
++ [project 1](./ucd.ios.cocotouch/ios.student.projects/ios.projects.tweetertags) (twitter tags bot)
+  <section data-markdown>
+  <img src="./ucd.ios.cocotouch/ios.student.projects/ios.projects.tweetertags/ios.twittertag.img.png" width="350" height="430">
+  </section>
++ [project 2](./ucd.ios.cocotouch/ios.student.projects/ios.projects.connect.4) (ai bot connect 4 game) 
+  <section data-markdown>
+  <img src="./ucd.ios.cocotouch/ios.student.projects/ios.projects.connect.4/ios.connect4.img.png" width="350" height="380">
+  </section>
+
 </p>
 </details> 
 

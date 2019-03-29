@@ -15,4 +15,7 @@ public class AlarmApplication {
 		}
 	}
 	public static final int SECONDS_IN_DAY = 86400;
+	
+	
+
 }

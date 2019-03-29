@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quad_Simulator.CSharp", "Quad_Simulator.CSharp.csproj", "{6DAE0AD8-AC65-D32C-73A9-92F47B0DDDAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DAE0AD8-AC65-D32C-73A9-92F47B0DDDAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DAE0AD8-AC65-D32C-73A9-92F47B0DDDAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DAE0AD8-AC65-D32C-73A9-92F47B0DDDAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DAE0AD8-AC65-D32C-73A9-92F47B0DDDAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

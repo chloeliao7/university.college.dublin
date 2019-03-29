@@ -29,5 +29,7 @@ public class HorseRaceMain {
 		Thread.sleep(2000);
 		System.out.println("GO!!");
 		race.startRace();
+		
+		
 	}
 }

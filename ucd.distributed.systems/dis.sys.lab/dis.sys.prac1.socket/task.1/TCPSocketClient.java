@@ -43,8 +43,9 @@ public class TCPSocketClient {
         port = Integer.valueOf(args[1]); // taking the second value and assigning it to the post
       } catch (NumberFormatException nfe) {
         System.err.println("The value provided for the port is not an integer");
-        nfe.printStackTrace(); //
-      }
+        nfe.printStackTrace(); 
+      } 
+
       message = args[2];
       TCPSocketClient client = new TCPSocketClient(host, port);
       client.sendMessage(message);

@@ -1,5 +1,3 @@
 package com.upgrad.SaavnProject;
 
-public class SaavnWritable {
-
-}
+public class SaavnWritable {}

@@ -1,0 +1,248 @@
+fileFormatVersion: 2
+guid: b8930f49238cefc418591d68ab91fce0
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface17
+    100004: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface31
+    100006: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface45
+    100008: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface59
+    100010: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface11
+    100012: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface15
+    100014: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface26
+    100016: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface34
+    100018: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface35
+    100020: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface8
+    100022: drone_awesome:pCube2_polySurface1
+    100024: drone_awesome:pCube2_polySurface67
+    100026: drone_awesome:pCube6_polySurface5_drone_awesome:polySurface1
+    100028: drone_awesome:pCylinder1_drone_awesome:polySurface1_polySurface6
+    400000: //RootNode
+    400002: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface17
+    400004: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface31
+    400006: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface45
+    400008: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface59
+    400010: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface11
+    400012: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface15
+    400014: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface26
+    400016: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface34
+    400018: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface35
+    400020: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface8
+    400022: drone_awesome:pCube2_polySurface1
+    400024: drone_awesome:pCube2_polySurface67
+    400026: drone_awesome:pCube6_polySurface5_drone_awesome:polySurface1
+    400028: drone_awesome:pCylinder1_drone_awesome:polySurface1_polySurface6
+    2300000: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface17
+    2300002: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface31
+    2300004: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface45
+    2300006: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface59
+    2300008: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface11
+    2300010: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface15
+    2300012: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface26
+    2300014: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface34
+    2300016: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface35
+    2300018: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface8
+    2300020: drone_awesome:pCube2_polySurface1
+    2300022: drone_awesome:pCube2_polySurface67
+    2300024: drone_awesome:pCube6_polySurface5_drone_awesome:polySurface1
+    2300026: drone_awesome:pCylinder1_drone_awesome:polySurface1_polySurface6
+    3300000: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface17
+    3300002: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface31
+    3300004: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface45
+    3300006: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface59
+    3300008: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface11
+    3300010: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface15
+    3300012: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface26
+    3300014: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface34
+    3300016: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface35
+    3300018: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface8
+    3300020: drone_awesome:pCube2_polySurface1
+    3300022: drone_awesome:pCube2_polySurface67
+    3300024: drone_awesome:pCube6_polySurface5_drone_awesome:polySurface1
+    3300026: drone_awesome:pCylinder1_drone_awesome:polySurface1_polySurface6
+    4300000: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface17
+    4300002: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface31
+    4300004: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface45
+    4300006: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface59
+    4300008: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface11
+    4300010: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface15
+    4300012: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface26
+    4300014: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface34
+    4300016: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface35
+    4300018: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface8
+    4300020: drone_awesome:pCube2_polySurface1
+    4300022: drone_awesome:pCube2_polySurface67
+    4300024: drone_awesome:pCube6_polySurface5_drone_awesome:polySurface1
+    4300026: drone_awesome:pCylinder1_drone_awesome:polySurface1_polySurface6
+    6400000: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface17
+    6400002: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface31
+    6400004: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface45
+    6400006: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_drone_awesome:polySurface1_polySurface59
+    6400008: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface11
+    6400010: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface15
+    6400012: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface26
+    6400014: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface34
+    6400016: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface35
+    6400018: drone_awesome:group1_drone_awesome:polySurface52_drone_awesome:polySurface53_drone_awesome:polySurface54_drone_awesome:polySurface55_polySurface8
+    6400020: drone_awesome:pCube2_polySurface1
+    6400022: drone_awesome:pCube2_polySurface67
+    6400024: drone_awesome:pCube6_polySurface5_drone_awesome:polySurface1
+    6400026: drone_awesome:pCylinder1_drone_awesome:polySurface1_polySurface6
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: drone_awesome_group1_drone_awesome_polySurface52_drone_awesome_polySurface53_drone_awesome_polySurface54_drone_awesome_polySurface55_drone_awesome_polySurface1_polySurface17Mat
+    second: {fileID: 2100000, guid: f32166d4ea915bf4eaee89b45f0f0853, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: drone_awesome_group1_drone_awesome_polySurface52_drone_awesome_polySurface53_drone_awesome_polySurface54_drone_awesome_polySurface55_drone_awesome_polySurface1_polySurface31Mat
+    second: {fileID: 2100000, guid: 8fdf011deca6a8647a61b0e837d00a87, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: drone_awesome_group1_drone_awesome_polySurface52_drone_awesome_polySurface53_drone_awesome_polySurface54_drone_awesome_polySurface55_drone_awesome_polySurface1_polySurface45Mat
+    second: {fileID: 2100000, guid: 64a818e5c92374345bd6a0f7439fd54f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: drone_awesome_group1_drone_awesome_polySurface52_drone_awesome_polySurface53_drone_awesome_polySurface54_drone_awesome_polySurface55_drone_awesome_polySurface1_polySurface59Mat
+    second: {fileID: 2100000, guid: dec140dd3abcdec4291f8693fef0fcfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: drone_awesome_group1_drone_awesome_polySurface52_drone_awesome_polySurface53_drone_awesome_polySurface54_drone_awesome_polySurface55_polySurface11Mat
+    second: {fileID: 2100000, guid: ba4f0a549bb597f45b182a9f69742f96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: drone_awesome_group1_drone_awesome_polySurface52_drone_awesome_polySurface53_drone_awesome_polySurface54_drone_awesome_polySurface55_polySurface15Mat
+    second: {fileID: 2100000, guid: f9fedc64f00072b4cbdade6bf838b426, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: drone_awesome_group1_drone_awesome_polySurface52_drone_awesome_polySurface53_drone_awesome_polySurface54_drone_awesome_polySurface55_polySurface26Mat
+    second: {fileID: 2100000, guid: c4e792daa111fa24ca3db74f555287d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: drone_awesome_group1_drone_awesome_polySurface52_drone_awesome_polySurface53_drone_awesome_polySurface54_drone_awesome_polySurface55_polySurface34Mat
+    second: {fileID: 2100000, guid: 465a136af25ef5645abf3d437339de9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: drone_awesome_group1_drone_awesome_polySurface52_drone_awesome_polySurface53_drone_awesome_polySurface54_drone_awesome_polySurface55_polySurface35Mat
+    second: {fileID: 2100000, guid: b962f20df218e064e8b348226ecb9f2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: drone_awesome_group1_drone_awesome_polySurface52_drone_awesome_polySurface53_drone_awesome_polySurface54_drone_awesome_polySurface55_polySurface8Mat
+    second: {fileID: 2100000, guid: 3ca29156cd4e789498359bcfa18d0c49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: drone_awesome_pCube2_polySurface1Mat
+    second: {fileID: 2100000, guid: ec21d5a9ff319334c98c0a96ffea0f4e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: drone_awesome_pCube2_polySurface67Mat
+    second: {fileID: 2100000, guid: 787dc4d1b5ddd144c91e6c8df63cb5d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: drone_awesome_pCube6_polySurface5_drone_awesome_polySurface1Mat
+    second: {fileID: 2100000, guid: 0d835ecec347b3d459f83cbbed670e84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: drone_awesome_pCylinder1_drone_awesome_polySurface1_polySurface6Mat
+    second: {fileID: 2100000, guid: 5abce1abbaaa649499ed5ec07d3661f8, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

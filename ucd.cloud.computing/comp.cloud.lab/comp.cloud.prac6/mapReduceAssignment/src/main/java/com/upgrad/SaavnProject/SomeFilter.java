@@ -14,57 +14,50 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class SomeFilter {
+	public static class SaavnMapper extends Mapper<LongWritable, Text, Text, Text> {
+		public void map(LongWritable key, Text record, Context con) throws InterruptedException {
+			String[] info = record.toString().split(",");
+			String songid = info[0];
+			String date = info[4];
 
-  public static class SaavnMapper extends Mapper<LongWritable, Text, Text, Text> {
+			System.out.println(record);
 
-    public void map(LongWritable key, Text record, Context con) throws InterruptedException {
+			try {
+				con.write(new Text(date + songid), new Text("1"));
 
-      String[] info = record.toString().split(",");
-      String songid = info[0];
-      String date = info[4];
+			} catch (IOException ioe) { System.out.println(ioe.getMessage()); }
+		}
+	}
 
-      System.out.println(record);
+	public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException {
+		Configuration conf = new Configuration(true);
+		Job job;
 
-      try {
-        con.write(new Text(date + songid), new Text("1"));
+		// conf = new Configuration();
 
-      } catch (IOException ioe) {
-        System.out.println(ioe.getMessage());
-      }
-    }
-  }
+		job = Job.getInstance(conf, "adhaar1_a");
+		job.setJarByClass(SaavnFilter.class);
 
-  public static void main(String[] args)
-      throws IOException, InterruptedException, ClassNotFoundException {
+		job.setMapperClass(MapperClass.class);
+		job.setReducerClass(ReducerClass.class);
 
-    Configuration conf = new Configuration(true);
-    Job job;
+		job.setMapOutputKeyClass(Text.class);
+		job.setMapOutputValueClass(DateAndCount.class);
 
-    //conf = new Configuration();
+		job.setOutputKeyClass(Text.class);
+		job.setOutputValueClass(Text.class);
 
-    job = Job.getInstance(conf, "adhaar1_a");
-    job.setJarByClass(SaavnFilter.class);
+		FileInputFormat.addInputPath(job, new Path(args[0]));
 
-    job.setMapperClass(MapperClass.class);
-    job.setReducerClass(ReducerClass.class);
+		FileOutputFormat.setOutputPath(job, new Path(args[1] + System.currentTimeMillis()));
 
-    job.setMapOutputKeyClass(Text.class);
-    job.setMapOutputValueClass(DateAndCount.class);
+		job.setNumReduceTasks(31);
 
-    job.setOutputKeyClass(Text.class);
-    job.setOutputValueClass(Text.class);
+		/*
+		 * Specify the partitioner class.
+		 */
+		job.setPartitionerClass(DayPartitioner.class);
 
-    FileInputFormat.addInputPath(job, new Path(args[0]));
-
-    FileOutputFormat.setOutputPath(job, new Path(args[1] + System.currentTimeMillis()));
-
-    job.setNumReduceTasks(31);
-
-    /*
-     * Specify the partitioner class.
-     */
-    job.setPartitionerClass(DayPartitioner.class);
-
-    System.exit(job.waitForCompletion(true) ? 0 : 1);
-  }
+		System.exit(job.waitForCompletion(true) ? 0 : 1);
+	}
 }
