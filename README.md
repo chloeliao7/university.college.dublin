@@ -111,11 +111,13 @@
 > topics : 
 + [lectures](./ucd.contemp.development/contemp.dev.pdf) (lecture slides pdf)
 + [notes](./ucd.contemp.development/contemp.dev.notes.txt) (lecture notes)
++ [report](./ucd.contemp.development/contemp.dev.assignments/contemp.journal.final.pdf) (final report)
 + [lab 1](./ucd.contemp.development/contemp.dev.assignments/contemp.lab1) (agile term research)
 + [lab 2](./ucd.contemp.development/contemp.dev.assignments/contemp.lab2) (uml exercise)
 + [lab 3](./ucd.contemp.development/contemp.dev.assignments/contemp.lab3) (ger hartnett : talk mongodb)
 + [lab 4](./ucd.contemp.development/contemp.dev.assignments/contemp.lab4) (junit)
 + [lab 5](./ucd.contemp.development/contemp.dev.assignments/contemp.lab5) (peter : talk 8bytes)
++ [lab 6](./ucd.contemp.development/contemp.dev.assignments/contemp.lab6) (ibm talk watson care)
 </p>
 </details> 
 
@@ -133,7 +135,6 @@
 <section data-markdown>
 <img src="./ucd.game.development/game.dev.game/game.assignment1/chicken.game.gif" width="500" height="300">
 </section>
-
 
 + [project 2](./ucd.game.development/game.dev.game/game.assignment2) (drone game with unity)
 <section data-markdown>
@@ -157,7 +158,6 @@
 <section data-markdown>
 <img src="./ucd.ios.cocotouch/ios.student.projects/ios.projects.tweetertags/ios.twittertag.img.png" width="350" height="430">
 </section>
-
 
 + [project 2](./ucd.ios.cocotouch/ios.student.projects/ios.projects.connect.4) (ai bot connect 4 game) 
 <section data-markdown>
