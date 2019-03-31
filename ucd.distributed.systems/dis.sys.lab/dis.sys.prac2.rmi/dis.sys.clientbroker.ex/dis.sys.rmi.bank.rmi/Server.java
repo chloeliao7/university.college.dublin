@@ -4,7 +4,7 @@ import java.rmi.registry.LocateRegistry;
 class Server {
 	
 	public static void main(String[] args) {
-		Registry registry = LocateRegistry,createRegistry(1099); 
+		Registry registry = LocateRegistry.createRegistry(1099); 
 		BankAccount currentAccount = new CurrentAccount(); 
 		// 0 = port number // proxy object you can // exposedObject.
 		BankAccount exposedObject = (BankAccount) UnicastRemoteObject.exportObject(currentAccount, 0); 

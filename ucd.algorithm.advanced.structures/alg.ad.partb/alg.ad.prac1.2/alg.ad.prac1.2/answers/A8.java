@@ -14,7 +14,6 @@ public class A8 {
     int factorial = 1; // OPERATIONS: 1
     for (k = 1; k <= a; k++) {
       // OPERATIONS: 2(n), k <= a -1 // OPERATIONS: 2(n -1) k++
-
       factorial = factorial * k; // OPERATIONS: 2(n) 
       System.out.println("K : " + k + "    A : " + a + "    Factorial : " + factorial);
 

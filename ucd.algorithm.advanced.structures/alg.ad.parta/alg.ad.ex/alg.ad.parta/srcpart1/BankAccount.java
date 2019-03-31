@@ -3,6 +3,7 @@
  *     Anderson, Franceschi
  *     Represents a generic bank account
  */
+
 import java.text.DecimalFormat;
 
 public class BankAccount {
