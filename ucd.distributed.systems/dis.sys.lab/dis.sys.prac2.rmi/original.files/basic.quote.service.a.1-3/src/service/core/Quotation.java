@@ -5,9 +5,9 @@ package service.core;
  * @author Rem
  */
 
- // ===========================================================================================
- // this has all the infromation from quotation giving the companies, reference and price its own assignemnts 
- // ===========================================================================================
+// ===========================================================================================
+// this has all the infromation from quotation giving the companies, reference and price its own assignemnts
+// ===========================================================================================
 
 public class Quotation {
 	public Quotation(String company, String reference, double price) {
@@ -15,7 +15,7 @@ public class Quotation {
 		this.reference = reference;
 		this.price = price;
 	}
-	
+
 	public String company;
 	public String reference;
 	public double price;

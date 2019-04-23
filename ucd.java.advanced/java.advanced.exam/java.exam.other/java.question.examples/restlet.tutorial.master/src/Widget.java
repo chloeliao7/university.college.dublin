@@ -27,7 +27,7 @@ public class Widget {
 
 	/**
 	 * @param id
-	 *            The id to set.
+	 * The id to set.
 	 */
 	public void setId(String id) {
 		this.id = id;
@@ -42,7 +42,7 @@ public class Widget {
 
 	/**
 	 * @param name
-	 *            The name to set.
+	 * The name to set.
 	 */
 	public void setName(String name) {
 		this.name = name;

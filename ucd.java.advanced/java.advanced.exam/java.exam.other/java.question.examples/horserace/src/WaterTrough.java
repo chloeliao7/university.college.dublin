@@ -16,7 +16,7 @@ public class WaterTrough {
 	 * @return The length of time the horse drank.
 	 * @throws InterruptedException
 	 */
-	
+
 	public synchronized long getDrink() throws InterruptedException {
 		// Horse takes between 1-3 seconds drinking!
 		long duration = Math.abs((this.rand.nextLong()) % 2000) + 1000;

@@ -7,10 +7,14 @@
  * @author Jonathan Engelsma (http://www.cis.gvsu.edu/~engelsma)
  *
  */
+ 
+ 
 public class HorseRaceMain {
+	
 	/**
 	 * @param args
 	 */
+	
 	public static void main(String[] args) throws InterruptedException {
 		// Create a race instance and a water trough for the thirsty race horses.
 		Race race = new Race();

@@ -13,7 +13,10 @@ public class Race {
 	 * Called by each horse to line up at the starting line.
 	 * @throws InterruptedException
 	 */
+	
+	 
 	public synchronized void getReadyToRace() throws InterruptedException { this.wait(); }
+
 	
 	
 	/**

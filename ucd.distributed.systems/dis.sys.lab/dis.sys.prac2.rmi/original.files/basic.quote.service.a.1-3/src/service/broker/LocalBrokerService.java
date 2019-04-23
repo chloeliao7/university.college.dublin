@@ -13,11 +13,7 @@ import service.core.Quotation;
 import service.core.QuotationService;
 import service.registry.ServiceRegistry;
 
-
-/**
- * Implementation of the broker service that uses the Service Registry.
- * @author Rem
- */
+/** Implementation of the broker service that uses the Service Registry. @author Rem */
 
 // sends off to all companies and every company does the math for each
 // Making this class as a Remote Object for Server RMI

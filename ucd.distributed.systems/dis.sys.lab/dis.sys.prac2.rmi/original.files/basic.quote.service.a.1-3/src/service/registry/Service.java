@@ -1,6 +1,3 @@
 package service.registry;
 
-
-public interface Service { 
-
-}
+public interface Service {}
