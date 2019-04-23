@@ -1,0 +1,114 @@
+
+
+1. THE INITIAL APPLICATION : CAN YOU SEE WHAT THE PROBLEM IS?
+Spend some time looking at the source code and determine what areas are most in need of improving, i.e., 
+what smells or principle violations or simply rotten-looking code do you see? Make note of these.
+
+- i see a lot of codesmells in this documetent = the first one is one that deals 
+with rental and vehicle class : meaninf that when you look at the rental class 
+you will see a method called get vehicle, this should still be in the vehicle 
+class. the refactoring way to deal with this issue (code smell) would be called 
+: method extraction 
+
+
+2. FUTURE EVOLUTION : 
+• The the current statement method returns a string. It is planned to extend the program to
+produce HTML output
+
+• The classification scheme for vehicles will be changed periodically, and this 
+will affect both the way customers are charged for rentals and the way that 
+frequent renter points are calculated. Extending the statement method to return 
+HTML output can really only be achieved by writing a new method with the same 
+structure as the current one. The vehicle classification scheme is embedded in 
+the statement method and it would be a nightmare if this scheme were to change 
+regularly. We want to refactor to code to make it more amenable to these 
+changes. 
+
+3. CODE SMELLS : 
+
+The Vehicle and Rental classes suffer from the same code . What is it? 
+What sort of refactoring comes to mind to fix these smells?smell
+The Customer class has a different type of problem. What is it? 
+It also violates some of the principles we looked at.
+
+
+- i also see that within this document you can spot that motorbike, all terrain 
+and car are static final variables in the vehicle class where if you wanted to 
+implimnent new types of each one of these it wouldnt be possible: the better solution would 
+be to create them as normal public variables and then change them if needed 
+
+
+Taking these code smells/issues as a whole, what general direction do you think 
+the refactoring of the program should take? 
+
+in this section I would make sure too move the vehicle methods back to thevehicle class and make sure every variables including statis finals would have their proper open/close princ
+
+In this exercise, you’ll be directed to apply a few refactorings, and then you 
+are free to refactor on your own. 
+
+4. SPLITTING UP A LONG METHOD: THE EXTRACT METHOD REFACTORING : The statement 
+method is clearly a Long Method. There is a lot happening and it LOOKS UGLY. 
+Consider the switch statement. What is it doing? Can you think of a good name 
+for this functionality? It is performing a single task so it’s a good candidate 
+to extract into a new method. In order to apply Extract Method to a code block, 
+you need to consider the following: 
+
+1. Does the code block embody a coherent piece of functionality? If you can’t 
+think of a good name for it, it doesn’t make sense to extract it out into a new 
+method. 
+
+2. Consider the extent of the code block to extract. We’re looking at the switch 
+statement, but does it make sense the extract the statement preceding the switch 
+statement (double thisAmount = 0) as well? 
+
+3. Does the code change one single variable? If so, this variable can simply be 
+returned by the new method. If it changes several variables then it gets 
+trickier to apply Extract Method, and perhaps this refactoring isn’t useful in 
+this context after all. 
+
+4. What variables does the code block need access to from its enclosing method? 
+These should be passed as parameters to the new method. 
+
+5. Note that variables created and used only inside the moved code block will 
+become local variables in the new method. 
+
+	Apply Extract Method to this code block by hand. Do not use the IDE’s refactoring! 
+	Decide what argument the new method needs and what its return type will be. Make sure the testcases work correctly after you finish.
+	Revert to the initial program and use the Extract Method refactoring on the Refactor menu. compare the result with your by-hand refactoring.
+	Try applying Extract Method to other portions of code just to see what happens (and undo the refactoring each time). 
+	Get a sense also of what its limits are, e.g. if you try to extract the switch statement and the following 
+	frequentRenterPoints++ statement it won’t work. Why?
+	
+5. FIXING POOR NAMES WITH THE RENAME REFACTORING : 
+A new method came into existence in the first refactoring. Now is good time to look at the names and check that they make sense. 
+Did you use a clear method name? If not, use the IDE’s Rename refactoring to change it to a better one. 
+Your method probably has a parameter called each. This is a terrible name; 
+rename it to something better (hint: it represents a rental). What other names could be improved?
+
+6. FEATURE ENVY! USE MOVE METHOD TO GET THE METHOD TO IT RIGHTFUL HOME : 
+You’ve created a new method and reduced the Long Method smell of the statement method. However this new method suffers badly from feature envy. 
+What class is it envious of? We’re going to move this method to its appropriate class.
+As for the Extract Method refactoring above, perform this refactoring by hand first. 
+Make sure you did it correctly by running the testcases. 
+Then undo your work and use the Move Method refactoring in the Eclipse IDE to perform the move.
+Eclipse will ask if you want to keep the original method as a delegate to the new one. 
+Think about this. Which option do you prefer and why? You could try both versions of the refactoring and see which result you prefer.
+When you’ve performed this refactoring check that the testcases work ok. Should you add some new testcases now?
+
+Look at the new method it its new class. Should you rename it to a better name? It still contains a comment. 
+Does this comment serve a useful purpose, or would you rather update/delete it?
+
+7. NOW REFACTOR MERCILESSLY (DON’T WORRY IF YOU DON’T GET FAR WITH THIS) : 
+Continue refactoring the program and playing around with some of the refactorings we looked at in lectures. Some hints as to what you might do:
+	- The statement method has a local variable you might get rid of.
+	- The statement method has two statements that update the frequent Renter Points variable. These could form a cohesive method on their own. What class should this method be moved to?
+	- The computation of total Amount in the statement method stretches across the entire method. We’ve all coded like this, but it is clearer if this computation is moved to a new method and invoked once in the statement method. This type of refactoring is called Replace Temp With Query. The resulting code is much clearer, though less efficient2.
+	- The same refactoring as in the previous bullet can be applied to frequentRenterPoints.
+	- (The previous two refactorings added two new methods to the Customer class. Should they be made public or private?)
+	- You can now create the htmlStatement method to output the customer statement as HTML with minimal copying of code3. This is an example of how refactoring a program can make it it amenable to being extended with new requirement.
+	- The new method created in (4) above switches on a type field in another class. This is awful. Move this method to the class that owns the type field and then consider using subclassing and polymorphism to get rid of the switch statement completely.
+	- We were warned in (2) above that the rules around price and frequent renter points are likely to change often. This suggests that they should be packaged off into a class on their own. 
+		Again, a design pattern, namely Strategy, is very useful to build this flexibility into the code. If you make much progress in this section, well done! The later bullet 
+		points about are just there to give you a notion of how the refactoring might progress, and the way design patterns (the final topic in the module) often have a place in refactoring. 
+	
+In most applications, clear code is far more important that efficiency. Code clearly first, then if necessary use run-time profiling to improve performance where it matters. The code duplication could be reduced entirely using a design pattern called Template Method.

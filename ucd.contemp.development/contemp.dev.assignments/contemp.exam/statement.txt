@@ -1,0 +1,66 @@
+STU NUMBER: 18204188
+
+NAME: Gregoire Cousin 
+
+Provide below a *terse* record of what you do in each part. A sample entry (from a different application) might be e.g.
+“sprint method in Person in wrong class, moved to Athlete”
+
+part 1: RECORD 
+Federation : 
+	num of clubs
+	num of mmebers - adult or child 
+	
+	"sprint method in person in wrong class, moved to athletes"
+	
+	# DONE:	10 minutes: 
+	
+	---------------------------------------
+	
+
+PART 1. Unit Testing
+====================
+
+added totalFees report since it has the return type int and we are getting the ints from it and checking weather they equal to what we desire with .equals
+
+PART 2. Cleaning Up the Code
+============================
+
+FEDERATION: 
+# generateReport
+	1. generateReport = clean up the unessesary str += into one lines
+	2. shorten the return statement 
+	3. rename the iterloop for clarity 
+	4. change i to count 
+	5. comment appropiatly
+	
+Member: 
+change class name from equals to checkName : name violation
+change n and t to name and type - refactoring 
+
+club: 
+change iter to iter Member
+change tostring to check member 
+iter -> iterMemberFee -> 
+moved Iterator<Member> iterMemberFee = members.iterator() to reduce load as a local var for all methods
+
+PART 3. Applying the Strategy Design Pattern
+============================================
+
+added 3 new files 
+- generate main : 
+-- mediator between the core code and the strategy interface - executables of the generateReport 
+
+- Strategy main : 
+-- class that will hold the interface for the strategy patten 
+
+- Strategy main : 
+-- class that will hold the interface for the strategy patten 
+
+- RunFees : 
+-- which should output the <html> code and fees
+
+
+PART 4. Further Evolution
+=========================
+
+
