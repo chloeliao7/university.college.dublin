@@ -14,6 +14,8 @@ class Bird
   end
 end
 
+
+
 class Seagull < Bird
   def initialize(name, wings, legs)
     @namer = name

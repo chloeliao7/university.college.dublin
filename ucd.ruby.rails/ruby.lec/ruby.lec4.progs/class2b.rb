@@ -14,9 +14,9 @@ class Visit
 		puts "#{@person} visited #{@place}"
 	end
 	
-	#def print_visit
-	#	puts "#{@person.man_name} visited #{@place}"
-	#end
+ 	#def print_visit
+ 	#	puts "#{@person.man_name} visited #{@place}"
+ 	#end
 	
 end
 
