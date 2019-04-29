@@ -35,7 +35,7 @@
 + [project](./ucd.cloud.computing/comp.cloud.todolist) (project with angular and firebase)
 
 	<section data-markdown>
-	<img src="./ucd.cloud.computing/comp.cloud.todolist/smart-todo-now-share.png" width="500" height="300">
+	<img src="./ucd.cloud.computing/comp.cloud.todolist/smart-todo-now-share.png" width="450" height="300">
 	</section>
 </p>
 </details>
@@ -194,14 +194,14 @@
 + [lectures](./ucd.python.data.analystics/python.pdf) (lecture slides pdf)
 + [notes](./ucd.python.data.analystics/python.notes.txt) (lecture notes)
 + [labs](./ucd.python.data.analystics/python.labs) (labs for python with a variety of exercises)
-+ [project](./ucd.python.data.analystics/python.assignments/python.assignment.pythongraph.1) (pythongraph : using api and json to collect weather data)
++ [project 1](./ucd.python.data.analystics/python.assignments/python.assignment.pythongraph.1) (pythongraph : using api and json to collect weather data)
 
 <section data-markdown>
 <img src="./ucd.python.data.analystics/python.assignments/python.assignment.pythongraph.1/python.data.png" width="350" height="380">
 </section>
 
 
-+ [project](./ucd.python.data.analystics/python.assignments/python.assignment.pythongraph.1) (Text classification : scrape, machine learning, data analysis and testing on a set of reviews)
++ [project 2](./ucd.python.data.analystics/python.assignments/python.assignment.pythongraph.1) (Text classification : scrape, machine learning, data analysis and testing on a set of reviews)
 
 <section data-markdown>
 <img src="./ucd.python.data.analystics/python.assignments/python.assignment.text.classification.2/python.review.png" width="350" height="380">
@@ -234,9 +234,9 @@
 > topics : big data, french, intro to security, recommended systems, text analystics
 + [big data](./ucd.course.audit/ucd.big.data)
 + [french](./ucd.course.audit/ucd.french)
++ [text analystics](./ucd.course.audit/ucd.text.analystics)
 + [intro to security](./ucd.course.audit/ucd.intro.security)
 + [recommended systems](./ucd.course.audit/ucd.rec.sys)
-+ [text analystics](./ucd.course.audit/ucd.text.analystics)
 </p>
 </details> 
 
