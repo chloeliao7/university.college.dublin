@@ -45,7 +45,7 @@
 + [project](./ucd.cloud.computing/comp.cloud.todolist) (project with angular and firebase)
 
 	<section data-markdown>
-	<img src="./ucd.cloud.computing/comp.cloud.todolist/smart-todo-now-share.png" width="450" height="300">
+	<img src="./ucd.cloud.computing/comp.cloud.todolist/smart-todo-now-share.png" width="420" height="300">
 	</section>
 </p>
 </details>
