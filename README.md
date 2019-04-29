@@ -162,7 +162,7 @@
 
 + [project 2](./ucd.ios.cocotouch/ios.student.projects/ios.projects.connect.4) (ai bot connect 4 game) 
 <section data-markdown>
-<img src="./ucd.ios.cocotouch/ios.student.projects/ios.projects.connect.4/ios.connect4.img.png" width="350" height="380">
+<img src="./ucd.ios.cocotouch/ios.student.projects/ios.projects.connect.4/ios.connect4.img" width="350" height="380">
 </section>
 
 </p>
