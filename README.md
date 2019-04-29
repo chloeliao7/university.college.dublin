@@ -14,13 +14,13 @@
 + [part a](./ucd.algorithm.advanced.structures/alg.ad.parta) exercises(racing graphics with java)
 
 <section data-markdown>
-<img src="./ucd.algorithm.advanced.structures/alg.ad.parta/alg.ad.ex/alg.ad.rabit.run.png" width="450" height="300">
+<img src="./ucd.algorithm.advanced.structures/alg.ad.parta/alg.ad.ex/alg.ad.rabit.run.png" width="300" height="300">
 </section>
 	
 + [part b](./ucd.algorithm.advanced.structures/alg.ad.partb) exercises(phone game with trees)
 
 <section data-markdown>
-<img src="./ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.phone.game/alg.ad.predict.text.png" width="450" height="300">
+<img src="./ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.phone.game/alg.ad.predict.text.png" width="300" height="300">
 </section>
 	
 </p>
