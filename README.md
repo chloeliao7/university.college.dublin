@@ -33,6 +33,7 @@
 + [lab 5](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac5) (pig latin)
 + [lab 6](./ucd.cloud.computing/comp.cloud.lab/comp.cloud.prac6) (map reduce advanced)
 + [project](./ucd.cloud.computing/comp.cloud.todolist) (project with angular and firebase)
+
 	<section data-markdown>
 	<img src="./ucd.cloud.computing/comp.cloud.todolist/smart-todo-now-share.png" width="500" height="300">
 	</section>
