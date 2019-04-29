@@ -195,7 +195,18 @@
 + [notes](./ucd.python.data.analystics/python.notes.txt) (lecture notes)
 + [labs](./ucd.python.data.analystics/python.labs) (labs for python with a variety of exercises)
 + [project](./ucd.python.data.analystics/python.assignments/python.assignment.pythongraph.1) (pythongraph : using api and json to collect weather data)
+
+<section data-markdown>
+<img src="./ucd.python.data.analystics/python.assignments/python.assignment.pythongraph.1/python.data.png" width="350" height="380">
+</section>
+
+
 + [project](./ucd.python.data.analystics/python.assignments/python.assignment.pythongraph.1) (Text classification : scrape, machine learning, data analysis and testing on a set of reviews)
+
+<section data-markdown>
+<img src="./ucd.python.data.analystics/python.assignments/python.assignment.text.classification.2/python.review.png" width="350" height="380">
+</section>
+
 </p>
 </details> 
 
