@@ -12,7 +12,17 @@
 
 > topics : trees, linklist, heap, hash tables, dictionaries, array lists and stacks and queues, big o, vectors
 + [part a](./ucd.algorithm.advanced.structures/alg.ad.parta) exercises(racing graphics with java)
+
+<section data-markdown>
+<img src="./ucd.algorithm.advanced.structures/alg.ad.parta/alg.ad.ex/alg.ad.rabit.run.png" width="450" height="300">
+</section>
+	
 + [part b](./ucd.algorithm.advanced.structures/alg.ad.partb) exercises(phone game with trees)
+
+<section data-markdown>
+<img src="./ucd.algorithm.advanced.structures/alg.ad.partb/alg.ad.phone.game/alg.ad.predict.text.png" width="450" height="300">
+</section>
+	
 </p>
 </details>
 
@@ -199,7 +209,6 @@
 <section data-markdown>
 <img src="./ucd.python.data.analystics/python.assignments/python.assignment.pythongraph.1/python.data.png" width="350" height="380">
 </section>
-
 
 + [project 2](./ucd.python.data.analystics/python.assignments/python.assignment.pythongraph.1) (Text classification : scrape, machine learning, data analysis and testing on a set of reviews)
 
