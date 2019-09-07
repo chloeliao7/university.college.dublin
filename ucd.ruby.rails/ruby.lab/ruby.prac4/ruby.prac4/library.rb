@@ -6,7 +6,6 @@ class Library
   def initialize(opts={})
     @books = opts[:books] # array of books from top.rb
   end
-  
   def lend(title_param, user) 
     # puts "book has been borrowed by #{user} BOOK: #{title_param}" 
     book = @books.find {|x| x.title == title_param }
